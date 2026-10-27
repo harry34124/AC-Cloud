@@ -1,1 +1,41 @@
-{"Version":3,"FileReferences":{"Moc":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/79cb86c0d4b796b21ebac6a80daa11c6521ccf6835a2ab92e99200453a743c16/resource.moc3","Textures":["/02_共用静止与衔接动作/共用模型/统一运行库/objects/e23a7c0269223b7ba2a4023e38d97479105891b39609f3acd70a92a58b1f5bc6/resource.png"],"DisplayInfo":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/e1698258b03d440891b48dfc1455ed44389f2ef8f920c18879fcb9291f4baefd/resource.cdi3.json","Motions":{"A10":[{"File":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/96d93c2f1286807d2feda95c10b7adb3ade4417164ed2bf20f5baa769f3c4832/resource.motion3.json","FadeInTime":0,"FadeOutTime":0}],"GL01":[{"File":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/c71ef3fa9b5caefb442128a4a5aa0ad853e6b9895105a519b9bed0055eb23d81/resource.motion3.json","FadeInTime":0,"FadeOutTime":0}],"GL02":[{"File":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/5e9e65bcede1309604c13108b0c166e719ea2bb260d63785f0501e4e6a2c5274/resource.motion3.json","FadeInTime":0,"FadeOutTime":0}],"GL03":[{"File":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/8e7287f68dfd9402be8b347c742c8e780ff7b049185b158a48fd6e1e8dbae312/resource.motion3.json","FadeInTime":0,"FadeOutTime":0}]}},"Groups":[]}
+{
+    "Version": 3,
+    "FileReferences": {
+        "Moc": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/79cb86c0d4b796b21ebac6a80daa11c6521ccf6835a2ab92e99200453a743c16/resource.moc3",
+        "Textures": [
+            "/02_共用静止与衔接动作/共用模型/统一运行库/objects/e23a7c0269223b7ba2a4023e38d97479105891b39609f3acd70a92a58b1f5bc6/resource.png"
+        ],
+        "DisplayInfo": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/e1698258b03d440891b48dfc1455ed44389f2ef8f920c18879fcb9291f4baefd/resource.cdi3.json",
+        "Motions": {
+            "A10": [
+                {
+                    "File": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/96d93c2f1286807d2feda95c10b7adb3ade4417164ed2bf20f5baa769f3c4832/resource.motion3.json",
+                    "FadeInTime": 0,
+                    "FadeOutTime": 0
+                }
+            ],
+            "GL01": [
+                {
+                    "File": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/c71ef3fa9b5caefb442128a4a5aa0ad853e6b9895105a519b9bed0055eb23d81/resource.motion3.json",
+                    "FadeInTime": 0,
+                    "FadeOutTime": 0
+                }
+            ],
+            "GL02": [
+                {
+                    "File": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/5e9e65bcede1309604c13108b0c166e719ea2bb260d63785f0501e4e6a2c5274/resource.motion3.json",
+                    "FadeInTime": 0,
+                    "FadeOutTime": 0
+                }
+            ],
+            "GL03": [
+                {
+                    "File": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/8e7287f68dfd9402be8b347c742c8e780ff7b049185b158a48fd6e1e8dbae312/resource.motion3.json",
+                    "FadeInTime": 0,
+                    "FadeOutTime": 0
+                }
+            ]
+        }
+    },
+    "Groups": []
+}

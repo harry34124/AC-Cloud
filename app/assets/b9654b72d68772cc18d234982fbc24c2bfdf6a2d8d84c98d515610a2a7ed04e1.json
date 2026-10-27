@@ -1,1 +1,46 @@
-{"台词":"开始吧。","台词范围":null,"概率":0.8,"亮刀出字":1.5245901639344261,"整段时长":6,"加速倍率":1.564102564102564,"gripPoint":[460.7813553806584,491.3120461156854],"palmPoint":[446.7535744322961,649.2851135407906],"palmFingerMismatch":0,"gripGap":null,"angle":-126,"forearmAngle":115.75527076016711,"wristToGripAngle":115.86635679409449,"axisError":61.75527076016709,"axisLock":0,"elbowAnchorExtrapolation":0,"wristAnchorExtrapolation":0,"roll":0,"depth":"背侧携行","bladeWidthRatio":1,"handAboveHandle":false,"handOverBody":false,"model":"38层原MOC3三独立层序通道","normalizedScale":0.33641715727502103,"hiltDoc":[488.6975788690071,298.42505707887494],"bladeLengthDoc":982,"textureLengthDoc":1500,"pivot":[1040,201],"modelCenter":[635,1216]}
+{
+    "台词": "开始吧。",
+    "台词范围": null,
+    "概率": 0.8,
+    "亮刀出字": 1.5245901639344261,
+    "整段时长": 6,
+    "加速倍率": 1.564102564102564,
+    "gripPoint": [
+        460.7813553806584,
+        491.3120461156854
+    ],
+    "palmPoint": [
+        446.7535744322961,
+        649.2851135407906
+    ],
+    "palmFingerMismatch": 0,
+    "gripGap": null,
+    "angle": -126,
+    "forearmAngle": 115.75527076016711,
+    "wristToGripAngle": 115.86635679409449,
+    "axisError": 61.75527076016709,
+    "axisLock": 0,
+    "elbowAnchorExtrapolation": 0,
+    "wristAnchorExtrapolation": 0,
+    "roll": 0,
+    "depth": "背侧携行",
+    "bladeWidthRatio": 1,
+    "handAboveHandle": false,
+    "handOverBody": false,
+    "model": "38层原MOC3三独立层序通道",
+    "normalizedScale": 0.33641715727502103,
+    "hiltDoc": [
+        488.6975788690071,
+        298.42505707887494
+    ],
+    "bladeLengthDoc": 982,
+    "textureLengthDoc": 1500,
+    "pivot": [
+        1040,
+        201
+    ],
+    "modelCenter": [
+        635,
+        1216
+    ]
+}

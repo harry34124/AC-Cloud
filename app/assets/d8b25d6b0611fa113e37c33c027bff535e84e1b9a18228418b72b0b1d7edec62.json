@@ -1,1 +1,680 @@
-{"Version":3,"Parameters":[{"Id":"ParamSI03Phase","GroupId":"","Name":"SI03 连续动作阶段"},{"Id":"ParamAngleX","GroupId":"ParamGroupFace","Name":"角度 X"},{"Id":"ParamAngleY","GroupId":"ParamGroupFace","Name":"角度 Y"},{"Id":"ParamAngleZ","GroupId":"ParamGroupFace","Name":"角度 Z"},{"Id":"ParamEyeLOpen","GroupId":"ParamGroupEyes","Name":"左眼开合"},{"Id":"ParamEyeROpen","GroupId":"ParamGroupEyes","Name":"右眼开合"},{"Id":"ParamEyeBallX","GroupId":"ParamGroupEyes","Name":"眼球 X"},{"Id":"ParamEyeBallY","GroupId":"ParamGroupEyes","Name":"眼球 Y"},{"Id":"ParamEyeBallForm","GroupId":"ParamGroupEyes","Name":"果冻眼"},{"Id":"ParamBrowLY","GroupId":"ParamGroupBrows","Name":"左眉 Y"},{"Id":"ParamBrowRY","GroupId":"ParamGroupBrows","Name":"右眉 Y"},{"Id":"ParamMouthForm","GroupId":"ParamGroupMouth","Name":"嘴型"},{"Id":"ParamMouthOpenY","GroupId":"ParamGroupMouth","Name":"嘴巴开合"},{"Id":"ParamBodyAngleX","GroupId":"ParamGroupBody","Name":"身体角度 X"},{"Id":"ParamBodyAngleY","GroupId":"ParamGroupBody","Name":"身体角度 Y"},{"Id":"ParamBodyAngleZ","GroupId":"ParamGroupBody","Name":"身体角度 Z"},{"Id":"ParamBodyLean","GroupId":"ParamGroupBody","Name":"身体前后倾"},{"Id":"ParamProportion","GroupId":"ParamGroupBody","Name":"大小变（头身比）"},{"Id":"ParamBreath","GroupId":"ParamGroupBody","Name":"呼吸"},{"Id":"ParamHairFront","GroupId":"ParamGroupPhysics","Name":"前发摆动"},{"Id":"ParamHairBack","GroupId":"ParamGroupPhysics","Name":"后发摆动"},{"Id":"ParamSI03Joint_S_pelvis","GroupId":"ParamGroupSkeleton","Name":"S pelvis"},{"Id":"ParamSI03Joint_S_chest","GroupId":"ParamGroupSkeleton","Name":"S chest"},{"Id":"ParamSI03Joint_S_upper_r","GroupId":"ParamGroupSkeleton","Name":"S upper_r"},{"Id":"ParamSI03Joint_S_fore_r","GroupId":"ParamGroupSkeleton","Name":"S fore_r"},{"Id":"ParamSI03Joint_S_hand_r","GroupId":"ParamGroupSkeleton","Name":"S hand_r"},{"Id":"ParamSI03Joint_S_upper_l","GroupId":"ParamGroupSkeleton","Name":"S upper_l"},{"Id":"ParamSI03Joint_S_fore_l","GroupId":"ParamGroupSkeleton","Name":"S fore_l"},{"Id":"ParamSI03Joint_S_hand_l","GroupId":"ParamGroupSkeleton","Name":"S hand_l"},{"Id":"ParamSI03Joint_L_upper_r","GroupId":"ParamGroupSkeleton","Name":"L upper_r"},{"Id":"ParamSI03Joint_L_fore_r","GroupId":"ParamGroupSkeleton","Name":"L fore_r"},{"Id":"ParamSI03Joint_L_hand_r","GroupId":"ParamGroupSkeleton","Name":"L hand_r"},{"Id":"ParamSI03Joint_L_upper_l","GroupId":"ParamGroupSkeleton","Name":"L upper_l"},{"Id":"ParamSI03Joint_L_fore_l","GroupId":"ParamGroupSkeleton","Name":"L fore_l"},{"Id":"ParamSI03Joint_L_hand_l","GroupId":"ParamGroupSkeleton","Name":"L hand_l"},{"Id":"ParamSI03Joint_H_upper_r","GroupId":"ParamGroupSkeleton","Name":"H upper_r"},{"Id":"ParamSI03Joint_H_fore_r","GroupId":"ParamGroupSkeleton","Name":"H fore_r"},{"Id":"ParamSI03Joint_H_hand_r","GroupId":"ParamGroupSkeleton","Name":"H hand_r"},{"Id":"ParamSI03Joint_H_upper_l","GroupId":"ParamGroupSkeleton","Name":"H upper_l"},{"Id":"ParamSI03Joint_H_fore_l","GroupId":"ParamGroupSkeleton","Name":"H fore_l"},{"Id":"ParamSI03Joint_H_hand_l","GroupId":"ParamGroupSkeleton","Name":"H hand_l"},{"Id":"ParamSI03Joint_S_thigh_r","GroupId":"ParamGroupSkeleton","Name":"S thigh_r"},{"Id":"ParamSI03Joint_S_shin_r","GroupId":"ParamGroupSkeleton","Name":"S shin_r"},{"Id":"ParamSI03Joint_S_foot_r","GroupId":"ParamGroupSkeleton","Name":"S foot_r"},{"Id":"ParamSI03Joint_S_thigh_l","GroupId":"ParamGroupSkeleton","Name":"S thigh_l"},{"Id":"ParamSI03Joint_S_shin_l","GroupId":"ParamGroupSkeleton","Name":"S shin_l"},{"Id":"ParamSI03Joint_S_foot_l","GroupId":"ParamGroupSkeleton","Name":"S foot_l"},{"Id":"ParamSI03Joint_L_thigh_r","GroupId":"ParamGroupSkeleton","Name":"L thigh_r"},{"Id":"ParamSI03Joint_L_shin_r","GroupId":"ParamGroupSkeleton","Name":"L shin_r"},{"Id":"ParamSI03Joint_L_foot_r","GroupId":"ParamGroupSkeleton","Name":"L foot_r"},{"Id":"ParamSI03Joint_L_thigh_l","GroupId":"ParamGroupSkeleton","Name":"L thigh_l"},{"Id":"ParamSI03Joint_L_shin_l","GroupId":"ParamGroupSkeleton","Name":"L shin_l"},{"Id":"ParamSI03Joint_L_foot_l","GroupId":"ParamGroupSkeleton","Name":"L foot_l"},{"Id":"ParamSI03Joint_H_thigh_r","GroupId":"ParamGroupSkeleton","Name":"H thigh_r"},{"Id":"ParamSI03Joint_H_shin_r","GroupId":"ParamGroupSkeleton","Name":"H shin_r"},{"Id":"ParamSI03Joint_H_foot_r","GroupId":"ParamGroupSkeleton","Name":"H foot_r"},{"Id":"ParamSI03Joint_H_thigh_l","GroupId":"ParamGroupSkeleton","Name":"H thigh_l"},{"Id":"ParamSI03Joint_H_shin_l","GroupId":"ParamGroupSkeleton","Name":"H shin_l"},{"Id":"ParamSI03Joint_H_foot_l","GroupId":"ParamGroupSkeleton","Name":"H foot_l"},{"Id":"ParamSI03Joint_S_cloth","GroupId":"ParamGroupSkeleton","Name":"S cloth"},{"Id":"ParamSI03Joint_S_cloth_mid","GroupId":"ParamGroupSkeleton","Name":"布摆中段"},{"Id":"ParamSI03Joint_S_cloth_tip","GroupId":"ParamGroupSkeleton","Name":"布摆下段"},{"Id":"ParamSkelCrouch","GroupId":"ParamGroupSkeleton","Name":"下蹲"},{"Id":"ParamSkelWeight","GroupId":"ParamGroupSkeleton","Name":"重心转移"},{"Id":"ParamSkelKneesIn","GroupId":"ParamGroupSkeleton","Name":"膝盖内扣"},{"Id":"ParamSkelHop","GroupId":"ParamGroupSkeleton","Name":"弹起"},{"Id":"ParamSI03View","GroupId":"","Name":"SI03 source view"},{"Id":"ParamSI03RightThighView","GroupId":"","Name":"SI03 right thigh view"}],"ParameterGroups":[{"Id":"ParamGroupFace","GroupId":"","Name":"面部"},{"Id":"ParamGroupEyes","GroupId":"","Name":"眼睛"},{"Id":"ParamGroupBrows","GroupId":"","Name":"眉毛"},{"Id":"ParamGroupMouth","GroupId":"","Name":"嘴巴"},{"Id":"ParamGroupBody","GroupId":"","Name":"身体"},{"Id":"ParamGroupPhysics","GroupId":"","Name":"物理"},{"Id":"ParamGroupSkeleton","GroupId":"","Name":"骨骼"}],"Parts":[{"Id":"PartHead","Name":"头部"},{"Id":"PartHairBack","Name":"后发"},{"Id":"PartFace","Name":"面部"},{"Id":"PartHairFront","Name":"前发"},{"Id":"PartHeadAccessories","Name":"头部附件"},{"Id":"PartExtra","Name":"附加物"},{"Id":"PartBody","Name":"身体"}],"CombinedParameters":[["ParamAngleX","ParamAngleY"],["ParamEyeBallX","ParamEyeBallY"],["ParamBodyAngleX","ParamBodyAngleY"]],"Drawables":[{"Id":"ArtMeshHandwearL12","Name":"handwear SI03_H_handwear_fist-l"},{"Id":"ArtMeshHandwearL11","Name":"handwear SI03_L_handwear-l"},{"Id":"ArtMeshHandwearL10","Name":"handwear SI03_S_handwear_fore-l"},{"Id":"ArtMeshHandwearL9","Name":"handwear SI03_H_handwear_fore-l"},{"Id":"ArtMeshHandwearL8","Name":"handwear SI03_S_handwear_fist-l"},{"Id":"ArtMeshHandwearL7","Name":"handwear SI03_S_handwear_upper-l"},{"Id":"ArtMeshHandwearL6","Name":"handwear SI03_S_handwear_pauldron-l"},{"Id":"ArtMeshHandwearL5","Name":"handwear SI03_H_handwear_upper-l"},{"Id":"ArtMeshHandwearL4","Name":"handwear SI03_L_handwear_fore-l"},{"Id":"ArtMeshHandwearL3","Name":"handwear SI03_L_handwear_sleeve-l"},{"Id":"ArtMeshHandwearR11","Name":"handwear SI03_H_handwear_fore-r"},{"Id":"ArtMeshHandwearR10","Name":"handwear SI03_L_handwear_fore-r"},{"Id":"ArtMeshHandwearR9","Name":"handwear SI03_S_handwear_fore-r"},{"Id":"ArtMeshHandwearR8","Name":"handwear SI03_H_handwear_fist-r"},{"Id":"ArtMeshHandwearR7","Name":"handwear SI03_L_handwear_fist-r"},{"Id":"ArtMeshHandwearR6","Name":"handwear SI03_S_handwear_fist-r"},{"Id":"ArtMeshBottomwearL","Name":"bottomwear SI03_S_bottomwear_cloth-l"},{"Id":"ArtMeshLegwearR8","Name":"legwear SI03_H_legwear_shin-r"},{"Id":"ArtMeshLegwearR7","Name":"legwear SI03_L_legwear_shin-r"},{"Id":"ArtMeshLegwearR6","Name":"legwear SI03_S_legwear_shin-r"},{"Id":"ArtMeshLegwearR5","Name":"legwear SI03_H_legwear_thigh-r"},{"Id":"ArtMeshLegwearR4","Name":"legwear SI03_L_legwear_thigh-r"},{"Id":"ArtMeshLegwearR3","Name":"legwear SI03_S_legwear_thigh-r"},{"Id":"ArtMeshBottomwear","Name":"bottomwear SI03_S_bottomwear_waist"},{"Id":"ArtMeshHandwearR5","Name":"handwear SI03_H_handwear_upper-r"},{"Id":"ArtMeshHandwearR4","Name":"handwear SI03_L_handwear_upper-r"},{"Id":"ArtMeshTopwear2","Name":"topwear SI03_S_topwear"},{"Id":"ArtMeshNeck","Name":"neck SI03_common_neck"},{"Id":"ArtMeshHandwearR3","Name":"handwear SI03_S_handwear_upper-r"},{"Id":"ArtMeshFootwearL2","Name":"footwear SI03_S_footwear-l"},{"Id":"ArtMeshFootwearL","Name":"footwear SI03_L_footwear-l"},{"Id":"ArtMeshFootwearR3","Name":"footwear SI03_common_footwear-r"},{"Id":"ArtMeshHandwearL2","Name":"handwear SI03_S_hidden_upper-l"},{"Id":"ArtMeshTopwear","Name":"topwear SI03_S_hidden_torso"},{"Id":"ArtMeshHandwearL","Name":"handwear SI03_S_hidden_fore-l"},{"Id":"ArtMeshHandwearR2","Name":"handwear SI03_S_hidden_fore-r"},{"Id":"ArtMeshHandwearR","Name":"handwear SI03_S_hidden_upper-r"},{"Id":"ArtMeshLegwearL8","Name":"legwear SI03_H_legwear_shin-l"},{"Id":"ArtMeshLegwearL7","Name":"legwear SI03_L_legwear_shin-l"},{"Id":"ArtMeshLegwearL6","Name":"legwear SI03_S_legwear_shin-l"},{"Id":"ArtMeshLegwearL5","Name":"legwear SI03_L_legwear_thigh-l"},{"Id":"ArtMeshLegwearL4","Name":"legwear SI03_S_legwear_thigh-l"},{"Id":"ArtMeshFootwearR2","Name":"footwear SI03_L_footwear-r"},{"Id":"ArtMeshFootwearR","Name":"footwear SI03_H_footwear-r"},{"Id":"ArtMeshLegwearR2","Name":"legwear SI03_L_hidden_pelvis-thigh-r"},{"Id":"ArtMeshLegwearL3","Name":"legwear SI03_L_hidden_pelvis-thigh-l"},{"Id":"ArtMeshLegwearL2","Name":"legwear SI03_H_attached_thigh-l"},{"Id":"ArtMeshLegwearL","Name":"legwear SI03_H_attached_knee-l"},{"Id":"ArtMeshLegwearR","Name":"legwear SI03_H_attached_knee-r"},{"Id":"ArtMeshFrontHair","Name":"front hair SI03_common_front_hair"},{"Id":"ArtMeshEyebrowL","Name":"eyebrow SI03_common_eyebrow-l"},{"Id":"ArtMeshEyebrowR","Name":"eyebrow SI03_common_eyebrow-r"},{"Id":"ArtMeshEyelashR","Name":"eyelash SI03_common_eyelash-r"},{"Id":"ArtMeshEyelashL","Name":"eyelash SI03_common_eyelash-l"},{"Id":"ArtMeshIridesL","Name":"irides SI03_common_irides-l"},{"Id":"ArtMeshIridesR","Name":"irides SI03_common_irides-r"},{"Id":"ArtMeshEyewhiteL","Name":"eyewhite SI03_common_eyewhite-l"},{"Id":"ArtMeshEyewhiteR","Name":"eyewhite SI03_common_eyewhite-r"},{"Id":"ArtMeshMouthClose","Name":"mouth close SI03_common_mouth_close"},{"Id":"ArtMeshNose","Name":"nose SI03_common_nose"},{"Id":"ArtMeshFace","Name":"face SI03_common_face"},{"Id":"ArtMeshEars","Name":"ears SI03_common_ears"},{"Id":"ArtMeshBackHair","Name":"back hair SI03_common_back_hair"}]}
+{
+    "Version": 3,
+    "Parameters": [
+        {
+            "Id": "ParamSI03Phase",
+            "GroupId": "",
+            "Name": "SI03 连续动作阶段"
+        },
+        {
+            "Id": "ParamAngleX",
+            "GroupId": "ParamGroupFace",
+            "Name": "角度 X"
+        },
+        {
+            "Id": "ParamAngleY",
+            "GroupId": "ParamGroupFace",
+            "Name": "角度 Y"
+        },
+        {
+            "Id": "ParamAngleZ",
+            "GroupId": "ParamGroupFace",
+            "Name": "角度 Z"
+        },
+        {
+            "Id": "ParamEyeLOpen",
+            "GroupId": "ParamGroupEyes",
+            "Name": "左眼开合"
+        },
+        {
+            "Id": "ParamEyeROpen",
+            "GroupId": "ParamGroupEyes",
+            "Name": "右眼开合"
+        },
+        {
+            "Id": "ParamEyeBallX",
+            "GroupId": "ParamGroupEyes",
+            "Name": "眼球 X"
+        },
+        {
+            "Id": "ParamEyeBallY",
+            "GroupId": "ParamGroupEyes",
+            "Name": "眼球 Y"
+        },
+        {
+            "Id": "ParamEyeBallForm",
+            "GroupId": "ParamGroupEyes",
+            "Name": "果冻眼"
+        },
+        {
+            "Id": "ParamBrowLY",
+            "GroupId": "ParamGroupBrows",
+            "Name": "左眉 Y"
+        },
+        {
+            "Id": "ParamBrowRY",
+            "GroupId": "ParamGroupBrows",
+            "Name": "右眉 Y"
+        },
+        {
+            "Id": "ParamMouthForm",
+            "GroupId": "ParamGroupMouth",
+            "Name": "嘴型"
+        },
+        {
+            "Id": "ParamMouthOpenY",
+            "GroupId": "ParamGroupMouth",
+            "Name": "嘴巴开合"
+        },
+        {
+            "Id": "ParamBodyAngleX",
+            "GroupId": "ParamGroupBody",
+            "Name": "身体角度 X"
+        },
+        {
+            "Id": "ParamBodyAngleY",
+            "GroupId": "ParamGroupBody",
+            "Name": "身体角度 Y"
+        },
+        {
+            "Id": "ParamBodyAngleZ",
+            "GroupId": "ParamGroupBody",
+            "Name": "身体角度 Z"
+        },
+        {
+            "Id": "ParamBodyLean",
+            "GroupId": "ParamGroupBody",
+            "Name": "身体前后倾"
+        },
+        {
+            "Id": "ParamProportion",
+            "GroupId": "ParamGroupBody",
+            "Name": "大小变（头身比）"
+        },
+        {
+            "Id": "ParamBreath",
+            "GroupId": "ParamGroupBody",
+            "Name": "呼吸"
+        },
+        {
+            "Id": "ParamHairFront",
+            "GroupId": "ParamGroupPhysics",
+            "Name": "前发摆动"
+        },
+        {
+            "Id": "ParamHairBack",
+            "GroupId": "ParamGroupPhysics",
+            "Name": "后发摆动"
+        },
+        {
+            "Id": "ParamSI03Joint_S_pelvis",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "S pelvis"
+        },
+        {
+            "Id": "ParamSI03Joint_S_chest",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "S chest"
+        },
+        {
+            "Id": "ParamSI03Joint_S_upper_r",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "S upper_r"
+        },
+        {
+            "Id": "ParamSI03Joint_S_fore_r",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "S fore_r"
+        },
+        {
+            "Id": "ParamSI03Joint_S_hand_r",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "S hand_r"
+        },
+        {
+            "Id": "ParamSI03Joint_S_upper_l",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "S upper_l"
+        },
+        {
+            "Id": "ParamSI03Joint_S_fore_l",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "S fore_l"
+        },
+        {
+            "Id": "ParamSI03Joint_S_hand_l",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "S hand_l"
+        },
+        {
+            "Id": "ParamSI03Joint_L_upper_r",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "L upper_r"
+        },
+        {
+            "Id": "ParamSI03Joint_L_fore_r",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "L fore_r"
+        },
+        {
+            "Id": "ParamSI03Joint_L_hand_r",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "L hand_r"
+        },
+        {
+            "Id": "ParamSI03Joint_L_upper_l",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "L upper_l"
+        },
+        {
+            "Id": "ParamSI03Joint_L_fore_l",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "L fore_l"
+        },
+        {
+            "Id": "ParamSI03Joint_L_hand_l",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "L hand_l"
+        },
+        {
+            "Id": "ParamSI03Joint_H_upper_r",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "H upper_r"
+        },
+        {
+            "Id": "ParamSI03Joint_H_fore_r",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "H fore_r"
+        },
+        {
+            "Id": "ParamSI03Joint_H_hand_r",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "H hand_r"
+        },
+        {
+            "Id": "ParamSI03Joint_H_upper_l",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "H upper_l"
+        },
+        {
+            "Id": "ParamSI03Joint_H_fore_l",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "H fore_l"
+        },
+        {
+            "Id": "ParamSI03Joint_H_hand_l",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "H hand_l"
+        },
+        {
+            "Id": "ParamSI03Joint_S_thigh_r",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "S thigh_r"
+        },
+        {
+            "Id": "ParamSI03Joint_S_shin_r",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "S shin_r"
+        },
+        {
+            "Id": "ParamSI03Joint_S_foot_r",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "S foot_r"
+        },
+        {
+            "Id": "ParamSI03Joint_S_thigh_l",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "S thigh_l"
+        },
+        {
+            "Id": "ParamSI03Joint_S_shin_l",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "S shin_l"
+        },
+        {
+            "Id": "ParamSI03Joint_S_foot_l",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "S foot_l"
+        },
+        {
+            "Id": "ParamSI03Joint_L_thigh_r",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "L thigh_r"
+        },
+        {
+            "Id": "ParamSI03Joint_L_shin_r",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "L shin_r"
+        },
+        {
+            "Id": "ParamSI03Joint_L_foot_r",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "L foot_r"
+        },
+        {
+            "Id": "ParamSI03Joint_L_thigh_l",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "L thigh_l"
+        },
+        {
+            "Id": "ParamSI03Joint_L_shin_l",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "L shin_l"
+        },
+        {
+            "Id": "ParamSI03Joint_L_foot_l",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "L foot_l"
+        },
+        {
+            "Id": "ParamSI03Joint_H_thigh_r",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "H thigh_r"
+        },
+        {
+            "Id": "ParamSI03Joint_H_shin_r",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "H shin_r"
+        },
+        {
+            "Id": "ParamSI03Joint_H_foot_r",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "H foot_r"
+        },
+        {
+            "Id": "ParamSI03Joint_H_thigh_l",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "H thigh_l"
+        },
+        {
+            "Id": "ParamSI03Joint_H_shin_l",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "H shin_l"
+        },
+        {
+            "Id": "ParamSI03Joint_H_foot_l",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "H foot_l"
+        },
+        {
+            "Id": "ParamSI03Joint_S_cloth",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "S cloth"
+        },
+        {
+            "Id": "ParamSI03Joint_S_cloth_mid",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "布摆中段"
+        },
+        {
+            "Id": "ParamSI03Joint_S_cloth_tip",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "布摆下段"
+        },
+        {
+            "Id": "ParamSkelCrouch",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "下蹲"
+        },
+        {
+            "Id": "ParamSkelWeight",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "重心转移"
+        },
+        {
+            "Id": "ParamSkelKneesIn",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "膝盖内扣"
+        },
+        {
+            "Id": "ParamSkelHop",
+            "GroupId": "ParamGroupSkeleton",
+            "Name": "弹起"
+        },
+        {
+            "Id": "ParamSI03View",
+            "GroupId": "",
+            "Name": "SI03 source view"
+        },
+        {
+            "Id": "ParamSI03RightThighView",
+            "GroupId": "",
+            "Name": "SI03 right thigh view"
+        }
+    ],
+    "ParameterGroups": [
+        {
+            "Id": "ParamGroupFace",
+            "GroupId": "",
+            "Name": "面部"
+        },
+        {
+            "Id": "ParamGroupEyes",
+            "GroupId": "",
+            "Name": "眼睛"
+        },
+        {
+            "Id": "ParamGroupBrows",
+            "GroupId": "",
+            "Name": "眉毛"
+        },
+        {
+            "Id": "ParamGroupMouth",
+            "GroupId": "",
+            "Name": "嘴巴"
+        },
+        {
+            "Id": "ParamGroupBody",
+            "GroupId": "",
+            "Name": "身体"
+        },
+        {
+            "Id": "ParamGroupPhysics",
+            "GroupId": "",
+            "Name": "物理"
+        },
+        {
+            "Id": "ParamGroupSkeleton",
+            "GroupId": "",
+            "Name": "骨骼"
+        }
+    ],
+    "Parts": [
+        {
+            "Id": "PartHead",
+            "Name": "头部"
+        },
+        {
+            "Id": "PartHairBack",
+            "Name": "后发"
+        },
+        {
+            "Id": "PartFace",
+            "Name": "面部"
+        },
+        {
+            "Id": "PartHairFront",
+            "Name": "前发"
+        },
+        {
+            "Id": "PartHeadAccessories",
+            "Name": "头部附件"
+        },
+        {
+            "Id": "PartExtra",
+            "Name": "附加物"
+        },
+        {
+            "Id": "PartBody",
+            "Name": "身体"
+        }
+    ],
+    "CombinedParameters": [
+        [
+            "ParamAngleX",
+            "ParamAngleY"
+        ],
+        [
+            "ParamEyeBallX",
+            "ParamEyeBallY"
+        ],
+        [
+            "ParamBodyAngleX",
+            "ParamBodyAngleY"
+        ]
+    ],
+    "Drawables": [
+        {
+            "Id": "ArtMeshHandwearL12",
+            "Name": "handwear SI03_H_handwear_fist-l"
+        },
+        {
+            "Id": "ArtMeshHandwearL11",
+            "Name": "handwear SI03_L_handwear-l"
+        },
+        {
+            "Id": "ArtMeshHandwearL10",
+            "Name": "handwear SI03_S_handwear_fore-l"
+        },
+        {
+            "Id": "ArtMeshHandwearL9",
+            "Name": "handwear SI03_H_handwear_fore-l"
+        },
+        {
+            "Id": "ArtMeshHandwearL8",
+            "Name": "handwear SI03_S_handwear_fist-l"
+        },
+        {
+            "Id": "ArtMeshHandwearL7",
+            "Name": "handwear SI03_S_handwear_upper-l"
+        },
+        {
+            "Id": "ArtMeshHandwearL6",
+            "Name": "handwear SI03_S_handwear_pauldron-l"
+        },
+        {
+            "Id": "ArtMeshHandwearL5",
+            "Name": "handwear SI03_H_handwear_upper-l"
+        },
+        {
+            "Id": "ArtMeshHandwearL4",
+            "Name": "handwear SI03_L_handwear_fore-l"
+        },
+        {
+            "Id": "ArtMeshHandwearL3",
+            "Name": "handwear SI03_L_handwear_sleeve-l"
+        },
+        {
+            "Id": "ArtMeshHandwearR11",
+            "Name": "handwear SI03_H_handwear_fore-r"
+        },
+        {
+            "Id": "ArtMeshHandwearR10",
+            "Name": "handwear SI03_L_handwear_fore-r"
+        },
+        {
+            "Id": "ArtMeshHandwearR9",
+            "Name": "handwear SI03_S_handwear_fore-r"
+        },
+        {
+            "Id": "ArtMeshHandwearR8",
+            "Name": "handwear SI03_H_handwear_fist-r"
+        },
+        {
+            "Id": "ArtMeshHandwearR7",
+            "Name": "handwear SI03_L_handwear_fist-r"
+        },
+        {
+            "Id": "ArtMeshHandwearR6",
+            "Name": "handwear SI03_S_handwear_fist-r"
+        },
+        {
+            "Id": "ArtMeshBottomwearL",
+            "Name": "bottomwear SI03_S_bottomwear_cloth-l"
+        },
+        {
+            "Id": "ArtMeshLegwearR8",
+            "Name": "legwear SI03_H_legwear_shin-r"
+        },
+        {
+            "Id": "ArtMeshLegwearR7",
+            "Name": "legwear SI03_L_legwear_shin-r"
+        },
+        {
+            "Id": "ArtMeshLegwearR6",
+            "Name": "legwear SI03_S_legwear_shin-r"
+        },
+        {
+            "Id": "ArtMeshLegwearR5",
+            "Name": "legwear SI03_H_legwear_thigh-r"
+        },
+        {
+            "Id": "ArtMeshLegwearR4",
+            "Name": "legwear SI03_L_legwear_thigh-r"
+        },
+        {
+            "Id": "ArtMeshLegwearR3",
+            "Name": "legwear SI03_S_legwear_thigh-r"
+        },
+        {
+            "Id": "ArtMeshBottomwear",
+            "Name": "bottomwear SI03_S_bottomwear_waist"
+        },
+        {
+            "Id": "ArtMeshHandwearR5",
+            "Name": "handwear SI03_H_handwear_upper-r"
+        },
+        {
+            "Id": "ArtMeshHandwearR4",
+            "Name": "handwear SI03_L_handwear_upper-r"
+        },
+        {
+            "Id": "ArtMeshTopwear2",
+            "Name": "topwear SI03_S_topwear"
+        },
+        {
+            "Id": "ArtMeshNeck",
+            "Name": "neck SI03_common_neck"
+        },
+        {
+            "Id": "ArtMeshHandwearR3",
+            "Name": "handwear SI03_S_handwear_upper-r"
+        },
+        {
+            "Id": "ArtMeshFootwearL2",
+            "Name": "footwear SI03_S_footwear-l"
+        },
+        {
+            "Id": "ArtMeshFootwearL",
+            "Name": "footwear SI03_L_footwear-l"
+        },
+        {
+            "Id": "ArtMeshFootwearR3",
+            "Name": "footwear SI03_common_footwear-r"
+        },
+        {
+            "Id": "ArtMeshHandwearL2",
+            "Name": "handwear SI03_S_hidden_upper-l"
+        },
+        {
+            "Id": "ArtMeshTopwear",
+            "Name": "topwear SI03_S_hidden_torso"
+        },
+        {
+            "Id": "ArtMeshHandwearL",
+            "Name": "handwear SI03_S_hidden_fore-l"
+        },
+        {
+            "Id": "ArtMeshHandwearR2",
+            "Name": "handwear SI03_S_hidden_fore-r"
+        },
+        {
+            "Id": "ArtMeshHandwearR",
+            "Name": "handwear SI03_S_hidden_upper-r"
+        },
+        {
+            "Id": "ArtMeshLegwearL8",
+            "Name": "legwear SI03_H_legwear_shin-l"
+        },
+        {
+            "Id": "ArtMeshLegwearL7",
+            "Name": "legwear SI03_L_legwear_shin-l"
+        },
+        {
+            "Id": "ArtMeshLegwearL6",
+            "Name": "legwear SI03_S_legwear_shin-l"
+        },
+        {
+            "Id": "ArtMeshLegwearL5",
+            "Name": "legwear SI03_L_legwear_thigh-l"
+        },
+        {
+            "Id": "ArtMeshLegwearL4",
+            "Name": "legwear SI03_S_legwear_thigh-l"
+        },
+        {
+            "Id": "ArtMeshFootwearR2",
+            "Name": "footwear SI03_L_footwear-r"
+        },
+        {
+            "Id": "ArtMeshFootwearR",
+            "Name": "footwear SI03_H_footwear-r"
+        },
+        {
+            "Id": "ArtMeshLegwearR2",
+            "Name": "legwear SI03_L_hidden_pelvis-thigh-r"
+        },
+        {
+            "Id": "ArtMeshLegwearL3",
+            "Name": "legwear SI03_L_hidden_pelvis-thigh-l"
+        },
+        {
+            "Id": "ArtMeshLegwearL2",
+            "Name": "legwear SI03_H_attached_thigh-l"
+        },
+        {
+            "Id": "ArtMeshLegwearL",
+            "Name": "legwear SI03_H_attached_knee-l"
+        },
+        {
+            "Id": "ArtMeshLegwearR",
+            "Name": "legwear SI03_H_attached_knee-r"
+        },
+        {
+            "Id": "ArtMeshFrontHair",
+            "Name": "front hair SI03_common_front_hair"
+        },
+        {
+            "Id": "ArtMeshEyebrowL",
+            "Name": "eyebrow SI03_common_eyebrow-l"
+        },
+        {
+            "Id": "ArtMeshEyebrowR",
+            "Name": "eyebrow SI03_common_eyebrow-r"
+        },
+        {
+            "Id": "ArtMeshEyelashR",
+            "Name": "eyelash SI03_common_eyelash-r"
+        },
+        {
+            "Id": "ArtMeshEyelashL",
+            "Name": "eyelash SI03_common_eyelash-l"
+        },
+        {
+            "Id": "ArtMeshIridesL",
+            "Name": "irides SI03_common_irides-l"
+        },
+        {
+            "Id": "ArtMeshIridesR",
+            "Name": "irides SI03_common_irides-r"
+        },
+        {
+            "Id": "ArtMeshEyewhiteL",
+            "Name": "eyewhite SI03_common_eyewhite-l"
+        },
+        {
+            "Id": "ArtMeshEyewhiteR",
+            "Name": "eyewhite SI03_common_eyewhite-r"
+        },
+        {
+            "Id": "ArtMeshMouthClose",
+            "Name": "mouth close SI03_common_mouth_close"
+        },
+        {
+            "Id": "ArtMeshNose",
+            "Name": "nose SI03_common_nose"
+        },
+        {
+            "Id": "ArtMeshFace",
+            "Name": "face SI03_common_face"
+        },
+        {
+            "Id": "ArtMeshEars",
+            "Name": "ears SI03_common_ears"
+        },
+        {
+            "Id": "ArtMeshBackHair",
+            "Name": "back hair SI03_common_back_hair"
+        }
+    ]
+}

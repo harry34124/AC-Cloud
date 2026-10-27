@@ -1,1 +1,22 @@
-{"Version":3,"FileReferences":{"Moc":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/abad76d81cbb7e09fa91df61044778a734cc95a1fafc201e6fdc5bb3cd6367d7/resource.moc3?revision=turn-earth1","Textures":["/02_共用静止与衔接动作/共用模型/统一运行库/objects/8c2ada6aaac7a9f6eaa7a7607c7a8b82668447ee7f26223cdb6110d96e9ad2a8/resource.png","/02_共用静止与衔接动作/共用模型/统一运行库/objects/ca50f78d2522f08e46fb373d3e9c3cad9b0d7bcf8fb16351296c74dcfa391207/resource.png","/02_共用静止与衔接动作/共用模型/统一运行库/objects/10dba28d433c5dc8f9426f1c566eccde8dc7c1db4cb2fd7b3a770d930661fd9a/resource.png"],"DisplayInfo":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/3c830add0a639165e81cb790d893d482468c2d84ab84970fb580258b32e48a24/resource.cdi3.json","Motions":{"A06":[{"File":"A06.lateHeadNatural.motion3.json","FadeInTime":0,"FadeOutTime":0.3}]}},"Groups":[]}
+{
+    "Version": 3,
+    "FileReferences": {
+        "Moc": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/abad76d81cbb7e09fa91df61044778a734cc95a1fafc201e6fdc5bb3cd6367d7/resource.moc3?revision=turn-earth1",
+        "Textures": [
+            "/02_共用静止与衔接动作/共用模型/统一运行库/objects/8c2ada6aaac7a9f6eaa7a7607c7a8b82668447ee7f26223cdb6110d96e9ad2a8/resource.png",
+            "/02_共用静止与衔接动作/共用模型/统一运行库/objects/ca50f78d2522f08e46fb373d3e9c3cad9b0d7bcf8fb16351296c74dcfa391207/resource.png",
+            "/02_共用静止与衔接动作/共用模型/统一运行库/objects/10dba28d433c5dc8f9426f1c566eccde8dc7c1db4cb2fd7b3a770d930661fd9a/resource.png"
+        ],
+        "DisplayInfo": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/3c830add0a639165e81cb790d893d482468c2d84ab84970fb580258b32e48a24/resource.cdi3.json",
+        "Motions": {
+            "A06": [
+                {
+                    "File": "A06.lateHeadNatural.motion3.json",
+                    "FadeInTime": 0,
+                    "FadeOutTime": 0.3
+                }
+            ]
+        }
+    },
+    "Groups": []
+}

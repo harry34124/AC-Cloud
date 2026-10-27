@@ -1,35 +1,133 @@
-<!doctype html><meta charset="utf-8"><style>html,body{margin:0;background:transparent}#inspection{display:none}</style>
-<div id="stage"></div><div id="inspection" hidden></div><details hidden></details><select id="size" hidden><option value="100">100</option><option value="150">150</option><option value="200" selected>200</option><option value="250">250</option><option value="300">300</option></select>
-<!--desktop-imports--><script type="importmap">{"imports": {"/02_共用静止与衔接动作/共用模型/统一运行库/objects/0ad3b3e998e3a2a6d6f24497f642f32f49b087568db56aee85b8c2947c2b873b/resource.mjs?instance=20b5b3f13d729f6c980e&instance=c6eefdc478097871cc17": "/desktop/generated/0ad3b3e998e3a2a6d6f24497f642f32f49b087568db56aee85b8c2947c2b873b.mjs", "/02_共用静止与衔接动作/共用模型/统一运行库/objects/2a03c7e10d87e84b12b53d4fc9c44acfcb6abdc134c0956bc780649a08d084d4/resource.mjs?instance=5ce16b7f4630ff027c96&instance=c7ac5d8d6c8791616f79": "/desktop/generated/2a03c7e10d87e84b12b53d4fc9c44acfcb6abdc134c0956bc780649a08d084d4.mjs", "/02_共用静止与衔接动作/共用模型/统一运行库/objects/30b69ca14806bb7b736217adf6382ac34dff8420babdc1f59b8cab56a39eeb49/resource.mjs?instance=cbb1be0d5d35f1abbdb6": "/desktop/generated/30b69ca14806bb7b736217adf6382ac34dff8420babdc1f59b8cab56a39eeb49.mjs", "/02_共用静止与衔接动作/共用模型/统一运行库/objects/802c5d1a69a65c030e40be64f351854d2426b9a70fc12de209530f4d2b535433/resource.mjs?instance=35e3a72c7ad57296f605&instance=c24487763a0ead606d36": "/desktop/generated/802c5d1a69a65c030e40be64f351854d2426b9a70fc12de209530f4d2b535433.mjs", "/02_共用静止与衔接动作/共用模型/统一运行库/objects/9efd3745c4eefb0214e728ce65f2b8b623d467db4b1b259a2f501b08b4259a47/resource.mjs?instance=43c3562281d6deb891ca&instance=6b7919b83a10be1755d7": "/desktop/generated/9efd3745c4eefb0214e728ce65f2b8b623d467db4b1b259a2f501b08b4259a47.mjs", "/02_共用静止与衔接动作/共用模型/统一运行库/objects/b30b97e5bb2b725becebaf0aeeffc87720a7acd76b323acf15ee823a2a5ca5f0/resource.mjs?instance=7c19fc1d26b604633e5d&instance=829e686b7f61074fdeb9": "/desktop/generated/b30b97e5bb2b725becebaf0aeeffc87720a7acd76b323acf15ee823a2a5ca5f0.mjs", "/02_共用静止与衔接动作/共用模型/统一运行库/objects/b450337f96852e2a269675311398c971793a9639e8c10249298ec15e7a8b04f2/resource.mjs?instance=ebfb36ae92cf08bc53e5&instance=f8c3f50c6fdf1c9b3daf": "/desktop/generated/b450337f96852e2a269675311398c971793a9639e8c10249298ec15e7a8b04f2.mjs", "/02_共用静止与衔接动作/共用模型/统一运行库/objects/b7e395739ab73685c0a7b4979917e581e946724043b5c76ef3292f2ab35ead64/resource.mjs?instance=1d1090f9ea0bbfc6217b&instance=248acbf88f692a45237b": "/desktop/generated/b7e395739ab73685c0a7b4979917e581e946724043b5c76ef3292f2ab35ead64.mjs", "/02_共用静止与衔接动作/共用模型/统一运行库/objects/c6c2a9a1017b5cf9bfba63eb49dd89d2ff37f3cb849191d68928775338a69217/resource.mjs?instance=91780420701cddd8618e&instance=4d8dcf82b1801f36c4e5": "/desktop/generated/c6c2a9a1017b5cf9bfba63eb49dd89d2ff37f3cb849191d68928775338a69217.mjs", "/02_共用静止与衔接动作/共用模型/统一运行库/objects/ca07047c1f0df4ba58b4bf682c5b20fda09076350d8caf4ea4beaa4a841ef908/resource.mjs?instance=04f7930e169c0611e912": "/desktop/generated/ca07047c1f0df4ba58b4bf682c5b20fda09076350d8caf4ea4beaa4a841ef908.mjs", "/02_共用静止与衔接动作/共用模型/统一运行库/objects/cbc955c4d51fd6e88e6e81747ab290bb3d13fb739fbdf46576c46344a68e85d0/resource.mjs?instance=b39bbdfdcdd732c35f39&instance=19aa7c40e2ec5da488e7": "/desktop/generated/cbc955c4d51fd6e88e6e81747ab290bb3d13fb739fbdf46576c46344a68e85d0.mjs", "/02_共用静止与衔接动作/共用模型/统一运行库/objects/cfed6b8f9d6be46c943515bfb1a6dc481243adf5b458dfedef912a020760ef6d/resource.mjs?instance=1e1a326e7c8b56da1fe6&instance=cbb1be0d5d35f1abbdb6": "/desktop/generated/cfed6b8f9d6be46c943515bfb1a6dc481243adf5b458dfedef912a020760ef6d.mjs", "/02_共用静止与衔接动作/共用模型/统一运行库/objects/d2c78bc948f0314d437a7d2a85f563d5dda4f31a3b7b257af5662b4b920138df/resource.mjs?instance=78b6d45b4c77be0367e6": "/desktop/generated/d2c78bc948f0314d437a7d2a85f563d5dda4f31a3b7b257af5662b4b920138df.mjs", "/02_共用静止与衔接动作/共用模型/统一运行库/objects/d810236fcd0feb0e2c8b7a936a06f79efe73c1540f9d184d213c10eba1c5b41c/resource.mjs?instance=4667233f7368990cc5ed&instance=a49c086ecfc496c92d40": "/desktop/generated/d810236fcd0feb0e2c8b7a936a06f79efe73c1540f9d184d213c10eba1c5b41c.mjs"}}</script><!--/desktop-imports-->
+<!doctype html><meta charset="utf-8" /><style>
+  html,
+  body {
+    margin: 0;
+    background: transparent;
+  }
+  #inspection {
+    display: none;
+  }
+</style>
+<div id="stage"></div>
+<div id="inspection" hidden></div>
+<details hidden></details>
+<select id="size" hidden>
+  <option value="100">100</option>
+  <option value="150">150</option>
+  <option value="200" selected>200</option>
+  <option value="250">250</option>
+  <option value="300">300</option>
+</select>
+<!--desktop-imports-->
+<script type="importmap">
+  {
+    "imports": {
+      "/02_共用静止与衔接动作/共用模型/统一运行库/objects/0ad3b3e998e3a2a6d6f24497f642f32f49b087568db56aee85b8c2947c2b873b/resource.mjs?instance=20b5b3f13d729f6c980e&instance=c6eefdc478097871cc17": "/desktop/generated/0ad3b3e998e3a2a6d6f24497f642f32f49b087568db56aee85b8c2947c2b873b.mjs",
+      "/02_共用静止与衔接动作/共用模型/统一运行库/objects/2a03c7e10d87e84b12b53d4fc9c44acfcb6abdc134c0956bc780649a08d084d4/resource.mjs?instance=5ce16b7f4630ff027c96&instance=c7ac5d8d6c8791616f79": "/desktop/generated/2a03c7e10d87e84b12b53d4fc9c44acfcb6abdc134c0956bc780649a08d084d4.mjs",
+      "/02_共用静止与衔接动作/共用模型/统一运行库/objects/30b69ca14806bb7b736217adf6382ac34dff8420babdc1f59b8cab56a39eeb49/resource.mjs?instance=cbb1be0d5d35f1abbdb6": "/desktop/generated/30b69ca14806bb7b736217adf6382ac34dff8420babdc1f59b8cab56a39eeb49.mjs",
+      "/02_共用静止与衔接动作/共用模型/统一运行库/objects/802c5d1a69a65c030e40be64f351854d2426b9a70fc12de209530f4d2b535433/resource.mjs?instance=35e3a72c7ad57296f605&instance=c24487763a0ead606d36": "/desktop/generated/802c5d1a69a65c030e40be64f351854d2426b9a70fc12de209530f4d2b535433.mjs",
+      "/02_共用静止与衔接动作/共用模型/统一运行库/objects/9efd3745c4eefb0214e728ce65f2b8b623d467db4b1b259a2f501b08b4259a47/resource.mjs?instance=43c3562281d6deb891ca&instance=6b7919b83a10be1755d7": "/desktop/generated/9efd3745c4eefb0214e728ce65f2b8b623d467db4b1b259a2f501b08b4259a47.mjs",
+      "/02_共用静止与衔接动作/共用模型/统一运行库/objects/b30b97e5bb2b725becebaf0aeeffc87720a7acd76b323acf15ee823a2a5ca5f0/resource.mjs?instance=7c19fc1d26b604633e5d&instance=829e686b7f61074fdeb9": "/desktop/generated/b30b97e5bb2b725becebaf0aeeffc87720a7acd76b323acf15ee823a2a5ca5f0.mjs",
+      "/02_共用静止与衔接动作/共用模型/统一运行库/objects/b450337f96852e2a269675311398c971793a9639e8c10249298ec15e7a8b04f2/resource.mjs?instance=ebfb36ae92cf08bc53e5&instance=f8c3f50c6fdf1c9b3daf": "/desktop/generated/b450337f96852e2a269675311398c971793a9639e8c10249298ec15e7a8b04f2.mjs",
+      "/02_共用静止与衔接动作/共用模型/统一运行库/objects/b7e395739ab73685c0a7b4979917e581e946724043b5c76ef3292f2ab35ead64/resource.mjs?instance=1d1090f9ea0bbfc6217b&instance=248acbf88f692a45237b": "/desktop/generated/b7e395739ab73685c0a7b4979917e581e946724043b5c76ef3292f2ab35ead64.mjs",
+      "/02_共用静止与衔接动作/共用模型/统一运行库/objects/c6c2a9a1017b5cf9bfba63eb49dd89d2ff37f3cb849191d68928775338a69217/resource.mjs?instance=91780420701cddd8618e&instance=4d8dcf82b1801f36c4e5": "/desktop/generated/c6c2a9a1017b5cf9bfba63eb49dd89d2ff37f3cb849191d68928775338a69217.mjs",
+      "/02_共用静止与衔接动作/共用模型/统一运行库/objects/ca07047c1f0df4ba58b4bf682c5b20fda09076350d8caf4ea4beaa4a841ef908/resource.mjs?instance=04f7930e169c0611e912": "/desktop/generated/ca07047c1f0df4ba58b4bf682c5b20fda09076350d8caf4ea4beaa4a841ef908.mjs",
+      "/02_共用静止与衔接动作/共用模型/统一运行库/objects/cbc955c4d51fd6e88e6e81747ab290bb3d13fb739fbdf46576c46344a68e85d0/resource.mjs?instance=b39bbdfdcdd732c35f39&instance=19aa7c40e2ec5da488e7": "/desktop/generated/cbc955c4d51fd6e88e6e81747ab290bb3d13fb739fbdf46576c46344a68e85d0.mjs",
+      "/02_共用静止与衔接动作/共用模型/统一运行库/objects/cfed6b8f9d6be46c943515bfb1a6dc481243adf5b458dfedef912a020760ef6d/resource.mjs?instance=1e1a326e7c8b56da1fe6&instance=cbb1be0d5d35f1abbdb6": "/desktop/generated/cfed6b8f9d6be46c943515bfb1a6dc481243adf5b458dfedef912a020760ef6d.mjs",
+      "/02_共用静止与衔接动作/共用模型/统一运行库/objects/d2c78bc948f0314d437a7d2a85f563d5dda4f31a3b7b257af5662b4b920138df/resource.mjs?instance=78b6d45b4c77be0367e6": "/desktop/generated/d2c78bc948f0314d437a7d2a85f563d5dda4f31a3b7b257af5662b4b920138df.mjs",
+      "/02_共用静止与衔接动作/共用模型/统一运行库/objects/d810236fcd0feb0e2c8b7a936a06f79efe73c1540f9d184d213c10eba1c5b41c/resource.mjs?instance=4667233f7368990cc5ed&instance=a49c086ecfc496c92d40": "/desktop/generated/d810236fcd0feb0e2c8b7a936a06f79efe73c1540f9d184d213c10eba1c5b41c.mjs"
+    }
+  }
+</script>
+<!--/desktop-imports-->
 <script src="/tools/审阅/共用动作/vendor/live2dcubismcore.min.js"></script>
 <script src="/tools/审阅/共用动作/vendor/pixi.min.js"></script>
 <script src="/tools/审阅/共用动作/vendor/cubism4.min.js"></script>
 <script type="module">
-// One disposable native action context. Its sole clock is driven by the desktop host.
-window.actionReady=(async()=>{
- window.actionInitPhase='config';
- const data=await(await fetch('./daily.json')).json(),id=new URLSearchParams(location.search).get('action');
- const item=data.actions.find(x=>x.id===id);if(!item)throw Error('未知动作 '+id);
- if(data.nativeGuardURL){const guard=await import(data.nativeGuardURL);guard.installNativeMemoryGuard(Live2DCubismCore).installPixi(PIXI);}
- const query=new URLSearchParams(location.search),config=structuredClone(item.config),layoutX=query.has('layoutX')?Number(query.get('layoutX')):NaN;
- if(query.get('demo')==='1'){config.dialoguePreview=true;config.dialogueVariant=0;}
- if(query.has('followupPreview'))config.followupPreview=query.get('followupPreview')==='1';
- const base=new URL(item.url,location.href),module=await import(new URL(config.adapterModule,base));
- window.desktopWords=true;
- const apps=[],models=[],Application=PIXI.Application,from=PIXI.live2d.Live2DModel.from;
- window.actionLoadStats=()=>({renderers:apps.length,models:models.length});
- PIXI.Application=class extends Application{constructor(...args){super(...args);apps.push(this);}};
- PIXI.live2d.Live2DModel.from=async function(...args){const model=await from.apply(this,args);models.push(model);return model;};
- window.actionInitPhase='native factory';
- let adapter;try{adapter=await module.createAdapter(config,base,document.getElementById('stage'));}finally{PIXI.Application=Application;PIXI.live2d.Live2DModel.from=from;}
- const {wrapDesktopSequence}=await import('/desktop/generated/desktop-sequence.mjs');adapter=wrapDesktopSequence(adapter);
- // Upload both front/side textures and compile shaders while still hidden.
- // Composite sword adapters manage Cubism's shared shader instance across their
- // own GL contexts. Their native render path must own shader preparation.
- window.actionInitPhase='warmup';
- if(!['A58','A59'].includes(item.id))for(const app of apps){const rt=PIXI.RenderTexture.create({width:1,height:1});for(const model of models){let parent=model;while(parent&&parent!==app.stage)parent=parent.parent;if(!parent)continue;const visible=model.visible;model.visible=true;for(const texture of model.textures)app.renderer.texture.bind(texture.baseTexture);app.renderer.render(model,{renderTexture:rt});model.visible=visible;}rt.destroy(true);}
- window.actionInitPhase='first frame';
- adapter.render(0);adapter.desktopGL=apps.find(app=>app.view===adapter.canvas)?.renderer.gl??null;window.actionWarmup={models:models.length,renderers:apps.length};
- window.actionAdapter=adapter;window.actionInitPhase='ready';return adapter;
-})();
+  // One disposable native action context. Its sole clock is driven by the desktop host.
+  window.actionReady = (async () => {
+    window.actionInitPhase = "config";
+    const data = await (await fetch("./daily.json")).json(),
+      id = new URLSearchParams(location.search).get("action");
+    const item = data.actions.find((x) => x.id === id);
+    if (!item) throw Error("未知动作 " + id);
+    if (data.nativeGuardURL) {
+      const guard = await import(data.nativeGuardURL);
+      guard.installNativeMemoryGuard(Live2DCubismCore).installPixi(PIXI);
+    }
+    const query = new URLSearchParams(location.search),
+      config = structuredClone(item.config),
+      layoutX = query.has("layoutX") ? Number(query.get("layoutX")) : NaN;
+    if (query.get("demo") === "1") {
+      config.dialoguePreview = true;
+      config.dialogueVariant = 0;
+    }
+    if (query.has("followupPreview"))
+      config.followupPreview = query.get("followupPreview") === "1";
+    const base = new URL(item.url, location.href),
+      module = await import(new URL(config.adapterModule, base));
+    window.desktopWords = true;
+    const apps = [],
+      models = [],
+      Application = PIXI.Application,
+      from = PIXI.live2d.Live2DModel.from;
+    window.actionLoadStats = () => ({
+      renderers: apps.length,
+      models: models.length,
+    });
+    PIXI.Application = class extends Application {
+      constructor(...args) {
+        super(...args);
+        apps.push(this);
+      }
+    };
+    PIXI.live2d.Live2DModel.from = async function (...args) {
+      const model = await from.apply(this, args);
+      models.push(model);
+      return model;
+    };
+    window.actionInitPhase = "native factory";
+    let adapter;
+    try {
+      adapter = await module.createAdapter(
+        config,
+        base,
+        document.getElementById("stage"),
+      );
+    } finally {
+      PIXI.Application = Application;
+      PIXI.live2d.Live2DModel.from = from;
+    }
+    const { wrapDesktopSequence } =
+      await import("/desktop/generated/desktop-sequence.mjs");
+    adapter = wrapDesktopSequence(adapter);
+    // Upload both front/side textures and compile shaders while still hidden.
+    // Composite sword adapters manage Cubism's shared shader instance across their
+    // own GL contexts. Their native render path must own shader preparation.
+    window.actionInitPhase = "warmup";
+    if (!["A58", "A59"].includes(item.id))
+      for (const app of apps) {
+        const rt = PIXI.RenderTexture.create({ width: 1, height: 1 });
+        for (const model of models) {
+          let parent = model;
+          while (parent && parent !== app.stage) parent = parent.parent;
+          if (!parent) continue;
+          const visible = model.visible;
+          model.visible = true;
+          for (const texture of model.textures)
+            app.renderer.texture.bind(texture.baseTexture);
+          app.renderer.render(model, { renderTexture: rt });
+          model.visible = visible;
+        }
+        rt.destroy(true);
+      }
+    window.actionInitPhase = "first frame";
+    adapter.render(0);
+    adapter.desktopGL =
+      apps.find((app) => app.view === adapter.canvas)?.renderer.gl ?? null;
+    window.actionWarmup = { models: models.length, renderers: apps.length };
+    window.actionAdapter = adapter;
+    window.actionInitPhase = "ready";
+    return adapter;
+  })();
 </script>

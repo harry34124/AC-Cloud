@@ -1,1 +1,408 @@
-{"source":"03_A编号动作/动作总设计.md","sourceSha256":"313973ce97de20a24df9409f1ac50e1beac97da4cdfb9060bff3a9629126a450","section":"7","actions":{"A01":{"label":"基础待机","candidates":["没兴趣。"],"defaultSilent":false,"sourceText":"“没兴趣。”（低频：仅独立完整触发A01时一次概率判定，当前20%；无30秒等待/90秒限制。作为其他动作初始或衔接时无台词，不随呼吸循环重抽。2026-10-13用户确认完整版）","enabled":true,"status":"有效文稿"},"A02":{"label":"从怀里取出爱丽丝黄花","candidates":["嗯 我...不是一个人。","这里很少见到花。","可以得到原谅么？","她一直在身边。"],"defaultSilent":false,"sourceText":"“嗯 我...不是一个人。”／“这里很少见到花。”/“可以得到原谅么？”／“她一直在身边。”（看花5.1秒起，80%一次判定、四句等概率择一；逐字后阅读停留2.2秒，动画15秒保持。2026-10-18用户确认w23微笑与台词匹配完整通过）","enabled":true,"status":"有效文稿"},"A04":{"label":"看手机后迟疑合盖","candidates":["尤菲的短信...","巴雷特的短信...","蒂法的短信...","怎么还有萨菲罗斯的？","希德的短信..."],"defaultSilent":false,"sourceText":"“尤菲的短信...”/“巴雷特的短信...”/“蒂法的短信...”/“怎么还有萨菲罗斯的？”（低频）/“希德的短信...” （w8：每次触发随机1–3句，不重复，普通四句权重1、萨菲罗斯权重0.15；一次固定抽取。看手机2.85秒起逐句显示，全文阅读1.3秒，句间0.24秒，全部结束后0.18秒再合盖收机；原7.8秒，必要时延长持机平台。2026-10-19用户确认w8完整动作、光效、五句台词及多句/等待逻辑与匹配通过）","enabled":true,"status":"有效文稿"},"A10":{"label":"穿脱右手套／裸手入口","candidates":[],"defaultSilent":true,"sourceText":"默认无台词（2026-10-14用户确认）","enabled":true,"status":"有效文稿"},"A11":{"label":"整理衣领","candidates":["还是女装舒服？"],"defaultSilent":false,"sourceText":"\"还是女装舒服？\"（理领2.65秒触发，每次独立完整触发抽取一次15%；2026-10-16用户补检台词后确认完整版，保持原动画）","enabled":true,"status":"有效文稿"},"A12":{"label":"触碰狼纹","candidates":[],"defaultSilent":true,"sourceText":"默认无台词","enabled":true,"status":"有效文稿"},"A13":{"label":"轻叹后复位","candidates":["有些事谁也帮不了我。"],"defaultSilent":false,"sourceText":"“有些事谁也帮不了我。”","enabled":true,"status":"有效文稿"},"A14":{"label":"站着打盹又醒来","candidates":["又睡着了吗。"],"defaultSilent":false,"sourceText":"“又睡着了吗。”（醒来后）","enabled":true,"status":"有效文稿"},"A15":{"label":"按下一束翘发","candidates":["...","难道我真是陆行鸟？"],"defaultSilent":false,"sourceText":"“...” （高频，85%）／“难道我真是陆行鸟？”（低频，15%）。第三次按发结束松手后择一显示，手正常连续收回戴套，不停手等台词；取消晃头。用户2026-10-16指定文案、高低频及最新时机。","enabled":true,"status":"有效文稿"},"A17":{"label":"准备行动／短距离慢步巡走","candidates":["我会试试。","走吧。"],"defaultSilent":false,"sourceText":"“我会试试。”／“走吧。”（低频，起步前）","enabled":true,"status":"有效文稿"},"A18":{"label":"停步侧目","candidates":[],"defaultSilent":true,"sourceText":"默认无台词","enabled":true,"status":"有效文稿"},"A41":{"label":"接住飘落黄花瓣","candidates":["约定之地……","在那里……能见到她。","爱丽丝...。"],"defaultSilent":false,"sourceText":"“约定之地……”（60%）／“在那里……能见到她。”（20%）／“爱丽丝...。”（20%）。落掌后低头看花瓣时一次择一显示，收拳收花连续进行，不等台词停手。用户2026-10-18确认文案及主次频率。","enabled":true,"status":"有效文稿"},"A43":{"label":"取出爱丽丝蝴蝶绸带","candidates":["谁也救不了...吗？"],"defaultSilent":false,"sourceText":"“谁也救不了...吗？”（3.645秒查看发带时显示；低频20%，每次完整动作抽取一次，审稿固定展示；2026-10-19用户要求接入）","enabled":true,"status":"有效文稿"},"A44":{"label":"伸手接雨","candidates":["我知道了。"],"defaultSilent":false,"sourceText":"“我知道了。”（闭眼感受雨水后5.35秒显示一次，收手连续进行；2026-10-18用户确认文案及匹配通过）","enabled":true,"status":"有效文稿"},"A47":{"label":"看送货便签","candidates":[],"defaultSilent":false,"sourceText":"“斯特莱夫运输服务公司。”（低频）（搁置：保留文稿，暂不触发）","enabled":false,"status":"搁置"},"A49":{"label":"用户轻点后回应","candidates":["怎么了？"],"defaultSilent":false,"sourceText":"“怎么了？”（低频）","enabled":true,"status":"有效文稿"},"A50":{"label":"被摸头后避一下","candidates":["……妈妈。"],"defaultSilent":true,"sourceText":"用户摸头：默认无台词；未来爱丽丝摸头限定：“……妈妈。”（2026-10-20确认普通摸头无台词；w10完整通过取代w9；爱丽丝限定不在本版）","enabled":true,"status":"有效文稿"},"A51":{"label":"连续逗弄前兆","candidates":["够了。","饶了我吧。"],"defaultSilent":false,"sourceText":"“够了。”／“饶了我吧。”（1.4秒警告时显示；80%触发，两句等概率择一；2026-10-19用户确认匹配与概率）","enabled":true,"status":"有效文稿"},"SI01":{"label":"被拎起，先惊一下再稳住","candidates":[],"defaultSilent":true,"sourceText":"默认无台词（2026-10-22用户确认整组）","enabled":true,"status":"有效文稿"},"SI02":{"label":"被抛出，空中调整","candidates":[],"defaultSilent":true,"sourceText":"默认无台词（2026-10-22用户确认整组）","enabled":true,"status":"有效文稿"},"SI03":{"label":"帅气落地，站稳抬眼","candidates":[],"defaultSilent":true,"sourceText":"默认无台词（2026-10-16用户确认）","enabled":true,"status":"有效文稿"},"SI04":{"label":"屏幕边缘借力蹬开","candidates":[],"defaultSilent":true,"sourceText":"默认无台词（2026-10-22用户确认整组）","enabled":true,"status":"有效文稿"},"A05":{"label":"翻面查看六式","candidates":[],"defaultSilent":true,"sourceText":"默认无台词","enabled":true,"status":"有效文稿"},"A06":{"label":"扎克斯纪念／破坏剑前默立","candidates":["这里是英雄开始的地方。","神罗战士的骄傲。","拥抱梦想。","连你的份一起活下去。"],"defaultSilent":false,"sourceText":"“这里是英雄开始的地方。”／“神罗战士的骄傲。”/“拥抱梦想。”／“连你的份一起活下去。”","enabled":true,"status":"有效文稿"},"A33":{"label":"调整背剑带","candidates":[],"defaultSilent":false,"sourceText":"搁置，暂不触发；原候选保留供以后重审","enabled":false,"status":"搁置"},"A34":{"label":"拔刀亮刀","candidates":["准备好。","开始吧。"],"defaultSilent":false,"sourceText":"“准备好。”／“开始吧。”（亮刀定势）","enabled":true,"status":"有效文稿"},"A35":{"label":"基础斜斩","candidates":[],"defaultSilent":false,"sourceText":"“不再留手。”（蓄力时）","enabled":false,"status":"搁置"},"A36":{"label":"站立格挡","candidates":[],"defaultSilent":false,"sourceText":"“我不会再迷茫了。”","enabled":false,"status":"搁置"},"A37":{"label":"经典转六式","candidates":["这把剑，为守护而挥。"],"defaultSilent":false,"sourceText":"\"这把剑，为守护而挥。\"","enabled":true,"status":"有效文稿"},"A39":{"label":"战斗结束收剑","candidates":["结束了。"],"defaultSilent":false,"sourceText":"“结束了。”（收剑前）","enabled":true,"status":"有效文稿"},"A57":{"label":"原地拔剑弹反鼠标","candidates":["别闹了。"],"defaultSilent":false,"sourceText":"“别闹了。”（拔剑定势后，低频）","enabled":true,"status":"有效文稿"},"A58":{"label":"经典凶斩","candidates":["到此为止。"],"defaultSilent":false,"sourceText":"“到此为止。”（w16起手与持剑前冲0≤t<0.95秒，斩击前消失；2026-10-25完整通过）","enabled":true,"status":"有效文稿"},"A59":{"label":"六式超究武神霸斩","candidates":["留在回忆里吧。"],"defaultSilent":false,"sourceText":"开头拔刀快速显示：“留在回忆里吧。”；可延续到抛剑，升空前必须结束（w20已通过0.15–2.15秒，基于Claude w18）。对话框固定在身旁的舞台位置，最上层显示，不跟随人物移动。","enabled":true,"status":"有效文稿"},"A03":{"label":"芬里尔出发","candidates":["该动身了","我会去接你。"],"defaultSilent":false,"sourceText":"“该动身了”/“我会去接你。”（两句概率触发，触发后等概率择一；本侧面试制默认35%可调。摩托驶入停稳后才出现台词框；紧凑尺寸沿共用已定规格，跟随克劳德头肩旁，靠边自动换侧，避开人物和车辆。坐稳等全文显示完且框消失，全文阅读停留1.2秒（最终缩短1秒），再稍顿约0.15秒、收撑起步；未触发保持原节奏）","enabled":true,"status":"有效文稿"},"A16":{"label":"站在芬里尔旁休息","candidates":["斯特莱夫运输服务公司","接下来去..."],"defaultSilent":false,"sourceText":"“斯特莱夫运输服务公司”／“接下来去...” （靠稳后2.65秒触发，每次等概率随机一句；逐字显示后阅读2.2秒；2026-10-19用户确认两句随机）","enabled":true,"status":"有效文稿"},"A25":{"label":"芬里尔停车：平稳收车／落地急刹","candidates":["我回来了。"],"defaultSilent":false,"sourceText":"“我回来了。”（停车下车后，低频）","enabled":true,"status":"有效文稿"},"A26":{"label":"鼠标提车反馈","candidates":["饶了我吧。","够了。"],"defaultSilent":true,"sourceText":"默认无台词；整个人车被提起／空中飞车：“饶了我吧。”；连续逗弄：“够了。”（低频；一次互动只取一句；2026-10-14用户确认w4显示与触发）","enabled":true,"status":"有效文稿"},"A28":{"label":"站姿检查剑舱","candidates":[],"defaultSilent":false,"sourceText":"搁置，暂不触发；原候选保留供以后重审","enabled":false,"status":"搁置"},"A29":{"label":"芬里尔向右骑行折返","candidates":["花田...。","教堂...","第八区..."],"defaultSilent":false,"sourceText":"“花田...。”/“教堂...”/“第八区...”（每次上车坐稳随机一句，三句等概率；短暂停顿后起步。逐字70ms、全文停留1.2秒及淡出0.16秒沿此前时长，独立于实际骑行距离；显示期间跟随克劳德，骑行/下车不提前隐藏或延长）","enabled":true,"status":"有效文稿"},"A30":{"label":"摘下护目镜","candidates":[],"defaultSilent":false,"sourceText":"搁置，暂不触发；原候选保留供以后重审","enabled":false,"status":"搁置"},"A31":{"label":"原地烧胎起步（玩家主动彩蛋）","candidates":[],"defaultSilent":true,"sourceText":"默认无台词","enabled":true,"status":"有效文稿"}}}
+{
+    "source": "03_A编号动作/动作总设计.md",
+    "sourceSha256": "313973ce97de20a24df9409f1ac50e1beac97da4cdfb9060bff3a9629126a450",
+    "section": "7",
+    "actions": {
+        "A01": {
+            "label": "基础待机",
+            "candidates": [
+                "没兴趣。"
+            ],
+            "defaultSilent": false,
+            "sourceText": "“没兴趣。”（低频：仅独立完整触发A01时一次概率判定，当前20%；无30秒等待/90秒限制。作为其他动作初始或衔接时无台词，不随呼吸循环重抽。2026-10-13用户确认完整版）",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A02": {
+            "label": "从怀里取出爱丽丝黄花",
+            "candidates": [
+                "嗯 我...不是一个人。",
+                "这里很少见到花。",
+                "可以得到原谅么？",
+                "她一直在身边。"
+            ],
+            "defaultSilent": false,
+            "sourceText": "“嗯 我...不是一个人。”／“这里很少见到花。”/“可以得到原谅么？”／“她一直在身边。”（看花5.1秒起，80%一次判定、四句等概率择一；逐字后阅读停留2.2秒，动画15秒保持。2026-10-18用户确认w23微笑与台词匹配完整通过）",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A04": {
+            "label": "看手机后迟疑合盖",
+            "candidates": [
+                "尤菲的短信...",
+                "巴雷特的短信...",
+                "蒂法的短信...",
+                "怎么还有萨菲罗斯的？",
+                "希德的短信..."
+            ],
+            "defaultSilent": false,
+            "sourceText": "“尤菲的短信...”/“巴雷特的短信...”/“蒂法的短信...”/“怎么还有萨菲罗斯的？”（低频）/“希德的短信...” （w8：每次触发随机1–3句，不重复，普通四句权重1、萨菲罗斯权重0.15；一次固定抽取。看手机2.85秒起逐句显示，全文阅读1.3秒，句间0.24秒，全部结束后0.18秒再合盖收机；原7.8秒，必要时延长持机平台。2026-10-19用户确认w8完整动作、光效、五句台词及多句/等待逻辑与匹配通过）",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A10": {
+            "label": "穿脱右手套／裸手入口",
+            "candidates": [],
+            "defaultSilent": true,
+            "sourceText": "默认无台词（2026-10-14用户确认）",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A11": {
+            "label": "整理衣领",
+            "candidates": [
+                "还是女装舒服？"
+            ],
+            "defaultSilent": false,
+            "sourceText": "\"还是女装舒服？\"（理领2.65秒触发，每次独立完整触发抽取一次15%；2026-10-16用户补检台词后确认完整版，保持原动画）",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A12": {
+            "label": "触碰狼纹",
+            "candidates": [],
+            "defaultSilent": true,
+            "sourceText": "默认无台词",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A13": {
+            "label": "轻叹后复位",
+            "candidates": [
+                "有些事谁也帮不了我。"
+            ],
+            "defaultSilent": false,
+            "sourceText": "“有些事谁也帮不了我。”",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A14": {
+            "label": "站着打盹又醒来",
+            "candidates": [
+                "又睡着了吗。"
+            ],
+            "defaultSilent": false,
+            "sourceText": "“又睡着了吗。”（醒来后）",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A15": {
+            "label": "按下一束翘发",
+            "candidates": [
+                "...",
+                "难道我真是陆行鸟？"
+            ],
+            "defaultSilent": false,
+            "sourceText": "“...” （高频，85%）／“难道我真是陆行鸟？”（低频，15%）。第三次按发结束松手后择一显示，手正常连续收回戴套，不停手等台词；取消晃头。用户2026-10-16指定文案、高低频及最新时机。",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A17": {
+            "label": "准备行动／短距离慢步巡走",
+            "candidates": [
+                "我会试试。",
+                "走吧。"
+            ],
+            "defaultSilent": false,
+            "sourceText": "“我会试试。”／“走吧。”（低频，起步前）",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A18": {
+            "label": "停步侧目",
+            "candidates": [],
+            "defaultSilent": true,
+            "sourceText": "默认无台词",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A41": {
+            "label": "接住飘落黄花瓣",
+            "candidates": [
+                "约定之地……",
+                "在那里……能见到她。",
+                "爱丽丝...。"
+            ],
+            "defaultSilent": false,
+            "sourceText": "“约定之地……”（60%）／“在那里……能见到她。”（20%）／“爱丽丝...。”（20%）。落掌后低头看花瓣时一次择一显示，收拳收花连续进行，不等台词停手。用户2026-10-18确认文案及主次频率。",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A43": {
+            "label": "取出爱丽丝蝴蝶绸带",
+            "candidates": [
+                "谁也救不了...吗？"
+            ],
+            "defaultSilent": false,
+            "sourceText": "“谁也救不了...吗？”（3.645秒查看发带时显示；低频20%，每次完整动作抽取一次，审稿固定展示；2026-10-19用户要求接入）",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A44": {
+            "label": "伸手接雨",
+            "candidates": [
+                "我知道了。"
+            ],
+            "defaultSilent": false,
+            "sourceText": "“我知道了。”（闭眼感受雨水后5.35秒显示一次，收手连续进行；2026-10-18用户确认文案及匹配通过）",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A47": {
+            "label": "看送货便签",
+            "candidates": [],
+            "defaultSilent": false,
+            "sourceText": "“斯特莱夫运输服务公司。”（低频）（搁置：保留文稿，暂不触发）",
+            "enabled": false,
+            "status": "搁置"
+        },
+        "A49": {
+            "label": "用户轻点后回应",
+            "candidates": [
+                "怎么了？"
+            ],
+            "defaultSilent": false,
+            "sourceText": "“怎么了？”（低频）",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A50": {
+            "label": "被摸头后避一下",
+            "candidates": [
+                "……妈妈。"
+            ],
+            "defaultSilent": true,
+            "sourceText": "用户摸头：默认无台词；未来爱丽丝摸头限定：“……妈妈。”（2026-10-20确认普通摸头无台词；w10完整通过取代w9；爱丽丝限定不在本版）",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A51": {
+            "label": "连续逗弄前兆",
+            "candidates": [
+                "够了。",
+                "饶了我吧。"
+            ],
+            "defaultSilent": false,
+            "sourceText": "“够了。”／“饶了我吧。”（1.4秒警告时显示；80%触发，两句等概率择一；2026-10-19用户确认匹配与概率）",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "SI01": {
+            "label": "被拎起，先惊一下再稳住",
+            "candidates": [],
+            "defaultSilent": true,
+            "sourceText": "默认无台词（2026-10-22用户确认整组）",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "SI02": {
+            "label": "被抛出，空中调整",
+            "candidates": [],
+            "defaultSilent": true,
+            "sourceText": "默认无台词（2026-10-22用户确认整组）",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "SI03": {
+            "label": "帅气落地，站稳抬眼",
+            "candidates": [],
+            "defaultSilent": true,
+            "sourceText": "默认无台词（2026-10-16用户确认）",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "SI04": {
+            "label": "屏幕边缘借力蹬开",
+            "candidates": [],
+            "defaultSilent": true,
+            "sourceText": "默认无台词（2026-10-22用户确认整组）",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A05": {
+            "label": "翻面查看六式",
+            "candidates": [],
+            "defaultSilent": true,
+            "sourceText": "默认无台词",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A06": {
+            "label": "扎克斯纪念／破坏剑前默立",
+            "candidates": [
+                "这里是英雄开始的地方。",
+                "神罗战士的骄傲。",
+                "拥抱梦想。",
+                "连你的份一起活下去。"
+            ],
+            "defaultSilent": false,
+            "sourceText": "“这里是英雄开始的地方。”／“神罗战士的骄傲。”/“拥抱梦想。”／“连你的份一起活下去。”",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A33": {
+            "label": "调整背剑带",
+            "candidates": [],
+            "defaultSilent": false,
+            "sourceText": "搁置，暂不触发；原候选保留供以后重审",
+            "enabled": false,
+            "status": "搁置"
+        },
+        "A34": {
+            "label": "拔刀亮刀",
+            "candidates": [
+                "准备好。",
+                "开始吧。"
+            ],
+            "defaultSilent": false,
+            "sourceText": "“准备好。”／“开始吧。”（亮刀定势）",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A35": {
+            "label": "基础斜斩",
+            "candidates": [],
+            "defaultSilent": false,
+            "sourceText": "“不再留手。”（蓄力时）",
+            "enabled": false,
+            "status": "搁置"
+        },
+        "A36": {
+            "label": "站立格挡",
+            "candidates": [],
+            "defaultSilent": false,
+            "sourceText": "“我不会再迷茫了。”",
+            "enabled": false,
+            "status": "搁置"
+        },
+        "A37": {
+            "label": "经典转六式",
+            "candidates": [
+                "这把剑，为守护而挥。"
+            ],
+            "defaultSilent": false,
+            "sourceText": "\"这把剑，为守护而挥。\"",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A39": {
+            "label": "战斗结束收剑",
+            "candidates": [
+                "结束了。"
+            ],
+            "defaultSilent": false,
+            "sourceText": "“结束了。”（收剑前）",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A57": {
+            "label": "原地拔剑弹反鼠标",
+            "candidates": [
+                "别闹了。"
+            ],
+            "defaultSilent": false,
+            "sourceText": "“别闹了。”（拔剑定势后，低频）",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A58": {
+            "label": "经典凶斩",
+            "candidates": [
+                "到此为止。"
+            ],
+            "defaultSilent": false,
+            "sourceText": "“到此为止。”（w16起手与持剑前冲0≤t<0.95秒，斩击前消失；2026-10-25完整通过）",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A59": {
+            "label": "六式超究武神霸斩",
+            "candidates": [
+                "留在回忆里吧。"
+            ],
+            "defaultSilent": false,
+            "sourceText": "开头拔刀快速显示：“留在回忆里吧。”；可延续到抛剑，升空前必须结束（w20已通过0.15–2.15秒，基于Claude w18）。对话框固定在身旁的舞台位置，最上层显示，不跟随人物移动。",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A03": {
+            "label": "芬里尔出发",
+            "candidates": [
+                "该动身了",
+                "我会去接你。"
+            ],
+            "defaultSilent": false,
+            "sourceText": "“该动身了”/“我会去接你。”（两句概率触发，触发后等概率择一；本侧面试制默认35%可调。摩托驶入停稳后才出现台词框；紧凑尺寸沿共用已定规格，跟随克劳德头肩旁，靠边自动换侧，避开人物和车辆。坐稳等全文显示完且框消失，全文阅读停留1.2秒（最终缩短1秒），再稍顿约0.15秒、收撑起步；未触发保持原节奏）",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A16": {
+            "label": "站在芬里尔旁休息",
+            "candidates": [
+                "斯特莱夫运输服务公司",
+                "接下来去..."
+            ],
+            "defaultSilent": false,
+            "sourceText": "“斯特莱夫运输服务公司”／“接下来去...” （靠稳后2.65秒触发，每次等概率随机一句；逐字显示后阅读2.2秒；2026-10-19用户确认两句随机）",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A25": {
+            "label": "芬里尔停车：平稳收车／落地急刹",
+            "candidates": [
+                "我回来了。"
+            ],
+            "defaultSilent": false,
+            "sourceText": "“我回来了。”（停车下车后，低频）",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A26": {
+            "label": "鼠标提车反馈",
+            "candidates": [
+                "饶了我吧。",
+                "够了。"
+            ],
+            "defaultSilent": true,
+            "sourceText": "默认无台词；整个人车被提起／空中飞车：“饶了我吧。”；连续逗弄：“够了。”（低频；一次互动只取一句；2026-10-14用户确认w4显示与触发）",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A28": {
+            "label": "站姿检查剑舱",
+            "candidates": [],
+            "defaultSilent": false,
+            "sourceText": "搁置，暂不触发；原候选保留供以后重审",
+            "enabled": false,
+            "status": "搁置"
+        },
+        "A29": {
+            "label": "芬里尔向右骑行折返",
+            "candidates": [
+                "花田...。",
+                "教堂...",
+                "第八区..."
+            ],
+            "defaultSilent": false,
+            "sourceText": "“花田...。”/“教堂...”/“第八区...”（每次上车坐稳随机一句，三句等概率；短暂停顿后起步。逐字70ms、全文停留1.2秒及淡出0.16秒沿此前时长，独立于实际骑行距离；显示期间跟随克劳德，骑行/下车不提前隐藏或延长）",
+            "enabled": true,
+            "status": "有效文稿"
+        },
+        "A30": {
+            "label": "摘下护目镜",
+            "candidates": [],
+            "defaultSilent": false,
+            "sourceText": "搁置，暂不触发；原候选保留供以后重审",
+            "enabled": false,
+            "status": "搁置"
+        },
+        "A31": {
+            "label": "原地烧胎起步（玩家主动彩蛋）",
+            "candidates": [],
+            "defaultSilent": true,
+            "sourceText": "默认无台词",
+            "enabled": true,
+            "status": "有效文稿"
+        }
+    }
+}

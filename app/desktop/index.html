@@ -1,27 +1,127 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>克劳德桌宠</title><link rel="stylesheet" href="style.css"></head>
-<body><main id="stage" aria-label="克劳德桌宠"></main><canvas id="dialogue"></canvas><div id="inspection" hidden></div>
-<div id="notice" role="status" hidden></div><div id="loading" role="status">克劳德正在准备…</div>
-<aside id="rage-window" tabindex="0" aria-label="怒气浮标，双击清零，右键打开菜单" title="怒气 0 / 100 · 双击清零 · 拖动移动 · 右键菜单">
- <svg class="rage-ring" viewBox="0 0 64 64" aria-hidden="true"><circle class="track" cx="32" cy="32" r="29.6" pathLength="100"/><circle class="fill" cx="32" cy="32" r="29.6" pathLength="100"/><circle class="rim" cx="32" cy="32" r="31.4"/></svg><div class="rage-orb"></div><img id="rage-avatar" src="assets/rage/hud/0-chocobo.png" alt="悠闲的陆行鸟" draggable="false"><div class="rage-gloss"></div><output id="rage-number">0</output>
-</aside>
-<section id="menu" hidden aria-label="操作菜单">
- <label>动作<select id="daily-select" aria-label="选择动作后立即播放"><option value="" selected disabled>选择即播放…</option></select></label>
- <button data-command="autonomous" id="auto">自动动作：开</button>
- <div class="divider"></div><label>大小 <output id="size-label">200 px</output><input id="scale" aria-label="人物大小" type="range" min="100" max="300" step="10" value="200"></label>
- <div class="sizes"><button data-size="100">100</button><button data-size="150">150</button><button data-size="200">200</button><button data-size="250">250</button><button data-size="300">300</button></div>
- <button data-command="pause" id="pause">暂停动作</button><button data-command="top" id="top">置顶：开</button><button data-command="dialogue" id="words">台词：开</button>
- <div class="divider"></div><button data-command="help">玩法与操作</button><button data-command="quit" class="quit">退出</button>
-</section>
-<section id="help-panel" role="dialog" aria-label="玩法与操作" hidden>
- <div class="help-heading"><strong>玩法与操作</strong><button id="help-close" aria-label="关闭玩法介绍">×</button></div>
- <h2>互动</h2><p>轻点身体会回应，轻点头部会避让，有时会整理头发。按住人物拖起，松手可抛出；向左抛到墙边可蹬墙。</p>
- <p>选择“骑车互动”后，可提车头、车尾或整车。</p>
- <h2>怒气浮标</h2><p>拖动浮标可移动；右键打开菜单；<strong>左键双击清空怒气</strong>，不会打断当前动作。</p>
- <div class="rage-stages" aria-label="怒气档位">
- <div style="--c:#5cc8ff"><img src="assets/rage/hud/0-chocobo.png" alt="陆行鸟"><span>0–19</span></div><div style="--c:#9b8cff"><img src="assets/rage/hud/1-soft.png" alt="软萌克劳德"><span>20–39</span></div><div style="--c:#f5c35b"><img src="assets/rage/hud/2-focused.png" alt="认真的克劳德"><span>40–59</span></div><div style="--c:#ff993c"><img src="assets/rage/hud/3-calm.png" alt="警觉的克劳德"><span>60–79</span></div><div style="--c:#ff3d48"><img src="assets/rage/hud/4-angry.png" alt="生气的克劳德"><span>80–100</span></div>
- </div>
- <p>每次有效按下 +1，同一次点击或拖起不重复累加。提起后每秒平滑增加2点，明显生气后加快到5点；主动点播动作 +8。停止互动3秒后，怒气每秒减少1点。</p><p>怒气20–49时大概率避让，50以上大概率弹反；被反制的操作不会再触发抓取或轻点。弹反朝真实鼠标的本次位置出刀，移开可以躲过。</p>
- <h2>动作与设置</h2><p>选择动作立即播放，可打断原动作。自动动作按概率连续选择；抽中待机会正常停留约5秒。人物可调100–300px。</p>
- <p>Esc 收起菜单或本窗口。置顶可在菜单中开关。</p>
-</section>
-<script src="/tools/审阅/共用动作/vendor/live2dcubismcore.min.js"></script><script src="/tools/审阅/共用动作/vendor/pixi.min.js"></script><script src="/tools/审阅/共用动作/vendor/cubism4.min.js"></script><script type="module" src="app.mjs"></script></body></html>
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>克劳德桌宠</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="stage" aria-label="克劳德桌宠"></main>
+    <canvas id="dialogue"></canvas>
+    <div id="inspection" hidden></div>
+    <div id="notice" role="status" hidden></div>
+    <div id="loading" role="status">克劳德正在准备…</div>
+    <aside
+      id="rage-window"
+      tabindex="0"
+      aria-label="怒气浮标，双击清零，右键打开菜单"
+      title="怒气 0 / 100 · 双击清零 · 拖动移动 · 右键菜单"
+    >
+      <svg class="rage-ring" viewBox="0 0 64 64" aria-hidden="true">
+        <circle class="track" cx="32" cy="32" r="29.6" pathLength="100" />
+        <circle class="fill" cx="32" cy="32" r="29.6" pathLength="100" />
+        <circle class="rim" cx="32" cy="32" r="31.4" />
+      </svg>
+      <div class="rage-orb"></div>
+      <img
+        id="rage-avatar"
+        src="assets/rage/hud/0-chocobo.png"
+        alt="悠闲的陆行鸟"
+        draggable="false"
+      />
+      <div class="rage-gloss"></div>
+      <output id="rage-number">0</output>
+    </aside>
+    <section id="menu" hidden aria-label="操作菜单">
+      <label
+        >动作<select id="daily-select" aria-label="选择动作后立即播放">
+          <option value="" selected disabled>选择即播放…</option>
+        </select></label
+      >
+      <button data-command="autonomous" id="auto">自动动作：开</button>
+      <div class="divider"></div>
+      <label
+        >大小 <output id="size-label">200 px</output
+        ><input
+          id="scale"
+          aria-label="人物大小"
+          type="range"
+          min="100"
+          max="300"
+          step="10"
+          value="200"
+      /></label>
+      <div class="sizes">
+        <button data-size="100">100</button><button data-size="150">150</button
+        ><button data-size="200">200</button><button data-size="250">250</button
+        ><button data-size="300">300</button>
+      </div>
+      <button data-command="pause" id="pause">暂停动作</button
+      ><button data-command="top" id="top">置顶：开</button
+      ><button data-command="dialogue" id="words">台词：开</button>
+      <div class="divider"></div>
+      <button data-command="help">玩法与操作</button
+      ><button data-command="quit" class="quit">退出</button>
+    </section>
+    <section id="help-panel" role="dialog" aria-label="玩法与操作" hidden>
+      <div class="help-heading">
+        <strong>玩法与操作</strong
+        ><button id="help-close" aria-label="关闭玩法介绍">×</button>
+      </div>
+      <h2>互动</h2>
+      <p>
+        轻点身体会回应，轻点头部会避让，有时会整理头发。按住人物拖起，松手可抛出；向左抛到墙边可蹬墙。
+      </p>
+      <p>选择“骑车互动”后，可提车头、车尾或整车。</p>
+      <h2>怒气浮标</h2>
+      <p>
+        拖动浮标可移动；右键打开菜单；<strong>左键双击清空怒气</strong>，不会打断当前动作。
+      </p>
+      <div class="rage-stages" aria-label="怒气档位">
+        <div style="--c: #5cc8ff">
+          <img src="assets/rage/hud/0-chocobo.png" alt="陆行鸟" /><span
+            >0–19</span
+          >
+        </div>
+        <div style="--c: #9b8cff">
+          <img src="assets/rage/hud/1-soft.png" alt="软萌克劳德" /><span
+            >20–39</span
+          >
+        </div>
+        <div style="--c: #f5c35b">
+          <img src="assets/rage/hud/2-focused.png" alt="认真的克劳德" /><span
+            >40–59</span
+          >
+        </div>
+        <div style="--c: #ff993c">
+          <img src="assets/rage/hud/3-calm.png" alt="警觉的克劳德" /><span
+            >60–79</span
+          >
+        </div>
+        <div style="--c: #ff3d48">
+          <img src="assets/rage/hud/4-angry.png" alt="生气的克劳德" /><span
+            >80–100</span
+          >
+        </div>
+      </div>
+      <p>
+        每次有效按下
+        +1，同一次点击或拖起不重复累加。提起后每秒平滑增加2点，明显生气后加快到5点；主动点播动作
+        +8。停止互动3秒后，怒气每秒减少1点。
+      </p>
+      <p>
+        怒气20–49时大概率避让，50以上大概率弹反；被反制的操作不会再触发抓取或轻点。弹反朝真实鼠标的本次位置出刀，移开可以躲过。
+      </p>
+      <h2>动作与设置</h2>
+      <p>
+        选择动作立即播放，可打断原动作。自动动作按概率连续选择；抽中待机会正常停留约5秒。人物可调100–300px。
+      </p>
+      <p>Esc 收起菜单或本窗口。置顶可在菜单中开关。</p>
+    </section>
+    <script src="/tools/审阅/共用动作/vendor/live2dcubismcore.min.js"></script>
+    <script src="/tools/审阅/共用动作/vendor/pixi.min.js"></script>
+    <script src="/tools/审阅/共用动作/vendor/cubism4.min.js"></script>
+    <script type="module" src="app.mjs"></script>
+  </body>
+</html>

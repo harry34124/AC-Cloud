@@ -1,1 +1,29 @@
-{"intervals":21,"sourceDuration":9.6,"outputDuration":8.5,"sizes":[{"height":400,"file":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/4eed2439f974158e247cf5fe5ff78f1ac9d208b6395f73a8d1f1509c95fd1cfc/resource.png","width":340,"frameHeight":600,"count":22,"columns":8,"rowsPerPart":3,"x":200,"y":180},{"height":200,"file":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/a55e62796871d19e90fe83f9061f6fde3dffcdbb94472c4144a359c88c5c7168/resource.png","width":170,"frameHeight":300,"count":22,"columns":8,"rowsPerPart":3,"x":255,"y":335}]}
+{
+    "intervals": 21,
+    "sourceDuration": 9.6,
+    "outputDuration": 8.5,
+    "sizes": [
+        {
+            "height": 400,
+            "file": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/4eed2439f974158e247cf5fe5ff78f1ac9d208b6395f73a8d1f1509c95fd1cfc/resource.png",
+            "width": 340,
+            "frameHeight": 600,
+            "count": 22,
+            "columns": 8,
+            "rowsPerPart": 3,
+            "x": 200,
+            "y": 180
+        },
+        {
+            "height": 200,
+            "file": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/a55e62796871d19e90fe83f9061f6fde3dffcdbb94472c4144a359c88c5c7168/resource.png",
+            "width": 170,
+            "frameHeight": 300,
+            "count": 22,
+            "columns": 8,
+            "rowsPerPart": 3,
+            "x": 255,
+            "y": 335
+        }
+    ]
+}

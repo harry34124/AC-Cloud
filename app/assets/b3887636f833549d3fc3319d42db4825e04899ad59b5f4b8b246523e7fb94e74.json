@@ -1,1 +1,11 @@
-{"Version":3,"FileReferences":{"Moc":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/610df865d66ef5d6d02098dbc26c1f8621a577781f06892cef8ab80732acd543/resource.moc3","Textures":["/02_共用静止与衔接动作/共用模型/统一运行库/objects/384cb4d1af7d18356a50232eedf8797e84e304e0f7cbaf15bc98bddb2798da97/resource.png"],"DisplayInfo":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/b81ae678895bc13721fe8c10674c4443357a9d1f69e08700bc43d081210c5e4e/resource.cdi3.json"},"Groups":[]}
+{
+    "Version": 3,
+    "FileReferences": {
+        "Moc": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/610df865d66ef5d6d02098dbc26c1f8621a577781f06892cef8ab80732acd543/resource.moc3",
+        "Textures": [
+            "/02_共用静止与衔接动作/共用模型/统一运行库/objects/384cb4d1af7d18356a50232eedf8797e84e304e0f7cbaf15bc98bddb2798da97/resource.png"
+        ],
+        "DisplayInfo": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/b81ae678895bc13721fe8c10674c4443357a9d1f69e08700bc43d081210c5e4e/resource.cdi3.json"
+    },
+    "Groups": []
+}

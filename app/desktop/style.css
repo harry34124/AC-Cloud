@@ -1,31 +1,423 @@
-:root{font:14px/1.5 SimSun,"Microsoft YaHei",serif;color:#f4f4fa;color-scheme:dark}*{box-sizing:border-box}[hidden]{display:none!important}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:transparent;user-select:none}#stage{position:absolute;inset:0;touch-action:none}#stage canvas{display:block!important;position:absolute;inset:0;width:100%!important;height:100%!important}#dialogue{position:absolute;inset:0;pointer-events:none;width:100%;height:100%}
-#loading,#notice{position:fixed;padding:9px 13px;background:linear-gradient(135deg,#151caa,#101979 42%,#070c41);border:2px solid #dadce3;border-radius:5px;box-shadow:inset 1px 1px #fff,inset -1px -1px #747887,2px 3px #0005;color:#f4f4fa;text-shadow:1px 1px #000;font-size:12px;pointer-events:none;z-index:12}#loading{right:36px;bottom:24px;max-width:440px;white-space:pre-wrap}#notice{max-width:260px}
-#menu,#help-panel{position:fixed;padding:8px;background:linear-gradient(135deg,#151caa,#101979 42%,#070c41);border:2px solid #dadce3;border-radius:5px;box-shadow:inset 1px 1px #fff,inset -1px -1px #747887,0 0 0 1px #242632,2px 3px #0005;text-shadow:1px 1px #000;max-height:calc(100vh - 16px);overflow-y:auto;z-index:10}#menu{width:232px}button{font:inherit;cursor:pointer;border:0;color:inherit;background:transparent;border-radius:2px;text-align:left;padding:6px 10px;width:100%;text-shadow:inherit}button:hover,button:focus-visible{background:#b4c7ff24;outline:1px solid #ccd7f366}button:focus-visible{outline:2px solid #fff}.divider{height:1px;background:#c5c9e35c;margin:5px 4px}label{display:block;padding:5px 10px;font-size:12px;color:#d5dcf0}output{float:right}input{width:100%;margin:9px 0 0;accent-color:#b4ccff}.sizes{display:flex;padding:0 7px 4px;gap:2px}.sizes button{font-size:11px;text-align:center;background:#b5c2ed18;padding:4px 1px}.quit{color:#ffc4c6}#daily-select{width:100%;margin-top:5px;padding:6px;background:#0d145d;color:#f4f4fa;border:1px solid #b4bbd1;border-radius:2px;font:inherit}
-#help-panel{width:380px;max-width:calc(100vw - 24px);left:50%;top:50%;transform:translate(-50%,-50%);padding:14px 18px;z-index:11;font-size:13px;line-height:1.65}.help-heading{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #c5c9e35c;padding-bottom:6px;margin-bottom:9px;font-size:16px}.help-heading button{width:28px;padding:0;text-align:center;font:22px/28px system-ui}#help-panel h2{font:inherit;font-weight:bold;margin:12px 0 4px;color:#e3d5a0}#help-panel p{margin:5px 0;color:#eef0f9}.rage-stages{display:flex;justify-content:space-between;margin:10px 0;gap:4px}.rage-stages div{width:56px;text-align:center;font:10px/1.6 system-ui;color:#c9d3ef}.rage-stages img{display:block;margin:auto;width:42px;height:42px;object-fit:contain}
-.action-context,.prepared-context{position:fixed;left:-10000px;top:0;width:1060px;height:900px;visibility:hidden;pointer-events:none;border:0}#daily-layer{position:absolute;inset:0;overflow:hidden;pointer-events:none}#daily-layer canvas{pointer-events:none}#daily-canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+:root {
+  font:
+    14px/1.5 SimSun,
+    "Microsoft YaHei",
+    serif;
+  color: #f4f4fa;
+  color-scheme: dark;
+}
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: transparent;
+  user-select: none;
+}
+#stage {
+  position: absolute;
+  inset: 0;
+  touch-action: none;
+}
+#stage canvas {
+  display: block !important;
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+#dialogue {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+#loading,
+#notice {
+  position: fixed;
+  padding: 9px 13px;
+  background: linear-gradient(135deg, #151caa, #101979 42%, #070c41);
+  border: 2px solid #dadce3;
+  border-radius: 5px;
+  box-shadow:
+    inset 1px 1px #fff,
+    inset -1px -1px #747887,
+    2px 3px #0005;
+  color: #f4f4fa;
+  text-shadow: 1px 1px #000;
+  font-size: 12px;
+  pointer-events: none;
+  z-index: 12;
+}
+#loading {
+  right: 36px;
+  bottom: 24px;
+  max-width: 440px;
+  white-space: pre-wrap;
+}
+#notice {
+  max-width: 260px;
+}
+#menu,
+#help-panel {
+  position: fixed;
+  padding: 8px;
+  background: linear-gradient(135deg, #151caa, #101979 42%, #070c41);
+  border: 2px solid #dadce3;
+  border-radius: 5px;
+  box-shadow:
+    inset 1px 1px #fff,
+    inset -1px -1px #747887,
+    0 0 0 1px #242632,
+    2px 3px #0005;
+  text-shadow: 1px 1px #000;
+  max-height: calc(100vh - 16px);
+  overflow-y: auto;
+  z-index: 10;
+}
+#menu {
+  width: 232px;
+}
+button {
+  font: inherit;
+  cursor: pointer;
+  border: 0;
+  color: inherit;
+  background: transparent;
+  border-radius: 2px;
+  text-align: left;
+  padding: 6px 10px;
+  width: 100%;
+  text-shadow: inherit;
+}
+button:hover,
+button:focus-visible {
+  background: #b4c7ff24;
+  outline: 1px solid #ccd7f366;
+}
+button:focus-visible {
+  outline: 2px solid #fff;
+}
+.divider {
+  height: 1px;
+  background: #c5c9e35c;
+  margin: 5px 4px;
+}
+label {
+  display: block;
+  padding: 5px 10px;
+  font-size: 12px;
+  color: #d5dcf0;
+}
+output {
+  float: right;
+}
+input {
+  width: 100%;
+  margin: 9px 0 0;
+  accent-color: #b4ccff;
+}
+.sizes {
+  display: flex;
+  padding: 0 7px 4px;
+  gap: 2px;
+}
+.sizes button {
+  font-size: 11px;
+  text-align: center;
+  background: #b5c2ed18;
+  padding: 4px 1px;
+}
+.quit {
+  color: #ffc4c6;
+}
+#daily-select {
+  width: 100%;
+  margin-top: 5px;
+  padding: 6px;
+  background: #0d145d;
+  color: #f4f4fa;
+  border: 1px solid #b4bbd1;
+  border-radius: 2px;
+  font: inherit;
+}
+#help-panel {
+  width: 380px;
+  max-width: calc(100vw - 24px);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 14px 18px;
+  z-index: 11;
+  font-size: 13px;
+  line-height: 1.65;
+}
+.help-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #c5c9e35c;
+  padding-bottom: 6px;
+  margin-bottom: 9px;
+  font-size: 16px;
+}
+.help-heading button {
+  width: 28px;
+  padding: 0;
+  text-align: center;
+  font: 22px/28px system-ui;
+}
+#help-panel h2 {
+  font: inherit;
+  font-weight: bold;
+  margin: 12px 0 4px;
+  color: #e3d5a0;
+}
+#help-panel p {
+  margin: 5px 0;
+  color: #eef0f9;
+}
+.rage-stages {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  gap: 4px;
+}
+.rage-stages div {
+  width: 56px;
+  text-align: center;
+  font: 10px/1.6 system-ui;
+  color: #c9d3ef;
+}
+.rage-stages img {
+  display: block;
+  margin: auto;
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+.action-context,
+.prepared-context {
+  position: fixed;
+  left: -10000px;
+  top: 0;
+  width: 1060px;
+  height: 900px;
+  visibility: hidden;
+  pointer-events: none;
+  border: 0;
+}
+#daily-layer {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+#daily-layer canvas {
+  pointer-events: none;
+}
+#daily-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
 /* Rage HUD — glass medallion; avatar pops out above the rim, ring shows R with round caps. */
-#rage-window{--rage-accent:#78c4ff;--rage-pct:0;position:fixed;left:calc(100vw - 88px);top:24px;width:64px;height:64px;z-index:9;cursor:grab;touch-action:none;outline:none;transition:transform .18s ease}
-#rage-window:hover{transform:scale(1.06)}#rage-window:active{cursor:grabbing;transform:scale(.97)}
-#rage-window:focus-visible .rage-ring{outline:1px solid #fff;outline-offset:3px;border-radius:50%}
-#rage-window:before{content:"";position:absolute;inset:3px;border-radius:50%;box-shadow:0 0 calc(4px + var(--rage-pct)*.14px) color-mix(in srgb,var(--rage-accent) calc(30% + var(--rage-pct)*.5%),transparent),0 3px 6px #0007;pointer-events:none}
-#rage-window[data-level="4"]:before{animation:rage-pulse 1.4s ease-in-out infinite}
-@keyframes rage-pulse{50%{box-shadow:0 0 22px color-mix(in srgb,var(--rage-accent) 85%,transparent),0 3px 6px #0007}}
-.rage-ring{position:absolute;inset:0;width:64px;height:64px;transform:rotate(-90deg);overflow:visible;pointer-events:none}
-.rage-ring circle{fill:none;stroke-width:3.2}
-.rage-ring .rim{stroke:#e9edf7;stroke-width:1;opacity:.85}
-.rage-ring .track{stroke:#070b28d9}
-.rage-ring .fill{stroke:var(--rage-accent);stroke-linecap:round;stroke-dasharray:var(--rage-pct) 100;transition:stroke-dasharray .35s ease,stroke .35s ease;filter:drop-shadow(0 0 1.5px var(--rage-accent))}
-#rage-window[data-empty] .rage-ring .fill{opacity:0}
-.rage-orb{position:absolute;inset:6px;border-radius:50%;overflow:hidden;pointer-events:none;
- background:radial-gradient(circle at 50% 118%,color-mix(in srgb,var(--rage-accent) 70%,#fff0) 0,color-mix(in srgb,var(--rage-accent) 22%,#0c1546) 46%,#070b2c 78%);
- box-shadow:inset 0 0 0 1px #ffffff30,inset 0 -6px 10px #0006;transition:background .35s}
-.rage-orb:before{content:"";position:absolute;inset:3px;border-radius:50%;background:repeating-conic-gradient(from 0deg,#ffffff07 0 6deg,#0000 6deg 12deg);}
-#rage-avatar{position:absolute;left:1px;top:-9px;width:62px;height:62px;object-fit:contain;pointer-events:none;-webkit-user-drag:none;
- filter:drop-shadow(0 1px 1px #000a);
- /* circle of the orb (centre 28,37 r 26 in image coords) plus a soft cap above it */
- -webkit-mask:radial-gradient(circle 26px at 31px 41px,#000 25.5px,#0000 26px),radial-gradient(ellipse 31px 27px at 31px 25px,#000 70%,#0000 100%);
- mask:radial-gradient(circle 26px at 31px 41px,#000 25.5px,#0000 26px),radial-gradient(ellipse 31px 27px at 31px 25px,#000 70%,#0000 100%)}
-.rage-gloss{position:absolute;left:12px;top:8px;width:40px;height:18px;border-radius:50%;background:linear-gradient(#ffffff3d,#fff0);pointer-events:none;mix-blend-mode:screen}
-#rage-number{position:absolute;left:auto;transform:none;right:-6px;bottom:-1px;min-width:22px;height:16px;padding:0 5px;border-radius:8px;background:linear-gradient(#1a2470,#0a0f3a);border:1px solid color-mix(in srgb,var(--rage-accent) 80%,#fff);box-shadow:0 1px 3px #0009,0 0 6px color-mix(in srgb,var(--rage-accent) 45%,transparent);color:#fff;font:700 10px/14px "Segoe UI",system-ui,sans-serif;font-variant-numeric:tabular-nums;letter-spacing:.02em;text-align:center;text-shadow:0 1px 1px #000;pointer-events:none;float:none;transition:border-color .35s}
-@media (prefers-reduced-motion:reduce){#rage-window,#rage-window:before,.rage-ring .fill{transition:none;animation:none!important}}
-.rage-stages img{border-radius:50%;background:radial-gradient(circle at 50% 115%,var(--c,#78c4ff) 0,#0c1546 60%);box-shadow:0 0 0 1.5px var(--c,#78c4ff),0 2px 4px #0006;padding:2px}
+#rage-window {
+  --rage-accent: #78c4ff;
+  --rage-pct: 0;
+  position: fixed;
+  left: calc(100vw - 88px);
+  top: 24px;
+  width: 64px;
+  height: 64px;
+  z-index: 9;
+  cursor: grab;
+  touch-action: none;
+  outline: none;
+  transition: transform 0.18s ease;
+}
+#rage-window:hover {
+  transform: scale(1.06);
+}
+#rage-window:active {
+  cursor: grabbing;
+  transform: scale(0.97);
+}
+#rage-window:focus-visible .rage-ring {
+  outline: 1px solid #fff;
+  outline-offset: 3px;
+  border-radius: 50%;
+}
+#rage-window:before {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border-radius: 50%;
+  box-shadow:
+    0 0 calc(4px + var(--rage-pct) * 0.14px)
+      color-mix(
+        in srgb,
+        var(--rage-accent) calc(30% + var(--rage-pct) * 0.5%),
+        transparent
+      ),
+    0 3px 6px #0007;
+  pointer-events: none;
+}
+#rage-window[data-level="4"]:before {
+  animation: rage-pulse 1.4s ease-in-out infinite;
+}
+@keyframes rage-pulse {
+  50% {
+    box-shadow:
+      0 0 22px color-mix(in srgb, var(--rage-accent) 85%, transparent),
+      0 3px 6px #0007;
+  }
+}
+.rage-ring {
+  position: absolute;
+  inset: 0;
+  width: 64px;
+  height: 64px;
+  transform: rotate(-90deg);
+  overflow: visible;
+  pointer-events: none;
+}
+.rage-ring circle {
+  fill: none;
+  stroke-width: 3.2;
+}
+.rage-ring .rim {
+  stroke: #e9edf7;
+  stroke-width: 1;
+  opacity: 0.85;
+}
+.rage-ring .track {
+  stroke: #070b28d9;
+}
+.rage-ring .fill {
+  stroke: var(--rage-accent);
+  stroke-linecap: round;
+  stroke-dasharray: var(--rage-pct) 100;
+  transition:
+    stroke-dasharray 0.35s ease,
+    stroke 0.35s ease;
+  filter: drop-shadow(0 0 1.5px var(--rage-accent));
+}
+#rage-window[data-empty] .rage-ring .fill {
+  opacity: 0;
+}
+.rage-orb {
+  position: absolute;
+  inset: 6px;
+  border-radius: 50%;
+  overflow: hidden;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at 50% 118%,
+    color-mix(in srgb, var(--rage-accent) 70%, #fff0) 0,
+    color-mix(in srgb, var(--rage-accent) 22%, #0c1546) 46%,
+    #070b2c 78%
+  );
+  box-shadow:
+    inset 0 0 0 1px #ffffff30,
+    inset 0 -6px 10px #0006;
+  transition: background 0.35s;
+}
+.rage-orb:before {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border-radius: 50%;
+  background: repeating-conic-gradient(
+    from 0deg,
+    #ffffff07 0 6deg,
+    #0000 6deg 12deg
+  );
+}
+#rage-avatar {
+  position: absolute;
+  left: 1px;
+  top: -9px;
+  width: 62px;
+  height: 62px;
+  object-fit: contain;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  filter: drop-shadow(0 1px 1px #000a);
+  /* circle of the orb (centre 28,37 r 26 in image coords) plus a soft cap above it */
+  -webkit-mask:
+    radial-gradient(circle 26px at 31px 41px, #000 25.5px, #0000 26px),
+    radial-gradient(ellipse 31px 27px at 31px 25px, #000 70%, #0000 100%);
+  mask:
+    radial-gradient(circle 26px at 31px 41px, #000 25.5px, #0000 26px),
+    radial-gradient(ellipse 31px 27px at 31px 25px, #000 70%, #0000 100%);
+}
+.rage-gloss {
+  position: absolute;
+  left: 12px;
+  top: 8px;
+  width: 40px;
+  height: 18px;
+  border-radius: 50%;
+  background: linear-gradient(#ffffff3d, #fff0);
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+#rage-number {
+  position: absolute;
+  left: auto;
+  transform: none;
+  right: -6px;
+  bottom: -1px;
+  min-width: 22px;
+  height: 16px;
+  padding: 0 5px;
+  border-radius: 8px;
+  background: linear-gradient(#1a2470, #0a0f3a);
+  border: 1px solid color-mix(in srgb, var(--rage-accent) 80%, #fff);
+  box-shadow:
+    0 1px 3px #0009,
+    0 0 6px color-mix(in srgb, var(--rage-accent) 45%, transparent);
+  color: #fff;
+  font:
+    700 10px/14px "Segoe UI",
+    system-ui,
+    sans-serif;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-shadow: 0 1px 1px #000;
+  pointer-events: none;
+  float: none;
+  transition: border-color 0.35s;
+}
+@media (prefers-reduced-motion: reduce) {
+  #rage-window,
+  #rage-window:before,
+  .rage-ring .fill {
+    transition: none;
+    animation: none !important;
+  }
+}
+.rage-stages img {
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 50% 115%,
+    var(--c, #78c4ff) 0,
+    #0c1546 60%
+  );
+  box-shadow:
+    0 0 0 1.5px var(--c, #78c4ff),
+    0 2px 4px #0006;
+  padding: 2px;
+}

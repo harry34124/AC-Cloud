@@ -1,1 +1,281 @@
-{"title":"A12 · 穿脱放慢、摸狼纹加快 w9","description":"总长8.5秒；穿脱手套稍放慢，中间摸狼纹加快，阶段之间平滑变速。保留w8完整手套、收尾材质配准与原臂形腕口。","model":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/875136e5c234cdffa48b34b56024f513f4d06540209378f799c974383a29dfac/resource.model3.json","armModel":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/ee0177ab1592c079f0e2673087789ebdc8aea9e843d14f1d27499231f663fbbb/resource.model3.json","adapterModule":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/6b1d1651ca03224ded4474ad2e0acd09c7fb20d3e31762d627956455385c0478/resource.mjs?instance=d8cc8014f3dc133e1f8a&instance=8056511097070e6a4344&v=a12w9","motion":{"module":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/eae50c9b01c62f89290a9756274165aa5c8e62ea5848df53eed185ec89eff0c0/resource.mjs?instance=f449cf628f40b08e88bd&instance=e41f86b9f8b632c59d4a"},"duration":8.5,"artBounds":[0.28515625,0.0203125,0.7140625,0.95],"recordFps":24,"returnPolicy":{"reverseBefore":0.7307934840311614},"components":[{"id":"A10:ArtMeshHandwearR","label":"handwear upper-r","layer":"handwear upper-r","drawableIds":["ArtMeshHandwearR"],"psd":"/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd","owner":"body"},{"id":"A10:ArtMeshLayerR","label":"hidden upper-r","layer":"hidden upper-r","drawableIds":["ArtMeshLayerR"],"psd":"/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd","owner":"body"},{"id":"A10:ArtMeshHandwearR3","label":"handwear fore-r","layer":"handwear fore-r","drawableIds":["ArtMeshHandwearR3"],"psd":"/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd","owner":"body"},{"id":"A10:ArtMeshLayerR3","label":"hidden fore-r","layer":"hidden fore-r","drawableIds":["ArtMeshLayerR3"],"psd":"/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd","owner":"body"},{"id":"A10:ArtMeshLayerR6","label":"bare fore-r","layer":"bare fore-r","drawableIds":["ArtMeshLayerR6"],"psd":"/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd","owner":"body"},{"id":"A10:ArtMeshLayerR8","label":"bare hand-r","layer":"bare hand-r","drawableIds":["ArtMeshLayerR8"],"psd":"/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd","owner":"body"},{"id":"A10:ArtMeshLayerL3","label":"empty glove-l","layer":"empty glove-l","drawableIds":["ArtMeshLayerL3"],"psd":"/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd","owner":"body"},{"id":"A10:ArtMeshHandwearL3","label":"handwear fist-l","layer":"handwear fist-l","drawableIds":["ArtMeshHandwearL3"],"psd":"/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd","owner":"body"},{"id":"A10:ArtMeshHandwearL4","label":"handwear fore-l","layer":"handwear fore-l","drawableIds":["ArtMeshHandwearL4"],"psd":"/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd","owner":"body"},{"id":"A10:ArtMeshHandwearL2","label":"handwear upper-l","layer":"handwear upper-l","drawableIds":["ArtMeshHandwearL2"],"psd":"/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd","owner":"body"},{"id":"A10:ArtMeshLayerL2","label":"hidden upper-l","layer":"hidden upper-l","drawableIds":["ArtMeshLayerL2"],"psd":"/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd","owner":"body"},{"id":"A10:ArtMeshLayerL","label":"hidden fore-l","layer":"hidden fore-l","drawableIds":["ArtMeshLayerL"],"psd":"/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd","owner":"body"},{"id":"A10:ArtMeshHandwearL","label":"handwear pauldron-l","layer":"handwear pauldron-l","drawableIds":["ArtMeshHandwearL"],"psd":"/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd","owner":"body"},{"id":"A10:ArtMeshLayerR5","label":"a01 upper-r","layer":"a01 upper-r","drawableIds":["ArtMeshLayerR5"],"psd":"/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd","owner":"body"},{"id":"A10:ArtMeshLayerR2","label":"a01 hidden upper-r","layer":"a01 hidden upper-r","drawableIds":["ArtMeshLayerR2"],"psd":"/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd","owner":"body"},{"id":"A10:ArtMeshLayerR4","label":"a01 hidden fore-r","layer":"a01 hidden fore-r","drawableIds":["ArtMeshLayerR4"],"psd":"/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd","owner":"body"},{"id":"A10:ArtMeshLayerR7","label":"a01 fore-r","layer":"a01 fore-r","drawableIds":["ArtMeshLayerR7"],"psd":"/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd","owner":"body"},{"id":"A11:ArtMeshLayerR3","label":"a11 bare fore-r","layer":"a11 bare fore-r","owner":"arm","drawableIds":["ArtMeshLayerR2"],"psd":"/01_统一设计参考/PSD/人物/A11/已通过w31_2026-10-14/A11_腕肘轮廓源.psd"},{"id":"A11:ArtMeshLayerR4","label":"a11 bare hand-r","layer":"a11 bare hand-r","owner":"arm","drawableIds":["ArtMeshLayerR3"],"psd":"/01_统一设计参考/PSD/人物/A11/已通过w31_2026-10-14/A11_腕肘轮廓源.psd"},{"id":"A11:upper","label":"a11 upper-r","layer":"a11 upper-r","owner":"arm","drawableIds":["ArtMeshLayerR"],"psd":"/01_统一设计参考/PSD/人物/A11/已通过w31_2026-10-14/A11_腕肘轮廓源.psd"}],"checks":[{"label":"起手","time":0},{"label":"脱套完成","time":1.5499999999999994},{"label":"跨胸","time":2.252614752320575},{"label":"下方圆环","time":2.8716598481816478},{"label":"原穿模点","time":3.3087941700197785},{"label":"狼纹中部上限","time":3.797266299914088},{"label":"回到圆环","time":4.7085257116613795},{"label":"撤回","time":5.455007431701865},{"label":"穿套会合","time":6.399999999999998},{"label":"收尾前","time":7.93344630625107},{"label":"收尾中","time":8.20060030816931},{"label":"接回末","time":8.469123905358245},{"label":"A01","time":8.5}],"upperModel":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/6871314c3c94d764ef8009f26fd200601f52f31ec945292bd1fc1910b643aabc/resource.model3.json","jointInk":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/8b9099d85485b6042dad2245f6ffccf1849257fc469a708af5b72cd5609b75a0/resource.json","adapter":{},"returnCache":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/1bc65ff4bfb83e994471f722f4c55b052760902a13d3236838a5127cf467510e/resource.json"}
+{
+    "title": "A12 · 穿脱放慢、摸狼纹加快 w9",
+    "description": "总长8.5秒；穿脱手套稍放慢，中间摸狼纹加快，阶段之间平滑变速。保留w8完整手套、收尾材质配准与原臂形腕口。",
+    "model": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/875136e5c234cdffa48b34b56024f513f4d06540209378f799c974383a29dfac/resource.model3.json",
+    "armModel": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/ee0177ab1592c079f0e2673087789ebdc8aea9e843d14f1d27499231f663fbbb/resource.model3.json",
+    "adapterModule": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/6b1d1651ca03224ded4474ad2e0acd09c7fb20d3e31762d627956455385c0478/resource.mjs?instance=d8cc8014f3dc133e1f8a&instance=8056511097070e6a4344&v=a12w9",
+    "motion": {
+        "module": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/eae50c9b01c62f89290a9756274165aa5c8e62ea5848df53eed185ec89eff0c0/resource.mjs?instance=f449cf628f40b08e88bd&instance=e41f86b9f8b632c59d4a"
+    },
+    "duration": 8.5,
+    "artBounds": [
+        0.28515625,
+        0.0203125,
+        0.7140625,
+        0.95
+    ],
+    "recordFps": 24,
+    "returnPolicy": {
+        "reverseBefore": 0.7307934840311614
+    },
+    "components": [
+        {
+            "id": "A10:ArtMeshHandwearR",
+            "label": "handwear upper-r",
+            "layer": "handwear upper-r",
+            "drawableIds": [
+                "ArtMeshHandwearR"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshLayerR",
+            "label": "hidden upper-r",
+            "layer": "hidden upper-r",
+            "drawableIds": [
+                "ArtMeshLayerR"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshHandwearR3",
+            "label": "handwear fore-r",
+            "layer": "handwear fore-r",
+            "drawableIds": [
+                "ArtMeshHandwearR3"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshLayerR3",
+            "label": "hidden fore-r",
+            "layer": "hidden fore-r",
+            "drawableIds": [
+                "ArtMeshLayerR3"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshLayerR6",
+            "label": "bare fore-r",
+            "layer": "bare fore-r",
+            "drawableIds": [
+                "ArtMeshLayerR6"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshLayerR8",
+            "label": "bare hand-r",
+            "layer": "bare hand-r",
+            "drawableIds": [
+                "ArtMeshLayerR8"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshLayerL3",
+            "label": "empty glove-l",
+            "layer": "empty glove-l",
+            "drawableIds": [
+                "ArtMeshLayerL3"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshHandwearL3",
+            "label": "handwear fist-l",
+            "layer": "handwear fist-l",
+            "drawableIds": [
+                "ArtMeshHandwearL3"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshHandwearL4",
+            "label": "handwear fore-l",
+            "layer": "handwear fore-l",
+            "drawableIds": [
+                "ArtMeshHandwearL4"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshHandwearL2",
+            "label": "handwear upper-l",
+            "layer": "handwear upper-l",
+            "drawableIds": [
+                "ArtMeshHandwearL2"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshLayerL2",
+            "label": "hidden upper-l",
+            "layer": "hidden upper-l",
+            "drawableIds": [
+                "ArtMeshLayerL2"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshLayerL",
+            "label": "hidden fore-l",
+            "layer": "hidden fore-l",
+            "drawableIds": [
+                "ArtMeshLayerL"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshHandwearL",
+            "label": "handwear pauldron-l",
+            "layer": "handwear pauldron-l",
+            "drawableIds": [
+                "ArtMeshHandwearL"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshLayerR5",
+            "label": "a01 upper-r",
+            "layer": "a01 upper-r",
+            "drawableIds": [
+                "ArtMeshLayerR5"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshLayerR2",
+            "label": "a01 hidden upper-r",
+            "layer": "a01 hidden upper-r",
+            "drawableIds": [
+                "ArtMeshLayerR2"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshLayerR4",
+            "label": "a01 hidden fore-r",
+            "layer": "a01 hidden fore-r",
+            "drawableIds": [
+                "ArtMeshLayerR4"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshLayerR7",
+            "label": "a01 fore-r",
+            "layer": "a01 fore-r",
+            "drawableIds": [
+                "ArtMeshLayerR7"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A12/已通过w9_2026-10-15/A12_手套衔接源.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A11:ArtMeshLayerR3",
+            "label": "a11 bare fore-r",
+            "layer": "a11 bare fore-r",
+            "owner": "arm",
+            "drawableIds": [
+                "ArtMeshLayerR2"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A11/已通过w31_2026-10-14/A11_腕肘轮廓源.psd"
+        },
+        {
+            "id": "A11:ArtMeshLayerR4",
+            "label": "a11 bare hand-r",
+            "layer": "a11 bare hand-r",
+            "owner": "arm",
+            "drawableIds": [
+                "ArtMeshLayerR3"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A11/已通过w31_2026-10-14/A11_腕肘轮廓源.psd"
+        },
+        {
+            "id": "A11:upper",
+            "label": "a11 upper-r",
+            "layer": "a11 upper-r",
+            "owner": "arm",
+            "drawableIds": [
+                "ArtMeshLayerR"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A11/已通过w31_2026-10-14/A11_腕肘轮廓源.psd"
+        }
+    ],
+    "checks": [
+        {
+            "label": "起手",
+            "time": 0
+        },
+        {
+            "label": "脱套完成",
+            "time": 1.5499999999999994
+        },
+        {
+            "label": "跨胸",
+            "time": 2.252614752320575
+        },
+        {
+            "label": "下方圆环",
+            "time": 2.8716598481816478
+        },
+        {
+            "label": "原穿模点",
+            "time": 3.3087941700197785
+        },
+        {
+            "label": "狼纹中部上限",
+            "time": 3.797266299914088
+        },
+        {
+            "label": "回到圆环",
+            "time": 4.7085257116613795
+        },
+        {
+            "label": "撤回",
+            "time": 5.455007431701865
+        },
+        {
+            "label": "穿套会合",
+            "time": 6.399999999999998
+        },
+        {
+            "label": "收尾前",
+            "time": 7.93344630625107
+        },
+        {
+            "label": "收尾中",
+            "time": 8.20060030816931
+        },
+        {
+            "label": "接回末",
+            "time": 8.469123905358245
+        },
+        {
+            "label": "A01",
+            "time": 8.5
+        }
+    ],
+    "upperModel": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/6871314c3c94d764ef8009f26fd200601f52f31ec945292bd1fc1910b643aabc/resource.model3.json",
+    "jointInk": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/8b9099d85485b6042dad2245f6ffccf1849257fc469a708af5b72cd5609b75a0/resource.json",
+    "adapter": {},
+    "returnCache": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/1bc65ff4bfb83e994471f722f4c55b052760902a13d3236838a5127cf467510e/resource.json"
+}

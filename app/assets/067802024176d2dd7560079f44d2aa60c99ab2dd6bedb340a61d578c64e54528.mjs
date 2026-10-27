@@ -1,13 +1,17 @@
 // A58 w13 火焰凶字：轮廓顶点直接取自已认可的 glyph.json（与w8逐字节相同，不改字形），
 // 四笔先合成一个整体遮罩再在着色器里统一燃烧——笔画交叉处不会再看到叠层；
 // 收尾不是淡出，而是火从字里烧穿：烧蚀前沿发亮成余烬线，火舌脱离上升，火星飘散，最后烧尽。
-const clamp=(v,a=0,b=1)=>Math.max(a,Math.min(b,v));
+const clamp = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v));
 // 纹理覆盖的字形坐标范围（字形约1100×1100；上方留出火舌空间）
-const X0=-140,Y0=-560,GW=1400,GH=1760,TS=.36;// 纹理像素/字形单位
-const ORDER=['left','hook','descending','ascending'];
+const X0 = -140,
+  Y0 = -560,
+  GW = 1400,
+  GH = 1760,
+  TS = 0.36; // 纹理像素/字形单位
+const ORDER = ["left", "hook", "descending", "ascending"];
 
-const VS=`attribute vec2 p;varying vec2 uv;void main(){uv=vec2(p.x*.5+.5,.5-p.y*.5);gl_Position=vec4(p,0.,1.);}`;
-const FS=`precision highp float;varying vec2 uv;
+const VS = `attribute vec2 p;varying vec2 uv;void main(){uv=vec2(p.x*.5+.5,.5-p.y*.5);gl_Position=vec4(p,0.,1.);}`;
+const FS = `precision highp float;varying vec2 uv;
 uniform sampler2D s0,s1,s2,s3;uniform vec4 r0,r1,r2,r3;uniform vec2 g0,g1,g2,g3;
 uniform float uT,uBurn,uA;uniform vec4 uBox;
 float h21(vec2 p){p=fract(p*vec2(123.34,456.21));p+=dot(p,p+45.32);return fract(p.x*p.y);}
@@ -63,76 +67,269 @@ void main(){
  gl_FragColor=vec4(col,a+hl*(1.-a))*uA;
 }`;
 
-export function createFireGlyph(data){
-  const strokes=ORDER.map(name=>{const pts=data[name],p=new Path2D();pts.forEach(([x,y],i)=>i?p.lineTo(x,y):p.moveTo(x,y));p.closePath();return{name,pts,path:p};});
-  const TW=Math.round(GW*TS),TH=Math.round(GH*TS);
+export function createFireGlyph(data) {
+  const strokes = ORDER.map((name) => {
+    const pts = data[name],
+      p = new Path2D();
+    pts.forEach(([x, y], i) => (i ? p.lineTo(x, y) : p.moveTo(x, y)));
+    p.closePath();
+    return { name, pts, path: p };
+  });
+  const TW = Math.round(GW * TS),
+    TH = Math.round(GH * TS);
   // 每笔一张纹理：R=遮罩，G=小模糊（笔画内外的“热度”），B=大模糊（火舌源与热辉光）
-  function strokeTex(st){
-    const mk=()=>Object.assign(document.createElement('canvas'),{width:TW,height:TH});
-    const m=mk(),mc=m.getContext('2d');mc.setTransform(TS,0,0,TS,-X0*TS,-Y0*TS);mc.fillStyle='#fff';mc.fill(st.path);
-    const blur=r=>{const c=mk(),x=c.getContext('2d');x.filter=`blur(${r}px)`;x.drawImage(m,0,0);x.filter='none';x.drawImage(c,0,0);return x.getImageData(0,0,TW,TH).data;};
-    const a=mc.getImageData(0,0,TW,TH).data,b1=blur(5),b2=blur(15),out=new Uint8Array(TW*TH*4);
-    for(let i=0;i<TW*TH;i++){out[i*4]=a[i*4+3];out[i*4+1]=Math.min(255,b1[i*4+3]*1.6);out[i*4+2]=Math.min(255,b2[i*4+3]*1.9);out[i*4+3]=255;}
+  function strokeTex(st) {
+    const mk = () =>
+      Object.assign(document.createElement("canvas"), {
+        width: TW,
+        height: TH,
+      });
+    const m = mk(),
+      mc = m.getContext("2d");
+    mc.setTransform(TS, 0, 0, TS, -X0 * TS, -Y0 * TS);
+    mc.fillStyle = "#fff";
+    mc.fill(st.path);
+    const blur = (r) => {
+      const c = mk(),
+        x = c.getContext("2d");
+      x.filter = `blur(${r}px)`;
+      x.drawImage(m, 0, 0);
+      x.filter = "none";
+      x.drawImage(c, 0, 0);
+      return x.getImageData(0, 0, TW, TH).data;
+    };
+    const a = mc.getImageData(0, 0, TW, TH).data,
+      b1 = blur(5),
+      b2 = blur(15),
+      out = new Uint8Array(TW * TH * 4);
+    for (let i = 0; i < TW * TH; i++) {
+      out[i * 4] = a[i * 4 + 3];
+      out[i * 4 + 1] = Math.min(255, b1[i * 4 + 3] * 1.6);
+      out[i * 4 + 2] = Math.min(255, b2[i * 4 + 3] * 1.9);
+      out[i * 4 + 3] = 255;
+    }
     // 出笔方向上的投影范围
-    return{px:out,mask:a};
+    return { px: out, mask: a };
   }
-  const tex=strokes.map(strokeTex);
+  const tex = strokes.map(strokeTex);
   // 火星发射点：字内随机点（按笔记录）
-  const pts=strokes.map((st,k)=>{const a=tex[k].mask,o=[];let s=k*977+13;const R=()=>{s=(s*16807)%2147483647;return s/2147483647;};
-    for(let n=0;n<4000&&o.length<260;n++){const x=Math.floor(R()*TW),y=Math.floor(R()*TH);if(a[(y*TW+x)*4+3]>200)o.push([X0+x/TS,Y0+y/TS]);}return o;});
+  const pts = strokes.map((st, k) => {
+    const a = tex[k].mask,
+      o = [];
+    let s = k * 977 + 13;
+    const R = () => {
+      s = (s * 16807) % 2147483647;
+      return s / 2147483647;
+    };
+    for (let n = 0; n < 4000 && o.length < 260; n++) {
+      const x = Math.floor(R() * TW),
+        y = Math.floor(R() * TH);
+      if (a[(y * TW + x) * 4 + 3] > 200) o.push([X0 + x / TS, Y0 + y / TS]);
+    }
+    return o;
+  });
 
-  const glc=document.createElement('canvas');
-  const gl=glc.getContext('webgl',{premultipliedAlpha:true,alpha:true,antialias:false,preserveDrawingBuffer:true});
-  const sh=(type,src)=>{const s=gl.createShader(type);gl.shaderSource(s,src);gl.compileShader(s);if(!gl.getShaderParameter(s,gl.COMPILE_STATUS))throw new Error(gl.getShaderInfoLog(s));return s;};
-  const prog=gl.createProgram();gl.attachShader(prog,sh(gl.VERTEX_SHADER,VS));gl.attachShader(prog,sh(gl.FRAGMENT_SHADER,FS));gl.linkProgram(prog);
-  if(!gl.getProgramParameter(prog,gl.LINK_STATUS))throw new Error(gl.getProgramInfoLog(prog));
-  gl.useProgram(prog);const buf=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buf);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),gl.STATIC_DRAW);
-  const lp=gl.getAttribLocation(prog,'p');gl.enableVertexAttribArray(lp);gl.vertexAttribPointer(lp,2,gl.FLOAT,false,0,0);
-  const U=n=>gl.getUniformLocation(prog,n);
-  tex.forEach((tx,k)=>{const t=gl.createTexture();gl.activeTexture(gl.TEXTURE0+k);gl.bindTexture(gl.TEXTURE_2D,t);
-    gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL,false);gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL,false);
-    gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,TW,TH,0,gl.RGBA,gl.UNSIGNED_BYTE,tx.px);
-    for(const [p,v] of [[gl.TEXTURE_MIN_FILTER,gl.LINEAR],[gl.TEXTURE_MAG_FILTER,gl.LINEAR],[gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE],[gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE]])gl.texParameteri(gl.TEXTURE_2D,p,v);
-    gl.uniform1i(U('s'+k),k);});
-  gl.uniform4f(U('uBox'),X0,Y0,GW,GH);
+  const glc = document.createElement("canvas");
+  const gl = glc.getContext("webgl", {
+    premultipliedAlpha: true,
+    alpha: true,
+    antialias: false,
+    preserveDrawingBuffer: true,
+  });
+  const sh = (type, src) => {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    if (!gl.getShaderParameter(s, gl.COMPILE_STATUS))
+      throw new Error(gl.getShaderInfoLog(s));
+    return s;
+  };
+  const prog = gl.createProgram();
+  gl.attachShader(prog, sh(gl.VERTEX_SHADER, VS));
+  gl.attachShader(prog, sh(gl.FRAGMENT_SHADER, FS));
+  gl.linkProgram(prog);
+  if (!gl.getProgramParameter(prog, gl.LINK_STATUS))
+    throw new Error(gl.getProgramInfoLog(prog));
+  gl.useProgram(prog);
+  const buf = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(
+    gl.ARRAY_BUFFER,
+    new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]),
+    gl.STATIC_DRAW,
+  );
+  const lp = gl.getAttribLocation(prog, "p");
+  gl.enableVertexAttribArray(lp);
+  gl.vertexAttribPointer(lp, 2, gl.FLOAT, false, 0, 0);
+  const U = (n) => gl.getUniformLocation(prog, n);
+  tex.forEach((tx, k) => {
+    const t = gl.createTexture();
+    gl.activeTexture(gl.TEXTURE0 + k);
+    gl.bindTexture(gl.TEXTURE_2D, t);
+    gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, false);
+    gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL, false);
+    gl.texImage2D(
+      gl.TEXTURE_2D,
+      0,
+      gl.RGBA,
+      TW,
+      TH,
+      0,
+      gl.RGBA,
+      gl.UNSIGNED_BYTE,
+      tx.px,
+    );
+    for (const [p, v] of [
+      [gl.TEXTURE_MIN_FILTER, gl.LINEAR],
+      [gl.TEXTURE_MAG_FILTER, gl.LINEAR],
+      [gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE],
+      [gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE],
+    ])
+      gl.texParameteri(gl.TEXTURE_2D, p, v);
+    gl.uniform1i(U("s" + k), k);
+  });
+  gl.uniform4f(U("uBox"), X0, Y0, GW, GH);
   // 出笔方向（字形坐标，y向下）：竖自上而下；钩随第二刀从右下往左上；交叉两笔随第三刀
-  const DIRS={left:[0,1],hook:[-.8,-.6],descending:[.49,.87],ascending:[-.85,.53]};
-  const proj=strokes.map(st=>{const d=DIRS[st.name];let lo=1e9,hi=-1e9;for(const [x,y] of st.pts){const q=x*d[0]+y*d[1];lo=Math.min(lo,q);hi=Math.max(hi,q);}return[d[0],d[1],lo,hi];});
-  proj.forEach((r,k)=>gl.uniform4f(U('r'+k),...r));
-  const rnd=i=>{const x=Math.sin(i*127.1+311.7)*43758.5453;return x-Math.floor(x);};
+  const DIRS = {
+    left: [0, 1],
+    hook: [-0.8, -0.6],
+    descending: [0.49, 0.87],
+    ascending: [-0.85, 0.53],
+  };
+  const proj = strokes.map((st) => {
+    const d = DIRS[st.name];
+    let lo = 1e9,
+      hi = -1e9;
+    for (const [x, y] of st.pts) {
+      const q = x * d[0] + y * d[1];
+      lo = Math.min(lo, q);
+      hi = Math.max(hi, q);
+    }
+    return [d[0], d[1], lo, hi];
+  });
+  proj.forEach((r, k) => gl.uniform4f(U("r" + k), ...r));
+  const rnd = (i) => {
+    const x = Math.sin(i * 127.1 + 311.7) * 43758.5453;
+    return x - Math.floor(x);
+  };
 
   // 火星：一直有少量往上飘；烧尽时大量迸出
-  function sparks(ctx,{t,births,burnAt,burnDur},map,sc){
-    ctx.save();ctx.globalCompositeOperation='lighter';ctx.lineCap='round';
-    const drawP=(x,y,vx,vy,size,a,hot)=>{const [sx,sy]=map(x,y),L=Math.min(28,Math.hypot(vx,vy)*.035);const k=L/Math.max(1e-3,Math.hypot(vx,vy));
-      ctx.strokeStyle=hot?`rgba(255,245,215,${a})`:`rgba(255,${170+Math.round(60*a)},90,${a})`;ctx.lineWidth=Math.max(.8,size*sc);ctx.shadowColor='rgba(255,110,30,.9)';ctx.shadowBlur=6*sc*4;
-      ctx.beginPath();ctx.moveTo(sx,sy);ctx.lineTo(sx-vx*k*sc,sy-vy*k*sc);ctx.stroke();};
-    const end=burnAt+burnDur;
-    for(let k=0;k<4;k++){const b=births[k];if(b==null||t<b)continue;const P=pts[k];if(!P.length)continue;
-      for(let i=0;i<16;i++){const L=.7+rnd(i+k*50)*.7,ph=rnd(i*3+k*7)*L,c=Math.floor((t-b+ph)/L),age=(t-b+ph)-c*L;const born=t-age;if(born<b||born>end)continue;
-        const p=P[Math.floor(rnd(c*13+i*7+k)*P.length)],vy=-(140+rnd(c+i)*200),vx=Math.sin(age*5+i)*40+(rnd(c*5+i)-.5)*60;
-        const x=p[0]+vx*age,y=p[1]+vy*age-30*age*age,a=Math.sin(Math.PI*age/L)*(.55+.45*Math.sin(t*40+i))*(1-clamp((t-end+.2)/.3));
-        if(a>0)drawP(x,y,vx,vy-60*age,4+rnd(i)*4,a,false);}}
-    const ba=t-burnAt;if(ba>0&&ba<burnDur+.9){
-      for(let i=0;i<170;i++){const k=i%4;if(births[k]==null)continue;const P=pts[k];if(!P.length)continue;const t0=rnd(i*1.7)*burnDur*.85,age=ba-t0,L=.55+rnd(i*2.3)*.75;if(age<0||age>L)continue;
-        const p=P[Math.floor(rnd(i*5.1)*P.length)],ang=-Math.PI/2+(rnd(i*3.3)-.5)*2.2,sp=180+rnd(i*7.7)*420,dr=Math.exp(-age*2.2);
-        const vx=Math.cos(ang)*sp*dr,vy=Math.sin(ang)*sp*dr-90;const x=p[0]+Math.cos(ang)*sp*(1-dr)/2.2,y=p[1]+Math.sin(ang)*sp*(1-dr)/2.2-90*age-40*age*age;
-        const a=(1-age/L)*(.6+.4*Math.sin(t*55+i));drawP(x,y,vx,vy,3+rnd(i*9.1)*5,a,rnd(i*4.4)>.7);}}
-    ctx.restore();}
+  function sparks(ctx, { t, births, burnAt, burnDur }, map, sc) {
+    ctx.save();
+    ctx.globalCompositeOperation = "lighter";
+    ctx.lineCap = "round";
+    const drawP = (x, y, vx, vy, size, a, hot) => {
+      const [sx, sy] = map(x, y),
+        L = Math.min(28, Math.hypot(vx, vy) * 0.035);
+      const k = L / Math.max(1e-3, Math.hypot(vx, vy));
+      ctx.strokeStyle = hot
+        ? `rgba(255,245,215,${a})`
+        : `rgba(255,${170 + Math.round(60 * a)},90,${a})`;
+      ctx.lineWidth = Math.max(0.8, size * sc);
+      ctx.shadowColor = "rgba(255,110,30,.9)";
+      ctx.shadowBlur = 6 * sc * 4;
+      ctx.beginPath();
+      ctx.moveTo(sx, sy);
+      ctx.lineTo(sx - vx * k * sc, sy - vy * k * sc);
+      ctx.stroke();
+    };
+    const end = burnAt + burnDur;
+    for (let k = 0; k < 4; k++) {
+      const b = births[k];
+      if (b == null || t < b) continue;
+      const P = pts[k];
+      if (!P.length) continue;
+      for (let i = 0; i < 16; i++) {
+        const L = 0.7 + rnd(i + k * 50) * 0.7,
+          ph = rnd(i * 3 + k * 7) * L,
+          c = Math.floor((t - b + ph) / L),
+          age = t - b + ph - c * L;
+        const born = t - age;
+        if (born < b || born > end) continue;
+        const p = P[Math.floor(rnd(c * 13 + i * 7 + k) * P.length)],
+          vy = -(140 + rnd(c + i) * 200),
+          vx = Math.sin(age * 5 + i) * 40 + (rnd(c * 5 + i) - 0.5) * 60;
+        const x = p[0] + vx * age,
+          y = p[1] + vy * age - 30 * age * age,
+          a =
+            Math.sin((Math.PI * age) / L) *
+            (0.55 + 0.45 * Math.sin(t * 40 + i)) *
+            (1 - clamp((t - end + 0.2) / 0.3));
+        if (a > 0) drawP(x, y, vx, vy - 60 * age, 4 + rnd(i) * 4, a, false);
+      }
+    }
+    const ba = t - burnAt;
+    if (ba > 0 && ba < burnDur + 0.9) {
+      for (let i = 0; i < 170; i++) {
+        const k = i % 4;
+        if (births[k] == null) continue;
+        const P = pts[k];
+        if (!P.length) continue;
+        const t0 = rnd(i * 1.7) * burnDur * 0.85,
+          age = ba - t0,
+          L = 0.55 + rnd(i * 2.3) * 0.75;
+        if (age < 0 || age > L) continue;
+        const p = P[Math.floor(rnd(i * 5.1) * P.length)],
+          ang = -Math.PI / 2 + (rnd(i * 3.3) - 0.5) * 2.2,
+          sp = 180 + rnd(i * 7.7) * 420,
+          dr = Math.exp(-age * 2.2);
+        const vx = Math.cos(ang) * sp * dr,
+          vy = Math.sin(ang) * sp * dr - 90;
+        const x = p[0] + (Math.cos(ang) * sp * (1 - dr)) / 2.2,
+          y =
+            p[1] +
+            (Math.sin(ang) * sp * (1 - dr)) / 2.2 -
+            90 * age -
+            40 * age * age;
+        const a = (1 - age / L) * (0.6 + 0.4 * Math.sin(t * 55 + i));
+        drawP(x, y, vx, vy, 3 + rnd(i * 9.1) * 5, a, rnd(i * 4.4) > 0.7);
+      }
+    }
+    ctx.restore();
+  }
 
-  let cw=0,ch=0;
-  return{
+  let cw = 0,
+    ch = 0;
+  return {
     // births[k]：第k笔出笔开始时刻（null=未出）；reveal：出笔用时
-    draw(ctx,{t,births,burnAt,burnDur=1,x,y,scale,reveal=.07}){
-      if(births.every(b=>b==null||t<b))return;if(t>burnAt+burnDur+1)return;
-      const outW=GW*scale,outH=GH*scale,q=Math.min(1,900/Math.max(outW,outH));
-      const w=Math.max(8,Math.round(outW*q)),h=Math.max(8,Math.round(outH*q));
-      if(w!==cw||h!==ch){glc.width=cw=w;glc.height=ch=h;}
-      gl.viewport(0,0,w,h);gl.useProgram(prog);
-      births.forEach((b,k)=>{const g=b==null||t<b?[-1,0]:[clamp((t-b)/reveal,0,1.2),Math.exp(-(t-b-reveal)*6)*(t-b>reveal?1:(t-b)/reveal)];gl.uniform2f(U('g'+k),g[0],g[1]);});
-      gl.uniform1f(U('uT'),t);gl.uniform1f(U('uBurn'),t<burnAt?-1:(t-burnAt)/burnDur);gl.uniform1f(U('uA'),1);
-      gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT);gl.drawArrays(gl.TRIANGLE_STRIP,0,4);
-      ctx.drawImage(glc,x+X0*scale,y+Y0*scale,outW,outH);
-      sparks(ctx,{t,births,burnAt,burnDur},(gx,gy)=>[x+gx*scale,y+gy*scale],scale);
-    }};
+    draw(ctx, { t, births, burnAt, burnDur = 1, x, y, scale, reveal = 0.07 }) {
+      if (births.every((b) => b == null || t < b)) return;
+      if (t > burnAt + burnDur + 1) return;
+      const outW = GW * scale,
+        outH = GH * scale,
+        q = Math.min(1, 900 / Math.max(outW, outH));
+      const w = Math.max(8, Math.round(outW * q)),
+        h = Math.max(8, Math.round(outH * q));
+      if (w !== cw || h !== ch) {
+        glc.width = cw = w;
+        glc.height = ch = h;
+      }
+      gl.viewport(0, 0, w, h);
+      gl.useProgram(prog);
+      births.forEach((b, k) => {
+        const g =
+          b == null || t < b
+            ? [-1, 0]
+            : [
+                clamp((t - b) / reveal, 0, 1.2),
+                Math.exp(-(t - b - reveal) * 6) *
+                  (t - b > reveal ? 1 : (t - b) / reveal),
+              ];
+        gl.uniform2f(U("g" + k), g[0], g[1]);
+      });
+      gl.uniform1f(U("uT"), t);
+      gl.uniform1f(U("uBurn"), t < burnAt ? -1 : (t - burnAt) / burnDur);
+      gl.uniform1f(U("uA"), 1);
+      gl.clearColor(0, 0, 0, 0);
+      gl.clear(gl.COLOR_BUFFER_BIT);
+      gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+      ctx.drawImage(glc, x + X0 * scale, y + Y0 * scale, outW, outH);
+      sparks(
+        ctx,
+        { t, births, burnAt, burnDur },
+        (gx, gy) => [x + gx * scale, y + gy * scale],
+        scale,
+      );
+    },
+  };
 }

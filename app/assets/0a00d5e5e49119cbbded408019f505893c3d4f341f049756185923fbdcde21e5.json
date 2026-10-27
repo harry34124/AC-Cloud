@@ -1,1 +1,52 @@
-{"version":1,"presets":{"normal":{"ParamEyeLOpen":1,"ParamEyeROpen":1,"ParamEyeBallX":0,"ParamEyeBallY":0,"ParamBrowLY":0,"ParamBrowRY":0,"ParamMouthForm":0,"ParamMouthOpenY":0},"angry":{"ParamEyeLOpen":0.77,"ParamEyeROpen":0.77,"ParamEyeBallX":0.16,"ParamEyeBallY":-0.05,"ParamBrowLY":-0.5,"ParamBrowRY":-0.5,"ParamMouthForm":-0.95,"ParamMouthOpenY":0},"sleepy":{"ParamEyeLOpen":0,"ParamEyeROpen":0,"ParamEyeBallX":0,"ParamEyeBallY":0,"ParamBrowLY":-0.15,"ParamBrowRY":-0.15,"ParamMouthForm":0,"ParamMouthOpenY":0},"mourning":{"ParamEyeLOpen":0.55,"ParamEyeROpen":0.55,"ParamEyeBallX":-0.12,"ParamEyeBallY":-0.8,"ParamBrowLY":0,"ParamBrowRY":0,"ParamMouthForm":0,"ParamMouthOpenY":0}},"sources":{"normal":"tools/审阅/共用动作/curves.json defaults","angry":"04_项目记录/工作/si01-picked-up-w4/emotion.mjs: full anger, no alert/bored; excludes mesh rotation and effects","sleepy":"tools/审阅/共用动作/curves.json A14 @8.25s","mourning":"04_项目记录/工作/a06-shoulder-joints-w16/A06曲线.json @6s"},"status":"Extracted face poses; combinations not user-approved. Original motions unchanged."}
+{
+    "version": 1,
+    "presets": {
+        "normal": {
+            "ParamEyeLOpen": 1,
+            "ParamEyeROpen": 1,
+            "ParamEyeBallX": 0,
+            "ParamEyeBallY": 0,
+            "ParamBrowLY": 0,
+            "ParamBrowRY": 0,
+            "ParamMouthForm": 0,
+            "ParamMouthOpenY": 0
+        },
+        "angry": {
+            "ParamEyeLOpen": 0.77,
+            "ParamEyeROpen": 0.77,
+            "ParamEyeBallX": 0.16,
+            "ParamEyeBallY": -0.05,
+            "ParamBrowLY": -0.5,
+            "ParamBrowRY": -0.5,
+            "ParamMouthForm": -0.95,
+            "ParamMouthOpenY": 0
+        },
+        "sleepy": {
+            "ParamEyeLOpen": 0,
+            "ParamEyeROpen": 0,
+            "ParamEyeBallX": 0,
+            "ParamEyeBallY": 0,
+            "ParamBrowLY": -0.15,
+            "ParamBrowRY": -0.15,
+            "ParamMouthForm": 0,
+            "ParamMouthOpenY": 0
+        },
+        "mourning": {
+            "ParamEyeLOpen": 0.55,
+            "ParamEyeROpen": 0.55,
+            "ParamEyeBallX": -0.12,
+            "ParamEyeBallY": -0.8,
+            "ParamBrowLY": 0,
+            "ParamBrowRY": 0,
+            "ParamMouthForm": 0,
+            "ParamMouthOpenY": 0
+        }
+    },
+    "sources": {
+        "normal": "tools/审阅/共用动作/curves.json defaults",
+        "angry": "04_项目记录/工作/si01-picked-up-w4/emotion.mjs: full anger, no alert/bored; excludes mesh rotation and effects",
+        "sleepy": "tools/审阅/共用动作/curves.json A14 @8.25s",
+        "mourning": "04_项目记录/工作/a06-shoulder-joints-w16/A06曲线.json @6s"
+    },
+    "status": "Extracted face poses; combinations not user-approved. Original motions unchanged."
+}

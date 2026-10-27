@@ -1,1 +1,2507 @@
-{"K1":{"scale":0.3684,"foot":[240,1180],"swing":{"meshes":["ArtMeshHandwear","ArtMeshObjects"],"pivot":[502,560],"r0":40,"r1":170},"blade":{"pommel":[95,345],"tip":[1200,60]},"contactAlong":0.6,"keys":{"wind":-26,"hit":-10,"follow":3},"body":{"coil":{"ParamBodyAngleZ":-6,"ParamBodyAngleX":-5,"ParamAngleY":-8},"release":{"ParamBodyAngleZ":6,"ParamBodyAngleX":4,"ParamAngleY":10}},"flutter":[{"mesh":"ArtMeshBottomwear","anchor":[470,790],"dir":[0.55,1],"len":380,"amp":7,"wave":300,"freq":2.2}],"layers":[{"id":"layer:footwear-l","name":"footwear-l","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/70c08fb52deef7264f4882ab9d7e0f83bd8e520b354fd65ef3a36a7a6d726d24/resource.png","bounds":[743,1053,919,1194]},{"id":"layer:footwear-r","name":"footwear-r","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/eacf908596dd81db8b945fda4eb5e1d47576778a1ec9f80a8d76273383842303/resource.png","bounds":[73,1042,281,1177]},{"id":"layer:back hair","name":"back hair","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/726f95672132a7d89297bd356c63800678bc4a19286d6645f9b40aa79d4013eb/resource.png","bounds":[488,271,710,533]},{"id":"layer:neck","name":"neck","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/48bf9184435127f0883d441ca678b1ff1f53e9fecd04feb3c43178432cdd4c15/resource.png","bounds":[518,482,561,526]},{"id":"layer:ears","name":"ears","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/37a369a790929bade01cd18f5e721645542fc6879f0a20353cac04e887d1a015/resource.png","bounds":[566,452,612,500]},{"id":"layer:face","name":"face","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/7969a2fbc09188a5f87ddac0f131b2777c0cee18538a168964f8130950d39cd9/resource.png","bounds":[447,332,618,515]},{"id":"layer:mouth","name":"mouth","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/24efcc7b284f0bb1a53f888b6ca8578bd4f210c31747db5ea7d9e7b2f2809301/resource.png","bounds":[475,470,493,481]},{"id":"layer:legwear","name":"legwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/1cb6d361a31f1d6310039db4967ef4d21c58be16770060a907e7d96a8500f500/resource.png","bounds":[157,689,908,1127]},{"id":"layer:bottomwear","name":"bottomwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/451db8f9f9a6e1f10a2d89bcf427c45a8d181cd86f6dc7c21a15b6234f19911a/resource.png","bounds":[410,785,896,1082]},{"id":"layer:nose","name":"nose","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/64653f15c2245926f1d66e522704bd98f0daf8025629eb0b532891aa6f2b39f1/resource.png","bounds":[472,438,489,460]},{"id":"layer:handwear","name":"handwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/54781fed4397bc00e930337f8d8bb04c871cf6ff51e7f2cc4d1c65824018c98b/resource.png","bounds":[144,268,534,623]},{"id":"layer:topwear","name":"topwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/c2bd5303422476d856b59dfa62eacc00917eade5981ad53d88d9eef8a96391e4/resource.png","bounds":[392,499,654,733]},{"id":"layer:eyewhite","name":"eyewhite","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/61264f254d3255a7a24504b4c64834247d53c2bc6426d2394644a3c71a2af6c2/resource.png","bounds":[471,423,548,452]},{"id":"layer:irides","name":"irides","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/1e688b7993801a4c946ab64aaf40a47e06201bce20665c0a3446a3baafdedf13/resource.png","bounds":[473,422,536,452]},{"id":"layer:eyelash","name":"eyelash","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/9f35ef485ad549dbf321d28b7ee83e816d03113b8c4c7233030ed1d853c8a200/resource.png","bounds":[467,420,555,448]},{"id":"layer:eyebrow","name":"eyebrow","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/678721333fa52ffd00f9ab2916460adfc4da8a5f2300add62443615633278d40/resource.png","bounds":[479,408,548,428]},{"id":"layer:front hair","name":"front hair","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/058c26a0adfc5c7d00c375affdba2ce9985a260dfa280c6f2fc3326b1b9089a2/resource.png","bounds":[407,271,711,537]}],"psd":"/04_项目记录/工作/a58-a59-strike-animatic-w1/A59姿态工单/K1_地面上挑/K1_组件修正w2.psd","sourcePSDHash":"cc6ea9b0458e16628da1316f5080aaa7f69e54cc421555a5ae264aa124d4372e","grip":[240,326],"upperPivot":[495,727],"joints":{"hip":[495,727],"neck":[540,510],"head":[515,420],"right":[502,560],"left":[590,550],"leftHand":[400,400],"feet":[570,1100]}},"K2":{"scale":0.4,"swing":{"meshes":["ArtMeshHandwear","ArtMeshObjects"],"pivot":[608,490],"r0":30,"r1":130,"exclude":{"xMin":680}},"blade":{"pommel":[525,600],"tip":[8,1000]},"contactAlong":0.55,"hide":["ArtMeshObjects"],"keys":{"wind":22,"hit":0,"follow":-14},"body":{"coil":{"ParamBodyAngleZ":7,"ParamBodyAngleX":6,"ParamAngleZ":5},"release":{"ParamBodyAngleZ":-7,"ParamBodyAngleX":-6,"ParamAngleZ":-4}},"flutter":[{"mesh":"ArtMeshBottomwear","anchor":[700,560],"dir":[1,0.25],"len":520,"amp":7,"wave":280,"freq":3.0}],"layers":[{"id":"layer:footwear","name":"footwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/b55bf54d2b2cb7f86604b2449c1cc733cc40023455dcbdd67bd48d446cf4a7da/resource.png","bounds":[727,692,1228,1013]},{"id":"layer:legwear","name":"legwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/01b5a6ba353c591f9997306e722e7bf05e199cf5c3184864a02cfc6689368fac/resource.png","bounds":[562,574,1172,933]},{"id":"layer:waist","name":"waist","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/7a329b26ed51d6067090979a9011fd741396ddf282f9969a6589aefd0c8bffeb/resource.png","bounds":[664,512,830,640]},{"id":"layer:bottomwear","name":"bottomwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/9e92f1d4d88d3a69a16b58b81469e5103bb55338aef2e508d02f48913f13b985/resource.png","bounds":[751,514,1265,814]},{"id":"layer:topwear","name":"topwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/7111120f180d7eb116ebdf2e1a332b0af270e0a5caf878d6dacf01550a8563ce/resource.png","bounds":[608,387,819,592]},{"id":"layer:neck","name":"neck","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/200a2496d7d6c2bebac35f63c6204405285092e12ae74603914d3d2212b9b1d7/resource.png","bounds":[634,408,688,458]},{"id":"layer:back hair","name":"back hair","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/83e3f04b88da02b927713f35c6ea68c8c712b92601cd4b75837cc7b6681cf957/resource.png","bounds":[530,227,777,479]},{"id":"layer:handwear-r","name":"handwear-r","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/1c6f00972d841bd6155021d6ae513b3ecd49ec76734df411f893d21416a69b09/resource.png","bounds":[404,456,640,691]},{"id":"layer:handwear-l","name":"handwear-l","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/e4b585f6176688361aacd794a88ba6cda9acfd291b3cfb351a91cd29670b4a2f/resource.png","bounds":[737,314,1192,495]},{"id":"layer:ears","name":"ears","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/9530eb7ba44703a6b1bb17bcaa270faa7bee49ffe3a78628ab63c25e002d6f01/resource.png","bounds":[663,390,694,437]},{"id":"layer:face","name":"face","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/7a08e4de84c162acf6f6286d315207d4225520f09d307d7c6bb2e2e2edf4be3a/resource.png","bounds":[550,353,667,482]},{"id":"layer:eyewhite","name":"eyewhite","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/197b16a08c0f65dfb44cd99b7f230f6ddb9f33eff7a73786e589da4a6aa548ac/resource.png","bounds":[563,412,631,435]},{"id":"layer:irides","name":"irides","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/12a6504f97f8d21870c5a896e29a3926ff0b5000f0033e567a6b16948c393936/resource.png","bounds":[563,411,619,435]},{"id":"layer:eyelash","name":"eyelash","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/bd4c07dfb8ad69ee4fbbf36c02539b33b3cbd79c074d651b078c9eab27b70006/resource.png","bounds":[556,410,637,424]},{"id":"layer:eyebrow","name":"eyebrow","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/ef542f07c254d5adf3de1b25a047de4290dc853e5906f99afccc0ad5512f83d9/resource.png","bounds":[555,397,619,422]},{"id":"layer:front hair","name":"front hair","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/3d8c9c8a75fecf43179df5461c4df39b3708d5df803ea5fcab63f0d0835dabe0/resource.png","bounds":[493,227,773,474]}],"psd":"/04_项目记录/工作/a58-a59-strike-animatic-w1/A59姿态工单/K2_空中正手冲斩/K2_组件修正w2.psd","sourcePSDHash":"22171c5588a602594a09c58fd9b04b7d7151001e9bf229e3ff9f5060796086b7","grip":[448,644],"joints":{"hip":[735,588],"neck":[660,445],"head":[620,397],"right":[608,490],"left":[780,420],"leftHand":[1090,382],"feet":[980,860]}},"K3":{"scale":0.2909,"swing":{"meshes":["ArtMeshHandwear","ArtMeshObjects"],"pivot":[315,482],"r0":30,"r1":140,"exclude":{"yMin":530}},"blade":{"pommel":[495,258],"tip":[1245,112]},"contactAlong":0.35,"hide":["ArtMeshObjects"],"keys":{"wind":-20,"hit":0,"follow":14},"body":{"coil":{"ParamBodyAngleZ":-6,"ParamBodyAngleX":-6,"ParamAngleZ":-4},"release":{"ParamBodyAngleZ":7,"ParamBodyAngleX":6,"ParamAngleZ":4}},"flutter":[{"mesh":"ArtMeshBottomwear","anchor":[520,640],"dir":[-1,0.1],"len":520,"amp":7,"wave":260,"freq":3.0}],"layers":[{"id":"layer:footwear","name":"footwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/6b4b0dd3771ccbb6a72e0a17ee6742e2b4b8a63d56453009175591be4d121891/resource.png","bounds":[358,742,959,1138]},{"id":"layer:waist","name":"waist","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/c786180540606746a5e9b00895b4435c7f6a9e1682af67f7e401e52d68690353/resource.png","bounds":[239,607,530,710]},{"id":"layer:bottomwear","name":"bottomwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/dc5f4dc57ba1acc40a140197eb57108defb6e900b0a035363f4e937370ba808e/resource.png","bounds":[358,623,980,926]},{"id":"layer:legwear","name":"legwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/61d497af67e06435fb1bbdf027a1bc3dfd8b65fa288bb772fc198dac01601753/resource.png","bounds":[203,640,877,1043]},{"id":"layer:back hair","name":"back hair","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/73e3c2081b40b6d3d066ea045a9272197533ca1a6ab189534033d338b96a8eaf/resource.png","bounds":[210,207,536,475]},{"id":"layer:topwear","name":"topwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/c3b1d146681917310cc0cf18b03ac30bbd3d48bb39c67dba386c33f596ea60a5/resource.png","bounds":[296,403,552,639]},{"id":"layer:ears","name":"ears","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/51e282349bcf0ed7b256354216aa32befd23c8805b941930a7a4b8f050c6b6b9/resource.png","bounds":[404,334,442,394]},{"id":"layer:face","name":"face","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/9316f06bab96f3f217716acbaa9be5f1a1df663482e376773cdb3c1bfb52db35/resource.png","bounds":[244,264,405,460]},{"id":"layer:mouth","name":"mouth","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/70250aa5647db95330aeb62b1a897db01542ecd3b4d359f38f52d2140dca6b34/resource.png","bounds":[308,431,326,445]},{"id":"layer:eyewhite","name":"eyewhite","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/39268da72aa7d011addf2dd787bde0c99f0bd4c9a72f7890e63efccac68e0839/resource.png","bounds":[266,357,354,405]},{"id":"layer:irides","name":"irides","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/adeff7f331e4a48b4449c16c7d7fa43767ffc473ac8291337f737381bb61e23b/resource.png","bounds":[267,357,341,407]},{"id":"layer:eyelash","name":"eyelash","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/659e8b12fe4933903404846c57e5e2fafa04660a991a5cc27314ce2203372b90/resource.png","bounds":[259,354,360,397]},{"id":"layer:eyebrow","name":"eyebrow","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/9351c1e78bd48929d82f4e392005e2c14353763fbc7908398aec44176f8309de/resource.png","bounds":[251,332,340,384]},{"id":"layer:nose","name":"nose","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/729d0c182b7bf36553a219a26a57a919292eb78ec6a2063b32aea8486fd0acb8/resource.png","bounds":[284,409,298,427]},{"id":"layer:front hair","name":"front hair","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/663ec2d56346afbc99f2cd52f06c678a50aa429e102e1275532fbdef5ea2db32/resource.png","bounds":[145,114,530,441]},{"id":"layer:shoulder-l","name":"shoulder-l","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/c04d339ef59b359833a499778d538b06f2d3b7ca5c19a5dbd64ebb4af40383b2/resource.png","bounds":[279,315,744,530],"group":"torso"},{"id":"layer:handwear-r","name":"handwear-r","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/cc6b2aae347df37e888a1c3c2198dd595662135129c6c83a2dde102665e63e95/resource.png","bounds":[279,315,744,565]},{"id":"layer:handwear-l","name":"handwear-l","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/f9e2f0e650c1154c688be8932d624692d30eb4d0ddc97bc050acd62500639da3/resource.png","bounds":[295,530,628,672]}],"psd":"/04_项目记录/工作/a59-component-motion-w14/服装组件/K3_服装修复.psd","sourcePSDHash":"0db01e83cbe076e0bef606c1592a6903072389f4dba03932e5c414d24a8c930c","grip":[690,347],"joints":{"hip":[431,645],"neck":[403,439],"head":[335,347],"right":[315,482],"left":[595,530],"leftHand":[370,572],"feet":[650,1000]}},"K4":{"scale":0.4828,"swing":{"meshes":["ArtMeshHandwear","ArtMeshObjects"],"pivot":[682,366],"r0":30,"r1":150},"blade":{"pommel":[700,600],"tip":[240,1255]},"contactAlong":0.5,"keys":{"wind":24,"hit":0,"follow":-15},"body":{"coil":{"ParamBodyAngleZ":-6,"ParamBodyAngleY":8,"ParamAngleY":10},"release":{"ParamBodyAngleZ":6,"ParamBodyAngleY":-8,"ParamAngleY":-12}},"flutter":[{"mesh":"ArtMeshBottomwear","anchor":[760,420],"dir":[0.25,-1],"len":420,"amp":7,"wave":240,"freq":2.6}],"layers":[{"id":"layer:bottomwear","name":"bottomwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/90d144813611102f7b9a6e646eb5705768ee18c80961475fded3bf684a18b8e0/resource.png","bounds":[635,11,1060,677]},{"id":"layer:topwear","name":"topwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/4bfa5c053e9236fc25a47545e6c1954a756175170c8b137e5ea3d75c16d1ab79/resource.png","bounds":[640,270,806,483]},{"id":"layer:legwear","name":"legwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/e599afa3982da859491d27979e0576ea0f5cff12a139630a5e15e64377d165dc/resource.png","bounds":[589,438,1031,925]},{"id":"layer:footwear","name":"footwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/43f1c3c46a93ec5155746352bdd068b0f3177544d694916d8fe8fd18c0d47c89/resource.png","bounds":[714,551,825,704]},{"id":"layer:neck","name":"neck","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/37a1546f67bb164132e7f1db10b97a50585e8261ba88c87372f2a4be3ee14016/resource.png","bounds":[658,271,715,324]},{"id":"layer:back hair","name":"back hair","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/824682065b43505b8398e25f3843ee21c8732c157336a1b13091e6e1fe739567/resource.png","bounds":[573,188,724,320]},{"id":"layer:ears","name":"ears","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/cb954285f33b9c467543e164ab8fc5639de913afcdbd2abfc9abc323e4086328/resource.png","bounds":[689,258,713,301]},{"id":"layer:face","name":"face","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/4cf81215081c1a50c943024c8300ba83c61a1098aa5cbae992ccad8d048cc8a4/resource.png","bounds":[579,230,695,351]},{"id":"layer:nose","name":"nose","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/5e4057cda0cf2c187f2ca7157a8659e0e3300a2bdabb4520b5264351d7ef2b92/resource.png","bounds":[620,316,632,338]},{"id":"layer:mouth","name":"mouth","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/dd6f3c0cb4151abdcba370454dc4b1f042dd460fa299d5e344c9939b0f1f3bda/resource.png","bounds":[639,334,657,344]},{"id":"layer:eyewhite","name":"eyewhite","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/e40b134c34acbd6d5a261e68bfbe4f1c79d391416e1a2ca4e2e455f5721ade12/resource.png","bounds":[602,291,665,320]},{"id":"layer:irides","name":"irides","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/5f082529d629b61f180e39a260b6b62f1564d3b9e72e38393ae45f1b49d22597/resource.png","bounds":[603,294,658,322]},{"id":"layer:eyelash","name":"eyelash","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/c2c448c523cd1e2b1b28f0afa8eb4fb4d15fefb37a605821409cf7abd4dd4c87/resource.png","bounds":[597,289,669,322]},{"id":"layer:eyebrow","name":"eyebrow","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/58ef16d48b6c18d2d003b991e7385c7913f96f23351997c9e46ae664dcac8a81/resource.png","bounds":[598,280,653,311]},{"id":"layer:front hair","name":"front hair","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/e3f6b06f1da9441fcaccb58b2be0a3abc08446520b71cc802adcf8eab9531e1c/resource.png","bounds":[522,119,754,366]},{"id":"layer:handwear","name":"handwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/619912847820cb65dc8c2e5ca19958e0ab9507fd51a425c1a0a9db0e082bb8dd/resource.png","bounds":[608,249,852,620]}],"psd":"/04_项目记录/工作/a58-a59-strike-animatic-w1/A59姿态工单/K4_高位下劈/K4_组件修正w2.psd","sourcePSDHash":"f0b83e1a72c315a0309525b470a92cac2460a550da2a00c1dee1147d65b8355d","grip":[708,562],"upperPivot":[766,475],"joints":{"hip":[766,475],"neck":[687,318],"head":[645,280],"right":[650,367],"left":[758,335],"leftHand":[752,545],"feet":[823,746]}},"K5":{"scale":0.4275,"foot":[520,1028],"swing":{"pivot":[636,520]},"blade":{"pommel":[590,680],"tip":[8,1028]},"contactAlong":0.5,"keys":{"wind":7,"hit":2,"follow":0},"body":{"coil":{"ParamBodyAngleY":-8,"ParamAngleY":-6},"release":{"ParamBodyAngleY":0,"ParamAngleY":6}},"flutter":[{"mesh":"ArtMeshBottomwear","anchor":[800,620],"dir":[1,0.1],"len":480,"amp":7,"wave":260,"freq":2.4}],"layers":[{"id":"layer:back hair","name":"back hair","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/76067153e7637fbe30eb4edf724c233d5bb197bd6f71ce5a1f04846e94bc903f/resource.png","bounds":[533,230,801,521]},{"id":"layer:tail","name":"tail","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/6d91c56020caaa2e1cd14c84d434056e624a789202592f67b460b4dea16cf834/resource.png","bounds":[759,604,1111,843]},{"id":"layer:bottomwear","name":"bottomwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/f5586fc9398ab6914cd3f5e27152801e0f3d4ed50d2edb22546046f71634bc5c/resource.png","bounds":[500,578,1260,963],"group":"legs","materialNote":"Combined front trouser and cloth: no whole-layer cloth warp; separate tail supplies cloth follow-through."},{"id":"layer:footwear","name":"footwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/c3b3e6ec076d49b42aa264a95470af0a4d6ab4134dc9e00529ecbc1b094495ff/resource.png","bounds":[406,824,1231,1028]},{"id":"layer:handwear-r","name":"handwear-r","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/6f1ead268a7fee11bf13aef8357d82b10ede842044f5a1bf7d8def5a0f8fb69a/resource.png","bounds":[460,406,1184,761],"sourceLayer":"handwear","clip":[0,0,720,1280]},{"id":"layer:handwear-l","name":"handwear-l","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/6ae1166a8a1d86bf8c4702b3b79ae4838269a834b93aac2587dbf2e45e33a683/resource.png","bounds":[460,406,1184,761],"sourceLayer":"handwear","clip":[720,0,560,1280]},{"id":"layer:legwear","name":"legwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/e499bfef894096eecc4d78be06361048e6d74af9df557b285be357759ada76d5/resource.png","bounds":[1013,762,1194,927]},{"id":"layer:neck","name":"neck","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/b69cbe09cf1869518766c3a78ddc47e061285de85668324659c1a55531c248b8/resource.png","bounds":[637,421,725,500]},{"id":"layer:topwear","name":"topwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/89388f0d315e0b4a01022ee51815762500859a926367fe781db261d507fbd285/resource.png","bounds":[628,422,885,642]},{"id":"layer:ears","name":"ears","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/faaa41db8e673e6be9e1cca8eaeaf8dfbb56ef776d6ef575a03e2641eded7d5b/resource.png","bounds":[690,402,724,451]},{"id":"layer:face","name":"face","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/896f048dcae99581b27a9778e1f81d7bbc71a37dce5a687211d4ca6b00fcce27/resource.png","bounds":[589,355,701,492]},{"id":"layer:nose","name":"nose","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/4b74b6bd8692939a63d0c1afdbaccd9b737ff912aff000d392729f2e46550814/resource.png","bounds":[600,437,618,459]},{"id":"layer:mouth","name":"mouth","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/4fea12520e566b7eda61f62d1e1fa169a35f1b42f20675ce9f6bff27e33b4c5f/resource.png","bounds":[616,462,635,467]},{"id":"layer:eyebrow","name":"eyebrow","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/a19099b2f20b4ab2cb2f4276fde64055b6c7f496e89fb52c9154c8721147f0d8/resource.png","bounds":[588,389,657,424]},{"id":"layer:eyewhite","name":"eyewhite","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/25c2e086ef5244e00c3ea816ca2cfdd77f42567f4a48752066eda9f08b4ebde2/resource.png","bounds":[596,406,662,441]},{"id":"layer:irides","name":"irides","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/f4a627f98785cfd4705ea09edbbb39b61344f1fb5817fdb4c88d3e32ddd4398a/resource.png","bounds":[596,406,650,442]},{"id":"layer:eyelash","name":"eyelash","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/f93b078f3aa6e0511e2a124ef556cd7e3d8179d9dcf7c91d5ebbd8417a63b91e/resource.png","bounds":[593,401,665,442]},{"id":"layer:front hair","name":"front hair","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/e5cf781992f0d7da087a7526e3cf5302757f64da39dfe39196c637a9251f8cec/resource.png","bounds":[533,229,795,487]}],"psd":"/04_项目记录/工作/a59-finale-w13/K5_new.psd","sourcePSDHash":"6613cf4c5061b1bdd1e69e3797f1f642b36b35aacbc39926e4ecb49aa58fd3e9","grip":[500,720],"joints":{"hip":[780,623],"neck":[684,479],"head":[649,418],"right":[636,520],"left":[812,465],"leftHand":[1125,490],"feet":[821,1004]}},"K6":{"scale":0.5,"foot":[654,1238],"swing":{"pivot":[568,757]},"blade":{"pommel":[429,519],"tip":[607,17]},"contactAlong":0.6,"keys":{"wind":0,"hit":0,"follow":0},"grip":[429,519],"layers":[{"id":"layer:footwear-r","name":"footwear-r","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/423e965f3340867eee50bf6f729801015ca22122cc8ebf585c52c7b9bdec9267/resource.png","bounds":[320,1083,526,1238]},{"id":"layer:footwear-l","name":"footwear-l","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/6fc391f3b12b0dbcb7040221177492e1d5465e5659449bcd2f3f75be44cce0bd/resource.png","bounds":[863,1091,1008,1239]},{"id":"layer:back hair","name":"back hair","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/7ac57bbfc2f63075b2091c8122548ea8b16fadcb986e02967c53597be9f68813/resource.png","bounds":[563,544,788,769]},{"id":"layer:bottomwear","name":"bottomwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/e935c685587ba0970f66094aa92c1f39608b068b41969def3a03508c16327f1c/resource.png","bounds":[540,851,1010,1163]},{"id":"layer:legwear","name":"legwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/d8165e448f95db7655aa8fed25f19da250f138dc3e7b71106ce220c4b8dc7107/resource.png","bounds":[389,893,953,1179]},{"id":"layer:neck","name":"neck","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/a2aab2f63d7bd36a1c3993a2dae556b64f76170c99129e14ff00fb637f707b84/resource.png","bounds":[620,702,667,758]},{"id":"layer:topwear","name":"topwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/b414056eec23e5d609f382bd28516765cdc9eb407f6a58b6defe1149cadf762a/resource.png","bounds":[550,700,707,893]},{"id":"layer:handwear-r","name":"handwear-r","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/dbc076619f6701322cdbac9ed99942a22c61d71c245d114fc4b494988f4d9951/resource.png","bounds":[397,493,999,966],"sourceLayer":"handwear","clip":[0,0,638,1280]},{"id":"layer:handwear-l","name":"handwear-l","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/90d97bfb981c3e375b244fc975e0601017c14904af12cde03091ffef8e976901/resource.png","bounds":[397,493,999,966],"sourceLayer":"handwear","clip":[638,0,642,1280]},{"id":"layer:eyebrow","name":"eyebrow","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/1f4a625a116248b7b39b7863b865a0147c28ab16dc3ace64df0ccda9f78fb1c6/resource.png","bounds":[607,638,672,653]},{"id":"layer:ears","name":"ears","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/d193f4660fffc8d6a93f57c7d6a2d54e3c5d3550154dd97f59faa5bb79919089/resource.png","bounds":[667,684,709,718]},{"id":"layer:face","name":"face","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/b105a350efa4690c1bfa3e7f0c2a4b6b238be6554bc2a305bd1105a7da9e6c42/resource.png","bounds":[587,585,731,719]},{"id":"layer:mouth","name":"mouth","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/386f96ad98f32147365b909344df26b370b248d9e2410c1c616f53b7bef21cf2/resource.png","bounds":[602,683,617,694]},{"id":"layer:nose","name":"nose","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/71da532005c87af688ddcf13fc3c936968ec854b43ce0e1e6c72dc807e13db36/resource.png","bounds":[600,657,617,678]},{"id":"layer:eyelash","name":"eyelash","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/223ec0296c70141a5d0d902d80fe48d1e927dcbdb67c182ea37047d6e8cba762/resource.png","bounds":[602,645,667,675]},{"id":"layer:eyewhite","name":"eyewhite","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/1a897c29f2aafa0e2a33ce5051b76f7c2f77358230e9e07f16c5693e023ff415/resource.png","bounds":[603,648,662,673]},{"id":"layer:irides","name":"irides","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/816f70d449812829d4f28dade67ad7a4d360514d1c08d2691d179d2f66f01bbc/resource.png","bounds":[603,649,652,672]},{"id":"layer:front hair","name":"front hair","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/678dc8e215d5aa9172fc842441fa4cc0be7f8c15db8b49206f4fda08a82034c7/resource.png","bounds":[564,544,788,746]}],"psd":"/04_项目记录/工作/a59-component-motion-w14/K6_补回原画靴子.psd","note":"GPT w3抡剑脱手；objects(剑)层不画，由动画画飞出的剑","joints":{"hip":[638,891],"neck":[643,747],"head":[651,666],"right":[568,757],"left":[716,785],"leftHand":[957,930],"feet":[654,1238]},"sourcePSDHash":"62399f0e50c32d70e533e56e3228ee246ab623898fddaa74ac8dcab183eee380"},"K7":{"scale":0.5068,"foot":[700,1232],"swing":{"meshes":[],"pivot":[600,420],"r0":30,"r1":130},"blade":{"pommel":[600,420],"tip":[600,100]},"contactAlong":0.6,"keys":{"wind":0,"hit":0,"follow":0},"grip":[600,100],"layers":[{"id":"layer:back hair","name":"back hair","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/47009c51b96f48d8f494f9cc0c844d84f3bf97b13db576b4272ee29d08b341a7/resource.png","bounds":[522,169,737,422]},{"id":"layer:footwear","name":"footwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/354636d1fe63c40bfce0e982c499b40b3c00930df23145d12374640bea2ff574/resource.png","bounds":[620,848,891,1234]},{"id":"layer:neck","name":"neck","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/e9c22ed95a508320287dd7c5be4068c082912b011bfa6b1a5c29fdd64e0588b3/resource.png","bounds":[580,347,628,403]},{"id":"layer:topwear","name":"topwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/97752cedd0ef20bb818d61535fb6cccd49616adb72d399f1751306eb8e2b0730/resource.png","bounds":[498,355,699,568]},{"id":"layer:bottomwear","name":"bottomwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/70041766c1ba449bc2e70043e51bf4c6df9bdf6c2dab6cea05d6672a8645afae/resource.png","bounds":[499,529,888,1071]},{"id":"layer:ears","name":"ears","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/ce439095f339911758893c16eb2227b3954bba7931aefc8b9c5c883495170709/resource.png","bounds":[633,332,678,368]},{"id":"layer:face","name":"face","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/1db052adb49b843a0960d3aa9d32b1c9ad02ffe0190e44315b8fb477043efcd4/resource.png","bounds":[556,247,678,369]},{"id":"layer:mouth","name":"mouth","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/6f16380e2e6b8ec06c9f4188d62aadcaccbdd20e19d2c4dd02eddfcd427ad604/resource.png","bounds":[566,324,582,339]},{"id":"layer:eyebrow","name":"eyebrow","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/17e5805eb0486c9b048948b8857e2c20a80f04c90dd9ccfecbc0374d48e3b8af/resource.png","bounds":[574,279,642,295]},{"id":"layer:eyelash","name":"eyelash","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/89c71f57525641ccee27cae76b0c83a477fc9f1b07e6861e89246e9e532fea09/resource.png","bounds":[567,287,637,319]},{"id":"layer:irides","name":"irides","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/5f5add7169bcdd8e98df743102562204288d886ae3e1e3a47697d790a5ad927b/resource.png","bounds":[570,291,625,316]},{"id":"layer:eyewhite","name":"eyewhite","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/6c70928ffcdcd7630d54354b505ba13e9b692eb039ec7d8860cf0971fa1b2c3c/resource.png","bounds":[570,291,633,318]},{"id":"layer:nose","name":"nose","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/1801238f9ffa048dc363ef2602bc841bb882043118b73c464150c35c767d368c/resource.png","bounds":[567,302,584,320]},{"id":"layer:front hair","name":"front hair","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/e258bcd0c48b88d0e7ce8b3643b05a5d92d1641ed055e8fe5b7acd8b50012579/resource.png","bounds":[522,169,743,390]},{"id":"layer:handwear","name":"handwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/cb62f04dc6deb600627f454d2559c316a3851d4a827f387e6adbb30d0c75139f/resource.png","bounds":[374,13,829,493]}],"psd":"/04_项目记录/工作/a58-a59-strike-animatic-w1/A59姿态工单/K7.psd","note":"GPT w3蹬地离地","joints":{"hip":[624,566],"neck":[606,382],"head":[616,300],"right":[530,410],"left":[680,400],"leftHand":[750,90],"feet":[730,1130]}},"K7a":{"scale":0.2894,"foot":[620,1180],"swing":{"pivot":[436,540]},"blade":{"pommel":[264,747],"tip":[264,400]},"contactAlong":0.6,"keys":{"wind":0,"hit":0,"follow":0},"grip":[264,747],"layers":[{"id":"layer:back hair","name":"back hair","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/d0c2270c5f2ab3e85cb14aebee491563cfa813d2fdd5c0a90286843835f3a8b8/resource.png","bounds":[360,210,696,481]},{"id":"layer:neck","name":"neck","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/9ace814844cb588402ae9cc139dd2e8596494bc6cd1c0e6e99785e265bfbc1f6/resource.png","bounds":[437,395,555,511]},{"id":"layer:topwear","name":"topwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/5fa9fa2af6e9d1274f9b7941c5f10c30c8547fb31f7aad72096dcce15490cc92/resource.png","bounds":[418,415,1148,1109],"clothBelow":810},{"id":"layer:ears","name":"ears","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/bd425459c930b0be6475b4b10f7c9468b0aa86768423e32f5a9dd3b5a77a0d16/resource.png","bounds":[523,360,579,420]},{"id":"layer:face","name":"face","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/c76169e891917fa43c12ab5daf2351bc1f3769a08deab368739e41289c8ccfd6/resource.png","bounds":[379,258,548,444]},{"id":"layer:mouth","name":"mouth","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/967ce7b9acb31421931a02596b64ed803bf746075bc0e8e888da918f8982e35d/resource.png","bounds":[397,393,422,412]},{"id":"layer:legwear","name":"legwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/8694a6b7ed83424c6c9c0a9cb244f07accdeeae0a34b2205db52d02639c52084/resource.png","bounds":[316,712,922,1066]},{"id":"layer:footwear","name":"footwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/5e63cb7e92c6dcdc1be6aad075874da3a1f4a1a83520bdb34ae85662175848b8/resource.png","bounds":[326,960,921,1186]},{"id":"layer:nose","name":"nose","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/6c7d91138ae2196e66b143287ad9be4e461b9854c6561d927eedccd0f266d920/resource.png","bounds":[388,341,410,387]},{"id":"layer:eyewhite","name":"eyewhite","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/a1bdab9f0ebf78853b2f07f4b38263e158fa18dd83e9f786ea57acbe46696a48/resource.png","bounds":[391,329,486,363]},{"id":"layer:irides","name":"irides","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/b5ed38f9fde89848ec6900b9f4ef2ae24fed08797199e0bf56ad53180654547d/resource.png","bounds":[392,329,471,364]},{"id":"layer:eyebrow","name":"eyebrow","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/564cd8b88cac55f38116a95e5ec0c9ff5c113cd85e8da9d8f8c798e8230fd9cc/resource.png","bounds":[390,309,505,333]},{"id":"layer:eyelash","name":"eyelash","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/e912d469afbe171f7c68daf0e3c38100a23fa69762c7742fc51c5be8a71d129f/resource.png","bounds":[387,319,495,367]},{"id":"layer:handwear-r","name":"handwear-r","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/72da58485b00ec65ad1548d26fb8a77bf85a0bac6be61c00ce694a8106fffcf4/resource.png","bounds":[192,430,1122,835],"sourceLayer":"handwear","clip":[0,0,560,1280]},{"id":"layer:handwear-l","name":"handwear-l","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/112eaa910873dac5c8c76d7d4e158b53992c156b0d40f29c7f3e1ede49464b37/resource.png","bounds":[192,430,1122,835],"sourceLayer":"handwear","clip":[560,0,720,1280]},{"id":"layer:front hair","name":"front hair","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/2473486fc969e5dc4fe898e3d548138eecb34ab116013ae234370736b9b0f6ce/resource.png","bounds":[307,103,694,474]}],"psd":"/04_项目记录/工作/a59-finale-w13/K7a_new.psd","note":"GPT w3蹬地离地","sourcePSDHash":"90e9b1e1657104348453eef8431b638282d045e2d5b0a1ea5256c29320df3440","joints":{"hip":[610,733],"neck":[504,481],"head":[461,355],"right":[436,540],"left":[656,516],"leftHand":[1070,762],"feet":[620,1180]}},"K7b":{"scale":0.4409,"foot":[826,1228],"swing":{"pivot":[625,358]},"blade":{"pommel":[502,300],"tip":[502,100]},"contactAlong":0.6,"keys":{"wind":0,"hit":0,"follow":0},"grip":[502,300],"layers":[{"id":"layer:back hair","name":"back hair","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/83e3f4ce443cd34cd6905bc99f0a8fbcd31ded261dca3f9cf95daa8e97c9788e/resource.png","bounds":[591,31,897,349]},{"id":"layer:footwear","name":"footwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/b17065dae8396ced9934058c961ed21f33b0e444f2dcaabb3118b3a713c333ed/resource.png","bounds":[521,763,892,1231]},{"id":"layer:neck","name":"neck","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/1513643871fc144f8f8b6ce205a3d572ce974f8ae5bee8ed247927dd8547aa18/resource.png","bounds":[675,258,738,342]},{"id":"layer:legwear","name":"legwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/fa4a323114fddaec686411b172784ca73a257b64fa884511f89309cda70115c5/resource.png","bounds":[438,545,868,1078]},{"id":"layer:topwear","name":"topwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/9cc4f3f1340e7aceaa20e9ec56d676d4744b7974e3e229255b02c5c558e4ffb1/resource.png","bounds":[586,290,819,540]},{"id":"layer:ears","name":"ears","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/767a5cdaf05d89b7b7936573bee339a879b2c5027f1f30e314819fd3e858bfa4/resource.png","bounds":[746,229,800,280]},{"id":"layer:face","name":"face","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/f61897582e21b84cfbea16bb0af4d8533b0a3475c14edc5ce05d418d87894a5a/resource.png","bounds":[631,130,832,292]},{"id":"layer:mouth","name":"mouth","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/d1db2d30b7db7815b1987a2ddbdf389afffaed6ea69d2467a473edbb0f6e5c27/resource.png","bounds":[644,245,667,264]},{"id":"layer:bottomwear","name":"bottomwear","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/74f8982cbe7f4dbe2315d9daa9e91356378798fd2f36498d84ee7ff67929039f/resource.png","bounds":[537,412,953,962]},{"id":"layer:nose","name":"nose","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/042e34d87dfca8e3b906735314348a2e1a9d99a3f469a0bca569608a3e8117bf/resource.png","bounds":[638,208,660,240]},{"id":"layer:eyewhite","name":"eyewhite","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/5d258277b218cc2beac644526539116c208591126d9de48517ec2471dff72a75/resource.png","bounds":[644,197,722,223]},{"id":"layer:eyebrow","name":"eyebrow","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/b1fd256837e6a4f27ec1064b23f6cb594471698fc3b29b350445fe47f5a18000/resource.png","bounds":[642,182,728,204]},{"id":"layer:irides","name":"irides","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/2b22324247d9b9892450ac58390ad4ec2dff9b60bcc40a927037605e4e6ccf02/resource.png","bounds":[646,195,708,223]},{"id":"layer:eyelash","name":"eyelash","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/b9446354d7acb24b2f20b6b8de86317974164da58a7b50ba91315315ca61ae17/resource.png","bounds":[642,191,728,223]},{"id":"layer:front hair","name":"front hair","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/763b0874cc64266d3e61ac5989e89fdb49b6cc9973de8d031fc646348fef300a/resource.png","bounds":[606,129,860,303]},{"id":"layer:handwear-r","name":"handwear-r","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/6490f350650770916acc99dab3afdd5c344971fa84c7783c8edcbe586a1d2914/resource.png","bounds":[433,228,925,559],"sourceLayer":"handwear","clip":[0,0,639,1280]},{"id":"layer:handwear-l","name":"handwear-l","src":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/3b3ae2b8cfd3979110e685b70646e29e3714f63d205c10b85070e0ad89f008cb/resource.png","bounds":[433,228,925,559],"sourceLayer":"handwear","clip":[639,0,641,1280]}],"psd":"/04_项目记录/工作/a59-component-motion-w14/服装组件/K7b_服装修复.psd","note":"GPT w3蹬地离地","sourcePSDHash":"0ffa16f3abd305282fa72d0765956495ee052916485d1a5552701a21e18b76f5","joints":{"hip":[691,535],"neck":[707,312],"head":[703,226],"right":[625,358],"left":[797,343],"leftHand":[725,410],"feet":[706,1060]}}}
+{
+    "K1": {
+        "scale": 0.3684,
+        "foot": [
+            240,
+            1180
+        ],
+        "swing": {
+            "meshes": [
+                "ArtMeshHandwear",
+                "ArtMeshObjects"
+            ],
+            "pivot": [
+                502,
+                560
+            ],
+            "r0": 40,
+            "r1": 170
+        },
+        "blade": {
+            "pommel": [
+                95,
+                345
+            ],
+            "tip": [
+                1200,
+                60
+            ]
+        },
+        "contactAlong": 0.6,
+        "keys": {
+            "wind": -26,
+            "hit": -10,
+            "follow": 3
+        },
+        "body": {
+            "coil": {
+                "ParamBodyAngleZ": -6,
+                "ParamBodyAngleX": -5,
+                "ParamAngleY": -8
+            },
+            "release": {
+                "ParamBodyAngleZ": 6,
+                "ParamBodyAngleX": 4,
+                "ParamAngleY": 10
+            }
+        },
+        "flutter": [
+            {
+                "mesh": "ArtMeshBottomwear",
+                "anchor": [
+                    470,
+                    790
+                ],
+                "dir": [
+                    0.55,
+                    1
+                ],
+                "len": 380,
+                "amp": 7,
+                "wave": 300,
+                "freq": 2.2
+            }
+        ],
+        "layers": [
+            {
+                "id": "layer:footwear-l",
+                "name": "footwear-l",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/70c08fb52deef7264f4882ab9d7e0f83bd8e520b354fd65ef3a36a7a6d726d24/resource.png",
+                "bounds": [
+                    743,
+                    1053,
+                    919,
+                    1194
+                ]
+            },
+            {
+                "id": "layer:footwear-r",
+                "name": "footwear-r",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/eacf908596dd81db8b945fda4eb5e1d47576778a1ec9f80a8d76273383842303/resource.png",
+                "bounds": [
+                    73,
+                    1042,
+                    281,
+                    1177
+                ]
+            },
+            {
+                "id": "layer:back hair",
+                "name": "back hair",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/726f95672132a7d89297bd356c63800678bc4a19286d6645f9b40aa79d4013eb/resource.png",
+                "bounds": [
+                    488,
+                    271,
+                    710,
+                    533
+                ]
+            },
+            {
+                "id": "layer:neck",
+                "name": "neck",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/48bf9184435127f0883d441ca678b1ff1f53e9fecd04feb3c43178432cdd4c15/resource.png",
+                "bounds": [
+                    518,
+                    482,
+                    561,
+                    526
+                ]
+            },
+            {
+                "id": "layer:ears",
+                "name": "ears",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/37a369a790929bade01cd18f5e721645542fc6879f0a20353cac04e887d1a015/resource.png",
+                "bounds": [
+                    566,
+                    452,
+                    612,
+                    500
+                ]
+            },
+            {
+                "id": "layer:face",
+                "name": "face",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/7969a2fbc09188a5f87ddac0f131b2777c0cee18538a168964f8130950d39cd9/resource.png",
+                "bounds": [
+                    447,
+                    332,
+                    618,
+                    515
+                ]
+            },
+            {
+                "id": "layer:mouth",
+                "name": "mouth",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/24efcc7b284f0bb1a53f888b6ca8578bd4f210c31747db5ea7d9e7b2f2809301/resource.png",
+                "bounds": [
+                    475,
+                    470,
+                    493,
+                    481
+                ]
+            },
+            {
+                "id": "layer:legwear",
+                "name": "legwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/1cb6d361a31f1d6310039db4967ef4d21c58be16770060a907e7d96a8500f500/resource.png",
+                "bounds": [
+                    157,
+                    689,
+                    908,
+                    1127
+                ]
+            },
+            {
+                "id": "layer:bottomwear",
+                "name": "bottomwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/451db8f9f9a6e1f10a2d89bcf427c45a8d181cd86f6dc7c21a15b6234f19911a/resource.png",
+                "bounds": [
+                    410,
+                    785,
+                    896,
+                    1082
+                ]
+            },
+            {
+                "id": "layer:nose",
+                "name": "nose",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/64653f15c2245926f1d66e522704bd98f0daf8025629eb0b532891aa6f2b39f1/resource.png",
+                "bounds": [
+                    472,
+                    438,
+                    489,
+                    460
+                ]
+            },
+            {
+                "id": "layer:handwear",
+                "name": "handwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/54781fed4397bc00e930337f8d8bb04c871cf6ff51e7f2cc4d1c65824018c98b/resource.png",
+                "bounds": [
+                    144,
+                    268,
+                    534,
+                    623
+                ]
+            },
+            {
+                "id": "layer:topwear",
+                "name": "topwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/c2bd5303422476d856b59dfa62eacc00917eade5981ad53d88d9eef8a96391e4/resource.png",
+                "bounds": [
+                    392,
+                    499,
+                    654,
+                    733
+                ]
+            },
+            {
+                "id": "layer:eyewhite",
+                "name": "eyewhite",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/61264f254d3255a7a24504b4c64834247d53c2bc6426d2394644a3c71a2af6c2/resource.png",
+                "bounds": [
+                    471,
+                    423,
+                    548,
+                    452
+                ]
+            },
+            {
+                "id": "layer:irides",
+                "name": "irides",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/1e688b7993801a4c946ab64aaf40a47e06201bce20665c0a3446a3baafdedf13/resource.png",
+                "bounds": [
+                    473,
+                    422,
+                    536,
+                    452
+                ]
+            },
+            {
+                "id": "layer:eyelash",
+                "name": "eyelash",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/9f35ef485ad549dbf321d28b7ee83e816d03113b8c4c7233030ed1d853c8a200/resource.png",
+                "bounds": [
+                    467,
+                    420,
+                    555,
+                    448
+                ]
+            },
+            {
+                "id": "layer:eyebrow",
+                "name": "eyebrow",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/678721333fa52ffd00f9ab2916460adfc4da8a5f2300add62443615633278d40/resource.png",
+                "bounds": [
+                    479,
+                    408,
+                    548,
+                    428
+                ]
+            },
+            {
+                "id": "layer:front hair",
+                "name": "front hair",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/058c26a0adfc5c7d00c375affdba2ce9985a260dfa280c6f2fc3326b1b9089a2/resource.png",
+                "bounds": [
+                    407,
+                    271,
+                    711,
+                    537
+                ]
+            }
+        ],
+        "psd": "/04_项目记录/工作/a58-a59-strike-animatic-w1/A59姿态工单/K1_地面上挑/K1_组件修正w2.psd",
+        "sourcePSDHash": "cc6ea9b0458e16628da1316f5080aaa7f69e54cc421555a5ae264aa124d4372e",
+        "grip": [
+            240,
+            326
+        ],
+        "upperPivot": [
+            495,
+            727
+        ],
+        "joints": {
+            "hip": [
+                495,
+                727
+            ],
+            "neck": [
+                540,
+                510
+            ],
+            "head": [
+                515,
+                420
+            ],
+            "right": [
+                502,
+                560
+            ],
+            "left": [
+                590,
+                550
+            ],
+            "leftHand": [
+                400,
+                400
+            ],
+            "feet": [
+                570,
+                1100
+            ]
+        }
+    },
+    "K2": {
+        "scale": 0.4,
+        "swing": {
+            "meshes": [
+                "ArtMeshHandwear",
+                "ArtMeshObjects"
+            ],
+            "pivot": [
+                608,
+                490
+            ],
+            "r0": 30,
+            "r1": 130,
+            "exclude": {
+                "xMin": 680
+            }
+        },
+        "blade": {
+            "pommel": [
+                525,
+                600
+            ],
+            "tip": [
+                8,
+                1000
+            ]
+        },
+        "contactAlong": 0.55,
+        "hide": [
+            "ArtMeshObjects"
+        ],
+        "keys": {
+            "wind": 22,
+            "hit": 0,
+            "follow": -14
+        },
+        "body": {
+            "coil": {
+                "ParamBodyAngleZ": 7,
+                "ParamBodyAngleX": 6,
+                "ParamAngleZ": 5
+            },
+            "release": {
+                "ParamBodyAngleZ": -7,
+                "ParamBodyAngleX": -6,
+                "ParamAngleZ": -4
+            }
+        },
+        "flutter": [
+            {
+                "mesh": "ArtMeshBottomwear",
+                "anchor": [
+                    700,
+                    560
+                ],
+                "dir": [
+                    1,
+                    0.25
+                ],
+                "len": 520,
+                "amp": 7,
+                "wave": 280,
+                "freq": 3.0
+            }
+        ],
+        "layers": [
+            {
+                "id": "layer:footwear",
+                "name": "footwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/b55bf54d2b2cb7f86604b2449c1cc733cc40023455dcbdd67bd48d446cf4a7da/resource.png",
+                "bounds": [
+                    727,
+                    692,
+                    1228,
+                    1013
+                ]
+            },
+            {
+                "id": "layer:legwear",
+                "name": "legwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/01b5a6ba353c591f9997306e722e7bf05e199cf5c3184864a02cfc6689368fac/resource.png",
+                "bounds": [
+                    562,
+                    574,
+                    1172,
+                    933
+                ]
+            },
+            {
+                "id": "layer:waist",
+                "name": "waist",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/7a329b26ed51d6067090979a9011fd741396ddf282f9969a6589aefd0c8bffeb/resource.png",
+                "bounds": [
+                    664,
+                    512,
+                    830,
+                    640
+                ]
+            },
+            {
+                "id": "layer:bottomwear",
+                "name": "bottomwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/9e92f1d4d88d3a69a16b58b81469e5103bb55338aef2e508d02f48913f13b985/resource.png",
+                "bounds": [
+                    751,
+                    514,
+                    1265,
+                    814
+                ]
+            },
+            {
+                "id": "layer:topwear",
+                "name": "topwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/7111120f180d7eb116ebdf2e1a332b0af270e0a5caf878d6dacf01550a8563ce/resource.png",
+                "bounds": [
+                    608,
+                    387,
+                    819,
+                    592
+                ]
+            },
+            {
+                "id": "layer:neck",
+                "name": "neck",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/200a2496d7d6c2bebac35f63c6204405285092e12ae74603914d3d2212b9b1d7/resource.png",
+                "bounds": [
+                    634,
+                    408,
+                    688,
+                    458
+                ]
+            },
+            {
+                "id": "layer:back hair",
+                "name": "back hair",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/83e3f04b88da02b927713f35c6ea68c8c712b92601cd4b75837cc7b6681cf957/resource.png",
+                "bounds": [
+                    530,
+                    227,
+                    777,
+                    479
+                ]
+            },
+            {
+                "id": "layer:handwear-r",
+                "name": "handwear-r",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/1c6f00972d841bd6155021d6ae513b3ecd49ec76734df411f893d21416a69b09/resource.png",
+                "bounds": [
+                    404,
+                    456,
+                    640,
+                    691
+                ]
+            },
+            {
+                "id": "layer:handwear-l",
+                "name": "handwear-l",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/e4b585f6176688361aacd794a88ba6cda9acfd291b3cfb351a91cd29670b4a2f/resource.png",
+                "bounds": [
+                    737,
+                    314,
+                    1192,
+                    495
+                ]
+            },
+            {
+                "id": "layer:ears",
+                "name": "ears",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/9530eb7ba44703a6b1bb17bcaa270faa7bee49ffe3a78628ab63c25e002d6f01/resource.png",
+                "bounds": [
+                    663,
+                    390,
+                    694,
+                    437
+                ]
+            },
+            {
+                "id": "layer:face",
+                "name": "face",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/7a08e4de84c162acf6f6286d315207d4225520f09d307d7c6bb2e2e2edf4be3a/resource.png",
+                "bounds": [
+                    550,
+                    353,
+                    667,
+                    482
+                ]
+            },
+            {
+                "id": "layer:eyewhite",
+                "name": "eyewhite",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/197b16a08c0f65dfb44cd99b7f230f6ddb9f33eff7a73786e589da4a6aa548ac/resource.png",
+                "bounds": [
+                    563,
+                    412,
+                    631,
+                    435
+                ]
+            },
+            {
+                "id": "layer:irides",
+                "name": "irides",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/12a6504f97f8d21870c5a896e29a3926ff0b5000f0033e567a6b16948c393936/resource.png",
+                "bounds": [
+                    563,
+                    411,
+                    619,
+                    435
+                ]
+            },
+            {
+                "id": "layer:eyelash",
+                "name": "eyelash",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/bd4c07dfb8ad69ee4fbbf36c02539b33b3cbd79c074d651b078c9eab27b70006/resource.png",
+                "bounds": [
+                    556,
+                    410,
+                    637,
+                    424
+                ]
+            },
+            {
+                "id": "layer:eyebrow",
+                "name": "eyebrow",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/ef542f07c254d5adf3de1b25a047de4290dc853e5906f99afccc0ad5512f83d9/resource.png",
+                "bounds": [
+                    555,
+                    397,
+                    619,
+                    422
+                ]
+            },
+            {
+                "id": "layer:front hair",
+                "name": "front hair",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/3d8c9c8a75fecf43179df5461c4df39b3708d5df803ea5fcab63f0d0835dabe0/resource.png",
+                "bounds": [
+                    493,
+                    227,
+                    773,
+                    474
+                ]
+            }
+        ],
+        "psd": "/04_项目记录/工作/a58-a59-strike-animatic-w1/A59姿态工单/K2_空中正手冲斩/K2_组件修正w2.psd",
+        "sourcePSDHash": "22171c5588a602594a09c58fd9b04b7d7151001e9bf229e3ff9f5060796086b7",
+        "grip": [
+            448,
+            644
+        ],
+        "joints": {
+            "hip": [
+                735,
+                588
+            ],
+            "neck": [
+                660,
+                445
+            ],
+            "head": [
+                620,
+                397
+            ],
+            "right": [
+                608,
+                490
+            ],
+            "left": [
+                780,
+                420
+            ],
+            "leftHand": [
+                1090,
+                382
+            ],
+            "feet": [
+                980,
+                860
+            ]
+        }
+    },
+    "K3": {
+        "scale": 0.2909,
+        "swing": {
+            "meshes": [
+                "ArtMeshHandwear",
+                "ArtMeshObjects"
+            ],
+            "pivot": [
+                315,
+                482
+            ],
+            "r0": 30,
+            "r1": 140,
+            "exclude": {
+                "yMin": 530
+            }
+        },
+        "blade": {
+            "pommel": [
+                495,
+                258
+            ],
+            "tip": [
+                1245,
+                112
+            ]
+        },
+        "contactAlong": 0.35,
+        "hide": [
+            "ArtMeshObjects"
+        ],
+        "keys": {
+            "wind": -20,
+            "hit": 0,
+            "follow": 14
+        },
+        "body": {
+            "coil": {
+                "ParamBodyAngleZ": -6,
+                "ParamBodyAngleX": -6,
+                "ParamAngleZ": -4
+            },
+            "release": {
+                "ParamBodyAngleZ": 7,
+                "ParamBodyAngleX": 6,
+                "ParamAngleZ": 4
+            }
+        },
+        "flutter": [
+            {
+                "mesh": "ArtMeshBottomwear",
+                "anchor": [
+                    520,
+                    640
+                ],
+                "dir": [
+                    -1,
+                    0.1
+                ],
+                "len": 520,
+                "amp": 7,
+                "wave": 260,
+                "freq": 3.0
+            }
+        ],
+        "layers": [
+            {
+                "id": "layer:footwear",
+                "name": "footwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/6b4b0dd3771ccbb6a72e0a17ee6742e2b4b8a63d56453009175591be4d121891/resource.png",
+                "bounds": [
+                    358,
+                    742,
+                    959,
+                    1138
+                ]
+            },
+            {
+                "id": "layer:waist",
+                "name": "waist",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/c786180540606746a5e9b00895b4435c7f6a9e1682af67f7e401e52d68690353/resource.png",
+                "bounds": [
+                    239,
+                    607,
+                    530,
+                    710
+                ]
+            },
+            {
+                "id": "layer:bottomwear",
+                "name": "bottomwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/dc5f4dc57ba1acc40a140197eb57108defb6e900b0a035363f4e937370ba808e/resource.png",
+                "bounds": [
+                    358,
+                    623,
+                    980,
+                    926
+                ]
+            },
+            {
+                "id": "layer:legwear",
+                "name": "legwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/61d497af67e06435fb1bbdf027a1bc3dfd8b65fa288bb772fc198dac01601753/resource.png",
+                "bounds": [
+                    203,
+                    640,
+                    877,
+                    1043
+                ]
+            },
+            {
+                "id": "layer:back hair",
+                "name": "back hair",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/73e3c2081b40b6d3d066ea045a9272197533ca1a6ab189534033d338b96a8eaf/resource.png",
+                "bounds": [
+                    210,
+                    207,
+                    536,
+                    475
+                ]
+            },
+            {
+                "id": "layer:topwear",
+                "name": "topwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/c3b1d146681917310cc0cf18b03ac30bbd3d48bb39c67dba386c33f596ea60a5/resource.png",
+                "bounds": [
+                    296,
+                    403,
+                    552,
+                    639
+                ]
+            },
+            {
+                "id": "layer:ears",
+                "name": "ears",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/51e282349bcf0ed7b256354216aa32befd23c8805b941930a7a4b8f050c6b6b9/resource.png",
+                "bounds": [
+                    404,
+                    334,
+                    442,
+                    394
+                ]
+            },
+            {
+                "id": "layer:face",
+                "name": "face",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/9316f06bab96f3f217716acbaa9be5f1a1df663482e376773cdb3c1bfb52db35/resource.png",
+                "bounds": [
+                    244,
+                    264,
+                    405,
+                    460
+                ]
+            },
+            {
+                "id": "layer:mouth",
+                "name": "mouth",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/70250aa5647db95330aeb62b1a897db01542ecd3b4d359f38f52d2140dca6b34/resource.png",
+                "bounds": [
+                    308,
+                    431,
+                    326,
+                    445
+                ]
+            },
+            {
+                "id": "layer:eyewhite",
+                "name": "eyewhite",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/39268da72aa7d011addf2dd787bde0c99f0bd4c9a72f7890e63efccac68e0839/resource.png",
+                "bounds": [
+                    266,
+                    357,
+                    354,
+                    405
+                ]
+            },
+            {
+                "id": "layer:irides",
+                "name": "irides",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/adeff7f331e4a48b4449c16c7d7fa43767ffc473ac8291337f737381bb61e23b/resource.png",
+                "bounds": [
+                    267,
+                    357,
+                    341,
+                    407
+                ]
+            },
+            {
+                "id": "layer:eyelash",
+                "name": "eyelash",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/659e8b12fe4933903404846c57e5e2fafa04660a991a5cc27314ce2203372b90/resource.png",
+                "bounds": [
+                    259,
+                    354,
+                    360,
+                    397
+                ]
+            },
+            {
+                "id": "layer:eyebrow",
+                "name": "eyebrow",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/9351c1e78bd48929d82f4e392005e2c14353763fbc7908398aec44176f8309de/resource.png",
+                "bounds": [
+                    251,
+                    332,
+                    340,
+                    384
+                ]
+            },
+            {
+                "id": "layer:nose",
+                "name": "nose",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/729d0c182b7bf36553a219a26a57a919292eb78ec6a2063b32aea8486fd0acb8/resource.png",
+                "bounds": [
+                    284,
+                    409,
+                    298,
+                    427
+                ]
+            },
+            {
+                "id": "layer:front hair",
+                "name": "front hair",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/663ec2d56346afbc99f2cd52f06c678a50aa429e102e1275532fbdef5ea2db32/resource.png",
+                "bounds": [
+                    145,
+                    114,
+                    530,
+                    441
+                ]
+            },
+            {
+                "id": "layer:shoulder-l",
+                "name": "shoulder-l",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/c04d339ef59b359833a499778d538b06f2d3b7ca5c19a5dbd64ebb4af40383b2/resource.png",
+                "bounds": [
+                    279,
+                    315,
+                    744,
+                    530
+                ],
+                "group": "torso"
+            },
+            {
+                "id": "layer:handwear-r",
+                "name": "handwear-r",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/cc6b2aae347df37e888a1c3c2198dd595662135129c6c83a2dde102665e63e95/resource.png",
+                "bounds": [
+                    279,
+                    315,
+                    744,
+                    565
+                ]
+            },
+            {
+                "id": "layer:handwear-l",
+                "name": "handwear-l",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/f9e2f0e650c1154c688be8932d624692d30eb4d0ddc97bc050acd62500639da3/resource.png",
+                "bounds": [
+                    295,
+                    530,
+                    628,
+                    672
+                ]
+            }
+        ],
+        "psd": "/04_项目记录/工作/a59-component-motion-w14/服装组件/K3_服装修复.psd",
+        "sourcePSDHash": "0db01e83cbe076e0bef606c1592a6903072389f4dba03932e5c414d24a8c930c",
+        "grip": [
+            690,
+            347
+        ],
+        "joints": {
+            "hip": [
+                431,
+                645
+            ],
+            "neck": [
+                403,
+                439
+            ],
+            "head": [
+                335,
+                347
+            ],
+            "right": [
+                315,
+                482
+            ],
+            "left": [
+                595,
+                530
+            ],
+            "leftHand": [
+                370,
+                572
+            ],
+            "feet": [
+                650,
+                1000
+            ]
+        }
+    },
+    "K4": {
+        "scale": 0.4828,
+        "swing": {
+            "meshes": [
+                "ArtMeshHandwear",
+                "ArtMeshObjects"
+            ],
+            "pivot": [
+                682,
+                366
+            ],
+            "r0": 30,
+            "r1": 150
+        },
+        "blade": {
+            "pommel": [
+                700,
+                600
+            ],
+            "tip": [
+                240,
+                1255
+            ]
+        },
+        "contactAlong": 0.5,
+        "keys": {
+            "wind": 24,
+            "hit": 0,
+            "follow": -15
+        },
+        "body": {
+            "coil": {
+                "ParamBodyAngleZ": -6,
+                "ParamBodyAngleY": 8,
+                "ParamAngleY": 10
+            },
+            "release": {
+                "ParamBodyAngleZ": 6,
+                "ParamBodyAngleY": -8,
+                "ParamAngleY": -12
+            }
+        },
+        "flutter": [
+            {
+                "mesh": "ArtMeshBottomwear",
+                "anchor": [
+                    760,
+                    420
+                ],
+                "dir": [
+                    0.25,
+                    -1
+                ],
+                "len": 420,
+                "amp": 7,
+                "wave": 240,
+                "freq": 2.6
+            }
+        ],
+        "layers": [
+            {
+                "id": "layer:bottomwear",
+                "name": "bottomwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/90d144813611102f7b9a6e646eb5705768ee18c80961475fded3bf684a18b8e0/resource.png",
+                "bounds": [
+                    635,
+                    11,
+                    1060,
+                    677
+                ]
+            },
+            {
+                "id": "layer:topwear",
+                "name": "topwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/4bfa5c053e9236fc25a47545e6c1954a756175170c8b137e5ea3d75c16d1ab79/resource.png",
+                "bounds": [
+                    640,
+                    270,
+                    806,
+                    483
+                ]
+            },
+            {
+                "id": "layer:legwear",
+                "name": "legwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/e599afa3982da859491d27979e0576ea0f5cff12a139630a5e15e64377d165dc/resource.png",
+                "bounds": [
+                    589,
+                    438,
+                    1031,
+                    925
+                ]
+            },
+            {
+                "id": "layer:footwear",
+                "name": "footwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/43f1c3c46a93ec5155746352bdd068b0f3177544d694916d8fe8fd18c0d47c89/resource.png",
+                "bounds": [
+                    714,
+                    551,
+                    825,
+                    704
+                ]
+            },
+            {
+                "id": "layer:neck",
+                "name": "neck",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/37a1546f67bb164132e7f1db10b97a50585e8261ba88c87372f2a4be3ee14016/resource.png",
+                "bounds": [
+                    658,
+                    271,
+                    715,
+                    324
+                ]
+            },
+            {
+                "id": "layer:back hair",
+                "name": "back hair",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/824682065b43505b8398e25f3843ee21c8732c157336a1b13091e6e1fe739567/resource.png",
+                "bounds": [
+                    573,
+                    188,
+                    724,
+                    320
+                ]
+            },
+            {
+                "id": "layer:ears",
+                "name": "ears",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/cb954285f33b9c467543e164ab8fc5639de913afcdbd2abfc9abc323e4086328/resource.png",
+                "bounds": [
+                    689,
+                    258,
+                    713,
+                    301
+                ]
+            },
+            {
+                "id": "layer:face",
+                "name": "face",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/4cf81215081c1a50c943024c8300ba83c61a1098aa5cbae992ccad8d048cc8a4/resource.png",
+                "bounds": [
+                    579,
+                    230,
+                    695,
+                    351
+                ]
+            },
+            {
+                "id": "layer:nose",
+                "name": "nose",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/5e4057cda0cf2c187f2ca7157a8659e0e3300a2bdabb4520b5264351d7ef2b92/resource.png",
+                "bounds": [
+                    620,
+                    316,
+                    632,
+                    338
+                ]
+            },
+            {
+                "id": "layer:mouth",
+                "name": "mouth",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/dd6f3c0cb4151abdcba370454dc4b1f042dd460fa299d5e344c9939b0f1f3bda/resource.png",
+                "bounds": [
+                    639,
+                    334,
+                    657,
+                    344
+                ]
+            },
+            {
+                "id": "layer:eyewhite",
+                "name": "eyewhite",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/e40b134c34acbd6d5a261e68bfbe4f1c79d391416e1a2ca4e2e455f5721ade12/resource.png",
+                "bounds": [
+                    602,
+                    291,
+                    665,
+                    320
+                ]
+            },
+            {
+                "id": "layer:irides",
+                "name": "irides",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/5f082529d629b61f180e39a260b6b62f1564d3b9e72e38393ae45f1b49d22597/resource.png",
+                "bounds": [
+                    603,
+                    294,
+                    658,
+                    322
+                ]
+            },
+            {
+                "id": "layer:eyelash",
+                "name": "eyelash",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/c2c448c523cd1e2b1b28f0afa8eb4fb4d15fefb37a605821409cf7abd4dd4c87/resource.png",
+                "bounds": [
+                    597,
+                    289,
+                    669,
+                    322
+                ]
+            },
+            {
+                "id": "layer:eyebrow",
+                "name": "eyebrow",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/58ef16d48b6c18d2d003b991e7385c7913f96f23351997c9e46ae664dcac8a81/resource.png",
+                "bounds": [
+                    598,
+                    280,
+                    653,
+                    311
+                ]
+            },
+            {
+                "id": "layer:front hair",
+                "name": "front hair",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/e3f6b06f1da9441fcaccb58b2be0a3abc08446520b71cc802adcf8eab9531e1c/resource.png",
+                "bounds": [
+                    522,
+                    119,
+                    754,
+                    366
+                ]
+            },
+            {
+                "id": "layer:handwear",
+                "name": "handwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/619912847820cb65dc8c2e5ca19958e0ab9507fd51a425c1a0a9db0e082bb8dd/resource.png",
+                "bounds": [
+                    608,
+                    249,
+                    852,
+                    620
+                ]
+            }
+        ],
+        "psd": "/04_项目记录/工作/a58-a59-strike-animatic-w1/A59姿态工单/K4_高位下劈/K4_组件修正w2.psd",
+        "sourcePSDHash": "f0b83e1a72c315a0309525b470a92cac2460a550da2a00c1dee1147d65b8355d",
+        "grip": [
+            708,
+            562
+        ],
+        "upperPivot": [
+            766,
+            475
+        ],
+        "joints": {
+            "hip": [
+                766,
+                475
+            ],
+            "neck": [
+                687,
+                318
+            ],
+            "head": [
+                645,
+                280
+            ],
+            "right": [
+                650,
+                367
+            ],
+            "left": [
+                758,
+                335
+            ],
+            "leftHand": [
+                752,
+                545
+            ],
+            "feet": [
+                823,
+                746
+            ]
+        }
+    },
+    "K5": {
+        "scale": 0.4275,
+        "foot": [
+            520,
+            1028
+        ],
+        "swing": {
+            "pivot": [
+                636,
+                520
+            ]
+        },
+        "blade": {
+            "pommel": [
+                590,
+                680
+            ],
+            "tip": [
+                8,
+                1028
+            ]
+        },
+        "contactAlong": 0.5,
+        "keys": {
+            "wind": 7,
+            "hit": 2,
+            "follow": 0
+        },
+        "body": {
+            "coil": {
+                "ParamBodyAngleY": -8,
+                "ParamAngleY": -6
+            },
+            "release": {
+                "ParamBodyAngleY": 0,
+                "ParamAngleY": 6
+            }
+        },
+        "flutter": [
+            {
+                "mesh": "ArtMeshBottomwear",
+                "anchor": [
+                    800,
+                    620
+                ],
+                "dir": [
+                    1,
+                    0.1
+                ],
+                "len": 480,
+                "amp": 7,
+                "wave": 260,
+                "freq": 2.4
+            }
+        ],
+        "layers": [
+            {
+                "id": "layer:back hair",
+                "name": "back hair",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/76067153e7637fbe30eb4edf724c233d5bb197bd6f71ce5a1f04846e94bc903f/resource.png",
+                "bounds": [
+                    533,
+                    230,
+                    801,
+                    521
+                ]
+            },
+            {
+                "id": "layer:tail",
+                "name": "tail",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/6d91c56020caaa2e1cd14c84d434056e624a789202592f67b460b4dea16cf834/resource.png",
+                "bounds": [
+                    759,
+                    604,
+                    1111,
+                    843
+                ]
+            },
+            {
+                "id": "layer:bottomwear",
+                "name": "bottomwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/f5586fc9398ab6914cd3f5e27152801e0f3d4ed50d2edb22546046f71634bc5c/resource.png",
+                "bounds": [
+                    500,
+                    578,
+                    1260,
+                    963
+                ],
+                "group": "legs",
+                "materialNote": "Combined front trouser and cloth: no whole-layer cloth warp; separate tail supplies cloth follow-through."
+            },
+            {
+                "id": "layer:footwear",
+                "name": "footwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/c3b3e6ec076d49b42aa264a95470af0a4d6ab4134dc9e00529ecbc1b094495ff/resource.png",
+                "bounds": [
+                    406,
+                    824,
+                    1231,
+                    1028
+                ]
+            },
+            {
+                "id": "layer:handwear-r",
+                "name": "handwear-r",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/6f1ead268a7fee11bf13aef8357d82b10ede842044f5a1bf7d8def5a0f8fb69a/resource.png",
+                "bounds": [
+                    460,
+                    406,
+                    1184,
+                    761
+                ],
+                "sourceLayer": "handwear",
+                "clip": [
+                    0,
+                    0,
+                    720,
+                    1280
+                ]
+            },
+            {
+                "id": "layer:handwear-l",
+                "name": "handwear-l",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/6ae1166a8a1d86bf8c4702b3b79ae4838269a834b93aac2587dbf2e45e33a683/resource.png",
+                "bounds": [
+                    460,
+                    406,
+                    1184,
+                    761
+                ],
+                "sourceLayer": "handwear",
+                "clip": [
+                    720,
+                    0,
+                    560,
+                    1280
+                ]
+            },
+            {
+                "id": "layer:legwear",
+                "name": "legwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/e499bfef894096eecc4d78be06361048e6d74af9df557b285be357759ada76d5/resource.png",
+                "bounds": [
+                    1013,
+                    762,
+                    1194,
+                    927
+                ]
+            },
+            {
+                "id": "layer:neck",
+                "name": "neck",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/b69cbe09cf1869518766c3a78ddc47e061285de85668324659c1a55531c248b8/resource.png",
+                "bounds": [
+                    637,
+                    421,
+                    725,
+                    500
+                ]
+            },
+            {
+                "id": "layer:topwear",
+                "name": "topwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/89388f0d315e0b4a01022ee51815762500859a926367fe781db261d507fbd285/resource.png",
+                "bounds": [
+                    628,
+                    422,
+                    885,
+                    642
+                ]
+            },
+            {
+                "id": "layer:ears",
+                "name": "ears",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/faaa41db8e673e6be9e1cca8eaeaf8dfbb56ef776d6ef575a03e2641eded7d5b/resource.png",
+                "bounds": [
+                    690,
+                    402,
+                    724,
+                    451
+                ]
+            },
+            {
+                "id": "layer:face",
+                "name": "face",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/896f048dcae99581b27a9778e1f81d7bbc71a37dce5a687211d4ca6b00fcce27/resource.png",
+                "bounds": [
+                    589,
+                    355,
+                    701,
+                    492
+                ]
+            },
+            {
+                "id": "layer:nose",
+                "name": "nose",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/4b74b6bd8692939a63d0c1afdbaccd9b737ff912aff000d392729f2e46550814/resource.png",
+                "bounds": [
+                    600,
+                    437,
+                    618,
+                    459
+                ]
+            },
+            {
+                "id": "layer:mouth",
+                "name": "mouth",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/4fea12520e566b7eda61f62d1e1fa169a35f1b42f20675ce9f6bff27e33b4c5f/resource.png",
+                "bounds": [
+                    616,
+                    462,
+                    635,
+                    467
+                ]
+            },
+            {
+                "id": "layer:eyebrow",
+                "name": "eyebrow",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/a19099b2f20b4ab2cb2f4276fde64055b6c7f496e89fb52c9154c8721147f0d8/resource.png",
+                "bounds": [
+                    588,
+                    389,
+                    657,
+                    424
+                ]
+            },
+            {
+                "id": "layer:eyewhite",
+                "name": "eyewhite",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/25c2e086ef5244e00c3ea816ca2cfdd77f42567f4a48752066eda9f08b4ebde2/resource.png",
+                "bounds": [
+                    596,
+                    406,
+                    662,
+                    441
+                ]
+            },
+            {
+                "id": "layer:irides",
+                "name": "irides",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/f4a627f98785cfd4705ea09edbbb39b61344f1fb5817fdb4c88d3e32ddd4398a/resource.png",
+                "bounds": [
+                    596,
+                    406,
+                    650,
+                    442
+                ]
+            },
+            {
+                "id": "layer:eyelash",
+                "name": "eyelash",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/f93b078f3aa6e0511e2a124ef556cd7e3d8179d9dcf7c91d5ebbd8417a63b91e/resource.png",
+                "bounds": [
+                    593,
+                    401,
+                    665,
+                    442
+                ]
+            },
+            {
+                "id": "layer:front hair",
+                "name": "front hair",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/e5cf781992f0d7da087a7526e3cf5302757f64da39dfe39196c637a9251f8cec/resource.png",
+                "bounds": [
+                    533,
+                    229,
+                    795,
+                    487
+                ]
+            }
+        ],
+        "psd": "/04_项目记录/工作/a59-finale-w13/K5_new.psd",
+        "sourcePSDHash": "6613cf4c5061b1bdd1e69e3797f1f642b36b35aacbc39926e4ecb49aa58fd3e9",
+        "grip": [
+            500,
+            720
+        ],
+        "joints": {
+            "hip": [
+                780,
+                623
+            ],
+            "neck": [
+                684,
+                479
+            ],
+            "head": [
+                649,
+                418
+            ],
+            "right": [
+                636,
+                520
+            ],
+            "left": [
+                812,
+                465
+            ],
+            "leftHand": [
+                1125,
+                490
+            ],
+            "feet": [
+                821,
+                1004
+            ]
+        }
+    },
+    "K6": {
+        "scale": 0.5,
+        "foot": [
+            654,
+            1238
+        ],
+        "swing": {
+            "pivot": [
+                568,
+                757
+            ]
+        },
+        "blade": {
+            "pommel": [
+                429,
+                519
+            ],
+            "tip": [
+                607,
+                17
+            ]
+        },
+        "contactAlong": 0.6,
+        "keys": {
+            "wind": 0,
+            "hit": 0,
+            "follow": 0
+        },
+        "grip": [
+            429,
+            519
+        ],
+        "layers": [
+            {
+                "id": "layer:footwear-r",
+                "name": "footwear-r",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/423e965f3340867eee50bf6f729801015ca22122cc8ebf585c52c7b9bdec9267/resource.png",
+                "bounds": [
+                    320,
+                    1083,
+                    526,
+                    1238
+                ]
+            },
+            {
+                "id": "layer:footwear-l",
+                "name": "footwear-l",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/6fc391f3b12b0dbcb7040221177492e1d5465e5659449bcd2f3f75be44cce0bd/resource.png",
+                "bounds": [
+                    863,
+                    1091,
+                    1008,
+                    1239
+                ]
+            },
+            {
+                "id": "layer:back hair",
+                "name": "back hair",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/7ac57bbfc2f63075b2091c8122548ea8b16fadcb986e02967c53597be9f68813/resource.png",
+                "bounds": [
+                    563,
+                    544,
+                    788,
+                    769
+                ]
+            },
+            {
+                "id": "layer:bottomwear",
+                "name": "bottomwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/e935c685587ba0970f66094aa92c1f39608b068b41969def3a03508c16327f1c/resource.png",
+                "bounds": [
+                    540,
+                    851,
+                    1010,
+                    1163
+                ]
+            },
+            {
+                "id": "layer:legwear",
+                "name": "legwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/d8165e448f95db7655aa8fed25f19da250f138dc3e7b71106ce220c4b8dc7107/resource.png",
+                "bounds": [
+                    389,
+                    893,
+                    953,
+                    1179
+                ]
+            },
+            {
+                "id": "layer:neck",
+                "name": "neck",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/a2aab2f63d7bd36a1c3993a2dae556b64f76170c99129e14ff00fb637f707b84/resource.png",
+                "bounds": [
+                    620,
+                    702,
+                    667,
+                    758
+                ]
+            },
+            {
+                "id": "layer:topwear",
+                "name": "topwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/b414056eec23e5d609f382bd28516765cdc9eb407f6a58b6defe1149cadf762a/resource.png",
+                "bounds": [
+                    550,
+                    700,
+                    707,
+                    893
+                ]
+            },
+            {
+                "id": "layer:handwear-r",
+                "name": "handwear-r",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/dbc076619f6701322cdbac9ed99942a22c61d71c245d114fc4b494988f4d9951/resource.png",
+                "bounds": [
+                    397,
+                    493,
+                    999,
+                    966
+                ],
+                "sourceLayer": "handwear",
+                "clip": [
+                    0,
+                    0,
+                    638,
+                    1280
+                ]
+            },
+            {
+                "id": "layer:handwear-l",
+                "name": "handwear-l",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/90d97bfb981c3e375b244fc975e0601017c14904af12cde03091ffef8e976901/resource.png",
+                "bounds": [
+                    397,
+                    493,
+                    999,
+                    966
+                ],
+                "sourceLayer": "handwear",
+                "clip": [
+                    638,
+                    0,
+                    642,
+                    1280
+                ]
+            },
+            {
+                "id": "layer:eyebrow",
+                "name": "eyebrow",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/1f4a625a116248b7b39b7863b865a0147c28ab16dc3ace64df0ccda9f78fb1c6/resource.png",
+                "bounds": [
+                    607,
+                    638,
+                    672,
+                    653
+                ]
+            },
+            {
+                "id": "layer:ears",
+                "name": "ears",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/d193f4660fffc8d6a93f57c7d6a2d54e3c5d3550154dd97f59faa5bb79919089/resource.png",
+                "bounds": [
+                    667,
+                    684,
+                    709,
+                    718
+                ]
+            },
+            {
+                "id": "layer:face",
+                "name": "face",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/b105a350efa4690c1bfa3e7f0c2a4b6b238be6554bc2a305bd1105a7da9e6c42/resource.png",
+                "bounds": [
+                    587,
+                    585,
+                    731,
+                    719
+                ]
+            },
+            {
+                "id": "layer:mouth",
+                "name": "mouth",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/386f96ad98f32147365b909344df26b370b248d9e2410c1c616f53b7bef21cf2/resource.png",
+                "bounds": [
+                    602,
+                    683,
+                    617,
+                    694
+                ]
+            },
+            {
+                "id": "layer:nose",
+                "name": "nose",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/71da532005c87af688ddcf13fc3c936968ec854b43ce0e1e6c72dc807e13db36/resource.png",
+                "bounds": [
+                    600,
+                    657,
+                    617,
+                    678
+                ]
+            },
+            {
+                "id": "layer:eyelash",
+                "name": "eyelash",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/223ec0296c70141a5d0d902d80fe48d1e927dcbdb67c182ea37047d6e8cba762/resource.png",
+                "bounds": [
+                    602,
+                    645,
+                    667,
+                    675
+                ]
+            },
+            {
+                "id": "layer:eyewhite",
+                "name": "eyewhite",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/1a897c29f2aafa0e2a33ce5051b76f7c2f77358230e9e07f16c5693e023ff415/resource.png",
+                "bounds": [
+                    603,
+                    648,
+                    662,
+                    673
+                ]
+            },
+            {
+                "id": "layer:irides",
+                "name": "irides",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/816f70d449812829d4f28dade67ad7a4d360514d1c08d2691d179d2f66f01bbc/resource.png",
+                "bounds": [
+                    603,
+                    649,
+                    652,
+                    672
+                ]
+            },
+            {
+                "id": "layer:front hair",
+                "name": "front hair",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/678dc8e215d5aa9172fc842441fa4cc0be7f8c15db8b49206f4fda08a82034c7/resource.png",
+                "bounds": [
+                    564,
+                    544,
+                    788,
+                    746
+                ]
+            }
+        ],
+        "psd": "/04_项目记录/工作/a59-component-motion-w14/K6_补回原画靴子.psd",
+        "note": "GPT w3抡剑脱手；objects(剑)层不画，由动画画飞出的剑",
+        "joints": {
+            "hip": [
+                638,
+                891
+            ],
+            "neck": [
+                643,
+                747
+            ],
+            "head": [
+                651,
+                666
+            ],
+            "right": [
+                568,
+                757
+            ],
+            "left": [
+                716,
+                785
+            ],
+            "leftHand": [
+                957,
+                930
+            ],
+            "feet": [
+                654,
+                1238
+            ]
+        },
+        "sourcePSDHash": "62399f0e50c32d70e533e56e3228ee246ab623898fddaa74ac8dcab183eee380"
+    },
+    "K7": {
+        "scale": 0.5068,
+        "foot": [
+            700,
+            1232
+        ],
+        "swing": {
+            "meshes": [],
+            "pivot": [
+                600,
+                420
+            ],
+            "r0": 30,
+            "r1": 130
+        },
+        "blade": {
+            "pommel": [
+                600,
+                420
+            ],
+            "tip": [
+                600,
+                100
+            ]
+        },
+        "contactAlong": 0.6,
+        "keys": {
+            "wind": 0,
+            "hit": 0,
+            "follow": 0
+        },
+        "grip": [
+            600,
+            100
+        ],
+        "layers": [
+            {
+                "id": "layer:back hair",
+                "name": "back hair",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/47009c51b96f48d8f494f9cc0c844d84f3bf97b13db576b4272ee29d08b341a7/resource.png",
+                "bounds": [
+                    522,
+                    169,
+                    737,
+                    422
+                ]
+            },
+            {
+                "id": "layer:footwear",
+                "name": "footwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/354636d1fe63c40bfce0e982c499b40b3c00930df23145d12374640bea2ff574/resource.png",
+                "bounds": [
+                    620,
+                    848,
+                    891,
+                    1234
+                ]
+            },
+            {
+                "id": "layer:neck",
+                "name": "neck",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/e9c22ed95a508320287dd7c5be4068c082912b011bfa6b1a5c29fdd64e0588b3/resource.png",
+                "bounds": [
+                    580,
+                    347,
+                    628,
+                    403
+                ]
+            },
+            {
+                "id": "layer:topwear",
+                "name": "topwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/97752cedd0ef20bb818d61535fb6cccd49616adb72d399f1751306eb8e2b0730/resource.png",
+                "bounds": [
+                    498,
+                    355,
+                    699,
+                    568
+                ]
+            },
+            {
+                "id": "layer:bottomwear",
+                "name": "bottomwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/70041766c1ba449bc2e70043e51bf4c6df9bdf6c2dab6cea05d6672a8645afae/resource.png",
+                "bounds": [
+                    499,
+                    529,
+                    888,
+                    1071
+                ]
+            },
+            {
+                "id": "layer:ears",
+                "name": "ears",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/ce439095f339911758893c16eb2227b3954bba7931aefc8b9c5c883495170709/resource.png",
+                "bounds": [
+                    633,
+                    332,
+                    678,
+                    368
+                ]
+            },
+            {
+                "id": "layer:face",
+                "name": "face",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/1db052adb49b843a0960d3aa9d32b1c9ad02ffe0190e44315b8fb477043efcd4/resource.png",
+                "bounds": [
+                    556,
+                    247,
+                    678,
+                    369
+                ]
+            },
+            {
+                "id": "layer:mouth",
+                "name": "mouth",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/6f16380e2e6b8ec06c9f4188d62aadcaccbdd20e19d2c4dd02eddfcd427ad604/resource.png",
+                "bounds": [
+                    566,
+                    324,
+                    582,
+                    339
+                ]
+            },
+            {
+                "id": "layer:eyebrow",
+                "name": "eyebrow",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/17e5805eb0486c9b048948b8857e2c20a80f04c90dd9ccfecbc0374d48e3b8af/resource.png",
+                "bounds": [
+                    574,
+                    279,
+                    642,
+                    295
+                ]
+            },
+            {
+                "id": "layer:eyelash",
+                "name": "eyelash",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/89c71f57525641ccee27cae76b0c83a477fc9f1b07e6861e89246e9e532fea09/resource.png",
+                "bounds": [
+                    567,
+                    287,
+                    637,
+                    319
+                ]
+            },
+            {
+                "id": "layer:irides",
+                "name": "irides",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/5f5add7169bcdd8e98df743102562204288d886ae3e1e3a47697d790a5ad927b/resource.png",
+                "bounds": [
+                    570,
+                    291,
+                    625,
+                    316
+                ]
+            },
+            {
+                "id": "layer:eyewhite",
+                "name": "eyewhite",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/6c70928ffcdcd7630d54354b505ba13e9b692eb039ec7d8860cf0971fa1b2c3c/resource.png",
+                "bounds": [
+                    570,
+                    291,
+                    633,
+                    318
+                ]
+            },
+            {
+                "id": "layer:nose",
+                "name": "nose",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/1801238f9ffa048dc363ef2602bc841bb882043118b73c464150c35c767d368c/resource.png",
+                "bounds": [
+                    567,
+                    302,
+                    584,
+                    320
+                ]
+            },
+            {
+                "id": "layer:front hair",
+                "name": "front hair",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/e258bcd0c48b88d0e7ce8b3643b05a5d92d1641ed055e8fe5b7acd8b50012579/resource.png",
+                "bounds": [
+                    522,
+                    169,
+                    743,
+                    390
+                ]
+            },
+            {
+                "id": "layer:handwear",
+                "name": "handwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/cb62f04dc6deb600627f454d2559c316a3851d4a827f387e6adbb30d0c75139f/resource.png",
+                "bounds": [
+                    374,
+                    13,
+                    829,
+                    493
+                ]
+            }
+        ],
+        "psd": "/04_项目记录/工作/a58-a59-strike-animatic-w1/A59姿态工单/K7.psd",
+        "note": "GPT w3蹬地离地",
+        "joints": {
+            "hip": [
+                624,
+                566
+            ],
+            "neck": [
+                606,
+                382
+            ],
+            "head": [
+                616,
+                300
+            ],
+            "right": [
+                530,
+                410
+            ],
+            "left": [
+                680,
+                400
+            ],
+            "leftHand": [
+                750,
+                90
+            ],
+            "feet": [
+                730,
+                1130
+            ]
+        }
+    },
+    "K7a": {
+        "scale": 0.2894,
+        "foot": [
+            620,
+            1180
+        ],
+        "swing": {
+            "pivot": [
+                436,
+                540
+            ]
+        },
+        "blade": {
+            "pommel": [
+                264,
+                747
+            ],
+            "tip": [
+                264,
+                400
+            ]
+        },
+        "contactAlong": 0.6,
+        "keys": {
+            "wind": 0,
+            "hit": 0,
+            "follow": 0
+        },
+        "grip": [
+            264,
+            747
+        ],
+        "layers": [
+            {
+                "id": "layer:back hair",
+                "name": "back hair",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/d0c2270c5f2ab3e85cb14aebee491563cfa813d2fdd5c0a90286843835f3a8b8/resource.png",
+                "bounds": [
+                    360,
+                    210,
+                    696,
+                    481
+                ]
+            },
+            {
+                "id": "layer:neck",
+                "name": "neck",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/9ace814844cb588402ae9cc139dd2e8596494bc6cd1c0e6e99785e265bfbc1f6/resource.png",
+                "bounds": [
+                    437,
+                    395,
+                    555,
+                    511
+                ]
+            },
+            {
+                "id": "layer:topwear",
+                "name": "topwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/5fa9fa2af6e9d1274f9b7941c5f10c30c8547fb31f7aad72096dcce15490cc92/resource.png",
+                "bounds": [
+                    418,
+                    415,
+                    1148,
+                    1109
+                ],
+                "clothBelow": 810
+            },
+            {
+                "id": "layer:ears",
+                "name": "ears",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/bd425459c930b0be6475b4b10f7c9468b0aa86768423e32f5a9dd3b5a77a0d16/resource.png",
+                "bounds": [
+                    523,
+                    360,
+                    579,
+                    420
+                ]
+            },
+            {
+                "id": "layer:face",
+                "name": "face",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/c76169e891917fa43c12ab5daf2351bc1f3769a08deab368739e41289c8ccfd6/resource.png",
+                "bounds": [
+                    379,
+                    258,
+                    548,
+                    444
+                ]
+            },
+            {
+                "id": "layer:mouth",
+                "name": "mouth",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/967ce7b9acb31421931a02596b64ed803bf746075bc0e8e888da918f8982e35d/resource.png",
+                "bounds": [
+                    397,
+                    393,
+                    422,
+                    412
+                ]
+            },
+            {
+                "id": "layer:legwear",
+                "name": "legwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/8694a6b7ed83424c6c9c0a9cb244f07accdeeae0a34b2205db52d02639c52084/resource.png",
+                "bounds": [
+                    316,
+                    712,
+                    922,
+                    1066
+                ]
+            },
+            {
+                "id": "layer:footwear",
+                "name": "footwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/5e63cb7e92c6dcdc1be6aad075874da3a1f4a1a83520bdb34ae85662175848b8/resource.png",
+                "bounds": [
+                    326,
+                    960,
+                    921,
+                    1186
+                ]
+            },
+            {
+                "id": "layer:nose",
+                "name": "nose",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/6c7d91138ae2196e66b143287ad9be4e461b9854c6561d927eedccd0f266d920/resource.png",
+                "bounds": [
+                    388,
+                    341,
+                    410,
+                    387
+                ]
+            },
+            {
+                "id": "layer:eyewhite",
+                "name": "eyewhite",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/a1bdab9f0ebf78853b2f07f4b38263e158fa18dd83e9f786ea57acbe46696a48/resource.png",
+                "bounds": [
+                    391,
+                    329,
+                    486,
+                    363
+                ]
+            },
+            {
+                "id": "layer:irides",
+                "name": "irides",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/b5ed38f9fde89848ec6900b9f4ef2ae24fed08797199e0bf56ad53180654547d/resource.png",
+                "bounds": [
+                    392,
+                    329,
+                    471,
+                    364
+                ]
+            },
+            {
+                "id": "layer:eyebrow",
+                "name": "eyebrow",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/564cd8b88cac55f38116a95e5ec0c9ff5c113cd85e8da9d8f8c798e8230fd9cc/resource.png",
+                "bounds": [
+                    390,
+                    309,
+                    505,
+                    333
+                ]
+            },
+            {
+                "id": "layer:eyelash",
+                "name": "eyelash",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/e912d469afbe171f7c68daf0e3c38100a23fa69762c7742fc51c5be8a71d129f/resource.png",
+                "bounds": [
+                    387,
+                    319,
+                    495,
+                    367
+                ]
+            },
+            {
+                "id": "layer:handwear-r",
+                "name": "handwear-r",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/72da58485b00ec65ad1548d26fb8a77bf85a0bac6be61c00ce694a8106fffcf4/resource.png",
+                "bounds": [
+                    192,
+                    430,
+                    1122,
+                    835
+                ],
+                "sourceLayer": "handwear",
+                "clip": [
+                    0,
+                    0,
+                    560,
+                    1280
+                ]
+            },
+            {
+                "id": "layer:handwear-l",
+                "name": "handwear-l",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/112eaa910873dac5c8c76d7d4e158b53992c156b0d40f29c7f3e1ede49464b37/resource.png",
+                "bounds": [
+                    192,
+                    430,
+                    1122,
+                    835
+                ],
+                "sourceLayer": "handwear",
+                "clip": [
+                    560,
+                    0,
+                    720,
+                    1280
+                ]
+            },
+            {
+                "id": "layer:front hair",
+                "name": "front hair",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/2473486fc969e5dc4fe898e3d548138eecb34ab116013ae234370736b9b0f6ce/resource.png",
+                "bounds": [
+                    307,
+                    103,
+                    694,
+                    474
+                ]
+            }
+        ],
+        "psd": "/04_项目记录/工作/a59-finale-w13/K7a_new.psd",
+        "note": "GPT w3蹬地离地",
+        "sourcePSDHash": "90e9b1e1657104348453eef8431b638282d045e2d5b0a1ea5256c29320df3440",
+        "joints": {
+            "hip": [
+                610,
+                733
+            ],
+            "neck": [
+                504,
+                481
+            ],
+            "head": [
+                461,
+                355
+            ],
+            "right": [
+                436,
+                540
+            ],
+            "left": [
+                656,
+                516
+            ],
+            "leftHand": [
+                1070,
+                762
+            ],
+            "feet": [
+                620,
+                1180
+            ]
+        }
+    },
+    "K7b": {
+        "scale": 0.4409,
+        "foot": [
+            826,
+            1228
+        ],
+        "swing": {
+            "pivot": [
+                625,
+                358
+            ]
+        },
+        "blade": {
+            "pommel": [
+                502,
+                300
+            ],
+            "tip": [
+                502,
+                100
+            ]
+        },
+        "contactAlong": 0.6,
+        "keys": {
+            "wind": 0,
+            "hit": 0,
+            "follow": 0
+        },
+        "grip": [
+            502,
+            300
+        ],
+        "layers": [
+            {
+                "id": "layer:back hair",
+                "name": "back hair",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/83e3f4ce443cd34cd6905bc99f0a8fbcd31ded261dca3f9cf95daa8e97c9788e/resource.png",
+                "bounds": [
+                    591,
+                    31,
+                    897,
+                    349
+                ]
+            },
+            {
+                "id": "layer:footwear",
+                "name": "footwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/b17065dae8396ced9934058c961ed21f33b0e444f2dcaabb3118b3a713c333ed/resource.png",
+                "bounds": [
+                    521,
+                    763,
+                    892,
+                    1231
+                ]
+            },
+            {
+                "id": "layer:neck",
+                "name": "neck",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/1513643871fc144f8f8b6ce205a3d572ce974f8ae5bee8ed247927dd8547aa18/resource.png",
+                "bounds": [
+                    675,
+                    258,
+                    738,
+                    342
+                ]
+            },
+            {
+                "id": "layer:legwear",
+                "name": "legwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/fa4a323114fddaec686411b172784ca73a257b64fa884511f89309cda70115c5/resource.png",
+                "bounds": [
+                    438,
+                    545,
+                    868,
+                    1078
+                ]
+            },
+            {
+                "id": "layer:topwear",
+                "name": "topwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/9cc4f3f1340e7aceaa20e9ec56d676d4744b7974e3e229255b02c5c558e4ffb1/resource.png",
+                "bounds": [
+                    586,
+                    290,
+                    819,
+                    540
+                ]
+            },
+            {
+                "id": "layer:ears",
+                "name": "ears",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/767a5cdaf05d89b7b7936573bee339a879b2c5027f1f30e314819fd3e858bfa4/resource.png",
+                "bounds": [
+                    746,
+                    229,
+                    800,
+                    280
+                ]
+            },
+            {
+                "id": "layer:face",
+                "name": "face",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/f61897582e21b84cfbea16bb0af4d8533b0a3475c14edc5ce05d418d87894a5a/resource.png",
+                "bounds": [
+                    631,
+                    130,
+                    832,
+                    292
+                ]
+            },
+            {
+                "id": "layer:mouth",
+                "name": "mouth",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/d1db2d30b7db7815b1987a2ddbdf389afffaed6ea69d2467a473edbb0f6e5c27/resource.png",
+                "bounds": [
+                    644,
+                    245,
+                    667,
+                    264
+                ]
+            },
+            {
+                "id": "layer:bottomwear",
+                "name": "bottomwear",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/74f8982cbe7f4dbe2315d9daa9e91356378798fd2f36498d84ee7ff67929039f/resource.png",
+                "bounds": [
+                    537,
+                    412,
+                    953,
+                    962
+                ]
+            },
+            {
+                "id": "layer:nose",
+                "name": "nose",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/042e34d87dfca8e3b906735314348a2e1a9d99a3f469a0bca569608a3e8117bf/resource.png",
+                "bounds": [
+                    638,
+                    208,
+                    660,
+                    240
+                ]
+            },
+            {
+                "id": "layer:eyewhite",
+                "name": "eyewhite",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/5d258277b218cc2beac644526539116c208591126d9de48517ec2471dff72a75/resource.png",
+                "bounds": [
+                    644,
+                    197,
+                    722,
+                    223
+                ]
+            },
+            {
+                "id": "layer:eyebrow",
+                "name": "eyebrow",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/b1fd256837e6a4f27ec1064b23f6cb594471698fc3b29b350445fe47f5a18000/resource.png",
+                "bounds": [
+                    642,
+                    182,
+                    728,
+                    204
+                ]
+            },
+            {
+                "id": "layer:irides",
+                "name": "irides",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/2b22324247d9b9892450ac58390ad4ec2dff9b60bcc40a927037605e4e6ccf02/resource.png",
+                "bounds": [
+                    646,
+                    195,
+                    708,
+                    223
+                ]
+            },
+            {
+                "id": "layer:eyelash",
+                "name": "eyelash",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/b9446354d7acb24b2f20b6b8de86317974164da58a7b50ba91315315ca61ae17/resource.png",
+                "bounds": [
+                    642,
+                    191,
+                    728,
+                    223
+                ]
+            },
+            {
+                "id": "layer:front hair",
+                "name": "front hair",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/763b0874cc64266d3e61ac5989e89fdb49b6cc9973de8d031fc646348fef300a/resource.png",
+                "bounds": [
+                    606,
+                    129,
+                    860,
+                    303
+                ]
+            },
+            {
+                "id": "layer:handwear-r",
+                "name": "handwear-r",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/6490f350650770916acc99dab3afdd5c344971fa84c7783c8edcbe586a1d2914/resource.png",
+                "bounds": [
+                    433,
+                    228,
+                    925,
+                    559
+                ],
+                "sourceLayer": "handwear",
+                "clip": [
+                    0,
+                    0,
+                    639,
+                    1280
+                ]
+            },
+            {
+                "id": "layer:handwear-l",
+                "name": "handwear-l",
+                "src": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/3b3ae2b8cfd3979110e685b70646e29e3714f63d205c10b85070e0ad89f008cb/resource.png",
+                "bounds": [
+                    433,
+                    228,
+                    925,
+                    559
+                ],
+                "sourceLayer": "handwear",
+                "clip": [
+                    639,
+                    0,
+                    641,
+                    1280
+                ]
+            }
+        ],
+        "psd": "/04_项目记录/工作/a59-component-motion-w14/服装组件/K7b_服装修复.psd",
+        "note": "GPT w3蹬地离地",
+        "sourcePSDHash": "0ffa16f3abd305282fa72d0765956495ee052916485d1a5552701a21e18b76f5",
+        "joints": {
+            "hip": [
+                691,
+                535
+            ],
+            "neck": [
+                707,
+                312
+            ],
+            "head": [
+                703,
+                226
+            ],
+            "right": [
+                625,
+                358
+            ],
+            "left": [
+                797,
+                343
+            ],
+            "leftHand": [
+                725,
+                410
+            ],
+            "feet": [
+                706,
+                1060
+            ]
+        }
+    }
+}

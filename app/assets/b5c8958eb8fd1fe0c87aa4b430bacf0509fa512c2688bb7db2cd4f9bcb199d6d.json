@@ -1,1 +1,98 @@
-{"title":"A37 · 已通过带台词完整版","description":"小臂位于头发前、剑后，肩根仍由衣服遮住；按已确认A34倍率1.564加速，一圈约5.377秒、三圈约6.739秒。近旁最上层台词保持。","adapterModule":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/854274f12088b922f26b64e0d2f6009d1d1968403362fdc1edae69f26f8a575d/resource.mjs?instance=da60be7be816a074e921&instance=36a92b890b9d5bad51d4","autoplay":true,"captureSize":[1060,900],"components":[{"id":"handwear upper-r","layer":"handwear upper-r","label":"handwear upper-r","drawableIds":["ArtMeshHandwearR"],"psd":"/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"},{"id":"handwear fore-r","layer":"handwear fore-r","label":"handwear fore-r","drawableIds":["ArtMeshHandwearR3"],"psd":"/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"},{"id":"handwear grip-back-r","layer":"handwear grip-back-r","label":"handwear grip-back-r","drawableIds":["ArtMeshHandwearR4"],"psd":"/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"},{"id":"handwear grip-front-r","layer":"handwear grip-front-r","label":"handwear grip-front-r","drawableIds":["ArtMeshHandwearR5"],"psd":"/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"},{"id":"hidden upper-r","layer":"hidden upper-r","label":"hidden upper-r","drawableIds":["ArtMeshLayerR"],"psd":"/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"},{"id":"hidden fore-r","layer":"hidden fore-r","label":"hidden fore-r","drawableIds":["ArtMeshLayerR2"],"psd":"/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"},{"id":"hidden torso","layer":"hidden torso","label":"hidden torso","drawableIds":["ArtMeshLayer"],"psd":"/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"},{"id":"topwear","label":"topwear（肩根衣服）","layer":"topwear","drawableIds":["ArtMeshTopwear"],"psd":"/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"}],"checks":[{"label":"肩根衣服","time":1.5727868853490352},{"label":"小臂盖头发","time":2.621311475581725},{"label":"剑过手腕","time":2.7491803280491265}]}
+{
+    "title": "A37 · 已通过带台词完整版",
+    "description": "小臂位于头发前、剑后，肩根仍由衣服遮住；按已确认A34倍率1.564加速，一圈约5.377秒、三圈约6.739秒。近旁最上层台词保持。",
+    "adapterModule": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/854274f12088b922f26b64e0d2f6009d1d1968403362fdc1edae69f26f8a575d/resource.mjs?instance=da60be7be816a074e921&instance=36a92b890b9d5bad51d4",
+    "autoplay": true,
+    "captureSize": [
+        1060,
+        900
+    ],
+    "components": [
+        {
+            "id": "handwear upper-r",
+            "layer": "handwear upper-r",
+            "label": "handwear upper-r",
+            "drawableIds": [
+                "ArtMeshHandwearR"
+            ],
+            "psd": "/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"
+        },
+        {
+            "id": "handwear fore-r",
+            "layer": "handwear fore-r",
+            "label": "handwear fore-r",
+            "drawableIds": [
+                "ArtMeshHandwearR3"
+            ],
+            "psd": "/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"
+        },
+        {
+            "id": "handwear grip-back-r",
+            "layer": "handwear grip-back-r",
+            "label": "handwear grip-back-r",
+            "drawableIds": [
+                "ArtMeshHandwearR4"
+            ],
+            "psd": "/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"
+        },
+        {
+            "id": "handwear grip-front-r",
+            "layer": "handwear grip-front-r",
+            "label": "handwear grip-front-r",
+            "drawableIds": [
+                "ArtMeshHandwearR5"
+            ],
+            "psd": "/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"
+        },
+        {
+            "id": "hidden upper-r",
+            "layer": "hidden upper-r",
+            "label": "hidden upper-r",
+            "drawableIds": [
+                "ArtMeshLayerR"
+            ],
+            "psd": "/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"
+        },
+        {
+            "id": "hidden fore-r",
+            "layer": "hidden fore-r",
+            "label": "hidden fore-r",
+            "drawableIds": [
+                "ArtMeshLayerR2"
+            ],
+            "psd": "/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"
+        },
+        {
+            "id": "hidden torso",
+            "layer": "hidden torso",
+            "label": "hidden torso",
+            "drawableIds": [
+                "ArtMeshLayer"
+            ],
+            "psd": "/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"
+        },
+        {
+            "id": "topwear",
+            "label": "topwear（肩根衣服）",
+            "layer": "topwear",
+            "drawableIds": [
+                "ArtMeshTopwear"
+            ],
+            "psd": "/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"
+        }
+    ],
+    "checks": [
+        {
+            "label": "肩根衣服",
+            "time": 1.5727868853490352
+        },
+        {
+            "label": "小臂盖头发",
+            "time": 2.621311475581725
+        },
+        {
+            "label": "剑过手腕",
+            "time": 2.7491803280491265
+        }
+    ]
+}

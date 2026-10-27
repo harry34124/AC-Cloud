@@ -1,1 +1,373 @@
-{"title":"A10 · 连续皮肤臂与独立手套交接 w32","description":"复用A11穿脱经验：皮肤臂保持连续，手套/护腕单独交接，局部接回原A01。A10原手型、视线和7.8秒保持。","model":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/875136e5c234cdffa48b34b56024f513f4d06540209378f799c974383a29dfac/resource.model3.json","motion":{"module":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/be94dee5c43329473d2da1e9ddd84d7b3f0114ee18ed617e4fa16f925c8bc9e8/resource.mjs?instance=bb1b138ec935a086609e&instance=72aa9b0251996ee006b4&v=w32"},"duration":7.8,"artBounds":[0.28515625,0.0203125,0.7140625,0.95],"returnPolicy":{"reverseBefore":0.95},"components":[{"id":"ArtMeshHandwearR","label":"handwear upper-r","layer":"handwear upper-r","drawableIds":["ArtMeshHandwearR"],"psd":"/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"},{"id":"ArtMeshLayerR","label":"hidden upper-r","layer":"hidden upper-r","drawableIds":["ArtMeshLayerR"],"psd":"/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"},{"id":"ArtMeshHandwearR3","label":"handwear fore-r","layer":"handwear fore-r","drawableIds":["ArtMeshHandwearR3"],"psd":"/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"},{"id":"ArtMeshLayerR3","label":"hidden fore-r","layer":"hidden fore-r","drawableIds":["ArtMeshLayerR3"],"psd":"/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"},{"id":"ArtMeshLayerR6","label":"bare fore-r","layer":"bare fore-r","drawableIds":["ArtMeshLayerR6"],"psd":"/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"},{"id":"ArtMeshLayerR8","label":"bare hand-r","layer":"bare hand-r","drawableIds":["ArtMeshLayerR8"],"psd":"/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"},{"id":"ArtMeshLayerL3","label":"empty glove-l","layer":"empty glove-l","drawableIds":["ArtMeshLayerL3"],"psd":"/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"},{"id":"ArtMeshHandwearL3","label":"handwear fist-l","layer":"handwear fist-l","drawableIds":["ArtMeshHandwearL3"],"psd":"/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"},{"id":"ArtMeshHandwearL4","label":"handwear fore-l","layer":"handwear fore-l","drawableIds":["ArtMeshHandwearL4"],"psd":"/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"},{"id":"ArtMeshHandwearL2","label":"handwear upper-l","layer":"handwear upper-l","drawableIds":["ArtMeshHandwearL2"],"psd":"/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"},{"id":"ArtMeshLayerL2","label":"hidden upper-l","layer":"hidden upper-l","drawableIds":["ArtMeshLayerL2"],"psd":"/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"},{"id":"ArtMeshLayerL","label":"hidden fore-l","layer":"hidden fore-l","drawableIds":["ArtMeshLayerL"],"psd":"/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"},{"id":"ArtMeshHandwearL","label":"handwear pauldron-l","layer":"handwear pauldron-l","drawableIds":["ArtMeshHandwearL"],"psd":"/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"},{"id":"ArtMeshLayerR5","label":"a01 upper-r","layer":"a01 upper-r","drawableIds":["ArtMeshLayerR5"],"psd":"/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"},{"id":"ArtMeshLayerR2","label":"a01 hidden upper-r","layer":"a01 hidden upper-r","drawableIds":["ArtMeshLayerR2"],"psd":"/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"},{"id":"ArtMeshLayerR4","label":"a01 hidden fore-r","layer":"a01 hidden fore-r","drawableIds":["ArtMeshLayerR4"],"psd":"/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"},{"id":"ArtMeshLayerR7","label":"a01 fore-r","layer":"a01 fore-r","drawableIds":["ArtMeshLayerR7"],"psd":"/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"}],"checks":[{"label":"检查0.2","time":0.2},{"label":"检查0.72","time":0.72},{"label":"检查0.8","time":0.8},{"label":"检查0.9","time":0.9},{"label":"检查0.949","time":0.949},{"label":"检查0.951","time":0.951},{"label":"检查6.799","time":6.799},{"label":"检查6.801","time":6.801},{"label":"检查7.3","time":7.3},{"label":"检查7.42","time":7.42},{"label":"检查7.6","time":7.6},{"label":"检查7.799","time":7.799},{"label":"检查7.8","time":7.8},{"label":"起手叠线0.2","time":0.2},{"label":"交接前","time":0.94},{"label":"交接后","time":0.951},{"label":"A01起点","time":0},{"label":"起手还原层过渡","time":0.11},{"label":"起手0.3","time":0.3},{"label":"起手0.6","time":0.6},{"label":"靠近腕口0.62","time":0.62},{"label":"无挡切换前","time":0.949},{"label":"无挡切换后","time":0.951},{"label":"换套前","time":0.94},{"label":"换套后","time":0.95},{"label":"半抽","time":1.7},{"label":"裸手停留","time":3.65},{"label":"问题位5.5","time":5.5},{"label":"半穿","time":5.75},{"label":"回正","time":7.8},{"label":"收尾还原层过渡","time":7.69},{"label":"开始低头","time":4.65},{"label":"低头看套口","time":5.1},{"label":"穿戴注视","time":6.3},{"label":"戴稳准备抬头","time":6.8},{"label":"抬头回正","time":7.3},{"label":"戴稳交接前","time":6.799},{"label":"戴稳交接后","time":6.801},{"label":"收尾 7.53","time":7.53},{"label":"收尾 7.58","time":7.58},{"label":"收尾 7.63","time":7.63},{"label":"收尾 7.68","time":7.68},{"label":"收尾 7.73","time":7.73},{"label":"收尾 7.78","time":7.78},{"label":"脱套开始低头","time":0.35},{"label":"低头抓腕口","time":0.85},{"label":"脱套注视","time":1.7},{"label":"完全脱下","time":2.4},{"label":"脱后抬头","time":2.9}],"adapterModule":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/3dd621661bf9466e2d561b5b2246b436c948141e34d10b6a20159d445cc4384e/resource.mjs?instance=399c2b050aa8c467de7b&instance=99834570e2fc5377b4b0&v=w32","adapter":{}}
+{
+    "title": "A10 · 连续皮肤臂与独立手套交接 w32",
+    "description": "复用A11穿脱经验：皮肤臂保持连续，手套/护腕单独交接，局部接回原A01。A10原手型、视线和7.8秒保持。",
+    "model": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/875136e5c234cdffa48b34b56024f513f4d06540209378f799c974383a29dfac/resource.model3.json",
+    "motion": {
+        "module": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/be94dee5c43329473d2da1e9ddd84d7b3f0114ee18ed617e4fa16f925c8bc9e8/resource.mjs?instance=bb1b138ec935a086609e&instance=72aa9b0251996ee006b4&v=w32"
+    },
+    "duration": 7.8,
+    "artBounds": [
+        0.28515625,
+        0.0203125,
+        0.7140625,
+        0.95
+    ],
+    "returnPolicy": {
+        "reverseBefore": 0.95
+    },
+    "components": [
+        {
+            "id": "ArtMeshHandwearR",
+            "label": "handwear upper-r",
+            "layer": "handwear upper-r",
+            "drawableIds": [
+                "ArtMeshHandwearR"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"
+        },
+        {
+            "id": "ArtMeshLayerR",
+            "label": "hidden upper-r",
+            "layer": "hidden upper-r",
+            "drawableIds": [
+                "ArtMeshLayerR"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"
+        },
+        {
+            "id": "ArtMeshHandwearR3",
+            "label": "handwear fore-r",
+            "layer": "handwear fore-r",
+            "drawableIds": [
+                "ArtMeshHandwearR3"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"
+        },
+        {
+            "id": "ArtMeshLayerR3",
+            "label": "hidden fore-r",
+            "layer": "hidden fore-r",
+            "drawableIds": [
+                "ArtMeshLayerR3"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"
+        },
+        {
+            "id": "ArtMeshLayerR6",
+            "label": "bare fore-r",
+            "layer": "bare fore-r",
+            "drawableIds": [
+                "ArtMeshLayerR6"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"
+        },
+        {
+            "id": "ArtMeshLayerR8",
+            "label": "bare hand-r",
+            "layer": "bare hand-r",
+            "drawableIds": [
+                "ArtMeshLayerR8"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"
+        },
+        {
+            "id": "ArtMeshLayerL3",
+            "label": "empty glove-l",
+            "layer": "empty glove-l",
+            "drawableIds": [
+                "ArtMeshLayerL3"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"
+        },
+        {
+            "id": "ArtMeshHandwearL3",
+            "label": "handwear fist-l",
+            "layer": "handwear fist-l",
+            "drawableIds": [
+                "ArtMeshHandwearL3"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"
+        },
+        {
+            "id": "ArtMeshHandwearL4",
+            "label": "handwear fore-l",
+            "layer": "handwear fore-l",
+            "drawableIds": [
+                "ArtMeshHandwearL4"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"
+        },
+        {
+            "id": "ArtMeshHandwearL2",
+            "label": "handwear upper-l",
+            "layer": "handwear upper-l",
+            "drawableIds": [
+                "ArtMeshHandwearL2"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"
+        },
+        {
+            "id": "ArtMeshLayerL2",
+            "label": "hidden upper-l",
+            "layer": "hidden upper-l",
+            "drawableIds": [
+                "ArtMeshLayerL2"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"
+        },
+        {
+            "id": "ArtMeshLayerL",
+            "label": "hidden fore-l",
+            "layer": "hidden fore-l",
+            "drawableIds": [
+                "ArtMeshLayerL"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"
+        },
+        {
+            "id": "ArtMeshHandwearL",
+            "label": "handwear pauldron-l",
+            "layer": "handwear pauldron-l",
+            "drawableIds": [
+                "ArtMeshHandwearL"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"
+        },
+        {
+            "id": "ArtMeshLayerR5",
+            "label": "a01 upper-r",
+            "layer": "a01 upper-r",
+            "drawableIds": [
+                "ArtMeshLayerR5"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"
+        },
+        {
+            "id": "ArtMeshLayerR2",
+            "label": "a01 hidden upper-r",
+            "layer": "a01 hidden upper-r",
+            "drawableIds": [
+                "ArtMeshLayerR2"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"
+        },
+        {
+            "id": "ArtMeshLayerR4",
+            "label": "a01 hidden fore-r",
+            "layer": "a01 hidden fore-r",
+            "drawableIds": [
+                "ArtMeshLayerR4"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"
+        },
+        {
+            "id": "ArtMeshLayerR7",
+            "label": "a01 fore-r",
+            "layer": "a01 fore-r",
+            "drawableIds": [
+                "ArtMeshLayerR7"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A10/已通过w17/A10_分离小臂裸手工作.psd"
+        }
+    ],
+    "checks": [
+        {
+            "label": "检查0.2",
+            "time": 0.2
+        },
+        {
+            "label": "检查0.72",
+            "time": 0.72
+        },
+        {
+            "label": "检查0.8",
+            "time": 0.8
+        },
+        {
+            "label": "检查0.9",
+            "time": 0.9
+        },
+        {
+            "label": "检查0.949",
+            "time": 0.949
+        },
+        {
+            "label": "检查0.951",
+            "time": 0.951
+        },
+        {
+            "label": "检查6.799",
+            "time": 6.799
+        },
+        {
+            "label": "检查6.801",
+            "time": 6.801
+        },
+        {
+            "label": "检查7.3",
+            "time": 7.3
+        },
+        {
+            "label": "检查7.42",
+            "time": 7.42
+        },
+        {
+            "label": "检查7.6",
+            "time": 7.6
+        },
+        {
+            "label": "检查7.799",
+            "time": 7.799
+        },
+        {
+            "label": "检查7.8",
+            "time": 7.8
+        },
+        {
+            "label": "起手叠线0.2",
+            "time": 0.2
+        },
+        {
+            "label": "交接前",
+            "time": 0.94
+        },
+        {
+            "label": "交接后",
+            "time": 0.951
+        },
+        {
+            "label": "A01起点",
+            "time": 0
+        },
+        {
+            "label": "起手还原层过渡",
+            "time": 0.11
+        },
+        {
+            "label": "起手0.3",
+            "time": 0.3
+        },
+        {
+            "label": "起手0.6",
+            "time": 0.6
+        },
+        {
+            "label": "靠近腕口0.62",
+            "time": 0.62
+        },
+        {
+            "label": "无挡切换前",
+            "time": 0.949
+        },
+        {
+            "label": "无挡切换后",
+            "time": 0.951
+        },
+        {
+            "label": "换套前",
+            "time": 0.94
+        },
+        {
+            "label": "换套后",
+            "time": 0.95
+        },
+        {
+            "label": "半抽",
+            "time": 1.7
+        },
+        {
+            "label": "裸手停留",
+            "time": 3.65
+        },
+        {
+            "label": "问题位5.5",
+            "time": 5.5
+        },
+        {
+            "label": "半穿",
+            "time": 5.75
+        },
+        {
+            "label": "回正",
+            "time": 7.8
+        },
+        {
+            "label": "收尾还原层过渡",
+            "time": 7.69
+        },
+        {
+            "label": "开始低头",
+            "time": 4.65
+        },
+        {
+            "label": "低头看套口",
+            "time": 5.1
+        },
+        {
+            "label": "穿戴注视",
+            "time": 6.3
+        },
+        {
+            "label": "戴稳准备抬头",
+            "time": 6.8
+        },
+        {
+            "label": "抬头回正",
+            "time": 7.3
+        },
+        {
+            "label": "戴稳交接前",
+            "time": 6.799
+        },
+        {
+            "label": "戴稳交接后",
+            "time": 6.801
+        },
+        {
+            "label": "收尾 7.53",
+            "time": 7.53
+        },
+        {
+            "label": "收尾 7.58",
+            "time": 7.58
+        },
+        {
+            "label": "收尾 7.63",
+            "time": 7.63
+        },
+        {
+            "label": "收尾 7.68",
+            "time": 7.68
+        },
+        {
+            "label": "收尾 7.73",
+            "time": 7.73
+        },
+        {
+            "label": "收尾 7.78",
+            "time": 7.78
+        },
+        {
+            "label": "脱套开始低头",
+            "time": 0.35
+        },
+        {
+            "label": "低头抓腕口",
+            "time": 0.85
+        },
+        {
+            "label": "脱套注视",
+            "time": 1.7
+        },
+        {
+            "label": "完全脱下",
+            "time": 2.4
+        },
+        {
+            "label": "脱后抬头",
+            "time": 2.9
+        }
+    ],
+    "adapterModule": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/3dd621661bf9466e2d561b5b2246b436c948141e34d10b6a20159d445cc4384e/resource.mjs?instance=399c2b050aa8c467de7b&instance=99834570e2fc5377b4b0&v=w32",
+    "adapter": {}
+}

@@ -1,1 +1,55 @@
-{"hand_bbox":[359,675,512,851],"hand_wrist":[463,727],"hand_palm":[435,769],"hand_scale":0.8,"paths":{"model":"03_A编号动作/A43/已通过版本/A43_w11_2026-10-22/model/model.model3.json","hand_psd":"01_统一设计参考/PSD/人物/替换手与腕口/H04_整人试配.psd","ribbon_png":"01_统一设计参考/物件/小部件/P06-AC爱丽丝发带.png","ribbon_psd":"01_统一设计参考/PSD/道具/P06_A43爱丽丝蝴蝶绸带_w10.psd","official_hair_ref":"01_统一设计参考/物件/小部件/网络参考/se-ac-aerith-poster.jpg","movie_close_ref":"01_统一设计参考/物件/小部件/网络参考/ac-aerith-ending-close.jpg"},"sha256":{"model":"dbf110aeeb67fc5bffe7ff2b6e68e6c9e5efceb837867c4a8998f886596ce778","hand_psd":"abbc543663dcf21d9ddce71cd41e9cedefae4abe329f792ebc227e7a6ff4204f","ribbon_png":"0c49e0a975bcb3a7327220132c81351535a4b3ef97d04f0c6666ceb9c11eab1c","ribbon_psd":"926c8cb263226c81fa07e0fe92e2555005dd7f6f998a6e15d90c160f7f8a1176","official_hair_ref":"dc171388893a5e152941c99815e4f4134fc3f9f108c933c2dc2b2c3d085a5967","movie_close_ref":"e3f9357109b28d1fc8444efb04cc5ddd17b5bbe17ec40020506e364d1695ca94"},"ribbon_layer":"P06_source","scope":"用户2026-10-22通过w11自然化版并覆盖w10；姿态/绸带/神情/台词同源","prop_identity":"爱丽丝系在辫子上的粉色蝴蝶绸带；本轮明确排除AC队员纪念臂带/红绳。P06原画只读复用，宽扁结翼及双垂带。","motion_reverted_to_w1":false,"motion_sha256":"a14a7e32de1a6beda8d38543009ab63c29c5efaabeeb8648c339fa9bbb3b000c","user_axis_guide":{"path":"C:/Users/Lenovo/AppData/Local/Temp/codex-clipboard-ba70a6ce-9667-41e7-8320-c91363597064.png","sha256":"f5474a015b5bdfbef4fa105182db32371a0c499e913fa61c0d85e5d4b62ce59e"},"user_bend_guide":{"path":"C:\\Users\\Lenovo\\AppData\\Local\\Temp\\codex-clipboard-5ac3b11e-559e-4897-a02f-aa905c923845.png","sha256":"480751864bfcfa48798d0c458b15c44a86ee7ebfbd6fc9f236cd71501e275012"},"body_and_wrist_code_unchanged":true,"physics_source_sha256":"0071316acf315aee63264ff3cbb4d6a164a153ef1a65ec5d4f93db32807e9598","dialogue":{"text":"谁也救不了...吗？","start":3.645,"probability":0.2,"reviewForced":true},"natural_motion_sha256":"c0f8b9d84808d1c87ca2443ab73a8befb73ffa2cba2fbb85a15be1b56a0f64e5"}
+{
+    "hand_bbox": [
+        359,
+        675,
+        512,
+        851
+    ],
+    "hand_wrist": [
+        463,
+        727
+    ],
+    "hand_palm": [
+        435,
+        769
+    ],
+    "hand_scale": 0.8,
+    "paths": {
+        "model": "03_A编号动作/A43/已通过版本/A43_w11_2026-10-22/model/model.model3.json",
+        "hand_psd": "01_统一设计参考/PSD/人物/替换手与腕口/H04_整人试配.psd",
+        "ribbon_png": "01_统一设计参考/物件/小部件/P06-AC爱丽丝发带.png",
+        "ribbon_psd": "01_统一设计参考/PSD/道具/P06_A43爱丽丝蝴蝶绸带_w10.psd",
+        "official_hair_ref": "01_统一设计参考/物件/小部件/网络参考/se-ac-aerith-poster.jpg",
+        "movie_close_ref": "01_统一设计参考/物件/小部件/网络参考/ac-aerith-ending-close.jpg"
+    },
+    "sha256": {
+        "model": "dbf110aeeb67fc5bffe7ff2b6e68e6c9e5efceb837867c4a8998f886596ce778",
+        "hand_psd": "abbc543663dcf21d9ddce71cd41e9cedefae4abe329f792ebc227e7a6ff4204f",
+        "ribbon_png": "0c49e0a975bcb3a7327220132c81351535a4b3ef97d04f0c6666ceb9c11eab1c",
+        "ribbon_psd": "926c8cb263226c81fa07e0fe92e2555005dd7f6f998a6e15d90c160f7f8a1176",
+        "official_hair_ref": "dc171388893a5e152941c99815e4f4134fc3f9f108c933c2dc2b2c3d085a5967",
+        "movie_close_ref": "e3f9357109b28d1fc8444efb04cc5ddd17b5bbe17ec40020506e364d1695ca94"
+    },
+    "ribbon_layer": "P06_source",
+    "scope": "用户2026-10-22通过w11自然化版并覆盖w10；姿态/绸带/神情/台词同源",
+    "prop_identity": "爱丽丝系在辫子上的粉色蝴蝶绸带；本轮明确排除AC队员纪念臂带/红绳。P06原画只读复用，宽扁结翼及双垂带。",
+    "motion_reverted_to_w1": false,
+    "motion_sha256": "a14a7e32de1a6beda8d38543009ab63c29c5efaabeeb8648c339fa9bbb3b000c",
+    "user_axis_guide": {
+        "path": "C:/Users/Lenovo/AppData/Local/Temp/codex-clipboard-ba70a6ce-9667-41e7-8320-c91363597064.png",
+        "sha256": "f5474a015b5bdfbef4fa105182db32371a0c499e913fa61c0d85e5d4b62ce59e"
+    },
+    "user_bend_guide": {
+        "path": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\codex-clipboard-5ac3b11e-559e-4897-a02f-aa905c923845.png",
+        "sha256": "480751864bfcfa48798d0c458b15c44a86ee7ebfbd6fc9f236cd71501e275012"
+    },
+    "body_and_wrist_code_unchanged": true,
+    "physics_source_sha256": "0071316acf315aee63264ff3cbb4d6a164a153ef1a65ec5d4f93db32807e9598",
+    "dialogue": {
+        "text": "谁也救不了...吗？",
+        "start": 3.645,
+        "probability": 0.2,
+        "reviewForced": true
+    },
+    "natural_motion_sha256": "c0f8b9d84808d1c87ca2443ab73a8befb73ffa2cba2fbb85a15be1b56a0f64e5"
+}

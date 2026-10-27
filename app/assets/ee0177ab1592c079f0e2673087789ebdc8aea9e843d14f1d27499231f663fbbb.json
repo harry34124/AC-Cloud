@@ -1,1 +1,20 @@
-{"Version":3,"FileReferences":{"Moc":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/efe909a80ae6a35adcbe26ac8d46fc7a30a77c559e5a5bb48d0abf67c6b33cf5/resource.moc3","Textures":["/02_共用静止与衔接动作/共用模型/统一运行库/objects/b3d0a09901da5a070376dd679e8d30b2afb22e8278fae91204123b9550b96e49/resource.png","/02_共用静止与衔接动作/共用模型/统一运行库/objects/d1f54f4a6911fd25df162d0130cb3ce054af9ef18b3158842555dd9b2894741c/resource.png"],"DisplayInfo":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/2fff93fced8fcef235ac29a3d51625d81f5dfacb80d379fc9dc116cad0ac4e96/resource.cdi3.json"},"Groups":[{"Target":"Parameter","Name":"LipSync","Ids":["ParamMouthOpenY"]}]}
+{
+    "Version": 3,
+    "FileReferences": {
+        "Moc": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/efe909a80ae6a35adcbe26ac8d46fc7a30a77c559e5a5bb48d0abf67c6b33cf5/resource.moc3",
+        "Textures": [
+            "/02_共用静止与衔接动作/共用模型/统一运行库/objects/b3d0a09901da5a070376dd679e8d30b2afb22e8278fae91204123b9550b96e49/resource.png",
+            "/02_共用静止与衔接动作/共用模型/统一运行库/objects/d1f54f4a6911fd25df162d0130cb3ce054af9ef18b3158842555dd9b2894741c/resource.png"
+        ],
+        "DisplayInfo": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/2fff93fced8fcef235ac29a3d51625d81f5dfacb80d379fc9dc116cad0ac4e96/resource.cdi3.json"
+    },
+    "Groups": [
+        {
+            "Target": "Parameter",
+            "Name": "LipSync",
+            "Ids": [
+                "ParamMouthOpenY"
+            ]
+        }
+    ]
+}

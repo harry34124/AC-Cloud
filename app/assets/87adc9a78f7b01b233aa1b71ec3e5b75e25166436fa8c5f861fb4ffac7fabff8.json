@@ -1,1 +1,81 @@
-{"paths":{"hand_psd":"01_统一设计参考/PSD/人物/替换手与腕口/H04_整人试配.psd","hand_png":"01_统一设计参考/PSD/人物/替换手与腕口/H04_PSD坐标.png","flower_psd":"01_统一设计参考/PSD/道具/P02_黄花落瓣.psd","flower_png":"01_统一设计参考/PSD/道具/P02_黄花落瓣.png","model":"02_共用静止与衔接动作/共用模型/克劳德_基础/model.model3.json","nod_binding_record":"02_共用静止与衔接动作/共用模型/克劳德_基础/点头绑定记录.txt"},"sha256":{"hand_psd":"abbc543663dcf21d9ddce71cd41e9cedefae4abe329f792ebc227e7a6ff4204f","hand_png":"f25fe93dd21e7c307078ab28e0b262e7d6e41fad4cf8a0f38bc4e4483affc83a","flower_psd":"b3f4168d618db7d0b7b46880de4e428a5e6e68d81859917f0aa3a9562c3b7f87","flower_png":"85c0734695cc8b640264eb26f779e9133e13d9490ee7f5a0611cfbace1d39639","model":"dbf110aeeb67fc5bffe7ff2b6e68e6c9e5efceb837867c4a8998f886596ce778","nod_binding_record":"f494a0f69e3fd2d1a517844b1f82e4935f990cd592f615ad14e153b4bddfa0c7"},"hand_layer":"handwear fist-r","hand_bbox":[359,675,512,851],"hand_wrist":[463,727],"hand_palm":[435,769],"flower_bbox":[130,166,1190,1045],"flower_layer":"P02_完整原画","hand_layers":["legwear thigh-l","legwear shin-l","hidden upper-r","hidden fore-r","hidden fore-l","hidden torso","hidden upper-l","footwear-r","footwear-l","back hair","handwear upper-r","neck","topwear","bottomwear waist","legwear thigh-r","legwear shin-r","bottomwear cloth-l","handwear fist-r","handwear fore-r","ears","face","nose","mouth close","eyewhite-r","eyewhite-l","irides-r","irides-l","eyelash-l","eyelash-r","eyebrow-r","eyebrow-l","front hair","handwear pauldron-l","handwear upper-l","handwear fist-l","handwear fore-l"],"flower_scale_doc_width":54,"scope":"read actual PSD layers; exact crop only; no repaint, approved pixels unchanged","hand_scale":0.8}
+{
+    "paths": {
+        "hand_psd": "01_统一设计参考/PSD/人物/替换手与腕口/H04_整人试配.psd",
+        "hand_png": "01_统一设计参考/PSD/人物/替换手与腕口/H04_PSD坐标.png",
+        "flower_psd": "01_统一设计参考/PSD/道具/P02_黄花落瓣.psd",
+        "flower_png": "01_统一设计参考/PSD/道具/P02_黄花落瓣.png",
+        "model": "02_共用静止与衔接动作/共用模型/克劳德_基础/model.model3.json",
+        "nod_binding_record": "02_共用静止与衔接动作/共用模型/克劳德_基础/点头绑定记录.txt"
+    },
+    "sha256": {
+        "hand_psd": "abbc543663dcf21d9ddce71cd41e9cedefae4abe329f792ebc227e7a6ff4204f",
+        "hand_png": "f25fe93dd21e7c307078ab28e0b262e7d6e41fad4cf8a0f38bc4e4483affc83a",
+        "flower_psd": "b3f4168d618db7d0b7b46880de4e428a5e6e68d81859917f0aa3a9562c3b7f87",
+        "flower_png": "85c0734695cc8b640264eb26f779e9133e13d9490ee7f5a0611cfbace1d39639",
+        "model": "dbf110aeeb67fc5bffe7ff2b6e68e6c9e5efceb837867c4a8998f886596ce778",
+        "nod_binding_record": "f494a0f69e3fd2d1a517844b1f82e4935f990cd592f615ad14e153b4bddfa0c7"
+    },
+    "hand_layer": "handwear fist-r",
+    "hand_bbox": [
+        359,
+        675,
+        512,
+        851
+    ],
+    "hand_wrist": [
+        463,
+        727
+    ],
+    "hand_palm": [
+        435,
+        769
+    ],
+    "flower_bbox": [
+        130,
+        166,
+        1190,
+        1045
+    ],
+    "flower_layer": "P02_完整原画",
+    "hand_layers": [
+        "legwear thigh-l",
+        "legwear shin-l",
+        "hidden upper-r",
+        "hidden fore-r",
+        "hidden fore-l",
+        "hidden torso",
+        "hidden upper-l",
+        "footwear-r",
+        "footwear-l",
+        "back hair",
+        "handwear upper-r",
+        "neck",
+        "topwear",
+        "bottomwear waist",
+        "legwear thigh-r",
+        "legwear shin-r",
+        "bottomwear cloth-l",
+        "handwear fist-r",
+        "handwear fore-r",
+        "ears",
+        "face",
+        "nose",
+        "mouth close",
+        "eyewhite-r",
+        "eyewhite-l",
+        "irides-r",
+        "irides-l",
+        "eyelash-l",
+        "eyelash-r",
+        "eyebrow-r",
+        "eyebrow-l",
+        "front hair",
+        "handwear pauldron-l",
+        "handwear upper-l",
+        "handwear fist-l",
+        "handwear fore-l"
+    ],
+    "flower_scale_doc_width": 54,
+    "scope": "read actual PSD layers; exact crop only; no repaint, approved pixels unchanged",
+    "hand_scale": 0.8
+}

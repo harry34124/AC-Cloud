@@ -1,1 +1,127 @@
-{"side_psd":"E:\\Cloud\\CloudDesktopPet\\01_统一设计参考\\人物组件\\侧面步态修复\\修订14_髋根隐藏轮廓\\侧面_髋根轮廓工作.psd","side_sha256":"86cd12bc77e0269c5a6e908115efb4e9b26f5afea9893965d3d3fe413f70de1a","side_joints":{"near":{"hip":[638,735],"knee":[624.0107812196734,920.9121367380438],"ankle":[638,1094.2005011132362],"heel_support":[671,1199.2005011132362],"toe_support":[478,1199.2005011132362]},"far":{"hip":[638,735],"knee":[630.1627442398758,912.5951964140861],"ankle":[638,1094.9486379655789],"heel_support":[671,1199.9486379655789],"toe_support":[478,1199.9486379655789]},"left_arm":{"shoulder":[676,474],"elbow":[674,590],"wrist":[692,737]},"right_arm":{"shoulder":[609,474],"elbow":[618.7922221582071,602.7442069482053],"wrist":[595,744],"hand_tip":[606.1610992683068,806.8782854179871]}},"bent_joints":{"near":{"hip":[638,735],"knee":[638,911.3152104954115],"ankle":[786.6874733740012,1019.660457675745],"rest_thigh":90,"rest_shin":36.079989176667354},"far":{"hip":[638,735],"knee":[638,922.9343789300792],"ankle":[744.8930012522057,1058.1389820621052],"rest_thigh":90,"rest_shin":51.670040409840674}},"front_source":"E:/Cloud/CloudDesktopPet/02_共用静止与衔接动作/静止动作/cloud_ac/模型/A01_A49试制/model","status":"A01已通过待机模型原样复用；起停衔接候选待审","review_url":"http://127.0.0.1:8862/","native_runtime_directory":"model-r3","source_candidate":"E:\\Cloud\\CloudDesktopPet\\03_A编号动作\\A17\\模型试制\\a17-support-knee-w7","curve_revision":10,"unbound_spares":["leg_near_bent","leg_far_bent"],"side_input_psd":"E:\\Cloud\\CloudDesktopPet\\01_统一设计参考\\人物组件\\侧面步态修复\\修订14_髋根隐藏轮廓\\侧面_髋根轮廓绑定输入.psd"}
+{
+    "side_psd": "E:\\Cloud\\CloudDesktopPet\\01_统一设计参考\\人物组件\\侧面步态修复\\修订14_髋根隐藏轮廓\\侧面_髋根轮廓工作.psd",
+    "side_sha256": "86cd12bc77e0269c5a6e908115efb4e9b26f5afea9893965d3d3fe413f70de1a",
+    "side_joints": {
+        "near": {
+            "hip": [
+                638,
+                735
+            ],
+            "knee": [
+                624.0107812196734,
+                920.9121367380438
+            ],
+            "ankle": [
+                638,
+                1094.2005011132362
+            ],
+            "heel_support": [
+                671,
+                1199.2005011132362
+            ],
+            "toe_support": [
+                478,
+                1199.2005011132362
+            ]
+        },
+        "far": {
+            "hip": [
+                638,
+                735
+            ],
+            "knee": [
+                630.1627442398758,
+                912.5951964140861
+            ],
+            "ankle": [
+                638,
+                1094.9486379655789
+            ],
+            "heel_support": [
+                671,
+                1199.9486379655789
+            ],
+            "toe_support": [
+                478,
+                1199.9486379655789
+            ]
+        },
+        "left_arm": {
+            "shoulder": [
+                676,
+                474
+            ],
+            "elbow": [
+                674,
+                590
+            ],
+            "wrist": [
+                692,
+                737
+            ]
+        },
+        "right_arm": {
+            "shoulder": [
+                609,
+                474
+            ],
+            "elbow": [
+                618.7922221582071,
+                602.7442069482053
+            ],
+            "wrist": [
+                595,
+                744
+            ],
+            "hand_tip": [
+                606.1610992683068,
+                806.8782854179871
+            ]
+        }
+    },
+    "bent_joints": {
+        "near": {
+            "hip": [
+                638,
+                735
+            ],
+            "knee": [
+                638,
+                911.3152104954115
+            ],
+            "ankle": [
+                786.6874733740012,
+                1019.660457675745
+            ],
+            "rest_thigh": 90,
+            "rest_shin": 36.079989176667354
+        },
+        "far": {
+            "hip": [
+                638,
+                735
+            ],
+            "knee": [
+                638,
+                922.9343789300792
+            ],
+            "ankle": [
+                744.8930012522057,
+                1058.1389820621052
+            ],
+            "rest_thigh": 90,
+            "rest_shin": 51.670040409840674
+        }
+    },
+    "front_source": "E:/Cloud/CloudDesktopPet/02_共用静止与衔接动作/静止动作/cloud_ac/模型/A01_A49试制/model",
+    "status": "A01已通过待机模型原样复用；起停衔接候选待审",
+    "review_url": "http://127.0.0.1:8862/",
+    "native_runtime_directory": "model-r3",
+    "source_candidate": "E:\\Cloud\\CloudDesktopPet\\03_A编号动作\\A17\\模型试制\\a17-support-knee-w7",
+    "curve_revision": 10,
+    "unbound_spares": [
+        "leg_near_bent",
+        "leg_far_bent"
+    ],
+    "side_input_psd": "E:\\Cloud\\CloudDesktopPet\\01_统一设计参考\\人物组件\\侧面步态修复\\修订14_髋根隐藏轮廓\\侧面_髋根轮廓绑定输入.psd"
+}

@@ -1,1 +1,271 @@
-{"title":"✅ A11 · 整理衣领 w32 自然理领＋已确认台词","description":"2026-10-22用户通过：基于w31仅改理领段曲线（连续接触、捏提/轻拉、领缘局部受力、头眼跟随、两次眨眼）；A10脱戴段、8秒、PSD/网格/腕肘适配器与已确认低频台词沿用。","model":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/875136e5c234cdffa48b34b56024f513f4d06540209378f799c974383a29dfac/resource.model3.json","armModel":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/ee0177ab1592c079f0e2673087789ebdc8aea9e843d14f1d27499231f663fbbb/resource.model3.json","adapterModule":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/82999ba96ef3287090ad3ee8cee36bb8bbe11acb5f518c5d10292feda44437a3/resource.mjs?instance=65278a84f4aeb08a840d&instance=250c1670f3cc34684c55&v=w32","motion":{"module":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/03fa5684888f1d324e31755c84aa73eea44981180998b418547534393d7b20f0/resource.mjs?instance=a080493d9d7087f4909c&instance=13ab715bae4c59ce9595"},"duration":8,"artBounds":[0.28515625,0.0203125,0.7140625,0.95],"recordFps":24,"returnPolicy":{"reverseBefore":0.58},"components":[{"id":"A10:ArtMeshHandwearR","label":"handwear upper-r","layer":"handwear upper-r","drawableIds":["ArtMeshHandwearR"],"psd":"/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd","owner":"body"},{"id":"A10:ArtMeshLayerR","label":"hidden upper-r","layer":"hidden upper-r","drawableIds":["ArtMeshLayerR"],"psd":"/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd","owner":"body"},{"id":"A10:ArtMeshHandwearR3","label":"handwear fore-r","layer":"handwear fore-r","drawableIds":["ArtMeshHandwearR3"],"psd":"/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd","owner":"body"},{"id":"A10:ArtMeshLayerR3","label":"hidden fore-r","layer":"hidden fore-r","drawableIds":["ArtMeshLayerR3"],"psd":"/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd","owner":"body"},{"id":"A10:ArtMeshLayerR6","label":"bare fore-r","layer":"bare fore-r","drawableIds":["ArtMeshLayerR6"],"psd":"/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd","owner":"body"},{"id":"A10:ArtMeshLayerR8","label":"bare hand-r","layer":"bare hand-r","drawableIds":["ArtMeshLayerR8"],"psd":"/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd","owner":"body"},{"id":"A10:ArtMeshLayerL3","label":"empty glove-l","layer":"empty glove-l","drawableIds":["ArtMeshLayerL3"],"psd":"/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd","owner":"body"},{"id":"A10:ArtMeshHandwearL3","label":"handwear fist-l","layer":"handwear fist-l","drawableIds":["ArtMeshHandwearL3"],"psd":"/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd","owner":"body"},{"id":"A10:ArtMeshHandwearL4","label":"handwear fore-l","layer":"handwear fore-l","drawableIds":["ArtMeshHandwearL4"],"psd":"/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd","owner":"body"},{"id":"A10:ArtMeshHandwearL2","label":"handwear upper-l","layer":"handwear upper-l","drawableIds":["ArtMeshHandwearL2"],"psd":"/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd","owner":"body"},{"id":"A10:ArtMeshLayerL2","label":"hidden upper-l","layer":"hidden upper-l","drawableIds":["ArtMeshLayerL2"],"psd":"/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd","owner":"body"},{"id":"A10:ArtMeshLayerL","label":"hidden fore-l","layer":"hidden fore-l","drawableIds":["ArtMeshLayerL"],"psd":"/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd","owner":"body"},{"id":"A10:ArtMeshHandwearL","label":"handwear pauldron-l","layer":"handwear pauldron-l","drawableIds":["ArtMeshHandwearL"],"psd":"/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd","owner":"body"},{"id":"A10:ArtMeshLayerR5","label":"a01 upper-r","layer":"a01 upper-r","drawableIds":["ArtMeshLayerR5"],"psd":"/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd","owner":"body"},{"id":"A10:ArtMeshLayerR2","label":"a01 hidden upper-r","layer":"a01 hidden upper-r","drawableIds":["ArtMeshLayerR2"],"psd":"/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd","owner":"body"},{"id":"A10:ArtMeshLayerR4","label":"a01 hidden fore-r","layer":"a01 hidden fore-r","drawableIds":["ArtMeshLayerR4"],"psd":"/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd","owner":"body"},{"id":"A10:ArtMeshLayerR7","label":"a01 fore-r","layer":"a01 fore-r","drawableIds":["ArtMeshLayerR7"],"psd":"/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd","owner":"body"},{"id":"A11:ArtMeshLayerR3","label":"a11 bare fore-r","layer":"a11 bare fore-r","owner":"arm","drawableIds":["ArtMeshLayerR2"],"psd":"/01_统一设计参考/PSD/人物/A11/已通过w31_2026-10-14/A11_腕肘轮廓源.psd"},{"id":"A11:ArtMeshLayerR4","label":"a11 bare hand-r","layer":"a11 bare hand-r","owner":"arm","drawableIds":["ArtMeshLayerR3"],"psd":"/01_统一设计参考/PSD/人物/A11/已通过w31_2026-10-14/A11_腕肘轮廓源.psd"},{"id":"A11:upper","label":"a11 upper-r","layer":"a11 upper-r","owner":"arm","drawableIds":["ArtMeshLayerR"],"psd":"/01_统一设计参考/PSD/人物/A11/已通过w31_2026-10-14/A11_腕肘轮廓源.psd"}],"checks":[{"time":0,"label":"A01"},{"time":1.34,"label":"脱完接抬手"},{"time":2.33,"label":"右领口第一次轻拉"},{"time":2.65,"label":"台词起点"},{"time":3.1,"label":"换到左领口"},{"time":4.3,"label":"左领口轻拉"},{"time":5.1,"label":"沿领缘抚平"},{"time":6.3,"label":"穿戴会合"},{"time":8,"label":"A01回正"}],"upperModel":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/6871314c3c94d764ef8009f26fd200601f52f31ec945292bd1fc1910b643aabc/resource.model3.json","jointInk":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/8b9099d85485b6042dad2245f6ffccf1849257fc469a708af5b72cd5609b75a0/resource.json","adapter":{},"confirmedDialogue":{"text":"还是女装舒服？","probability":0.15,"at":2.65,"readSeconds":1.8,"confirmation":"2026-10-14用户确认A10无台词、A11理领时低频保留此句"}}
+{
+    "title": "✅ A11 · 整理衣领 w32 自然理领＋已确认台词",
+    "description": "2026-10-22用户通过：基于w31仅改理领段曲线（连续接触、捏提/轻拉、领缘局部受力、头眼跟随、两次眨眼）；A10脱戴段、8秒、PSD/网格/腕肘适配器与已确认低频台词沿用。",
+    "model": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/875136e5c234cdffa48b34b56024f513f4d06540209378f799c974383a29dfac/resource.model3.json",
+    "armModel": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/ee0177ab1592c079f0e2673087789ebdc8aea9e843d14f1d27499231f663fbbb/resource.model3.json",
+    "adapterModule": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/82999ba96ef3287090ad3ee8cee36bb8bbe11acb5f518c5d10292feda44437a3/resource.mjs?instance=65278a84f4aeb08a840d&instance=250c1670f3cc34684c55&v=w32",
+    "motion": {
+        "module": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/03fa5684888f1d324e31755c84aa73eea44981180998b418547534393d7b20f0/resource.mjs?instance=a080493d9d7087f4909c&instance=13ab715bae4c59ce9595"
+    },
+    "duration": 8,
+    "artBounds": [
+        0.28515625,
+        0.0203125,
+        0.7140625,
+        0.95
+    ],
+    "recordFps": 24,
+    "returnPolicy": {
+        "reverseBefore": 0.58
+    },
+    "components": [
+        {
+            "id": "A10:ArtMeshHandwearR",
+            "label": "handwear upper-r",
+            "layer": "handwear upper-r",
+            "drawableIds": [
+                "ArtMeshHandwearR"
+            ],
+            "psd": "/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshLayerR",
+            "label": "hidden upper-r",
+            "layer": "hidden upper-r",
+            "drawableIds": [
+                "ArtMeshLayerR"
+            ],
+            "psd": "/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshHandwearR3",
+            "label": "handwear fore-r",
+            "layer": "handwear fore-r",
+            "drawableIds": [
+                "ArtMeshHandwearR3"
+            ],
+            "psd": "/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshLayerR3",
+            "label": "hidden fore-r",
+            "layer": "hidden fore-r",
+            "drawableIds": [
+                "ArtMeshLayerR3"
+            ],
+            "psd": "/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshLayerR6",
+            "label": "bare fore-r",
+            "layer": "bare fore-r",
+            "drawableIds": [
+                "ArtMeshLayerR6"
+            ],
+            "psd": "/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshLayerR8",
+            "label": "bare hand-r",
+            "layer": "bare hand-r",
+            "drawableIds": [
+                "ArtMeshLayerR8"
+            ],
+            "psd": "/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshLayerL3",
+            "label": "empty glove-l",
+            "layer": "empty glove-l",
+            "drawableIds": [
+                "ArtMeshLayerL3"
+            ],
+            "psd": "/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshHandwearL3",
+            "label": "handwear fist-l",
+            "layer": "handwear fist-l",
+            "drawableIds": [
+                "ArtMeshHandwearL3"
+            ],
+            "psd": "/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshHandwearL4",
+            "label": "handwear fore-l",
+            "layer": "handwear fore-l",
+            "drawableIds": [
+                "ArtMeshHandwearL4"
+            ],
+            "psd": "/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshHandwearL2",
+            "label": "handwear upper-l",
+            "layer": "handwear upper-l",
+            "drawableIds": [
+                "ArtMeshHandwearL2"
+            ],
+            "psd": "/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshLayerL2",
+            "label": "hidden upper-l",
+            "layer": "hidden upper-l",
+            "drawableIds": [
+                "ArtMeshLayerL2"
+            ],
+            "psd": "/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshLayerL",
+            "label": "hidden fore-l",
+            "layer": "hidden fore-l",
+            "drawableIds": [
+                "ArtMeshLayerL"
+            ],
+            "psd": "/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshHandwearL",
+            "label": "handwear pauldron-l",
+            "layer": "handwear pauldron-l",
+            "drawableIds": [
+                "ArtMeshHandwearL"
+            ],
+            "psd": "/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshLayerR5",
+            "label": "a01 upper-r",
+            "layer": "a01 upper-r",
+            "drawableIds": [
+                "ArtMeshLayerR5"
+            ],
+            "psd": "/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshLayerR2",
+            "label": "a01 hidden upper-r",
+            "layer": "a01 hidden upper-r",
+            "drawableIds": [
+                "ArtMeshLayerR2"
+            ],
+            "psd": "/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshLayerR4",
+            "label": "a01 hidden fore-r",
+            "layer": "a01 hidden fore-r",
+            "drawableIds": [
+                "ArtMeshLayerR4"
+            ],
+            "psd": "/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A10:ArtMeshLayerR7",
+            "label": "a01 fore-r",
+            "layer": "a01 fore-r",
+            "drawableIds": [
+                "ArtMeshLayerR7"
+            ],
+            "psd": "/04_项目记录/工作/a11-native-joints-w12/w24/A11_A10衔接_组件工作.psd",
+            "owner": "body"
+        },
+        {
+            "id": "A11:ArtMeshLayerR3",
+            "label": "a11 bare fore-r",
+            "layer": "a11 bare fore-r",
+            "owner": "arm",
+            "drawableIds": [
+                "ArtMeshLayerR2"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A11/已通过w31_2026-10-14/A11_腕肘轮廓源.psd"
+        },
+        {
+            "id": "A11:ArtMeshLayerR4",
+            "label": "a11 bare hand-r",
+            "layer": "a11 bare hand-r",
+            "owner": "arm",
+            "drawableIds": [
+                "ArtMeshLayerR3"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A11/已通过w31_2026-10-14/A11_腕肘轮廓源.psd"
+        },
+        {
+            "id": "A11:upper",
+            "label": "a11 upper-r",
+            "layer": "a11 upper-r",
+            "owner": "arm",
+            "drawableIds": [
+                "ArtMeshLayerR"
+            ],
+            "psd": "/01_统一设计参考/PSD/人物/A11/已通过w31_2026-10-14/A11_腕肘轮廓源.psd"
+        }
+    ],
+    "checks": [
+        {
+            "time": 0,
+            "label": "A01"
+        },
+        {
+            "time": 1.34,
+            "label": "脱完接抬手"
+        },
+        {
+            "time": 2.33,
+            "label": "右领口第一次轻拉"
+        },
+        {
+            "time": 2.65,
+            "label": "台词起点"
+        },
+        {
+            "time": 3.1,
+            "label": "换到左领口"
+        },
+        {
+            "time": 4.3,
+            "label": "左领口轻拉"
+        },
+        {
+            "time": 5.1,
+            "label": "沿领缘抚平"
+        },
+        {
+            "time": 6.3,
+            "label": "穿戴会合"
+        },
+        {
+            "time": 8,
+            "label": "A01回正"
+        }
+    ],
+    "upperModel": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/6871314c3c94d764ef8009f26fd200601f52f31ec945292bd1fc1910b643aabc/resource.model3.json",
+    "jointInk": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/8b9099d85485b6042dad2245f6ffccf1849257fc469a708af5b72cd5609b75a0/resource.json",
+    "adapter": {},
+    "confirmedDialogue": {
+        "text": "还是女装舒服？",
+        "probability": 0.15,
+        "at": 2.65,
+        "readSeconds": 1.8,
+        "confirmation": "2026-10-14用户确认A10无台词、A11理领时低频保留此句"
+    }
+}

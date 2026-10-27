@@ -1,1 +1,276 @@
-{"title":"A57 · 弹反鼠标 · 已通过","description":"收剑4.57～6.07秒完成；台词“别闹了。”，20%概率。","model":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/e7c95ca56a6f44a96f32d1b23e2dea4ba43f5d4af107030ad6cae3695f5bfa2c/resource.model3.json","adapterModule":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/93f7ecaaf3d529e6265482614876e435351135732149e1e436d75b25113757c4/resource.mjs?instance=5f9c1130954d4ba08e7c&v=a57w15a","duration":6.07,"artBounds":[0.28515625,0.0203125,0.7140625,0.95],"dialoguePreview":true,"dialogueVariant":0,"recordFps":24,"returnPolicy":{"reverseBefore":0.25},"components":[{"id":"Upper","label":"右上臂与肩根","drawableIds":["ArtMeshHandwearR","ArtMeshLayerR"],"layer":"handwear upper-r / hidden upper-r","psd":"/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"},{"id":"Fore","label":"右小臂与腕口","drawableIds":["ArtMeshHandwearR3","ArtMeshLayerR2"],"layer":"handwear fore-r / hidden fore-r","psd":"/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"},{"id":"Fist","label":"右拳及备用握剑手","drawableIds":["ArtMeshHandwearR2","ArtMeshHandwearR4","ArtMeshHandwearR5"],"layer":"handwear fist-r / grip-front-r / grip-back-r","psd":"/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"},{"id":"Torso","label":"胸衣与隐藏腰肩","drawableIds":["ArtMeshTopwear","ArtMeshLayer"],"layer":"topwear / hidden torso","psd":"/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"},{"id":"Left","label":"左肩甲与袖臂","drawableIds":["ArtMeshHandwearL","ArtMeshHandwearL2","ArtMeshHandwearL3","ArtMeshHandwearL4","ArtMeshLayerL","ArtMeshLayerL2"],"layer":"handwear pauldron-l / upper-l / fore-l / fist-l","psd":"/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"},{"id":"Head","label":"整头与五官","drawableIds":["ArtMeshBackHair","ArtMeshEars","ArtMeshFace","ArtMeshNose","ArtMeshMouthClose","ArtMeshEyewhiteR","ArtMeshEyewhiteL","ArtMeshIridesR","ArtMeshIridesL","ArtMeshEyelashL","ArtMeshEyelashR","ArtMeshEyebrowR","ArtMeshEyebrowL","ArtMeshFrontHair"],"layer":"back hair / front hair / face / facial features","psd":"/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"},{"id":"Neck","label":"后颈","drawableIds":["ArtMeshNeck"],"layer":"neck","psd":"/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"},{"id":"ForeCap","label":"右肘隐藏封头单件","layer":"hidden fore-r","drawableIds":["ArtMeshLayerR2"],"psd":"/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"},{"id":"Sword","label":"六式整剑","layer":"六式_整体动作输入","drawableIds":[],"psd":"/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/六式_整体动作输入.psd"},{"id":"Legs","label":"双腿与靴","layer":"legwear thigh/shin / footwear-r,l","drawableIds":["ArtMeshLegwearR","ArtMeshLegwearR2","ArtMeshLegwearL","ArtMeshLegwearL2","ArtMeshFootwearR","ArtMeshFootwearL"],"psd":"/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"},{"id":"LeftUpper","label":"左肩甲和上臂","drawableIds":["ArtMeshHandwearL","ArtMeshHandwearL2","ArtMeshLayerL2"],"layer":"handwear pauldron-l / upper-l / hidden upper-l","psd":"/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"},{"id":"LeftFore","label":"左小臂与肘隐藏端","drawableIds":["ArtMeshHandwearL4","ArtMeshLayerL"],"layer":"handwear fore-l / hidden fore-l","psd":"/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"},{"id":"LeftFist","label":"左拳与袖口","drawableIds":["ArtMeshHandwearL3"],"layer":"handwear fist-l","psd":"/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"},{"id":"LeftEnds","label":"左肩肘隐藏端","drawableIds":["ArtMeshLayerL","ArtMeshLayerL2"],"layer":"hidden fore-l / hidden upper-l","psd":"/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"},{"id":"FX","label":"刀光与命中闪光","drawableIds":[],"layer":"独立矢量效果，源：slash-fx.mjs（无PSD）","psd":null},{"id":"LongCloth","label":"左腰长布（腿部遮挡检查）","layer":"bottomwear side-l","drawableIds":["ArtMeshBottomwearL"],"psd":"/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"},{"id":"FrontHair","label":"前发（握剑手遮挡）","drawableIds":["ArtMeshFrontHair"],"layer":"front hair","psd":"/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"}],"checks":[{"label":"取柄","time":0.5},{"label":"出鞘","time":1.0833333333333335},{"label":"腰肩蓄力","time":1.6904916393442624},{"label":"砍中鼠标","time":1.8959016393442623},{"label":"立刃命中（去特效可查）","time":1.8704918032786884},{"label":"刀光扫出","time":1.9509016393442624},{"label":"斩击随势","time":2.1104916393442625},{"label":"全身制动","time":2.4459016393442625},{"label":"警戒","time":2.9459016393442625},{"label":"延长命中光尾段","time":2.210491803278688},{"label":"1.5秒收剑开始","time":4.57},{"label":"收剑头侧遮挡","time":5.0425},{"label":"回正","time":6.07},{"label":"原跳变前","time":2.52},{"label":"原跳变区间","time":2.59},{"label":"回到持剑位","time":2.79},{"label":"原停顿附近","time":4.8325}],"captureSize":[1060,900]}
+{
+    "title": "A57 · 弹反鼠标 · 已通过",
+    "description": "收剑4.57～6.07秒完成；台词“别闹了。”，20%概率。",
+    "model": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/e7c95ca56a6f44a96f32d1b23e2dea4ba43f5d4af107030ad6cae3695f5bfa2c/resource.model3.json",
+    "adapterModule": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/93f7ecaaf3d529e6265482614876e435351135732149e1e436d75b25113757c4/resource.mjs?instance=5f9c1130954d4ba08e7c&v=a57w15a",
+    "duration": 6.07,
+    "artBounds": [
+        0.28515625,
+        0.0203125,
+        0.7140625,
+        0.95
+    ],
+    "dialoguePreview": true,
+    "dialogueVariant": 0,
+    "recordFps": 24,
+    "returnPolicy": {
+        "reverseBefore": 0.25
+    },
+    "components": [
+        {
+            "id": "Upper",
+            "label": "右上臂与肩根",
+            "drawableIds": [
+                "ArtMeshHandwearR",
+                "ArtMeshLayerR"
+            ],
+            "layer": "handwear upper-r / hidden upper-r",
+            "psd": "/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"
+        },
+        {
+            "id": "Fore",
+            "label": "右小臂与腕口",
+            "drawableIds": [
+                "ArtMeshHandwearR3",
+                "ArtMeshLayerR2"
+            ],
+            "layer": "handwear fore-r / hidden fore-r",
+            "psd": "/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"
+        },
+        {
+            "id": "Fist",
+            "label": "右拳及备用握剑手",
+            "drawableIds": [
+                "ArtMeshHandwearR2",
+                "ArtMeshHandwearR4",
+                "ArtMeshHandwearR5"
+            ],
+            "layer": "handwear fist-r / grip-front-r / grip-back-r",
+            "psd": "/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"
+        },
+        {
+            "id": "Torso",
+            "label": "胸衣与隐藏腰肩",
+            "drawableIds": [
+                "ArtMeshTopwear",
+                "ArtMeshLayer"
+            ],
+            "layer": "topwear / hidden torso",
+            "psd": "/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"
+        },
+        {
+            "id": "Left",
+            "label": "左肩甲与袖臂",
+            "drawableIds": [
+                "ArtMeshHandwearL",
+                "ArtMeshHandwearL2",
+                "ArtMeshHandwearL3",
+                "ArtMeshHandwearL4",
+                "ArtMeshLayerL",
+                "ArtMeshLayerL2"
+            ],
+            "layer": "handwear pauldron-l / upper-l / fore-l / fist-l",
+            "psd": "/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"
+        },
+        {
+            "id": "Head",
+            "label": "整头与五官",
+            "drawableIds": [
+                "ArtMeshBackHair",
+                "ArtMeshEars",
+                "ArtMeshFace",
+                "ArtMeshNose",
+                "ArtMeshMouthClose",
+                "ArtMeshEyewhiteR",
+                "ArtMeshEyewhiteL",
+                "ArtMeshIridesR",
+                "ArtMeshIridesL",
+                "ArtMeshEyelashL",
+                "ArtMeshEyelashR",
+                "ArtMeshEyebrowR",
+                "ArtMeshEyebrowL",
+                "ArtMeshFrontHair"
+            ],
+            "layer": "back hair / front hair / face / facial features",
+            "psd": "/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"
+        },
+        {
+            "id": "Neck",
+            "label": "后颈",
+            "drawableIds": [
+                "ArtMeshNeck"
+            ],
+            "layer": "neck",
+            "psd": "/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"
+        },
+        {
+            "id": "ForeCap",
+            "label": "右肘隐藏封头单件",
+            "layer": "hidden fore-r",
+            "drawableIds": [
+                "ArtMeshLayerR2"
+            ],
+            "psd": "/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"
+        },
+        {
+            "id": "Sword",
+            "label": "六式整剑",
+            "layer": "六式_整体动作输入",
+            "drawableIds": [],
+            "psd": "/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/六式_整体动作输入.psd"
+        },
+        {
+            "id": "Legs",
+            "label": "双腿与靴",
+            "layer": "legwear thigh/shin / footwear-r,l",
+            "drawableIds": [
+                "ArtMeshLegwearR",
+                "ArtMeshLegwearR2",
+                "ArtMeshLegwearL",
+                "ArtMeshLegwearL2",
+                "ArtMeshFootwearR",
+                "ArtMeshFootwearL"
+            ],
+            "psd": "/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"
+        },
+        {
+            "id": "LeftUpper",
+            "label": "左肩甲和上臂",
+            "drawableIds": [
+                "ArtMeshHandwearL",
+                "ArtMeshHandwearL2",
+                "ArtMeshLayerL2"
+            ],
+            "layer": "handwear pauldron-l / upper-l / hidden upper-l",
+            "psd": "/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"
+        },
+        {
+            "id": "LeftFore",
+            "label": "左小臂与肘隐藏端",
+            "drawableIds": [
+                "ArtMeshHandwearL4",
+                "ArtMeshLayerL"
+            ],
+            "layer": "handwear fore-l / hidden fore-l",
+            "psd": "/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"
+        },
+        {
+            "id": "LeftFist",
+            "label": "左拳与袖口",
+            "drawableIds": [
+                "ArtMeshHandwearL3"
+            ],
+            "layer": "handwear fist-l",
+            "psd": "/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"
+        },
+        {
+            "id": "LeftEnds",
+            "label": "左肩肘隐藏端",
+            "drawableIds": [
+                "ArtMeshLayerL",
+                "ArtMeshLayerL2"
+            ],
+            "layer": "hidden fore-l / hidden upper-l",
+            "psd": "/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"
+        },
+        {
+            "id": "FX",
+            "label": "刀光与命中闪光",
+            "drawableIds": [],
+            "layer": "独立矢量效果，源：slash-fx.mjs（无PSD）",
+            "psd": null
+        },
+        {
+            "id": "LongCloth",
+            "label": "左腰长布（腿部遮挡检查）",
+            "layer": "bottomwear side-l",
+            "drawableIds": [
+                "ArtMeshBottomwearL"
+            ],
+            "psd": "/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"
+        },
+        {
+            "id": "FrontHair",
+            "label": "前发（握剑手遮挡）",
+            "drawableIds": [
+                "ArtMeshFrontHair"
+            ],
+            "layer": "front hair",
+            "psd": "/03_A编号动作/A34/模型试制/a34-a37-a39-approved-w9/A34_38层人物握柄候选.psd"
+        }
+    ],
+    "checks": [
+        {
+            "label": "取柄",
+            "time": 0.5
+        },
+        {
+            "label": "出鞘",
+            "time": 1.0833333333333335
+        },
+        {
+            "label": "腰肩蓄力",
+            "time": 1.6904916393442624
+        },
+        {
+            "label": "砍中鼠标",
+            "time": 1.8959016393442623
+        },
+        {
+            "label": "立刃命中（去特效可查）",
+            "time": 1.8704918032786884
+        },
+        {
+            "label": "刀光扫出",
+            "time": 1.9509016393442624
+        },
+        {
+            "label": "斩击随势",
+            "time": 2.1104916393442625
+        },
+        {
+            "label": "全身制动",
+            "time": 2.4459016393442625
+        },
+        {
+            "label": "警戒",
+            "time": 2.9459016393442625
+        },
+        {
+            "label": "延长命中光尾段",
+            "time": 2.210491803278688
+        },
+        {
+            "label": "1.5秒收剑开始",
+            "time": 4.57
+        },
+        {
+            "label": "收剑头侧遮挡",
+            "time": 5.0425
+        },
+        {
+            "label": "回正",
+            "time": 6.07
+        },
+        {
+            "label": "原跳变前",
+            "time": 2.52
+        },
+        {
+            "label": "原跳变区间",
+            "time": 2.59
+        },
+        {
+            "label": "回到持剑位",
+            "time": 2.79
+        },
+        {
+            "label": "原停顿附近",
+            "time": 4.8325
+        }
+    ],
+    "captureSize": [
+        1060,
+        900
+    ]
+}

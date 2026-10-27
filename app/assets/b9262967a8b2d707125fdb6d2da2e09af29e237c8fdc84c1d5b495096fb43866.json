@@ -1,1 +1,50 @@
-{"Version":3,"FileReferences":{"Moc":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/d1bb5f91fc787afcbd8d72067b0c5f18bea620ffb72cab2c9e7b0b4b46f90c78/resource.moc3","Textures":["/02_共用静止与衔接动作/共用模型/统一运行库/objects/f4ffc97ef2aa55af9b9566300d431d10eeb92de2b0d445d5adf0662eb4a1c87d/resource.png"],"Physics":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/3f9ee0952e0d2d7e45b8d8bcaa9ee7ecd766dfa4995594433ea920d0646104c6/resource.json","DisplayInfo":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/6b9945f4f9261466e796f5d56ca06b9e023ea3e664092a8410109c132636d28d/resource.cdi3.json","Motions":{"Idle":[{"File":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/aaa36a8da1c852afdef80b73d3b338a3f27cca32e85943b2fe5bfbee68c52a90/resource.motion3.json"}],"Blink":[{"File":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/2489be4ed2097f47cbb6bdfbc92cceac7ebbef37fea7cea640b590be0e92444f/resource.motion3.json"}],"Nod":[{"File":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/5913d97e6974d2465ed41b2ac0580a1663655970410b1b5e092389eddf21dc38/resource.motion3.json"}],"Shake":[{"File":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/42618031faa5e2c96027e645d4b2b6a147df850a9917cce383038ee6869867d6/resource.motion3.json"}]}},"Groups":[{"Target":"Parameter","Name":"EyeBlink","Ids":["ParamEyeLOpen","ParamEyeROpen"]},{"Target":"Parameter","Name":"LipSync","Ids":["ParamMouthOpenY"]}]}
+{
+    "Version": 3,
+    "FileReferences": {
+        "Moc": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/d1bb5f91fc787afcbd8d72067b0c5f18bea620ffb72cab2c9e7b0b4b46f90c78/resource.moc3",
+        "Textures": [
+            "/02_共用静止与衔接动作/共用模型/统一运行库/objects/f4ffc97ef2aa55af9b9566300d431d10eeb92de2b0d445d5adf0662eb4a1c87d/resource.png"
+        ],
+        "Physics": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/3f9ee0952e0d2d7e45b8d8bcaa9ee7ecd766dfa4995594433ea920d0646104c6/resource.json",
+        "DisplayInfo": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/6b9945f4f9261466e796f5d56ca06b9e023ea3e664092a8410109c132636d28d/resource.cdi3.json",
+        "Motions": {
+            "Idle": [
+                {
+                    "File": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/aaa36a8da1c852afdef80b73d3b338a3f27cca32e85943b2fe5bfbee68c52a90/resource.motion3.json"
+                }
+            ],
+            "Blink": [
+                {
+                    "File": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/2489be4ed2097f47cbb6bdfbc92cceac7ebbef37fea7cea640b590be0e92444f/resource.motion3.json"
+                }
+            ],
+            "Nod": [
+                {
+                    "File": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/5913d97e6974d2465ed41b2ac0580a1663655970410b1b5e092389eddf21dc38/resource.motion3.json"
+                }
+            ],
+            "Shake": [
+                {
+                    "File": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/42618031faa5e2c96027e645d4b2b6a147df850a9917cce383038ee6869867d6/resource.motion3.json"
+                }
+            ]
+        }
+    },
+    "Groups": [
+        {
+            "Target": "Parameter",
+            "Name": "EyeBlink",
+            "Ids": [
+                "ParamEyeLOpen",
+                "ParamEyeROpen"
+            ]
+        },
+        {
+            "Target": "Parameter",
+            "Name": "LipSync",
+            "Ids": [
+                "ParamMouthOpenY"
+            ]
+        }
+    ]
+}

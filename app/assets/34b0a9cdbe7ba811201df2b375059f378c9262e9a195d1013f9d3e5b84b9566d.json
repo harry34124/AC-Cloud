@@ -1,1 +1,97 @@
-{"paths":{"hand_psd":"01_统一设计参考/PSD/人物/替换手与腕口/H04_整人试配.psd","hand_png":"01_统一设计参考/PSD/人物/替换手与腕口/H04_PSD坐标.png","flower_psd":"01_统一设计参考/PSD/道具/P02_黄花落瓣.psd","flower_png":"01_统一设计参考/PSD/道具/P02_黄花落瓣.png","model":"03_A编号动作/A41/已通过版本/A41_w9_2026-10-18/model/model.model3.json","nod_binding_record":"02_共用静止与衔接动作/共用模型/克劳德_基础/点头绑定记录.txt"},"sha256":{"hand_psd":"abbc543663dcf21d9ddce71cd41e9cedefae4abe329f792ebc227e7a6ff4204f","hand_png":"f25fe93dd21e7c307078ab28e0b262e7d6e41fad4cf8a0f38bc4e4483affc83a","flower_psd":"b3f4168d618db7d0b7b46880de4e428a5e6e68d81859917f0aa3a9562c3b7f87","flower_png":"85c0734695cc8b640264eb26f779e9133e13d9490ee7f5a0611cfbace1d39639","model":"dbf110aeeb67fc5bffe7ff2b6e68e6c9e5efceb837867c4a8998f886596ce778","nod_binding_record":"f494a0f69e3fd2d1a517844b1f82e4935f990cd592f615ad14e153b4bddfa0c7"},"hand_layer":"handwear fist-r","hand_bbox":[359,675,512,851],"hand_wrist":[463,727],"hand_palm":[435,769],"flower_bbox":[130,166,1190,1045],"flower_layer":"P02_完整原画","hand_layers":["legwear thigh-l","legwear shin-l","hidden upper-r","hidden fore-r","hidden fore-l","hidden torso","hidden upper-l","footwear-r","footwear-l","back hair","handwear upper-r","neck","topwear","bottomwear waist","legwear thigh-r","legwear shin-r","bottomwear cloth-l","handwear fist-r","handwear fore-r","ears","face","nose","mouth close","eyewhite-r","eyewhite-l","irides-r","irides-l","eyelash-l","eyelash-r","eyebrow-r","eyebrow-l","front hair","handwear pauldron-l","handwear upper-l","handwear fist-l","handwear fore-l"],"flower_scale_doc_width":54,"scope":"read actual PSD layers; exact crop only; no repaint, approved pixels unchanged","hand_scale":0.8,"reuse":"A41正式源只读，身体复制到本候选model；A14表情库源复制至eye-source，按同贴图UV复用闭眼睫毛输出；详见表情库来源核验.json。雨为程序特效，不使用黄花素材。","candidateDependencies":{"adapter.mjs":"e9dc177ac66bcb89561d8ce787f9900a1c915676db1b2483c4ffae27161e4ac8","approved-motion.mjs":"176f7ec466bb4a1a8d08e2e96eb8d08aa2e3814757bbe0500c9b8b3ccfbbe841","arm-motion.mjs":"81100efc252f93acd717ec507d312006beaaab5b48f2d1693f5b8b79fc88f526","base-motion.mjs":"df92b68276142e391072e9b92bb0a7181850d705c4cde6e7ddf01a6c6d5db39b","body-rain.mjs":"eb2ecc2dd1b0a033ec056157ad2955749d216429497f2ed1db757d44eb371be4","capture.mjs":"76cd796a80a6eb4f0c43b32e96370975467a78507226dd4caec5f88f9549eaa9","lash-reuse.mjs":"69ed8acfb5ba22954d16ec677f86dcf715c7c22241de70c23b0331d2e3a64582","motion.mjs":"bd1389f09d6e17d61b4b46567329a15d7221efd048753e42c684d8f5a7a6fb53","presentation.mjs":"eb9d3c82207091dbb299bded3ffbe10576781dcef3d818b7cfd94e05f1fce640","previous-motion.mjs":"643c03877f714c976123bbb463ff8c33629f482e8909a72cdf2fd03b2b501d94","rain.mjs":"a4bfd5699d9f1bb8a79777c872b105465fa36a710949cf5ad106da227c4e9eb9"},"w4Reuse":"w3/model与w3/eye-source只读复用，手臂曲线和雨势保持，新增网格表面雨花与共用台词。","w5Change":"头发雨花略增强，双鞋面新增与肩甲相同的微溅；源模型/臂腕/台词/10.8秒不改。"}
+{
+    "paths": {
+        "hand_psd": "01_统一设计参考/PSD/人物/替换手与腕口/H04_整人试配.psd",
+        "hand_png": "01_统一设计参考/PSD/人物/替换手与腕口/H04_PSD坐标.png",
+        "flower_psd": "01_统一设计参考/PSD/道具/P02_黄花落瓣.psd",
+        "flower_png": "01_统一设计参考/PSD/道具/P02_黄花落瓣.png",
+        "model": "03_A编号动作/A41/已通过版本/A41_w9_2026-10-18/model/model.model3.json",
+        "nod_binding_record": "02_共用静止与衔接动作/共用模型/克劳德_基础/点头绑定记录.txt"
+    },
+    "sha256": {
+        "hand_psd": "abbc543663dcf21d9ddce71cd41e9cedefae4abe329f792ebc227e7a6ff4204f",
+        "hand_png": "f25fe93dd21e7c307078ab28e0b262e7d6e41fad4cf8a0f38bc4e4483affc83a",
+        "flower_psd": "b3f4168d618db7d0b7b46880de4e428a5e6e68d81859917f0aa3a9562c3b7f87",
+        "flower_png": "85c0734695cc8b640264eb26f779e9133e13d9490ee7f5a0611cfbace1d39639",
+        "model": "dbf110aeeb67fc5bffe7ff2b6e68e6c9e5efceb837867c4a8998f886596ce778",
+        "nod_binding_record": "f494a0f69e3fd2d1a517844b1f82e4935f990cd592f615ad14e153b4bddfa0c7"
+    },
+    "hand_layer": "handwear fist-r",
+    "hand_bbox": [
+        359,
+        675,
+        512,
+        851
+    ],
+    "hand_wrist": [
+        463,
+        727
+    ],
+    "hand_palm": [
+        435,
+        769
+    ],
+    "flower_bbox": [
+        130,
+        166,
+        1190,
+        1045
+    ],
+    "flower_layer": "P02_完整原画",
+    "hand_layers": [
+        "legwear thigh-l",
+        "legwear shin-l",
+        "hidden upper-r",
+        "hidden fore-r",
+        "hidden fore-l",
+        "hidden torso",
+        "hidden upper-l",
+        "footwear-r",
+        "footwear-l",
+        "back hair",
+        "handwear upper-r",
+        "neck",
+        "topwear",
+        "bottomwear waist",
+        "legwear thigh-r",
+        "legwear shin-r",
+        "bottomwear cloth-l",
+        "handwear fist-r",
+        "handwear fore-r",
+        "ears",
+        "face",
+        "nose",
+        "mouth close",
+        "eyewhite-r",
+        "eyewhite-l",
+        "irides-r",
+        "irides-l",
+        "eyelash-l",
+        "eyelash-r",
+        "eyebrow-r",
+        "eyebrow-l",
+        "front hair",
+        "handwear pauldron-l",
+        "handwear upper-l",
+        "handwear fist-l",
+        "handwear fore-l"
+    ],
+    "flower_scale_doc_width": 54,
+    "scope": "read actual PSD layers; exact crop only; no repaint, approved pixels unchanged",
+    "hand_scale": 0.8,
+    "reuse": "A41正式源只读，身体复制到本候选model；A14表情库源复制至eye-source，按同贴图UV复用闭眼睫毛输出；详见表情库来源核验.json。雨为程序特效，不使用黄花素材。",
+    "candidateDependencies": {
+        "adapter.mjs": "e9dc177ac66bcb89561d8ce787f9900a1c915676db1b2483c4ffae27161e4ac8",
+        "approved-motion.mjs": "176f7ec466bb4a1a8d08e2e96eb8d08aa2e3814757bbe0500c9b8b3ccfbbe841",
+        "arm-motion.mjs": "81100efc252f93acd717ec507d312006beaaab5b48f2d1693f5b8b79fc88f526",
+        "base-motion.mjs": "df92b68276142e391072e9b92bb0a7181850d705c4cde6e7ddf01a6c6d5db39b",
+        "body-rain.mjs": "eb2ecc2dd1b0a033ec056157ad2955749d216429497f2ed1db757d44eb371be4",
+        "capture.mjs": "76cd796a80a6eb4f0c43b32e96370975467a78507226dd4caec5f88f9549eaa9",
+        "lash-reuse.mjs": "69ed8acfb5ba22954d16ec677f86dcf715c7c22241de70c23b0331d2e3a64582",
+        "motion.mjs": "bd1389f09d6e17d61b4b46567329a15d7221efd048753e42c684d8f5a7a6fb53",
+        "presentation.mjs": "eb9d3c82207091dbb299bded3ffbe10576781dcef3d818b7cfd94e05f1fce640",
+        "previous-motion.mjs": "643c03877f714c976123bbb463ff8c33629f482e8909a72cdf2fd03b2b501d94",
+        "rain.mjs": "a4bfd5699d9f1bb8a79777c872b105465fa36a710949cf5ad106da227c4e9eb9"
+    },
+    "w4Reuse": "w3/model与w3/eye-source只读复用，手臂曲线和雨势保持，新增网格表面雨花与共用台词。",
+    "w5Change": "头发雨花略增强，双鞋面新增与肩甲相同的微溅；源模型/臂腕/台词/10.8秒不改。"
+}

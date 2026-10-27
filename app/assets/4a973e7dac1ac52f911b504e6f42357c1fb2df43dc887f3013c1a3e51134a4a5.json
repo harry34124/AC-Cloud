@@ -1,1 +1,26 @@
-{"id":"smile","label":"微笑","category":"情绪","version":1,"params":{"ParamMouthForm":1,"ParamMouthOpenY":0,"ParamEyeLOpen":0.9,"ParamEyeROpen":0.9,"ParamBrowLY":0.06,"ParamBrowRY":0.06,"ParamEyeBallY":0.02,"ParamEyeBallX":0},"mesh":{},"status":"用户要求独立保留","source":"2026-10-10微笑柔和版 / 悲伤轻眉版","model":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/c119d6a72a2049d475145adc9f2d3a5527d1bc19356678aaa7f5dccee53fc56d/resource.model3.json","animation":{"module":"情绪/smile.mjs","duration":8},"effects":null,"usage":"须使用包含ParamMouthForm嘴与眉关键形的本原生模型；脸部参数可接入整体动作，眨眼由调用者统一驱动。无额外符号。"}
+{
+    "id": "smile",
+    "label": "微笑",
+    "category": "情绪",
+    "version": 1,
+    "params": {
+        "ParamMouthForm": 1,
+        "ParamMouthOpenY": 0,
+        "ParamEyeLOpen": 0.9,
+        "ParamEyeROpen": 0.9,
+        "ParamBrowLY": 0.06,
+        "ParamBrowRY": 0.06,
+        "ParamEyeBallY": 0.02,
+        "ParamEyeBallX": 0
+    },
+    "mesh": {},
+    "status": "用户要求独立保留",
+    "source": "2026-10-10微笑柔和版 / 悲伤轻眉版",
+    "model": "/02_共用静止与衔接动作/共用模型/统一运行库/objects/c119d6a72a2049d475145adc9f2d3a5527d1bc19356678aaa7f5dccee53fc56d/resource.model3.json",
+    "animation": {
+        "module": "情绪/smile.mjs",
+        "duration": 8
+    },
+    "effects": null,
+    "usage": "须使用包含ParamMouthForm嘴与眉关键形的本原生模型；脸部参数可接入整体动作，眨眼由调用者统一驱动。无额外符号。"
+}
