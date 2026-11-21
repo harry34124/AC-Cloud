@@ -14,15 +14,39 @@
 </section>
 <section id="help-panel" role="dialog" aria-label="玩法与操作" hidden>
  <div class="help-heading"><strong>玩法与操作</strong><button id="help-close" aria-label="关闭玩法介绍">×</button></div>
- <h2>互动</h2><p>轻点身体会回应，轻点头部会避让，有时会整理头发。按住人物拖起，松手可抛出；向左抛到墙边可蹬墙。</p>
- <p>选择“骑车互动”后，可提车头、车尾或整车。</p>
- <h2>怒气浮标</h2><p>拖动浮标可移动；右键打开菜单；<strong>左键双击清空怒气</strong>，不会打断当前动作。</p>
+ <p class="help-intro">先试试下面三件事，其他玩法可以向下滚动查看。</p>
+ <ol class="help-start">
+  <li><strong>找到带数字的小圆球。</strong>在它上面点<strong>鼠标右键</strong>，打开操作菜单。</li>
+  <li><strong>和克劳德打个招呼。</strong>关掉菜单，用<strong>鼠标左键轻点身体或头部</strong>，看看他的反应。</li>
+  <li><strong>把他提起来。</strong>按住人物身上的<strong>鼠标左键并拖动</strong>；停稳后松手是放下，甩动后松手是抛出。</li>
+ </ol>
+ <h2>鼠标怎么玩</h2>
+ <dl class="help-controls">
+  <dt>左键点身体</dt><dd>他会做出轻点回应；不一定每次都会说话。</dd>
+  <dt>左键点头部</dt><dd>试着摸摸头。他可能躲开，有时随后还会整理头发。</dd>
+  <dt>按住并拖动</dt><dd>把人物提到空中。想轻轻放下，就先停一下再松手；想抛出，就在移动鼠标时松手。</dd>
+  <dt>朝左边甩出</dt><dd>在空中向屏幕左边抛，可以触发蹬墙回弹。从不同高度放手，也可以看看落地反应有什么不同。</dd>
+ </dl>
+ <h2>想看指定动作，或试试骑车</h2>
+ <p><strong>右键小圆球 → “动作”下拉框 → 选中动作</strong>，选完就会播放。即使他正在做其他动作，也可以重新选一个来打断、切换。</p>
+ <p>想玩摩托车：在<strong>“芬里尔”分组</strong>找到<strong>“骑车互动（可提车）”</strong>。播放时，试着按住车头、车尾或车身拖动；抓的位置不同，抬车的反应也会不同。</p>
+ <p>什么都不点也能玩：保持<strong>“自动动作：开”</strong>，他会自己选择动作。想自己逐个试动作，可以先把它关掉。</p>
+ <h2>小圆球上的数字是什么</h2>
+ <p>这是<strong>怒气值</strong>。颜色越暖、越红，他越不耐烦。频繁点击、提起太久，或主动点播动作，都会增加怒气。</p>
  <div class="rage-stages" aria-label="怒气档位">
  <div style="--c:#5cc8ff"><img src="assets/rage/hud/0-chocobo.png" alt="陆行鸟"><span>0–19</span></div><div style="--c:#9b8cff"><img src="assets/rage/hud/1-soft.png" alt="软萌克劳德"><span>20–39</span></div><div style="--c:#f5c35b"><img src="assets/rage/hud/2-focused.png" alt="认真的克劳德"><span>40–59</span></div><div style="--c:#ff993c"><img src="assets/rage/hud/3-calm.png" alt="警觉的克劳德"><span>60–79</span></div><div style="--c:#ff3d48"><img src="assets/rage/hud/4-angry.png" alt="生气的克劳德"><span>80–100</span></div>
  </div>
- <p>每次有效按下 +1，同一次点击或拖起不重复累加。提起后每秒平滑增加2点，明显生气后加快到5点；主动点播动作 +8。停止互动3秒后，怒气每秒减少1点。</p><p>怒气20–49时大概率避让，50以上大概率弹反；被反制的操作不会再触发抓取或轻点。弹反朝真实鼠标的本次位置出刀，移开可以躲过。</p>
- <h2>动作与设置</h2><p>选择动作立即播放，可打断原动作。自动动作按概率连续选择；抽中待机会正常停留约5秒。人物可调100–300px。</p>
- <p>Esc 收起菜单或本窗口。置顶可在菜单中开关。</p>
+ <p><strong>20–49：</strong>大概率躲开你的打扰；<strong>50以上：</strong>大概率弹反。这次点击或拖动可能会被他挡下。弹反朝你刚才的鼠标位置出刀，可以试着及时把鼠标移开。</p>
+ <p><strong>想让他消气：</strong>停止互动，安静等一会儿，数字会慢慢下降；也可以<strong>用左键双击小圆球，立刻清零怒气</strong>。清零不会中断已经开始的动作。</p>
+ <p><strong>小圆球挡住东西：</strong>按住它的左键拖到别处。操作菜单也始终从这个小圆球上右键打开。</p>
+ <aside class="help-secret" aria-label="台词小提示">
+  <h2>有些话，值得再看一次</h2>
+  <p>记得保持<strong>“台词：开”</strong>。有些回应只会偶尔出现，没看到对话框也不代表操作失败。</p>
+  <p>先让动作完整播完，再隔一会儿多试几次。同一个动作，不妨再给他一次开口的机会——也许一句看似随口的话，藏着一点小惊喜。</p>
+ </aside>
+ <h2>常用设置与退出</h2>
+ <p><strong>大小：</strong>拖动滑条，或直接点100–300的数字。<strong>暂停动作：</strong>暂停当前播放，再点一次继续。<strong>置顶：</strong>控制人物是否保持在其他窗口上方。</p>
+ <p><strong>关闭说明：</strong>点右上角“×”，或按 <kbd>Esc</kbd>。<strong>退出程序：</strong>右键小圆球后点“退出”，也可以从系统托盘退出。</p>
 <details><summary id="version-label">版本与安装位置</summary><p id="version-details" style="overflow-wrap:anywhere;user-select:text"></p></details>
 </section>
 <script src="/tools/审阅/共用动作/vendor/live2dcubismcore.min.js"></script><script src="/tools/审阅/共用动作/vendor/pixi.min.js"></script><script src="/tools/审阅/共用动作/vendor/cubism4.min.js"></script><script type="module" src="app.mjs"></script></body></html>

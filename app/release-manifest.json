@@ -3423,8 +3423,8 @@
       "sha256": "a8c036c734133655a8eb5b532cf61e53767634750aa60eea2c43b3c78bef0d92"
     },
     "desktop/index.html": {
-      "bytes": 4414,
-      "sha256": "29a01897b43e627441d3af7d4064c816c25a2acc36686866c276cb8336e4075b"
+      "bytes": 6855,
+      "sha256": "c3349d323bc41b4f4fdf8d8c508a3230d048ff060d8c5f95e3008172c38e383e"
     },
     "desktop/preload.cjs": {
       "bytes": 570,
@@ -3439,8 +3439,8 @@
       "sha256": "ad062b26742ae0defa50be08aaf2b9319d6981ebb64c6b0397f90aa35bdf5560"
     },
     "desktop/style.css": {
-      "bytes": 6706,
-      "sha256": "201490622db8a22d49c727612288a10c50ce479adaaa282a2e20908cf88ed7b5"
+      "bytes": 7755,
+      "sha256": "e4c96a81115e2499560a7159e70c00b4cee000509487045ced9b2e6d22a3b384"
     },
     "assets/af1267e6d52759b245766c578d905bfa025b532d5c3cc727c370957c4409e21b.js": {
       "bytes": 119922,

@@ -29,3 +29,17 @@
 #rage-number{position:absolute;left:auto;transform:none;right:-6px;bottom:-1px;min-width:22px;height:16px;padding:0 5px;border-radius:8px;background:linear-gradient(#1a2470,#0a0f3a);border:1px solid color-mix(in srgb,var(--rage-accent) 80%,#fff);box-shadow:0 1px 3px #0009,0 0 6px color-mix(in srgb,var(--rage-accent) 45%,transparent);color:#fff;font:700 10px/14px "Segoe UI",system-ui,sans-serif;font-variant-numeric:tabular-nums;letter-spacing:.02em;text-align:center;text-shadow:0 1px 1px #000;pointer-events:none;float:none;transition:border-color .35s}
 @media (prefers-reduced-motion:reduce){#rage-window,#rage-window:before,.rage-ring .fill{transition:none;animation:none!important}}
 .rage-stages img{border-radius:50%;background:radial-gradient(circle at 50% 115%,var(--c,#78c4ff) 0,#0c1546 60%);box-shadow:0 0 0 1.5px var(--c,#78c4ff),0 2px 4px #0006;padding:2px}
+
+/* Player-facing instructions: scan the gesture first, then its visible result. */
+#help-panel{width:460px;font-size:14px;max-height:calc(100vh - 32px);scrollbar-gutter:stable}
+#help-panel .help-intro{color:#cbd5ef}
+.help-heading{position:sticky;top:-14px;background:#111873;z-index:1}
+.help-start{padding-left:23px;margin:9px 0 14px}.help-start li{padding-left:2px;margin:7px 0}
+.help-controls{display:grid;grid-template-columns:108px minmax(0,1fr);gap:8px 12px;margin:8px 0 14px}
+.help-controls dt{font-weight:bold;color:#e3d5a0}.help-controls dd{margin:0}
+.help-secret{margin:15px 0;padding:0 12px 8px;border-left:2px solid #d7c48b;background:#e3d5a00c}
+#help-panel .help-secret h2{padding-top:8px}
+#help-panel kbd{font:inherit;border:1px solid #b4bbd1;border-radius:2px;padding:0 4px}
+#help-panel details{margin-top:12px;border-top:1px solid #c5c9e35c;padding-top:8px;color:#cbd5ef}
+#help-panel summary{cursor:pointer}
+@media(max-width:420px){.help-controls{grid-template-columns:1fr;gap:3px}.help-controls dd{margin-bottom:8px}}
