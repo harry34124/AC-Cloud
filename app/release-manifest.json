@@ -714,7 +714,8 @@
     "/desktop/generated/si-mesh-support-w15.mjs": "desktop/generated/si-mesh-support-w15.mjs",
     "/desktop/generated/batched-readback-w15.mjs": "desktop/generated/batched-readback-w15.mjs",
     "/desktop/generated/a11-joint-ink-w15.mjs": "desktop/generated/a11-joint-ink-w15.mjs",
-    "/desktop/generated/a11-native-w15.mjs": "desktop/generated/a11-native-w15.mjs"
+    "/desktop/generated/a11-native-w15.mjs": "desktop/generated/a11-native-w15.mjs",
+    "/desktop/action-lifecycle.mjs": "desktop/action-lifecycle.mjs"
   },
   "files": {
     "assets/fd8a747b66d2eda579cd758b9df565542b7fcd29d81d6739eec009f0db343b70.mjs": {
@@ -3142,8 +3143,8 @@
       "sha256": "c07570da5436dd333f6243247bce7b7788b667fd319f5987df9e3dbdc560f03d"
     },
     "desktop/daily.mjs": {
-      "bytes": 19073,
-      "sha256": "af67f5347c5354f79e2face96024507cdb2ae3207f4c5a53dd0fea980b6000b5"
+      "bytes": 19461,
+      "sha256": "2be7f429de5fe2c504df62ae4619dfaefe0178f9de06499d1a401c62885ba213"
     },
     "desktop/dialogue-host.mjs": {
       "bytes": 3147,
@@ -3520,6 +3521,10 @@
     "desktop/build-info.cjs": {
       "bytes": 845,
       "sha256": "65f45f3058bd51528637672f2dbe405b644a554b0a70f9dbf518a63eff84c111"
+    },
+    "desktop/action-lifecycle.mjs": {
+      "bytes": 1240,
+      "sha256": "2f95ea9dccab94504af38c5a2f33c5624b91d390b26738812483de342dfe474e"
     }
   },
   "actions": [

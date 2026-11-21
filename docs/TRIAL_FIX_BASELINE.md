@@ -1,5 +1,7 @@
 # Desktop trial fix baseline
 
+Historical checkpoint: `b75aa52`. The subsequent maintenance work adds the build/install/test workflow described in DEVELOPMENT.md and resolves the cancelled-load waiting issue through action-lifecycle.mjs. Limits below describe the original checkpoint.
+
 This checkpoint collects the dialogue, vehicle recovery, landing and performance fixes tested during the desktop trial. It preserves the original motion curves and resource files. A10 retains its `needsAdjustment` status and remains outside the autonomous action pool.
 
 - Dialogue placement follows character size and the actual head anchor, including vehicle and combat adapters.

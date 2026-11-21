@@ -2,6 +2,7 @@ exports.run=async function({mode}){
  const pet=window.cloudPet,s=pet.getScene(),d=pet.getDaily();d.setAuto(false);d.interrupt();s.acceptNeutral();s.setPaused(true);s.setWords(false);await s.prepareInteractions();
  if(mode==='regression'){
  s.setPaused(false);const startup=await pet.runChecks(),checks=[...startup.checks];d.setAuto(false);d.interrupt();
+ for(let i=0;i<3;i++){const pending=d.forcePlay('A13',{source:'cancel-check'});d.interrupt();const outcome=await Promise.race([pending,new Promise(r=>setTimeout(()=>r('timeout'),3000))]);checks.push({name:'cancel in-flight load settles '+i,pass:outcome===false&&!d.busy()&&!document.querySelector('.action-context')});}
  for(const size of [100,150,300])for(const id of ['A10','A11']){
  s.setPosition(.5);s.fit(size);s.setPaused(false);const loaded=await d.forcePlay(id,{source:'trial-w15'});const a=d.inspect();checks.push({name:id+' '+size+' real desktop load/prewarm',pass:loaded&&!!a});if(!a)continue;
  for(const time of id==='A10'?[0,.73,.82,.939,1,6.8,7.43,7.65,7.799]:[0,.8,3.5,7.63,7.75,7.95]){a.time=time;a.lastRenderKey=null;d.render();checks.push({name:id+' '+size+' render '+time,pass:!d.state().dailyError});}

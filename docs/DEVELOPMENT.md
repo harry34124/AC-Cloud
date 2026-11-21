@@ -73,7 +73,7 @@ npm run build
 npm run install:local
 ```
 
-`npm test` 不需要安装Electron：核对全部资源清单、路由、版本和源码语法，并运行台词定位、构建身份等CPU测试。GitHub工作流运行同一命令。`npm run test:desktop` 使用独立用户数据目录验证真实窗口、100/150/300px动作、打断、回正和版本显示，报告保存在忽略的 `build/test-results/`。
+`npm test` 不需要安装Electron：核对全部资源清单、路由、版本和源码语法，并运行台词定位、构建身份等CPU测试。GitHub工作流运行同一命令。`npm run test:desktop` 使用独立用户数据目录验证真实窗口、100/150/300px动作、打断、回正和版本显示，报告保存在忽略的 `build/test-results/`。桌面命令顺序运行基础回归、台词、骑车、落地、手套和窄屏六组，任一失败即退出；可用 `-- --suite regression` 等参数单独复现。
 
 开发时先运行 `npm install` 获取固定Electron33.2.0。已有运行时可设置 `ELECTRON_PATH` 给桌面测试，并向构建传入目录：
 
@@ -90,3 +90,9 @@ npm run build -- --electron 'D:\Tools\electron-v33.2.0-win32-x64' --zip
 源码启动 `npm start` 标记为开发版。日常使用桌面快捷方式或仓库根目录“启动 AC Cloud.cmd”。在“玩法与操作”末尾查看版本、资源指纹和实际安装路径，托盘菜单也显示版本。源码提交不会自动更新安装副本；不要跳过构建与安装。
 
 发布前对构建副本另跑 `npm run test:desktop -- --root "构建目录/resources/app"`，再上传完整ZIP。当前流程不会自行推送GitHub或替换公开下载包。Electron DLL、resources、locales及第三方许可材料必须一起保留。
+
+## 动作加载与释放
+
+`app/desktop/action-lifecycle.mjs` 只管理可取消等待和上下文释放，不采样或修改动作。日常宿主负责自己的加载scope；被打断时先取消scope，再撤销当前代次和移除旧iframe。正在等待load、actionReady、尺寸准备或预热的调用都应及时返回，不能只删iframe却留下永远等待的Promise。后续动作预备使用独立scope。
+
+`disposeActionContext` 对同一个上下文只执行一次适配器释放，并清理canvas和iframe。采样、位置交接和调度顺序仍由原宿主负责。台词定位保持在dialogue-host/dialogue-geometry模块。继续整理其他动作时以这些边界为基础，逐批回归，避免把模型修复混进宿主重构。
