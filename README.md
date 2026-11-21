@@ -101,6 +101,8 @@
 
 直接克隆[本仓库](https://github.com/harry34124/AC-Cloud)，或下载 [v0.1.0 精简源码包](https://github.com/harry34124/AC-Cloud/releases/download/v0.1.0/AC-Cloud-v0.1.0-source.zip)。包含可编辑代码、模型、动作和资源映射，**不含完整原始 PSD / CMO、历史候选或作者开发工具**。
 
+需要修改人物组件、武器、车辆或绑定，可以另取[美术开发素材包](docs/ART_SOURCES.md)：按类别整理分层PSD、CMO编辑参考，并附动作对应索引。该附件目前已在本地准备，公开下载链接将在上传后补充。
+
 <details>
 <summary><strong>展开源码运行与打包说明</strong></summary>
 

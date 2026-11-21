@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "native_projects": [
+    {"label": "共用基础", "file": "02_共用静止与衔接动作/共用模型/克劳德_基础/model.cmo3", "actions": ["A01", "A04", "A13", "A14", "A41", "A43", "A44", "A49"], "scope": "共用绑定参考；各动作表情与运行修订仍以源码为准"},
+    {"label": "微笑悲伤", "file": "02_共用静止与衔接动作/表情库/原生模型/微笑悲伤-v1/model.cmo3", "actions": ["A02", "表情库"], "scope": "表情库保存的原生工程"},
+    {"label": "A10_裸臂", "file": "03_A编号动作/A10/已通过版本/A10_w35_2026-10-15/runtime/04_项目记录/工作/a11-native-joints-w12/w24/a10-model/model.cmo3", "actions": ["A02", "A10", "A11", "A12", "A15"], "scope": "w35依赖中的编辑源；A10桌面修复在适配器，仍保留需要调整标记"},
+    {"label": "A11_关节", "file": "03_A编号动作/A11/已通过版本/A11_w32_2026-10-22/runtime/04_项目记录/工作/a11-native-joints-w12/w27/joint-model/A11.cmo3", "actions": ["A02", "A11", "A12", "A15"], "scope": "w32保留的关节源"},
+    {"label": "A11_腕口", "file": "03_A编号动作/A11/已通过版本/A11_w32_2026-10-22/runtime/04_项目记录/工作/a11-native-joints-w12/w15/native-wrist-model/A11.cmo3", "actions": ["A02", "A11", "A12"], "scope": "w32保留的腕口源；与关节工程不同，分别保留"},
+    {"label": "A05_翻面查看", "file": "03_A编号动作/A05/已通过版本/A05_w9_翻面查看_2026-10-24/model.cmo3", "actions": ["A05"], "scope": "当前采用包保存的编辑源"},
+    {"label": "A06_纪念动作", "file": "03_A编号动作/A06/已通过版本/A06_w30_2026-10-22/model/A06.cmo3", "actions": ["A06"], "scope": "w30保存的编辑源"},
+    {"label": "A16_靠车休息", "file": "03_A编号动作/A16/已通过版本/A16_w20_随机台词_2026-10-19/model/model.cmo3", "actions": ["A16"], "scope": "w20保存的编辑源"},
+    {"label": "A17_侧面步态", "file": "03_A编号动作/A17/已通过版本/完整台词_自然收步/side-model/model.cmo3", "actions": ["A17", "A18"], "scope": "侧面编辑源；最新步态和停步曲线在源码适配器"},
+    {"label": "A44_眼部", "file": "03_A编号动作/A44/已通过版本/A44_w5_2026-10-18/eye-source/model.cmo3", "actions": ["A44"], "scope": "当前包保留的眼部编辑源"},
+    {"label": "A50_摸头避让", "file": "03_A编号动作/A50/已通过版本/A50_w10_完整通过_2026-10-20/model/model.cmo3", "actions": ["A50"], "scope": "w10保存的编辑源，未采用旧w9"},
+    {"label": "六式持剑", "file": "03_A编号动作/A51/已通过版本/A51_w4_2026-10-19/model/model.cmo3", "actions": ["A34", "A37", "A39", "A51", "A57"], "scope": "持剑共用编辑参考；各动作最新曲线、遮挡与收刀在源码"},
+    {"label": "SI02_45度", "file": "02_共用静止与衔接动作/已通过动作/SI02_空中下落_w7/model/45.cmo3", "actions": ["SI02", "SI04"], "scope": "w7保存的45度工程；与同目录model工程不同，分别保留"},
+    {"label": "SI02_下落", "file": "02_共用静止与衔接动作/已通过动作/SI02_空中下落_w7/model/model.cmo3", "actions": ["SI02", "SI04"], "scope": "w7保存的下落工程；完整鼠标组以源码w45接入为准"},
+    {"label": "SI03_落地原始工程", "file": "02_共用静止与衔接动作/已通过动作/SI03_英雄落地_w8/model/SI03.cmo3", "actions": ["SI03", "SI04"], "scope": "原始可编辑工程体积较大；程序使用的是优化导出，不能直接覆盖回去"}
+  ],
+  "references": [
+    "01_统一设计参考/人物形象/用户确认多视角.png",
+    "01_统一设计参考/人物形象/最高基准.webp"
+  ]
+}
