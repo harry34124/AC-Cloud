@@ -1,6 +1,7 @@
 ﻿param([string]$BuildDirectory, [switch]$NoStart)
 $ErrorActionPreference = 'Stop'
 $repo = Split-Path -Parent $PSScriptRoot
+. (Join-Path $PSScriptRoot 'install_directory.ps1')
 if (-not $BuildDirectory) { $BuildDirectory = (Get-Content -LiteralPath (Join-Path $repo 'build/latest.json') -Raw | ConvertFrom-Json).directory }
 $source = (Resolve-Path -LiteralPath $BuildDirectory).Path
 if (-not (Test-Path -LiteralPath (Join-Path $source 'AC Cloud.exe'))) { throw 'Build executable missing' }
@@ -24,8 +25,15 @@ if ($LASTEXITCODE -ne 0) { throw 'Staged validation failed; active installation 
 $exe = Join-Path $target 'AC Cloud.exe'
 $running = @(Get-CimInstance Win32_Process -Filter "Name='AC Cloud.exe'" | Where-Object { $_.ExecutablePath -eq $exe -and $_.CommandLine -notmatch '--type=' })
 if ($running.Count) { Start-Process -FilePath $exe -ArgumentList '--quit' -WindowStyle Hidden; foreach ($p in $running) { Wait-Process -Id $p.ProcessId -Timeout 25 } }
-if (Test-Path -LiteralPath $target) { Move-Item -LiteralPath $target -Destination $backup }
-try { Move-Item -LiteralPath $stage -Destination $target } catch { if (-not (Test-Path -LiteralPath $target) -and (Test-Path -LiteralPath $backup)) { Move-Item -LiteralPath $backup -Destination $target }; throw }
+for ($i = 0; $i -lt 20; $i++) {
+    $remaining = @(Get-CimInstance Win32_Process -Filter "Name='AC Cloud.exe'" | Where-Object { $_.ExecutablePath -eq $exe })
+    if (-not $remaining.Count) { break }
+    Start-Sleep -Milliseconds 250
+}
+if ($remaining.Count) { throw 'Old runtime processes are still exiting; installation remains unchanged' }
+# Atomic rename only: Move-Item may fall back to moving individual files on Windows.
+if (Test-Path -LiteralPath $target) { Move-InstallDirectory -Source $target -Destination $backup -Root $dist }
+try { Move-InstallDirectory -Source $stage -Destination $target -Root $dist } catch { if (-not (Test-Path -LiteralPath $target) -and (Test-Path -LiteralPath $backup)) { Move-InstallDirectory -Source $backup -Destination $target -Root $dist }; throw }
 $ws = New-Object -ComObject WScript.Shell
 $desktop = [Environment]::GetFolderPath('Desktop')
 $link = Join-Path $desktop '克劳德桌宠（试用版）.lnk'

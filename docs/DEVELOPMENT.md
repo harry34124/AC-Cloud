@@ -86,7 +86,7 @@ npm run build -- --electron 'D:\Tools\electron-v33.2.0-win32-x64' --zip
 
 构建输出为 `build/v版本-资源指纹/AC Cloud`，已有输出不会覆盖。版本从package.json读取并与app/package.json核对；ZIP名称使用实际版本。构建身份包含提交、未提交修改标记和资源清单SHA256，随包保存到build-info.json。构建成功后才更新本机 `build/latest.json`。
 
-`npm run install:local` 验证最新构建与暂存副本，正常退出旧实例，备份旧安装并替换固定入口 `dist/AC Cloud/AC Cloud.exe`，更新桌面快捷方式，随后打开程序。失败会尝试恢复旧目录；安装过程不清除AppData中的设置。可传 `-BuildDirectory` 选择其他构建，或 `-NoStart` 安装后暂不运行。
+`npm run install:local` 验证最新构建与暂存副本，正常退出旧实例并等待其子进程结束，通过原子目录重命名备份旧安装并替换固定入口 `dist/AC Cloud/AC Cloud.exe`，更新桌面快捷方式，随后打开程序。文件占用时仅有限重试，不逐文件搬移旧安装；切换失败会尝试恢复旧目录；安装过程不清除AppData中的设置。可传 `-BuildDirectory` 选择其他构建，或 `-NoStart` 安装后暂不运行。
 
 源码启动 `npm start` 标记为开发版。日常使用桌面快捷方式或仓库根目录“启动 AC Cloud.cmd”。在“玩法与操作”末尾查看版本、资源指纹和实际安装路径，托盘菜单也显示版本。源码提交不会自动更新安装副本；不要跳过构建与安装。
 
