@@ -9,9 +9,12 @@
     "build": "python scripts/build_portable.py",
     "install:local": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/install_local.ps1",
     "test:desktop": "node scripts/test_desktop.cjs",
-    "check:all": "node scripts/check_all.cjs"
+    "check:all": "node scripts/check_all.cjs",
+    "format": "prettier --write \"app/desktop/action-*.mjs\" app/desktop/daily.mjs",
+    "format:check": "prettier --check \"app/desktop/action-*.mjs\" app/desktop/daily.mjs"
   },
   "devDependencies": {
-    "electron": "33.2.0"
+    "electron": "33.2.0",
+    "prettier": "3.10.1"
   }
 }

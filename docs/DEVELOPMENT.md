@@ -97,3 +97,30 @@ npm run build -- --electron 'D:\Tools\electron-v33.2.0-win32-x64' --zip
 `app/desktop/action-lifecycle.mjs` 只管理可取消等待和上下文释放，不采样或修改动作。日常宿主负责自己的加载scope；被打断时先取消scope，再撤销当前代次和移除旧iframe。正在等待load、actionReady、尺寸准备或预热的调用都应及时返回，不能只删iframe却留下永远等待的Promise。后续动作预备使用独立scope。
 
 `disposeActionContext` 对同一个上下文只执行一次适配器释放，并清理canvas和iframe。采样、位置交接和调度顺序仍由原宿主负责。台词定位保持在dialogue-host/dialogue-geometry模块。继续整理其他动作时以这些边界为基础，逐批回归，避免把模型修复混进宿主重构。
+
+## 手写动作宿主的维护边界
+
+| 模块 | 职责 | 不应放入的逻辑 |
+|---|---|---|
+| `daily.mjs` | 动作调度、当前显示所有者、阶段交接、对外宿主接口 | 像素变形与动作曲线 |
+| `action-frame.mjs` | 创建iframe、构造查询参数、观察load/error | 选动作、概率和模型采样 |
+| `action-layout.mjs` | CSS像素布局、尺寸控件、台词视口、命中坐标换算 | 预热、资源缓存和动作时钟 |
+| `action-preparation.mjs` | 显示前预热、单份后续动作缓存、尺寸变化与所有权转交 | 可见动作推进和调度决策 |
+| `action-lifecycle.mjs` | 可取消等待、单次释放 | 姿态、布局和动作选择 |
+
+预备记录在pending/ready/cancelled状态间转换。`take(id)` 将ready记录交给播放宿主，清除缓存定时器但不销毁适配器；`release()` 只释放尚由预备管理器持有的记录。预热中改尺寸会在当前准备结束后按最新尺寸重做，再允许显示。不要把已经交出的缓存当作闲置资源释放。
+
+宿主销毁也必须取消未结束的加载，撤销代次、移除iframe和显示层。一般的动作打断、完成、宿主销毁是不同入口，不能只检查其中一个。测试覆盖取消、超时、预热中缩放、缓存交接、实际A50→A15衔接和宿主销毁。
+
+### 固定代码格式
+
+Prettier固定为3.10.1，仅针对手写动作宿主及`action-*.mjs`：
+
+```powershell
+npm run format
+python scripts/update_manifest.py
+npm run format:check
+npm run check:all
+```
+
+先按上文安装开发依赖。格式化会改变受校验源码的字节，因此必须随后刷新清单；不要把模型、贴图或整个生成动作目录加入格式化范围。CI安装依赖时跳过Electron下载脚本，再检查代码格式和CPU/资源检查；真实桌面检查仍在Windows本机运行。
