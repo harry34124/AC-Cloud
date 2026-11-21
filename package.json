@@ -1,9 +1,14 @@
 {
   "name": "ac-cloud",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
-    "start": "electron app"
+    "start": "electron app",
+    "check": "node scripts/check.mjs",
+    "test": "node scripts/check.mjs",
+    "build": "python scripts/build_portable.py",
+    "install:local": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/install_local.ps1",
+    "test:desktop": "node scripts/test_desktop.cjs"
   },
   "devDependencies": {
     "electron": "33.2.0"

@@ -1,5 +1,6 @@
 const {contextBridge,ipcRenderer}=require('electron');
 contextBridge.exposeInMainWorld('cloudHost',{
+ info:()=>ipcRenderer.invoke('cloud:info'),
  load:()=>ipcRenderer.invoke('cloud:load'),
  save:patch=>ipcRenderer.invoke('cloud:save',patch),
  interactive:on=>ipcRenderer.send('cloud:interactive',Boolean(on)),

@@ -62,16 +62,31 @@ Cubism Core 扩容后，旧 TypedArray 可能失效。读取模型 owner 的当�
 
 画面对照与性能测试分开执行。逐帧 `readPixels`、大数组转 JSON 和哈希会影响下一帧的 GC/GPU 同步，不能用混合了这些操作的 p95 代表真实游玩流畅度。
 
-## 检查与打包
+## 检查、构建和本机安装
 
-每次修改按影响范围验证：实际尺寸和显示缩放下的完整播放、起终注册点、台词/表情、动作切换、暂停/继续、失焦、屏幕边界和退出释放。像素或数值检查不替代真实桌面操作，也不要把未执行的检查写成通过。
+在仓库根目录执行：
 
 ```powershell
-python scripts/build_portable.py --electron "D:\Tools\electron-v33.2.0-win32-x64" --zip
+npm test
+npm run test:desktop
+npm run build
+npm run install:local
 ```
 
-打包后从输出目录直接启动 `AC Cloud.exe`，验证托盘、设置保存及动作加载。发布时上传完整运行 ZIP；源码压缩包主要供开发，二者用途不同。Electron 的 DLL、`resources`、`locales` 和原始许可证材料随运行时一起保留。
+`npm test` 不需要安装Electron：核对全部资源清单、路由、版本和源码语法，并运行台词定位、构建身份等CPU测试。GitHub工作流运行同一命令。`npm run test:desktop` 使用独立用户数据目录验证真实窗口、100/150/300px动作、打断、回正和版本显示，报告保存在忽略的 `build/test-results/`。
 
-默认输出为`dist/AC Cloud`，已存在时脚本会拒绝覆盖，可用`--output`指定新目录。`--zip`生成`AC-Cloud-v0.1.0-windows-x64.zip`及`SHA256SUMS.txt`。构建使用实际Windows x64 Electron33.2.0目录；仓库并未声明其他平台已支持。
+开发时先运行 `npm install` 获取固定Electron33.2.0。已有运行时可设置 `ELECTRON_PATH` 给桌面测试，并向构建传入目录：
 
-提交前检查 [第三方说明](../THIRD_PARTY_NOTICES.md)，不要将角色素材或第三方组件误归到自写代码的许可范围。
+```powershell
+$env:ELECTRON_PATH = 'D:\Tools\electron-v33.2.0-win32-x64\electron.exe'
+npm run test:desktop
+npm run build -- --electron 'D:\Tools\electron-v33.2.0-win32-x64' --zip
+```
+
+构建输出为 `build/v版本-资源指纹/AC Cloud`，已有输出不会覆盖。版本从package.json读取并与app/package.json核对；ZIP名称使用实际版本。构建身份包含提交、未提交修改标记和资源清单SHA256，随包保存到build-info.json。构建成功后才更新本机 `build/latest.json`。
+
+`npm run install:local` 验证最新构建与暂存副本，正常退出旧实例，备份旧安装并替换固定入口 `dist/AC Cloud/AC Cloud.exe`，更新桌面快捷方式，随后打开程序。失败会尝试恢复旧目录；安装过程不清除AppData中的设置。可传 `-BuildDirectory` 选择其他构建，或 `-NoStart` 安装后暂不运行。
+
+源码启动 `npm start` 标记为开发版。日常使用桌面快捷方式或仓库根目录“启动 AC Cloud.cmd”。在“玩法与操作”末尾查看版本、资源指纹和实际安装路径，托盘菜单也显示版本。源码提交不会自动更新安装副本；不要跳过构建与安装。
+
+发布前对构建副本另跑 `npm run test:desktop -- --root "构建目录/resources/app"`，再上传完整ZIP。当前流程不会自行推送GitHub或替换公开下载包。Electron DLL、resources、locales及第三方许可材料必须一起保留。

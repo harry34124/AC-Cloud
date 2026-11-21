@@ -3110,8 +3110,8 @@
       "sha256": "538cc3fe11805aa7d9d25894c9c219f2434b2e1fff1d5031ed72f9205dc689a3"
     },
     "desktop/app.mjs": {
-      "bytes": 20327,
-      "sha256": "009bcd0013ca597b46c5b2519741a6da832a24193eed445cf76c0a538156f5bd"
+      "bytes": 20722,
+      "sha256": "d6bbf7ee7676a7db1928ff4fb622e71a8dbb3729da56444de79e90bfed845f0d"
     },
     "desktop/assets/rage/hud/0-chocobo.png": {
       "bytes": 81436,
@@ -3422,12 +3422,12 @@
       "sha256": "a8c036c734133655a8eb5b532cf61e53767634750aa60eea2c43b3c78bef0d92"
     },
     "desktop/index.html": {
-      "bytes": 4258,
-      "sha256": "714d6b653eef8dd79b4274b77e88c75c7adfe63dc31080578b647a843b23ba4f"
+      "bytes": 4414,
+      "sha256": "29a01897b43e627441d3af7d4064c816c25a2acc36686866c276cb8336e4075b"
     },
     "desktop/preload.cjs": {
-      "bytes": 515,
-      "sha256": "871de03f8205a82d60ff10320a6d9a9a3ece2c8c96bf4a02c2b95579834a2130"
+      "bytes": 570,
+      "sha256": "278d4999b25a82388079bd9fb78186e783779eea397da182fc14e58d6136a934"
     },
     "desktop/rage-scheduler.mjs": {
       "bytes": 14249,
@@ -3454,16 +3454,16 @@
       "sha256": "403f2f2ee8145fa17f60c5c89403056efe2680e5096ec2762036486914ed19c5"
     },
     "desktop/main.cjs": {
-      "bytes": 10412,
-      "sha256": "c0d4523f2f2e454c79d093c46c2c05f3e5edce0a6a9294eb5fd4183f04c6d043"
+      "bytes": 10776,
+      "sha256": "fa09e60d3cf8bf90174a36c473c0ec071a8e0c7c0ad7aaa5037ff84eee378aca"
     },
     "desktop/release-runtime.cjs": {
       "bytes": 825,
       "sha256": "6cc8345e2fb4d1e42c4082676d05b900f4092b07030bde3d3091c37a65d841ca"
     },
     "package.json": {
-      "bytes": 170,
-      "sha256": "601f87f338e021940e35a9a6f23666bafaa2d6113525a944070aaa2b90fe93fc"
+      "bytes": 178,
+      "sha256": "5f3aa10de239f73e78b1750e60bfbe3fafb4c27831507e4d8d59513c98971a2b"
     },
     "assets/9b8653c49c536134eeebfc2fbf47a692f30b4a46db879af0f4790e2b02e7c597.json": {
       "bytes": 14929,
@@ -3516,6 +3516,10 @@
     "desktop/generated/a11-native-w15.mjs": {
       "bytes": 10739,
       "sha256": "6511f3c752d19de0bb85589f3657ae4f24b820f03fb8c3157e2f67143b2d6952"
+    },
+    "desktop/build-info.cjs": {
+      "bytes": 845,
+      "sha256": "65f45f3058bd51528637672f2dbe405b644a554b0a70f9dbf518a63eff84c111"
     }
   },
   "actions": [
