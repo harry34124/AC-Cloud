@@ -8,7 +8,8 @@
     "test": "node scripts/check.mjs",
     "build": "python scripts/build_portable.py",
     "install:local": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/install_local.ps1",
-    "test:desktop": "node scripts/test_desktop.cjs"
+    "test:desktop": "node scripts/test_desktop.cjs",
+    "check:all": "node scripts/check_all.cjs"
   },
   "devDependencies": {
     "electron": "33.2.0"

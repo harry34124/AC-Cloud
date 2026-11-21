@@ -67,11 +67,12 @@ Cubism Core 扩容后，旧 TypedArray 可能失效。读取模型 owner 的当�
 在仓库根目录执行：
 
 ```powershell
-npm test
-npm run test:desktop
+npm run check:all
 npm run build
 npm run install:local
 ```
+
+`npm run check:all` 一条命令顺序执行CPU/资源检查和六组真实桌面检查，任一失败立即停止。也可单独执行下述命令。
 
 `npm test` 不需要安装Electron：核对全部资源清单、路由、版本和源码语法，并运行台词定位、构建身份等CPU测试。GitHub工作流运行同一命令。`npm run test:desktop` 使用独立用户数据目录验证真实窗口、100/150/300px动作、打断、回正和版本显示，报告保存在忽略的 `build/test-results/`。桌面命令顺序运行基础回归、台词、骑车、落地、手套和窄屏六组，任一失败即退出；可用 `-- --suite regression` 等参数单独复现。
 
