@@ -8,7 +8,7 @@
 
 <a href="https://github.com/harry34124/AC-Cloud/releases/download/v0.1.0/AC-Cloud-v0.1.0-windows-x64.zip"><img src="docs/images/download-windows.svg" alt="点击下载 AC Cloud Windows 完整运行包" width="320" height="64"></a>
 
-[下载页 / 历史版本](https://github.com/harry34124/AC-Cloud/releases) · [怎么玩](#怎么玩) · [继续开发](#继续开发) · [反馈问题](https://github.com/harry34124/AC-Cloud/issues)
+[下载页 / 历史版本](https://github.com/harry34124/AC-Cloud/releases) · [怎么玩](#怎么玩) · [继续开发](#继续开发) · [美术素材](docs/ART_SOURCES.md) · [反馈问题](https://github.com/harry34124/AC-Cloud/issues)
 
 <img src="docs/images/ac-cloud-preview.gif" alt="AC Cloud 实际程序预览：待机、轻点回应和爱丽丝黄花动作" width="640" height="456">
 
@@ -101,7 +101,7 @@
 
 直接克隆[本仓库](https://github.com/harry34124/AC-Cloud)，或下载 [v0.1.0 精简源码包](https://github.com/harry34124/AC-Cloud/releases/download/v0.1.0/AC-Cloud-v0.1.0-source.zip)。包含可编辑代码、模型、动作和资源映射，**不含完整原始 PSD / CMO、历史候选或作者开发工具**。
 
-需要修改人物组件、武器、车辆或绑定，可以另取[美术开发素材包](docs/ART_SOURCES.md)：按类别整理分层PSD、CMO编辑参考，并附动作对应索引。该附件目前已在本地准备，公开下载链接将在上传后补充。
+需要修改人物组件、武器、车辆或绑定，可下载 **[美术开发素材包（约327 MiB）](https://github.com/harry34124/AC-Cloud/releases/download/v0.1.0/AC-Cloud-v0.1.1-art-sources.zip)**：61份分层PSD、15份CMO编辑参考、2张形象参考及35项素材对应记录。详见[使用说明](docs/ART_SOURCES.md)和[SHA256校验](https://github.com/harry34124/AC-Cloud/releases/download/v0.1.0/AC-Cloud-v0.1.1-art-sources.zip.sha256)。这是可选开发附件，素材整理版本为v0.1.1，不是新版Windows程序；普通玩家无需下载。
 
 <details>
 <summary><strong>展开源码运行与打包说明</strong></summary>

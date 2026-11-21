@@ -1,6 +1,6 @@
 # 美术开发素材包
 
-继续开发运行逻辑，直接使用本仓库。需要改人物组件、武器、车辆、道具或绑定时，再下载独立的 `AC-Cloud-v0.1.1-art-sources.zip`。素材包目前已在作者本地准备，尚未上传公开下载页；不包含在旧版v0.1.0下载中。
+继续开发运行逻辑，直接使用本仓库。需要改人物组件、武器、车辆、道具或绑定时，再下载独立的 **[美术开发素材包](https://github.com/harry34124/AC-Cloud/releases/download/v0.1.0/AC-Cloud-v0.1.1-art-sources.zip)**（[SHA256校验文件](https://github.com/harry34124/AC-Cloud/releases/download/v0.1.0/AC-Cloud-v0.1.1-art-sources.zip.sha256)）。附件放在原v0.1.0发布页，素材整理版本为v0.1.1，不代表Windows程序更新；旧版程序和源码ZIP内没有这一素材包。
 
 本次打包约327 MiB，包含去重后的61份PSD、15份CMO、2张形象参考，以及35项动作/共用状态/表情的素材对应记录。SHA256为 `cf1d2a7c440e112baedcb4255d5b97866ee6a583c045fa006b2d31fe2005de5e`。
 
@@ -41,4 +41,4 @@ python scripts/build_art_sources.py --source-root "D:/制作工程/CloudDesktopP
 
 脚本不修改输入，不覆盖已有同名ZIP。输出ZIP、外部SHA256文件和打包摘要。打包后回读整个ZIP、核对CRC和每个文件hash；PSD检查仅包含头部/图层计数，CMO检查仅包含签名，不声称重新完成了全部编辑器和视觉验收。
 
-公开时将ZIP和外部SHA256文件作为GitHub Release附件上传，再把真实下载链接补到首页。素材包与源码版本分别记录；后续只修改代码时，不必重复发布同一份美术附件。使用范围沿用[版权说明](../NOTICE.md)，不因为提供开发文件而扩大第三方角色或素材授权。
+ZIP和外部SHA256文件作为GitHub Release附件提供，首页链接到实际附件。素材包与源码版本分别记录；后续只修改代码时，不必重复发布同一份美术附件。使用范围沿用[版权说明](../NOTICE.md)，不因为提供开发文件而扩大第三方角色或素材授权。
