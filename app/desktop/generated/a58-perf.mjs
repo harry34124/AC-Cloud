@@ -6,6 +6,7 @@
 
 // 字形：glyph.json/glyph.mjs与w8逐字节相同（已认可）。
 
+import {nativeHeadBounds,transformBounds,unionBounds,avoids} from "/desktop/dialogue-geometry.mjs";
 import {planApproach} from "/02_共用静止与衔接动作/共用模型/统一运行库/objects/85980bde9d9612c961edb50f4db35c7f80155aafee2ca8c2a009357a58e1a8b2/resource.mjs?instance=89f4fb6877b24fac2fce";
 
 import {createRig12} from "/desktop/generated/a58-rig-perf.mjs";
@@ -224,17 +225,20 @@ export async function createAdapter(config,base,host){
 
     const speech=seq.dialogue, speaking=!!speech&&t>=speech.start&&t<speech.end;
 
-    if(speaking){const r=stateAt(Math.max(plan.t0,t)).R;
-
-      const x=t<plan.enterAt?originX:r[0], y=t<plan.enterAt?home[1]-400*S:r[1]-310*S;
-
-      drawDialogueCanvas(sctx,{text:speech.text,elapsed:.7+t-speech.start,height:400*S,stageWidth:W,
-
-        anchor:{left:x-160*S,right:x+160*S,top:y,bottom:home[1]}});}
+    // Dialogue is placed after final scene zoom/shake.
 
     info.台词显示=speaking;
 
     ctx.clearRect(0,0,W,H);ctx.save();const f=D([-60,-250]);ctx.translate(f[0]+shake[0],f[1]+shake[1]);ctx.scale(zoom,zoom);ctx.translate(-f[0],-f[1]);ctx.drawImage(scene,0,0);ctx.restore();
+    if(speaking){
+      const guard=t<plan.enterAt,st=guard?null:stateAt(Math.max(plan.t0,t));
+      let geometry,head,sword;
+      if(guard){geometry=src.desktopDialogueGeometry(src.guardTime+.3);const shift=originX-510;head=geometry.head?{...geometry.head,left:geometry.head.left+shift,right:geometry.head.right+shift}:null;sword={...geometry.sword,left:geometry.sword.left+shift,right:geometry.sword.right+shift};}
+      else{head=unionBounds([nativeHeadBounds([rig.poses[st.pose]?.model]),st.other&&st.mix>0?nativeHeadBounds([rig.poses[st.other]?.model]):null]);const a=st.grip,b=rig.bladePoint(st.grip,st.th,1,st.pitch,rig.swordScale(S)),pad=16*S;sword={left:Math.min(a[0],b[0])-pad,right:Math.max(a[0],b[0])+pad,top:Math.min(a[1],b[1])-pad,bottom:Math.max(a[1],b[1])+pad};}
+      const headAnchor=transformBounds(head,zoom,f,shake),blade=transformBounds(sword,zoom,f,shake);
+      // No static R-width fallback: only an actual current head qualifies.
+      if(headAnchor)drawDialogueCanvas(ctx,{text:speech.text,elapsed:.7+t-speech.start,height:400*S,stageWidth:W,headAnchor,isClear:r=>avoids(r,blade)});
+    }
 
     return{state,params:{time:+t.toFixed(3),...info,hits:hits.map(h=>h.t),shifts:plan.shifts,前飞距离:route.distance,起飞横坐标:route.launch,举剑横坐标:route.land,后撤距离:route.retreat}};
 

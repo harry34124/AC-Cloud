@@ -16,9 +16,19 @@ export function createWallDeformer(p){
  const fn=(q,j)=>j===12?boots[q[1]<840?0:1](q):j===21?feet[q[0]<530?0:1](q):j===17?arms[q[0]/20](q):matrices.has(j)?matrices.get(j)(q):localDeform(q,j,p);
  const angle=q=>Math.atan2(q[1],q[0])*180/Math.PI,k14=p.swap?p.high:p.wallHigh,u14=[476.5509315759717-590,678.7021533371026-535],au14=angle([k14.E[0]-k14.S[0],k14.E[1]-k14.S[1]])-angle(u14),al14=angle([k14.W[0]-k14.E[0],k14.W[1]-k14.E[1]])-angle(u14),delta14=((al14-au14+540)%360)-180;
  const k26=p.wallHigh;let rad26=angle([k26.W[0]-k26.E[0],k26.W[1]-k26.E[1]])-angle([370-515,645-630]);rad26*=Math.PI/180;const cos26=Math.cos(rad26),sin26=Math.sin(rad26);
- fn.writeMesh=(j,vertices,ppu)=>{
+ fn.writeMesh=(j,vertices,ppu,chosen=null)=>{
   if(j!==12&&j!==21&&j!==17&&j!==14&&j!==26&&!matrices.has(j))return false;
-  for(let n=0;n<vertices.length;n+=2){const k=n/2,x=(k%65)*20,y=Math.floor(k/65)*20;let ox,oy;
+  // A rigid layer needs one matrix lookup per mesh, not one per vertex.
+  // Retain the complete grid and the original arithmetic order.
+  if(matrices.has(j)){
+   const {a,b,c,x:x0,y:y0}=matrices.get(j).coeffs,bx=b[0]-a[0],by=b[1]-a[1],cx=c[0]-a[0],cy=c[1]-a[1];
+   for(let row=0;row<65;row++){const v=(row*20-y0)/20;for(let col=0;col<65;col++){const u=(col*20-x0)/20,n=(row*65+col)*2;
+    const ox=a[0]+bx*u+cx*v,oy=a[1]+by*u+cy*v;vertices[n]=(ox-640)/ppu;vertices[n+1]=(640-oy)/ppu;
+   }}return true;
+  }
+  // Keep complete rigid meshes to preserve subpixel rasterization at the edge.
+  if(j!==14)chosen=null;
+  for(let at=0;at<(chosen?chosen.length:vertices.length/2);at++){const n=(chosen?chosen[at]:at)*2,k=n/2,x=(k%65)*20,y=Math.floor(k/65)*20;let ox,oy;
    if(j===14){let rad=au14+delta14*kneeGrid.weight[k];rad*=Math.PI/180;const c=Math.cos(rad),s=Math.sin(rad),rx=kneeGrid.rx[k],ry=kneeGrid.ry[k];ox=k14.E[0]+(rx*c-ry*s);oy=k14.E[1]+(rx*s+ry*c);}
    else if(j===26){const rx=kneeGrid.fx[k],ry=kneeGrid.fy[k],tx=k26.E[0]+(rx*cos26-ry*sin26);oy=k26.E[1]+(rx*sin26+ry*cos26);ox=k26.S[0]+(tx-k26.S[0])*p.limbProjection;}
    else if(j===17){const {a,b}=arms[x/20].coeffs;ox=a[0]+(b[0]-a[0])*y/20;oy=a[1]+(b[1]-a[1])*y/20;}

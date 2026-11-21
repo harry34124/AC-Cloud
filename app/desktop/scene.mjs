@@ -1,10 +1,12 @@
+import {meshSupport} from "/desktop/generated/si-mesh-support-w15.mjs";
 // Integration derivative from 02_共用静止与衔接动作/共用模型/统一运行库/objects/5da31380bdf428b481994be750ff607ae03a4a5992443923d058a53c231dc477/resource.mjs
 // Approved full mesh calculation retained; repeated pose transforms cached.
 import {ActionController} from "/02_共用静止与衔接动作/共用模型/统一运行库/objects/0f5d9e46df63fc2687df33e816348aa534ae44e10e7443447ef26505cec274d8/resource.mjs?instance=0ed49bd998cf40c5d91f&instance=aa88634d506fe577aba8";
+import {drawDesktopDialogue} from "./dialogue-host.mjs";
 import {loadDialogueCatalog,drawDialogueCanvas} from "/02_共用静止与衔接动作/共用对话框/dialogue.mjs";
 import {cacheBody} from "/02_共用静止与衔接动作/共用模型/统一运行库/objects/d662aa8cf5b2d5e039625f9e2acd23e06d6aa9cb58b706916f889551b068dc94/resource.mjs?instance=86f071fa9fade039e517";
 import {createWallDeformer} from "/desktop/generated/si-wall-w9.mjs";
-import {MouseRoute,buildDemo,estimateRelease,FLOOR,LEFT,FOOT,GROUND} from "/02_共用静止与衔接动作/共用模型/统一运行库/objects/c500eaf516c8aa222ebce7d03ae090f34582f790c1560badad1e8b832d5dfd19/resource.mjs?instance=c56fce271b75df7df8be&instance=d97baf32313deb46040c";
+import {MouseRoute,buildDemo,estimateRelease,FLOOR,LEFT,FOOT,GROUND} from "./mouse-route.mjs";
 import {createReviewEffects as landingFX} from "/02_共用静止与衔接动作/共用模型/统一运行库/objects/cc1bf3a95a51b7dd25fc07d17625fbf392d4a571798eba594ee61964a9d61c8b/resource.mjs?instance=48f45a15e8d51a7dbdf9&instance=ed883e407f30176c5e88";
 import {near,far,bare,sleeve,H,add,sub,rot,smooth,mix} from "/02_共用静止与衔接动作/共用模型/统一运行库/objects/809d72cb06efe2a4a42fc565f6eddd59af749069827fb5822fa7a7e89e2dadd4/resource.mjs?instance=ae5d1bdda08d2ae1b6cc&instance=f1371315588630bc9370";
 import {wallDeform} from "/02_共用静止与衔接动作/共用模型/统一运行库/objects/5377d95abffc708ec5b8b4940e059e2f0810b8b0170b4c1f82252900c2573636/resource.mjs?instance=4eee4c398c263d686229&instance=3b13c24e768042624272";
@@ -27,18 +29,18 @@ function deform(q,j,p){
 export async function createAdapter(config,base,host){
  let demo=buildDemo(config.scenario,200),controller=null,demoActive=false,review=null,pointer=null,homeRequested=false,lastDraw=null,lastTime=0;const floorY=FLOOR;
  const app=new PIXI.Application({width:host.clientWidth,height:host.clientHeight,backgroundAlpha:0,antialias:true,resolution:Math.min(2,devicePixelRatio||1),autoDensity:true,preserveDrawingBuffer:true});host.appendChild(app.view);app.ticker.stop();
- const wall=new PIXI.Graphics();app.stage.addChild(wall);let size=200;const hidden=new Set(),items=[];
+ const textureSupport=await fetch("/desktop/generated/si-texture-support-w15.json").then(r=>r.json());const wall=new PIXI.Graphics();app.stage.addChild(wall);let size=200;const hidden=new Set(),items=[];
  async function loadPart(i){
   const group=new PIXI.Container();app.stage.addChild(group);
   const model=await PIXI.live2d.Live2DModel.from(new URL(i===3?"/02_共用静止与衔接动作/共用模型/统一运行库/objects/f0732b93a80ef574f3378982f6f8f4d27bb7dfb69db2c1ae76f0ab4a5e80bfb0/resource.model3.json":i===2?"/02_共用静止与衔接动作/共用模型/统一运行库/objects/ec33ca2e0977efbd4ca988ae8d4dee8e1a30259719373d21705c9124d05a1741/resource.model3.json":i===1?"/02_共用静止与衔接动作/共用模型/统一运行库/objects/d68978655013486a0ba3a297cbfe0b9909e373223938bc45dc28398d26667b8f/resource.model3.json":"/02_共用静止与衔接动作/共用模型/统一运行库/objects/7e1252d4c9625ac4c505a2d4241a847f1822eab1aea21f7e367744aeef1bb0f8/resource.model3.json",base).href,{autoInteract:false,autoUpdate:false});group.addChild(model);
-  const internal=model.internalModel,core=internal.coreModel,d=core._model.drawables,rest=new Map(),op=new Map();let params={};const ids=core._model.parameters.ids,defaults=Array.from(core._model.parameters.defaultValues);
+  const internal=model.internalModel,core=internal.coreModel,d=core._model.drawables,rest=new Map(),op=new Map(),restPool=new Map(),support=textureSupport[i]?meshSupport(d,textureSupport[i]):null,maskSources=new Set(Array.from(d.masks).flatMap(m=>Array.from(m)));let params={};const ids=core._model.parameters.ids,defaults=Array.from(core._model.parameters.defaultValues);
   internal.eyeBlink=undefined;internal.breath=undefined;internal.physics=undefined;internal.motionManager.stopAllMotions();
   internal.on('beforeModelUpdate',()=>{for(const[j,v]of rest)d.vertexPositions[j].set(v);rest.clear();for(const[j,v]of op)d.opacities[j]=v;op.clear();for(let j=0;j<ids.length;j++)core.setParameterValueById(ids[j],defaults[j]);for(const[k,v]of Object.entries(params))core.setParameterValueById(k,v);});
   const fx=i===3?landingFX({app:{stage:group,renderer:app.renderer},model,core}):i?null:createReviewEffects({app:{stage:group,renderer:app.renderer},model,core});
   function render(p,t){if(i===2){p.body=cacheBody(p.body);if(p.air?.body)p.air.body=cacheBody(p.air.body);}const wallFn=i===2?createWallDeformer(p):null;
    if(i===3){params=p.params;internal.update(0,0);fx.render(t,p);for(const c of group.children)if(c!==model)c.visible=false;}
    else if(!i){const f=new Flight();f.mode='air';f.airAge=10;f.age=t;f.launchSpeed=350;f.airVx=p.vx??140;f.airVy=p.entry?p.vy:p.active==='flight'?p.vy:p.vy*3.5;f.x=0;f.y=-200;const pose=p.pose??f.pose();params=pose.params;internal.update(0,0);fx.render(t,{...pose,held:!!p.held,root:{x:0,y:0,angle:0},cameraY:0});if(p.held){const v=live.viewport;const e=pose.emotion??{},a=e.angry??0,c=e.time??0;v.root.position.set(v.cx+2.1*a*Math.sin(c*40)*v.ratio,v.cy+.6*a*Math.sin(c*53)*v.ratio);v.root.rotation=((pose.root?.angle??0)+.28*a*Math.sin(c*36))*Math.PI/180;}else{live.viewport.root.pivot.set(0,0);live.viewport.root.position.set(0,0);live.viewport.root.rotation=0;}live.viewport.shadow.visible=false;}
-   else{params={};internal.update(0,0);const maskSources=new Set(Array.from(d.masks).flatMap(m=>Array.from(m)));for(let j=0;j<(i===2?28:17);j++){const index=d.ids.indexOf((i===2?'WallPart':'PushPart')+j);if(i===2&&!localVisible(j,p)&&!maskSources.has(index))continue;const v=d.vertexPositions[index];rest.set(index,v.slice());if(i===2&&wallFn.writeMesh(j,v,internal.pixelsPerUnit)){d.dynamicFlags[index]|=32;continue;}for(let n=0;n<v.length;n+=2){const k=n/2,q=[(k%65)*20,Math.floor(k/65)*20],dest=i===2?wallFn(q,j):deform(q,j,p);v[n]=(dest[0]-640)/internal.pixelsPerUnit;v[n+1]=(640-dest[1])/internal.pixelsPerUnit;}d.dynamicFlags[index]|=32;}}
+   else{params={};internal.update(0,0);for(let j=0;j<(i===2?28:17);j++){const index=d.ids.indexOf((i===2?'WallPart':'PushPart')+j);if(i===2&&!localVisible(j,p)&&!maskSources.has(index))continue;const v=d.vertexPositions[index];let saved=restPool.get(index);if(!saved){saved=new Float32Array(v.length);restPool.set(index,saved);}saved.set(v);rest.set(index,saved);if(i===2&&wallFn.writeMesh(j,v,internal.pixelsPerUnit,config.fullGeometry?null:support?.[index])){d.dynamicFlags[index]|=32;continue;}const chosen=config.fullGeometry?null:support?.[index];for(let at=0;at<(chosen?chosen.length:v.length/2);at++){const n=(chosen?chosen[at]:at)*2,k=n/2,q=[(k%65)*20,Math.floor(k/65)*20],dest=i===2?wallFn(q,j):deform(q,j,p);v[n]=(dest[0]-640)/internal.pixelsPerUnit;v[n+1]=(640-dest[1])/internal.pixelsPerUnit;}d.dynamicFlags[index]|=32;}}
    if(i===2)for(let j=0;j<28;j++){if(!localVisible(j,p)){const index=d.ids.indexOf('WallPart'+j);op.set(index,d.opacities[index]);d.opacities[index]=0;}}
    for(const c of config.components.filter(c=>c.segment===i&&hidden.has(c.id)))for(const id of c.drawableIds){const j=d.ids.indexOf(id);op.set(j,d.opacities[j]);d.opacities[j]=0;}
   }
@@ -90,7 +92,7 @@ export async function createAdapter(config,base,host){
    bi.update(0,0);const s=size/(originalBounds.height*(art[3]-art[1]));baseModel.scale.set(s);baseModel.position.set(screenX(root.x)-(originalBounds.x+originalBounds.width*(art[0]+art[2])/2)*s,screenY(root.y)+FOOT*size/400-(originalBounds.y+originalBounds.height*art[3])*s);
   }
   wall.clear();app.renderer.render(app.stage);const a=p?items[active].group:baseGroup;const b=a.getBounds();bbox={left:b.x,top:b.y,right:b.x+b.width,bottom:b.y+b.height};
-  dc.clearRect(0,0,W,Hh);if(dialogue&&words)drawDialogueCanvas(dc,{text:dialogue.text,elapsed:dialogue.age-dialogue.start,height:size,stageWidth:W,anchor:bbox});
+  dc.clearRect(0,0,W,Hh);if(dialogue&&words){const s=baseModel.scale.x,bodyRect={left:baseModel.x+(originalBounds.x+originalBounds.width*art[0])*s,right:baseModel.x+(originalBounds.x+originalBounds.width*art[2])*s,top:baseModel.y+(originalBounds.y+originalBounds.height*art[1])*s,bottom:baseModel.y+(originalBounds.y+originalBounds.height*art[3])*s};drawDesktopDialogue(drawDialogueCanvas,dc,{text:dialogue.text,elapsed:dialogue.age-dialogue.start,height:size,stageWidth:W,anchor:bodyRect},{size,width:W,height:Hh,localWidth:W,localHeight:Hh,x:0,y:0});}
   return state();
  }
  function hit(q){if(!bbox||q.x<0||q.y<0||q.x>=W||q.y>=Hh||q.x<bbox.left||q.x>bbox.right||q.y<bbox.top||q.y>bbox.bottom)return false;const gl=app.renderer.gl,v=new Uint8Array(4),r=app.renderer.resolution;gl.readPixels(Math.floor(q.x*r),Math.max(0,Math.floor((Hh-q.y)*r)-1),1,1,gl.RGBA,gl.UNSIGNED_BYTE,v);return v[3]>65;}
@@ -115,7 +117,7 @@ export async function createAdapter(config,base,host){
   const flush=async()=>{render();app.renderer.gl.finish();draws++;await new Promise(r=>setTimeout(r,0));};
   try{globalRage=null;paused=false;dialogue=null;controller=new MouseRoute(size);controller.size=size;controller.bounds=bounds();controller.x=root.x;controller.y=GROUND-100;controller.grab();
    for(const [age,anger]of [[0,0],[.7,0],[4,1]]){while(controller.holdAge<age-1e-8)controller.step(Math.min(1/60,age-controller.holdAge));const e=controller.held.emotion;e.level=anger;e.dose=3.2+7*anger;e.releaseFade=1;await flush();}
-   for(const kind of ['wall','high']){simulate(kind);const warmed=new Set();for(let n=0;n<360&&controller.mode!=='idle';n++){controller.step(1/60);if(controller.mode==='idle')break;const pose=controller.pose(),key=pose.active+':'+Boolean(pose.swap);if(pose.active&&!warmed.has(key)){warmed.add(key);await flush();}}}
+   for(const kind of ['wall','high']){simulate(kind);const warmed=new Set();for(let n=0;n<360&&controller.mode!=='idle';n++){controller.step(1/60);if(controller.mode==='idle')break;const pose=controller.pose(),key=pose.active+':'+Boolean(pose.swap)+(pose.active==='landing'?':'+Math.floor((pose.local??0)*2):'');if(pose.active&&!warmed.has(key)){warmed.add(key);await flush();}}}
   }finally{controller=saved.controller;root=saved.root;paused=saved.paused;dialogue=saved.dialogue;frameTime=saved.frameTime;lastAir=saved.lastAir;lastEvents=saved.lastEvents;globalRage=saved.globalRage;blendEntry=saved.blendEntry;blendAge=saved.blendAge;render();}
   interactionPreparation={ready:true,milliseconds:performance.now()-started,draws};return interactionPreparation;
  }

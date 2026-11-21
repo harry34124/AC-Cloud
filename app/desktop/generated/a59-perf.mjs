@@ -485,9 +485,10 @@ export async function createAdapter(config, base, host) {const trace=window.__co
     const start=.15,end=Math.min(2.15,plan.jump.t0-.1),rate=1.4;
     if(t<start||t>=end)return null;
     const h=400*S;
+    const openingEvent=plan.ev.find(e=>t>=e.t0&&t<e.t1);const speechX=openingEvent?.k==='a57'?OX+510:openingEvent?.k==='blink'?lerp(OX+510,plan.Tg.x,clamp((t-openingEvent.t0)/(openingEvent.t1-openingEvent.t0),0,1)):plan.Tg.x;
     const typing=[...('「'+openingLine+'」')].length*.07;
     // Fixed stage-space placement; rendered last, above actor, weapons and effects.
-    return drawDialogueCanvas(ctx,{text:openingLine,elapsed:(t-start)*rate,height:h,stageWidth:W,position:{left:plan.Tg.x+h*.95,top:ground-h*.88},readSeconds:(end-start)*rate-typing-.16});
+    return drawDialogueCanvas(ctx,{text:openingLine,elapsed:(t-start)*rate,height:h,stageWidth:W,headAnchor:{left:speechX-h*.20,right:speechX+h*.20,top:ground-h*.95,bottom:ground-h*.55},position:{left:plan.Tg.x+h*.95,top:ground-h*.88},readSeconds:(end-start)*rate-typing-.16});
   }
   // ---- 审核页组件显隐 ----
   const compMap = new Map((config.components ?? []).map(c => [c.id, c]));

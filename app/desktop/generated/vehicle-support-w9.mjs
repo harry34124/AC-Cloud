@@ -12,6 +12,30 @@ export function createVehicleClear(canvas,width,height){
   for(let y=Math.max(0,Math.floor((rect.top-2)*sy));y<Math.min(probe.height,Math.ceil((rect.bottom+2)*sy));y++)for(let x=Math.max(0,Math.floor((rect.left-2)*sx));x<Math.min(probe.width,Math.ceil((rect.right+2)*sx));x++)if(data[(y*probe.width+x)*4+3]>16)return false;return true;
  };clear.invalidate=()=>{data=null;time=-Infinity;};clear.resize=(w,h)=>{width=w;height=h;probe.width=Math.min(1024,Math.ceil(w/4));probe.height=Math.ceil(h/4);clear.invalidate();};return clear;
 }
+
+// A failed vehicle request may recover once by using the real inward-facing
+// native action. No scene relocation, character mirroring or menu/rage event.
+export function vehicleSpaceRecovery({id,source,width,registration,size}){
+ if(source==='space-recovery'||!['A03','A29','A26','A31','A16'].includes(id))return null;
+ if(!Number.isFinite(width)||!Number.isFinite(registration?.x)||!Number.isFinite(size))return null;
+ const dx=width/2-registration.x;if(Math.abs(dx)<Math.max(24,size*.25))return null;
+ return{id:dx>0?'A29':'A03',source:'space-recovery',requestedAction:id};
+}
+export function applyVehicleRecoveryPlan(trip,viewport){
+ if(viewport.entryContext!=='space-recovery')return trip;
+ const {width,registration}=viewport,{size,direction,minAnchor,maxAnchor,vehicleOffsetsCSS:g}=trip,start=registration.x;
+ const target=Math.max(minAnchor,Math.min(maxAnchor,width/2)),distance=direction*(target-start);
+ const actorFits=start>=size*.32-.5&&start<=width-size*.32+.5;
+ // Only the trailing part of the arriving bike may start outside the screen.
+ // The front and the fully parked destination must already have real space.
+ const frontFits=direction>0?start+g.right<=width-12:start+g.left>=12;
+ const fits=actorFits&&minAnchor<=maxAnchor&&frontFits&&distance>=Math.max(24,size*.25);
+ return{...trip,fitsAtStart:fits,originalFitsAtStart:trip.fitsAtStart,
+  edgeEntry:fits?'space-recovery':null,recoveryTargetX:target,
+  distancePx:fits?distance:0,
+  message:fits?undefined:'当前屏幕空间放不下安全的骑行路线，请缩小人物或移到更宽的屏幕。'};
+}
+
 export function planVehicleTrip({direction=-1,registration,width,size,leftOffset,rightOffset,distancePx,speedPxPerSecond=220}){
  const margin=12,start=registration.x,min=margin-leftOffset,max=width-margin-rightOffset,fitsAtStart=start>=min-.5&&start<=max+.5;
  const available=Math.max(0,direction<0?start-min:max-start);
@@ -37,6 +61,6 @@ export function createStableVehicleDialogue(draw,surface){
    cached={text,dx:p.left-cx,dy:p.top-anchor.top,side:p.side};
   }
   lastElapsed=elapsed;const position={left:Math.max(frame.left+8,Math.min(frame.right-width-8,cx+cached.dx)),top:Math.max(8,Math.min(frame.height-boxHeight-8,anchor.top+cached.dy))};
-  const result=draw(ctx,{...options,stageWidth:frame.width,anchor:null,isClear:null,position});return result?{...result,side:cached.side,stable:true}:null;
+  const result=draw(ctx,{...options,stageWidth:frame.width,headAnchor:anchor,anchor:null,isClear,position});return result?{...result,side:cached.side,stable:true}:null;
  };
 }

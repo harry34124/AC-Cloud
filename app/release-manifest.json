@@ -17,7 +17,7 @@
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/03caf0179d67f1c2a030ef1e0d5d943a2835b8cdab9b3ba63e34286fb7ddb678/resource.mjs": "assets/03caf0179d67f1c2a030ef1e0d5d943a2835b8cdab9b3ba63e34286fb7ddb678.mjs",
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/03fa5684888f1d324e31755c84aa73eea44981180998b418547534393d7b20f0/resource.mjs": "assets/03fa5684888f1d324e31755c84aa73eea44981180998b418547534393d7b20f0.mjs",
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/042e34d87dfca8e3b906735314348a2e1a9d99a3f469a0bca569608a3e8117bf/resource.png": "assets/042e34d87dfca8e3b906735314348a2e1a9d99a3f469a0bca569608a3e8117bf.png",
-    "/02_共用静止与衔接动作/共用模型/统一运行库/objects/04b764208f81b432e4547e79d8dea0fb8b337b3faab4ef33dea3d7c5075f7fa1/resource.mjs": "assets/04b764208f81b432e4547e79d8dea0fb8b337b3faab4ef33dea3d7c5075f7fa1.mjs",
+    "/02_共用静止与衔接动作/共用模型/统一运行库/objects/04b764208f81b432e4547e79d8dea0fb8b337b3faab4ef33dea3d7c5075f7fa1/resource.mjs": "desktop/generated/a11-joint-ink-w15.mjs",
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/058c26a0adfc5c7d00c375affdba2ce9985a260dfa280c6f2fc3326b1b9089a2/resource.png": "assets/058c26a0adfc5c7d00c375affdba2ce9985a260dfa280c6f2fc3326b1b9089a2.png",
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/05a0cb4d76b038f111c71cc1593a25ff8b1385ed52bf877c6dd0b7db8c315331/resource.mjs": "assets/05a0cb4d76b038f111c71cc1593a25ff8b1385ed52bf877c6dd0b7db8c315331.mjs",
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/067802024176d2dd7560079f44d2aa60c99ab2dd6bedb340a61d578c64e54528/resource.mjs": "assets/067802024176d2dd7560079f44d2aa60c99ab2dd6bedb340a61d578c64e54528.mjs",
@@ -65,7 +65,7 @@
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/1ba17ccdea4547ff7d68d115199c659b21c9656dc64408e6e0b6a3606d846884/resource.png": "assets/1ba17ccdea4547ff7d68d115199c659b21c9656dc64408e6e0b6a3606d846884.png",
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/1bc65ff4bfb83e994471f722f4c55b052760902a13d3236838a5127cf467510e/resource.json": "assets/1bc65ff4bfb83e994471f722f4c55b052760902a13d3236838a5127cf467510e.json",
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/1bedc00747887c0ce5baeeb1ccf6283d5b1371049c1993bb84ed35e4fdd285c8/resource.moc3": "assets/1bedc00747887c0ce5baeeb1ccf6283d5b1371049c1993bb84ed35e4fdd285c8.moc3",
-    "/02_共用静止与衔接动作/共用模型/统一运行库/objects/1bff5c04c40f0924944da25841221a24e8723e2c099f4876652c693787f27e56/resource.mjs": "assets/1bff5c04c40f0924944da25841221a24e8723e2c099f4876652c693787f27e56.mjs",
+    "/02_共用静止与衔接动作/共用模型/统一运行库/objects/1bff5c04c40f0924944da25841221a24e8723e2c099f4876652c693787f27e56/resource.mjs": "desktop/generated/a12-skin-return-w14.mjs",
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/1c1dbee3c44431c34dc55282b9a5687729361eeb1b57310a82f226d30ae2f458/resource.mjs": "assets/1c1dbee3c44431c34dc55282b9a5687729361eeb1b57310a82f226d30ae2f458.mjs",
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/1c6cf1273940dd132d2c2f86bb80ffcbcd5d5f87fd41416a1b672a63ee42b8e7/resource.png": "assets/1c6cf1273940dd132d2c2f86bb80ffcbcd5d5f87fd41416a1b672a63ee42b8e7.png",
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/1c6f00972d841bd6155021d6ae513b3ecd49ec76734df411f893d21416a69b09/resource.png": "assets/1c6f00972d841bd6155021d6ae513b3ecd49ec76734df411f893d21416a69b09.png",
@@ -253,7 +253,7 @@
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/696ecac19440d4d6ceace0f1836a620dbe46fe57c80051e8bf5280193cdbe2c0/resource.mjs": "assets/696ecac19440d4d6ceace0f1836a620dbe46fe57c80051e8bf5280193cdbe2c0.mjs",
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/6991699b60a33d4a9c45f95368133bc8913da67df2840ea903448926447dab76/resource.moc3": "assets/6991699b60a33d4a9c45f95368133bc8913da67df2840ea903448926447dab76.moc3",
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/6ae1166a8a1d86bf8c4702b3b79ae4838269a834b93aac2587dbf2e45e33a683/resource.png": "assets/6ae1166a8a1d86bf8c4702b3b79ae4838269a834b93aac2587dbf2e45e33a683.png",
-    "/02_共用静止与衔接动作/共用模型/统一运行库/objects/6b1d1651ca03224ded4474ad2e0acd09c7fb20d3e31762d627956455385c0478/resource.mjs": "assets/6b1d1651ca03224ded4474ad2e0acd09c7fb20d3e31762d627956455385c0478.mjs",
+    "/02_共用静止与衔接动作/共用模型/统一运行库/objects/6b1d1651ca03224ded4474ad2e0acd09c7fb20d3e31762d627956455385c0478/resource.mjs": "desktop/generated/a12-desktop-w14.mjs",
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/6b4b0dd3771ccbb6a72e0a17ee6742e2b4b8a63d56453009175591be4d121891/resource.png": "assets/6b4b0dd3771ccbb6a72e0a17ee6742e2b4b8a63d56453009175591be4d121891.png",
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/6b9945f4f9261466e796f5d56ca06b9e023ea3e664092a8410109c132636d28d/resource.cdi3.json": "assets/6b9945f4f9261466e796f5d56ca06b9e023ea3e664092a8410109c132636d28d.json",
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/6c70928ffcdcd7630d54354b505ba13e9b692eb039ec7d8860cf0971fa1b2c3c/resource.png": "assets/6c70928ffcdcd7630d54354b505ba13e9b692eb039ec7d8860cf0971fa1b2c3c.png",
@@ -298,7 +298,7 @@
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/7b449e175162f08239dd60d6edb910c132a89fdd823695a0cca60f0aef460cec/resource.png": "assets/7b449e175162f08239dd60d6edb910c132a89fdd823695a0cca60f0aef460cec.png",
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/7b6684c69d19df129b81db2f7bb8cefdbf5e0e22ff8a9bc4dbac4b4230c17c04/resource.mjs": "assets/7b6684c69d19df129b81db2f7bb8cefdbf5e0e22ff8a9bc4dbac4b4230c17c04.mjs",
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/7b77d05c184520c9133881553bd6fc43d4b771630503549b22b57add5aae8d81/resource.mjs": "assets/7b77d05c184520c9133881553bd6fc43d4b771630503549b22b57add5aae8d81.mjs",
-    "/02_共用静止与衔接动作/共用模型/统一运行库/objects/7bd9bbf91eef39348335ccfcfd2eaab609be4c7a96fc6b68234c1121122eeadf/resource.mjs": "assets/7bd9bbf91eef39348335ccfcfd2eaab609be4c7a96fc6b68234c1121122eeadf.mjs",
+    "/02_共用静止与衔接动作/共用模型/统一运行库/objects/7bd9bbf91eef39348335ccfcfd2eaab609be4c7a96fc6b68234c1121122eeadf/resource.mjs": "desktop/generated/a11-native-w15.mjs",
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/7bfbbb33efa8c8a5ffd3d33b4be339df260559c69a884f3ee8e71da39be76428/resource.mjs": "assets/7bfbbb33efa8c8a5ffd3d33b4be339df260559c69a884f3ee8e71da39be76428.mjs",
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/7c12f031ad036672470660dccbd0b66744eb5fbf808b0a68edf82db8ac840067/resource.png": "assets/7c12f031ad036672470660dccbd0b66744eb5fbf808b0a68edf82db8ac840067.png",
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/7ccc4c1faf282227a4f55881c8cf030c85b8a4c3296a1da02cd8063ab3344fc9/resource.mjs": "assets/7ccc4c1faf282227a4f55881c8cf030c85b8a4c3296a1da02cd8063ab3344fc9.mjs",
@@ -565,7 +565,7 @@
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/e64eefe38fc489d8222f2395d518ae9167ceb57047ef946a601d6b7880f90e2f/resource.png": "assets/e64eefe38fc489d8222f2395d518ae9167ceb57047ef946a601d6b7880f90e2f.png",
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/e667eb7a2a922546abb3bfbd991e444b1d87926f9d7a74c00e4ac4d729d4eb3f/resource.png": "assets/e667eb7a2a922546abb3bfbd991e444b1d87926f9d7a74c00e4ac4d729d4eb3f.png",
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/e7512060382d96fd55909b8fbf95f749f3e9799f779a1d05e3cfe2c69897e4e8/resource.png": "assets/e7512060382d96fd55909b8fbf95f749f3e9799f779a1d05e3cfe2c69897e4e8.png",
-    "/02_共用静止与衔接动作/共用模型/统一运行库/objects/e797762e334b57b676e56579a9b14710f11d4f42ed7d975af67f43bb3fac7586/resource.mjs": "assets/e797762e334b57b676e56579a9b14710f11d4f42ed7d975af67f43bb3fac7586.mjs",
+    "/02_共用静止与衔接动作/共用模型/统一运行库/objects/e797762e334b57b676e56579a9b14710f11d4f42ed7d975af67f43bb3fac7586/resource.mjs": "desktop/generated/a11-skin-return-w14.mjs",
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/e7989b7dd091f95950fe7c5d2e873ad7f8d6eead069ba365668928b42482927b/resource.png": "assets/e7989b7dd091f95950fe7c5d2e873ad7f8d6eead069ba365668928b42482927b.png",
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/e7c95ca56a6f44a96f32d1b23e2dea4ba43f5d4af107030ad6cae3695f5bfa2c/resource.model3.json": "assets/e7c95ca56a6f44a96f32d1b23e2dea4ba43f5d4af107030ad6cae3695f5bfa2c.json",
     "/02_共用静止与衔接动作/共用模型/统一运行库/objects/e883e2841f37edb40ac0511c04c49bac7cc07f809bbcdb54defb246575907811/resource.mjs": "assets/e883e2841f37edb40ac0511c04c49bac7cc07f809bbcdb54defb246575907811.mjs",
@@ -702,7 +702,19 @@
     "/tools/审阅/共用动作/vendor/live2dcubismcore.min.js": "assets/25ae938cb4fe282ce189b357bcc97e603d1e1f7ec78bf04150d401c23cdc792f.js",
     "/tools/审阅/共用动作/vendor/pixi.min.js": "assets/403f2f2ee8145fa17f60c5c89403056efe2680e5096ec2762036486914ed19c5.js",
     "/02_共用静止与衔接动作/共用对话框/台词库.json": "assets/9b8653c49c536134eeebfc2fbf47a692f30b4a46db879af0f4790e2b02e7c597.json",
-    "/02_共用静止与衔接动作/共用对话框/dialogue.css": "assets/439c31d0ec89cf6e890a391453d9b70992b06a36cf2caaa479322c5e77374187.css"
+    "/02_共用静止与衔接动作/共用对话框/dialogue.css": "assets/439c31d0ec89cf6e890a391453d9b70992b06a36cf2caaa479322c5e77374187.css",
+    "/desktop/mouse-route.mjs": "desktop/mouse-route.mjs",
+    "/desktop/dialogue-geometry.mjs": "desktop/dialogue-geometry.mjs",
+    "/desktop/generated/glove-material-w14.mjs": "desktop/generated/glove-material-w14.mjs",
+    "/desktop/generated/a11-skin-return-w14.mjs": "desktop/generated/a11-skin-return-w14.mjs",
+    "/desktop/generated/a12-skin-return-w14.mjs": "desktop/generated/a12-skin-return-w14.mjs",
+    "/desktop/generated/a12-desktop-w14.mjs": "desktop/generated/a12-desktop-w14.mjs",
+    "/desktop/generated/compact-material-w15.mjs": "desktop/generated/compact-material-w15.mjs",
+    "/desktop/generated/si-texture-support-w15.json": "desktop/generated/si-texture-support-w15.json",
+    "/desktop/generated/si-mesh-support-w15.mjs": "desktop/generated/si-mesh-support-w15.mjs",
+    "/desktop/generated/batched-readback-w15.mjs": "desktop/generated/batched-readback-w15.mjs",
+    "/desktop/generated/a11-joint-ink-w15.mjs": "desktop/generated/a11-joint-ink-w15.mjs",
+    "/desktop/generated/a11-native-w15.mjs": "desktop/generated/a11-native-w15.mjs"
   },
   "files": {
     "assets/fd8a747b66d2eda579cd758b9df565542b7fcd29d81d6739eec009f0db343b70.mjs": {
@@ -3130,12 +3142,12 @@
       "sha256": "c07570da5436dd333f6243247bce7b7788b667fd319f5987df9e3dbdc560f03d"
     },
     "desktop/daily.mjs": {
-      "bytes": 18355,
-      "sha256": "7a821dd9434ec686f223a5a85894d3d0ae0fd3c0f3c82e0fe9d71359280aaeb9"
+      "bytes": 19073,
+      "sha256": "af67f5347c5354f79e2face96024507cdb2ae3207f4c5a53dd0fea980b6000b5"
     },
     "desktop/dialogue-host.mjs": {
-      "bytes": 1206,
-      "sha256": "7560bcb022b96a4768246f3320e6302e4c38da4043402313ba55e0fb331d8d5e"
+      "bytes": 3147,
+      "sha256": "f6665195a6e6b57328c68a8514d178830653360890f0f1d1d93e879f79310eae"
     },
     "desktop/generated/0ad3b3e998e3a2a6d6f24497f642f32f49b087568db56aee85b8c2947c2b873b.mjs": {
       "bytes": 7334,
@@ -3158,8 +3170,8 @@
       "sha256": "ff4e43dccfdd52011ef30951c56ebc9a601382a4180a21c35c659e1eea72c752"
     },
     "desktop/generated/a03-vehicle-w9.mjs": {
-      "bytes": 21598,
-      "sha256": "538ce930afd98d4543d23c888ae4604888ac50b537a36314844cd96ca2484d46"
+      "bytes": 21675,
+      "sha256": "de4a513cb5199391c2b56e33278c0d934e52115f54c254d233d235da05f01293"
     },
     "desktop/generated/a05-weapon.mjs": {
       "bytes": 15621,
@@ -3170,8 +3182,8 @@
       "sha256": "6c14f77306abcdb20dbe5d987bfa762d3a0b5a669f70bd57e9dc19ff8c2009c3"
     },
     "desktop/generated/a10-desktop.mjs": {
-      "bytes": 13360,
-      "sha256": "5babcabfbfda4a289de1a2e0850abd3137f7d282085f575c4b192bb0439a13a2"
+      "bytes": 16159,
+      "sha256": "269400ae2d7694c5b518ec53943bc0eac0ce90896dd8fb448ccd8b4fd144c494"
     },
     "desktop/generated/a15-desktop-safe-entry.mjs": {
       "bytes": 527,
@@ -3182,8 +3194,8 @@
       "sha256": "6c5d1fa0fd1ff24a2de7ed4a692a5f1fb371944dc63a1533d0ec45dcbbd27899"
     },
     "desktop/generated/a15-presentation-desktop.mjs": {
-      "bytes": 3009,
-      "sha256": "c4c2cd1eff97be43df2e0f2410d2cdc7392872f7fd2f1c32cac0b250441c48a8"
+      "bytes": 3323,
+      "sha256": "e499a19ac193668f0d4b606590e6d19cdd0cd7ff653cd86f6aba5ce071d2affb"
     },
     "desktop/generated/a15-skin-return-desktop.mjs": {
       "bytes": 11843,
@@ -3290,8 +3302,8 @@
       "sha256": "153d28f3c875acd66bf39e3aa1659778225890dc3ea265a94cab8b8560daf240"
     },
     "desktop/generated/a29-vehicle-w9.mjs": {
-      "bytes": 21213,
-      "sha256": "a547a912f8d1454a3c7286b0a54dd8197ca84d910dff8b298adf50ea2d03557f"
+      "bytes": 21290,
+      "sha256": "12853bc8f895d386f91f8d17665aa0dd9e55c93afbd43a1bd1ae91d4cb9b4f05"
     },
     "desktop/generated/a31-vehicle-w9.mjs": {
       "bytes": 27694,
@@ -3310,24 +3322,24 @@
       "sha256": "346d29b5a1137f7f997aef83e5bdb3cd062c612d76a9f66754244b0a1a1bbfa5"
     },
     "desktop/generated/a57-expression-weapon.mjs": {
-      "bytes": 28996,
-      "sha256": "68a8e13a638d0c0f842452314c1639a6fd3d8faf718bd45e15870cac24814e3d"
+      "bytes": 29641,
+      "sha256": "d23002d4bdb6f81c557dac439520236b66f14f1ce514ed30cc19b339ec768878"
     },
     "desktop/generated/a57-pointer-w11.mjs": {
-      "bytes": 30641,
-      "sha256": "51ed6ea14d608a6d508830e55d874d9c875e9daa8e78429971f949f5f1140505"
+      "bytes": 30840,
+      "sha256": "ab7b8c15bb5d117296ebfce4e7c4ee69d57e056b6ea0d5d72474291fa2f11038"
     },
     "desktop/generated/a57-weapon.mjs": {
-      "bytes": 28756,
-      "sha256": "e4693538f4e21e3592c78c9bdbee7ae722ae9fae84819fc00fe635cdaca17255"
+      "bytes": 28955,
+      "sha256": "79f3d9584d641675ca7f0d3dbf4726bc5173b9c004f4a98b65524a3fbce43f22"
     },
     "desktop/generated/a58-ending-weapon.mjs": {
       "bytes": 12975,
       "sha256": "baa66131c995ea38336ff93e22ddeacc7b8df0f7d0a5c8ea98f4aadbd173fbf6"
     },
     "desktop/generated/a58-perf.mjs": {
-      "bytes": 21496,
-      "sha256": "7e0ea04f6ec687fe86d18102e56497861bf6c45055199d2ffda64e63abafb59f"
+      "bytes": 22456,
+      "sha256": "58870ffc530ddf2c8729fa6a32ee84cb25ee5c97e74b7d883040cc76ea1975df"
     },
     "desktop/generated/a58-rig-perf.mjs": {
       "bytes": 18003,
@@ -3338,8 +3350,8 @@
       "sha256": "7f458fb63048c10e5720ce336a2302611d223d312798f95a53c6a4d169d95e24"
     },
     "desktop/generated/a59-perf.mjs": {
-      "bytes": 55333,
-      "sha256": "7251b237c9b2a0b3f98fc0cf986cce1f75f973dbcced4d139fa61f6cc4b5b282"
+      "bytes": 55649,
+      "sha256": "301b93b6451d7dd78ecde8a5650f748bb985094d8ac34b865456ac4a38a3047c"
     },
     "desktop/generated/a59-rig-perf.mjs": {
       "bytes": 9787,
@@ -3386,12 +3398,12 @@
       "sha256": "71d6b681f0ba8f27803847e783decc79852ea7d688b072e563a750f6cb669153"
     },
     "desktop/generated/si-wall-w9.mjs": {
-      "bytes": 3523,
-      "sha256": "8496173f90807cde830c37374463ce12b1bb7967b61b7034cbd0122a508c78e5"
+      "bytes": 4241,
+      "sha256": "c51c1d999d295c9139ba8894aea2655ec8ce1bd9cc07bebd1f32fd44ff14c761"
     },
     "desktop/generated/vehicle-support-w9.mjs": {
-      "bytes": 4175,
-      "sha256": "1c611449579748cc8575e580624dc7329b1f9e57ea6f045d1544e0073c8d0828"
+      "bytes": 5770,
+      "sha256": "29ae9e78794dc8c2396bad6d017298ccf293cdd293d9cd7a010d01a4a51959c5"
     },
     "desktop/generated/weapon-entry.mjs": {
       "bytes": 2028,
@@ -3422,8 +3434,8 @@
       "sha256": "a899b095487640bac94806ffecf73bf086008f6deab575e9e7044d9834bd72c4"
     },
     "desktop/scene.mjs": {
-      "bytes": 20582,
-      "sha256": "3c5431b8175303b7bb1b932d35d188f6f5ca9807754e34a2f3bc36f8f427717e"
+      "bytes": 21418,
+      "sha256": "ad062b26742ae0defa50be08aaf2b9319d6981ebb64c6b0397f90aa35bdf5560"
     },
     "desktop/style.css": {
       "bytes": 6706,
@@ -3456,6 +3468,54 @@
     "assets/9b8653c49c536134eeebfc2fbf47a692f30b4a46db879af0f4790e2b02e7c597.json": {
       "bytes": 14929,
       "sha256": "9b8653c49c536134eeebfc2fbf47a692f30b4a46db879af0f4790e2b02e7c597"
+    },
+    "desktop/mouse-route.mjs": {
+      "bytes": 11963,
+      "sha256": "59eae1acaabe75f56ba2c18ef7d5ae0aa5e8c2f024013117f9749f5bbbebfbfd"
+    },
+    "desktop/dialogue-geometry.mjs": {
+      "bytes": 1613,
+      "sha256": "a93c3ba11951b0290d13d7908e64eb52107000c2886960e1792a90bc2fae2e80"
+    },
+    "desktop/generated/a12-desktop-w14.mjs": {
+      "bytes": 13745,
+      "sha256": "5c39b138cda3c97266827daccd1697f9b72603c294d410d7883e375f84e351b1"
+    },
+    "desktop/generated/glove-material-w14.mjs": {
+      "bytes": 4341,
+      "sha256": "d0b8e56adeaa7ac3a3fa433204ceeadbe74e7d5fb23973a9fd002b60ae9c0bcc"
+    },
+    "desktop/generated/a12-skin-return-w14.mjs": {
+      "bytes": 9905,
+      "sha256": "f32240804058d55423e5e109f3e44486d1dc6fc19daafa74d765fb22486f7df2"
+    },
+    "desktop/generated/a11-skin-return-w14.mjs": {
+      "bytes": 3455,
+      "sha256": "9c3c42e63425112a6049f389d23fb14a9738a54a4c3a6ffb4c4a9308320cb57c"
+    },
+    "desktop/generated/compact-material-w15.mjs": {
+      "bytes": 1961,
+      "sha256": "64e839630c0758a8538686de82dc0428bbdb856960707b8cc4df2f107426c04f"
+    },
+    "desktop/generated/si-texture-support-w15.json": {
+      "bytes": 6364,
+      "sha256": "5a34051c2e6b039cb22d173446f5d43c0517155f10df6ee3749ee0696e3e35ed"
+    },
+    "desktop/generated/si-mesh-support-w15.mjs": {
+      "bytes": 1040,
+      "sha256": "99fc384cecf4917224625aad2ade034bd0e055ae0604e97b33c148b7a8142d27"
+    },
+    "desktop/generated/batched-readback-w15.mjs": {
+      "bytes": 2087,
+      "sha256": "1da82f570d30dfb818acae317d9ea84415bce48dd26c92aa88aaa570947e49ac"
+    },
+    "desktop/generated/a11-joint-ink-w15.mjs": {
+      "bytes": 4780,
+      "sha256": "140450102c4533161d5252aec50cbdc712f05bf29c9b67803982db705a7c237d"
+    },
+    "desktop/generated/a11-native-w15.mjs": {
+      "bytes": 10739,
+      "sha256": "6511f3c752d19de0bb85589f3657ae4f24b820f03fb8c3157e2f67143b2d6952"
     }
   },
   "actions": [
