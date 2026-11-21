@@ -114,7 +114,7 @@ npm run build -- --electron 'D:\Tools\electron-v33.2.0-win32-x64' --zip
 
 ### 固定代码格式
 
-Prettier固定为3.10.1，仅针对手写动作宿主及`action-*.mjs`：
+Prettier固定为3.10.1，仅针对手写动作宿主、`action-*.mjs`及本轮对应的测试：
 
 ```powershell
 npm run format

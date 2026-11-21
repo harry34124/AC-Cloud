@@ -10,8 +10,8 @@
     "install:local": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/install_local.ps1",
     "test:desktop": "node scripts/test_desktop.cjs",
     "check:all": "node scripts/check_all.cjs",
-    "format": "prettier --write \"app/desktop/action-*.mjs\" app/desktop/daily.mjs",
-    "format:check": "prettier --check \"app/desktop/action-*.mjs\" app/desktop/daily.mjs"
+    "format": "prettier --write \"app/desktop/action-*.mjs\" app/desktop/daily.mjs \"tests/action-*.test.mjs\" tests/desktop/regression.cjs",
+    "format:check": "prettier --check \"app/desktop/action-*.mjs\" app/desktop/daily.mjs \"tests/action-*.test.mjs\" tests/desktop/regression.cjs"
   },
   "devDependencies": {
     "electron": "33.2.0",
