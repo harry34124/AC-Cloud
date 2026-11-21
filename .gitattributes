@@ -1,9 +1,11 @@
 # Runtime assets and checksum-protected sources must round-trip byte for byte.
-app/** -text
-licenses/** -text
 *.md text eol=lf
 *.py text eol=lf
 package.json text eol=lf
 package-lock.json text eol=lf
 .gitignore text eol=lf
 .gitattributes text eol=lf
+
+# Keep these last: generic package/Markdown rules must not normalize protected bytes.
+app/** -text
+licenses/** -text
