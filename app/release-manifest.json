@@ -3423,8 +3423,8 @@
       "sha256": "a8c036c734133655a8eb5b532cf61e53767634750aa60eea2c43b3c78bef0d92"
     },
     "desktop/index.html": {
-      "bytes": 6855,
-      "sha256": "c3349d323bc41b4f4fdf8d8c508a3230d048ff060d8c5f95e3008172c38e383e"
+      "bytes": 5940,
+      "sha256": "8760392b51ec47ea2a66daff3e6f17605b914f9b09aeceb103169e4abfe1d83c"
     },
     "desktop/preload.cjs": {
       "bytes": 570,
